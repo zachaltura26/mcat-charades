@@ -1,0 +1,4377 @@
+[
+  {
+    "term": "Atomic Number",
+    "category": "Chemistry",
+    "explanation": "Number of protons in an atom's nucleus.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Mass Number",
+    "category": "Chemistry",
+    "explanation": "Total number of protons and neutrons.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Isotope",
+    "category": "Chemistry",
+    "explanation": "Atoms of same element with different neutron count.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Electronegativity",
+    "category": "Chemistry",
+    "explanation": "Atom's ability to attract electrons in a bond.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Ionization Energy",
+    "category": "Chemistry",
+    "explanation": "Energy required to remove an electron.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Covalent Bond",
+    "category": "Chemistry",
+    "explanation": "Sharing of electron pairs between atoms.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Ionic Bond",
+    "category": "Chemistry",
+    "explanation": "Electrostatic attraction between oppositely charged ions.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Hydrogen Bond",
+    "category": "Chemistry",
+    "explanation": "Weak bond between H and electronegative atoms (O,N,F).",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "pH Scale",
+    "category": "Chemistry",
+    "explanation": "Measure of H+ concentration; ranges 0-14.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Buffer",
+    "category": "Chemistry",
+    "explanation": "Solution that resists pH changes.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Equilibrium",
+    "category": "Chemistry",
+    "explanation": "State where forward and reverse reaction rates are equal.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Chatelier's Principle",
+    "category": "Chemistry",
+    "explanation": "System shifts to counteract applied stress.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Entropy",
+    "category": "Chemistry",
+    "explanation": "Measure of disorder or randomness.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Enthalpy",
+    "category": "Chemistry",
+    "explanation": "Total heat content of a system.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Free Energy",
+    "category": "Chemistry",
+    "explanation": "Energy available to do work; ΔG = ΔH - TΔS.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Catalyst",
+    "category": "Chemistry",
+    "explanation": "Speeds up reaction without being consumed.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Activation Energy",
+    "category": "Chemistry",
+    "explanation": "Minimum energy required for a reaction to occur.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Oxidation",
+    "category": "Chemistry",
+    "explanation": "Loss of electrons; increase in oxidation state.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Reduction",
+    "category": "Chemistry",
+    "explanation": "Gain of electrons; decrease in oxidation state.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Redox Reaction",
+    "category": "Chemistry",
+    "explanation": "Reaction involving transfer of electrons.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Molarity",
+    "category": "Chemistry",
+    "explanation": "Moles of solute per liter of solution.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Molality",
+    "category": "Chemistry",
+    "explanation": "Moles of solute per kilogram of solvent.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Titration",
+    "category": "Chemistry",
+    "explanation": "Determining concentration of an unknown solution.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Spectrophotometry",
+    "category": "Chemistry",
+    "explanation": "Measurement of light absorption by a solution.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Beer's Law",
+    "category": "Chemistry",
+    "explanation": "Absorbance ∝ concentration × path length.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Chromatography",
+    "category": "Chemistry",
+    "explanation": "Separation based on differential partitioning.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Distillation",
+    "category": "Chemistry",
+    "explanation": "Separation based on differences in boiling points.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Filtration",
+    "category": "Chemistry",
+    "explanation": "Separation based on particle size.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Sublimation",
+    "category": "Chemistry",
+    "explanation": "Direct transition from solid to gas.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Triple Point",
+    "category": "Chemistry",
+    "explanation": "T & P where solid, liquid, and gas coexist.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Vapor Pressure",
+    "category": "Chemistry",
+    "explanation": "Pressure exerted by vapor in equilibrium with liquid.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Boiling Point",
+    "category": "Chemistry",
+    "explanation": "Temperature where vapor pressure equals atmospheric pressure.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Freezing Point",
+    "category": "Chemistry",
+    "explanation": "Temperature where liquid becomes solid.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Mole",
+    "category": "Chemistry",
+    "explanation": "Amount containing Avogadro's number (6.022×10²³) of particles.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Avogadro's Number",
+    "category": "Chemistry",
+    "explanation": "6.022×10²³ particles per mole.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "STP",
+    "category": "Chemistry",
+    "explanation": "Standard Temperature and Pressure: 0°C and 1 atm.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Gas Law",
+    "category": "Chemistry",
+    "explanation": "PV = nRT; describes behavior of ideal gases.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Kinetic Molecular",
+    "category": "Chemistry",
+    "explanation": "Gas particles are in constant random motion.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Intermolecular Forces",
+    "category": "Chemistry",
+    "explanation": "Forces between molecules affecting physical properties.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Dispersion Forces",
+    "category": "Chemistry",
+    "explanation": "Weak temporary dipole attractions.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Dipole-Dipole Forces",
+    "category": "Chemistry",
+    "explanation": "Attractions between polar molecules.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Polar Molecule",
+    "category": "Chemistry",
+    "explanation": "Molecule with uneven charge distribution.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Nonpolar Molecule",
+    "category": "Chemistry",
+    "explanation": "Molecule with even charge distribution.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Solubility",
+    "category": "Chemistry",
+    "explanation": "Maximum amount of solute that can dissolve in solvent.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Solute",
+    "category": "Chemistry",
+    "explanation": "Substance being dissolved.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Solvent",
+    "category": "Chemistry",
+    "explanation": "Substance doing the dissolving.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Electrolyte",
+    "category": "Chemistry",
+    "explanation": "Substance that conducts electricity when dissolved.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Nonelectrolyte",
+    "category": "Chemistry",
+    "explanation": "Substance that does not conduct electricity when dissolved.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Acid",
+    "category": "Chemistry",
+    "explanation": "Proton donor; increases H+ concentration.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Base",
+    "category": "Chemistry",
+    "explanation": "Proton acceptor; increases OH- concentration.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Arrhenius Acid",
+    "category": "Chemistry",
+    "explanation": "Produces H+ ions in water.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Arrhenius Base",
+    "category": "Chemistry",
+    "explanation": "Produces OH- ions in water.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Bronsted-Lowry Acid",
+    "category": "Chemistry",
+    "explanation": "Proton donor.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Bronsted-Lowry Base",
+    "category": "Chemistry",
+    "explanation": "Proton acceptor.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Lewis Acid",
+    "category": "Chemistry",
+    "explanation": "Electron pair acceptor.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Lewis Base",
+    "category": "Chemistry",
+    "explanation": "Electron pair donor.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Conjugate Acid",
+    "category": "Chemistry",
+    "explanation": "Species formed when a base gains a proton.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Conjugate Base",
+    "category": "Chemistry",
+    "explanation": "Species formed when an acid loses a proton.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Ka",
+    "category": "Chemistry",
+    "explanation": "Acid dissociation constant; measure of acid strength.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Kb",
+    "category": "Chemistry",
+    "explanation": "Base dissociation constant; measure of base strength.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Kw",
+    "category": "Chemistry",
+    "explanation": "Ion product of water; 1×10⁻¹⁴ at 25°C.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "pKa",
+    "category": "Chemistry",
+    "explanation": "-log Ka; lower pKa means stronger acid.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Henderson-Hasselbalch",
+    "category": "Chemistry",
+    "explanation": "pH = pKa + log([A-]/[HA]).",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Half-Life",
+    "category": "Chemistry",
+    "explanation": "Time for half of substance to decay or react.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Rate Law",
+    "category": "Chemistry",
+    "explanation": "Relates reaction rate to concentration of reactants.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Rate Constant",
+    "category": "Chemistry",
+    "explanation": "Proportionality constant in rate law.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Reaction Order",
+    "category": "Chemistry",
+    "explanation": "Sum of exponents in rate law.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Activated Complex",
+    "category": "Chemistry",
+    "explanation": "High-energy transition state in reaction.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Michaelis-Menten",
+    "category": "Chemistry",
+    "explanation": "Enzyme kinetics: V = Vmax[S]/(Km + [S]).",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Km",
+    "category": "Chemistry",
+    "explanation": "Substrate concentration at 1/2 Vmax; affinity measure.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Competitive Inhibition",
+    "category": "Chemistry",
+    "explanation": "Inhibitor binds active site, competes with substrate.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Noncompetitive Inhibition",
+    "category": "Chemistry",
+    "explanation": "Inhibitor binds allosteric site, changes enzyme shape.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Allosteric Site",
+    "category": "Chemistry",
+    "explanation": "Regulatory site separate from active site.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Salt Bridge",
+    "category": "Chemistry",
+    "explanation": "Ionic bond between charged amino acids in protein.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Hydrophobic Effect",
+    "category": "Chemistry",
+    "explanation": "Tendency of nonpolar molecules to aggregate in water.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "vdW Forces",
+    "category": "Chemistry",
+    "explanation": "Weak attractions between molecules.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Atomic Number",
+    "category": "Chemistry",
+    "explanation": "Number of protons in an atom's nucleus.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Mass Number",
+    "category": "Chemistry",
+    "explanation": "Total number of protons and neutrons.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Isotope",
+    "category": "Chemistry",
+    "explanation": "Atoms of same element with different neutron count.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Electronegativity",
+    "category": "Chemistry",
+    "explanation": "Atom's ability to attract electrons in a bond.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Ionization Energy",
+    "category": "Chemistry",
+    "explanation": "Energy required to remove an electron.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Covalent Bond",
+    "category": "Chemistry",
+    "explanation": "Sharing of electron pairs between atoms.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Ionic Bond",
+    "category": "Chemistry",
+    "explanation": "Electrostatic attraction between oppositely charged ions.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Hydrogen Bond",
+    "category": "Chemistry",
+    "explanation": "Weak bond between H and electronegative atoms (O,N,F).",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "pH Scale",
+    "category": "Chemistry",
+    "explanation": "Measure of H+ concentration; ranges 0-14.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Buffer",
+    "category": "Chemistry",
+    "explanation": "Solution that resists pH changes.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Equilibrium",
+    "category": "Chemistry",
+    "explanation": "State where forward and reverse reaction rates are equal.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Chatelier's Principle",
+    "category": "Chemistry",
+    "explanation": "System shifts to counteract applied stress.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Entropy",
+    "category": "Chemistry",
+    "explanation": "Measure of disorder or randomness.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Enthalpy",
+    "category": "Chemistry",
+    "explanation": "Total heat content of a system.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Free Energy",
+    "category": "Chemistry",
+    "explanation": "Energy available to do work; ΔG = ΔH - TΔS.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Catalyst",
+    "category": "Chemistry",
+    "explanation": "Speeds up reaction without being consumed.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Activation Energy",
+    "category": "Chemistry",
+    "explanation": "Minimum energy required for a reaction to occur.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Oxidation",
+    "category": "Chemistry",
+    "explanation": "Loss of electrons; increase in oxidation state.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Reduction",
+    "category": "Chemistry",
+    "explanation": "Gain of electrons; decrease in oxidation state.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Redox Reaction",
+    "category": "Chemistry",
+    "explanation": "Reaction involving transfer of electrons.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Molarity",
+    "category": "Chemistry",
+    "explanation": "Moles of solute per liter of solution.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Molality",
+    "category": "Chemistry",
+    "explanation": "Moles of solute per kilogram of solvent.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Titration",
+    "category": "Chemistry",
+    "explanation": "Determining concentration of an unknown solution.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Spectrophotometry",
+    "category": "Chemistry",
+    "explanation": "Measurement of light absorption by a solution.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Beer's Law",
+    "category": "Chemistry",
+    "explanation": "Absorbance ∝ concentration × path length.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Chromatography",
+    "category": "Chemistry",
+    "explanation": "Separation based on differential partitioning.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Distillation",
+    "category": "Chemistry",
+    "explanation": "Separation based on differences in boiling points.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Filtration",
+    "category": "Chemistry",
+    "explanation": "Separation based on particle size.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Sublimation",
+    "category": "Chemistry",
+    "explanation": "Direct transition from solid to gas.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Triple Point",
+    "category": "Chemistry",
+    "explanation": "T & P where solid, liquid, and gas coexist.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Vapor Pressure",
+    "category": "Chemistry",
+    "explanation": "Pressure exerted by vapor in equilibrium with liquid.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Boiling Point",
+    "category": "Chemistry",
+    "explanation": "Temperature where vapor pressure equals atmospheric pressure.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Freezing Point",
+    "category": "Chemistry",
+    "explanation": "Temperature where liquid becomes solid.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Mole",
+    "category": "Chemistry",
+    "explanation": "Amount containing Avogadro's number (6.022×10²³) of particles.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Avogadro's Number",
+    "category": "Chemistry",
+    "explanation": "6.022×10²³ particles per mole.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "STP",
+    "category": "Chemistry",
+    "explanation": "Standard Temperature and Pressure: 0°C and 1 atm.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Gas Law",
+    "category": "Chemistry",
+    "explanation": "PV = nRT; describes behavior of ideal gases.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Kinetic Molecular",
+    "category": "Chemistry",
+    "explanation": "Gas particles are in constant random motion.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Intermolecular Forces",
+    "category": "Chemistry",
+    "explanation": "Forces between molecules affecting physical properties.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Dispersion Forces",
+    "category": "Chemistry",
+    "explanation": "Weak temporary dipole attractions.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Dipole-Dipole Forces",
+    "category": "Chemistry",
+    "explanation": "Attractions between polar molecules.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Polar Molecule",
+    "category": "Chemistry",
+    "explanation": "Molecule with uneven charge distribution.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Nonpolar Molecule",
+    "category": "Chemistry",
+    "explanation": "Molecule with even charge distribution.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Solubility",
+    "category": "Chemistry",
+    "explanation": "Maximum amount of solute that can dissolve in solvent.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Solute",
+    "category": "Chemistry",
+    "explanation": "Substance being dissolved.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Solvent",
+    "category": "Chemistry",
+    "explanation": "Substance doing the dissolving.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Electrolyte",
+    "category": "Chemistry",
+    "explanation": "Substance that conducts electricity when dissolved.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Nonelectrolyte",
+    "category": "Chemistry",
+    "explanation": "Substance that does not conduct electricity when dissolved.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Acid",
+    "category": "Chemistry",
+    "explanation": "Proton donor; increases H+ concentration.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Base",
+    "category": "Chemistry",
+    "explanation": "Proton acceptor; increases OH- concentration.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Arrhenius Acid",
+    "category": "Chemistry",
+    "explanation": "Produces H+ ions in water.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Arrhenius Base",
+    "category": "Chemistry",
+    "explanation": "Produces OH- ions in water.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Bronsted-Lowry Acid",
+    "category": "Chemistry",
+    "explanation": "Proton donor.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Bronsted-Lowry Base",
+    "category": "Chemistry",
+    "explanation": "Proton acceptor.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Lewis Acid",
+    "category": "Chemistry",
+    "explanation": "Electron pair acceptor.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Lewis Base",
+    "category": "Chemistry",
+    "explanation": "Electron pair donor.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Conjugate Acid",
+    "category": "Chemistry",
+    "explanation": "Species formed when a base gains a proton.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Conjugate Base",
+    "category": "Chemistry",
+    "explanation": "Species formed when an acid loses a proton.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Ka",
+    "category": "Chemistry",
+    "explanation": "Acid dissociation constant; measure of acid strength.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Kb",
+    "category": "Chemistry",
+    "explanation": "Base dissociation constant; measure of base strength.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Kw",
+    "category": "Chemistry",
+    "explanation": "Ion product of water; 1×10⁻¹⁴ at 25°C.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "pKa",
+    "category": "Chemistry",
+    "explanation": "-log Ka; lower pKa means stronger acid.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Henderson-Hasselbalch",
+    "category": "Chemistry",
+    "explanation": "pH = pKa + log([A-]/[HA]).",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Half-Life",
+    "category": "Chemistry",
+    "explanation": "Time for half of substance to decay or react.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Rate Law",
+    "category": "Chemistry",
+    "explanation": "Relates reaction rate to concentration of reactants.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Rate Constant",
+    "category": "Chemistry",
+    "explanation": "Proportionality constant in rate law.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Reaction Order",
+    "category": "Chemistry",
+    "explanation": "Sum of exponents in rate law.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Activated Complex",
+    "category": "Chemistry",
+    "explanation": "High-energy transition state in reaction.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Michaelis-Menten",
+    "category": "Chemistry",
+    "explanation": "Enzyme kinetics: V = Vmax[S]/(Km + [S]).",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Km",
+    "category": "Chemistry",
+    "explanation": "Substrate concentration at 1/2 Vmax; affinity measure.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Competitive Inhibition",
+    "category": "Chemistry",
+    "explanation": "Inhibitor binds active site, competes with substrate.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Noncompetitive Inhibition",
+    "category": "Chemistry",
+    "explanation": "Inhibitor binds allosteric site, changes enzyme shape.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Allosteric Site",
+    "category": "Chemistry",
+    "explanation": "Regulatory site separate from active site.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Salt Bridge",
+    "category": "Chemistry",
+    "explanation": "Ionic bond between charged amino acids in protein.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Hydrophobic Effect",
+    "category": "Chemistry",
+    "explanation": "Tendency of nonpolar molecules to aggregate in water.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "vdW Forces",
+    "category": "Chemistry",
+    "explanation": "Weak attractions between molecules.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Atomic Number",
+    "category": "Chemistry",
+    "explanation": "Number of protons in an atom's nucleus.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Mass Number",
+    "category": "Chemistry",
+    "explanation": "Total number of protons and neutrons.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Isotope",
+    "category": "Chemistry",
+    "explanation": "Atoms of same element with different neutron count.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Electronegativity",
+    "category": "Chemistry",
+    "explanation": "Atom's ability to attract electrons in a bond.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Ionization Energy",
+    "category": "Chemistry",
+    "explanation": "Energy required to remove an electron.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Covalent Bond",
+    "category": "Chemistry",
+    "explanation": "Sharing of electron pairs between atoms.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Ionic Bond",
+    "category": "Chemistry",
+    "explanation": "Electrostatic attraction between oppositely charged ions.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Hydrogen Bond",
+    "category": "Chemistry",
+    "explanation": "Weak bond between H and electronegative atoms (O,N,F).",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "pH Scale",
+    "category": "Chemistry",
+    "explanation": "Measure of H+ concentration; ranges 0-14.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Buffer",
+    "category": "Chemistry",
+    "explanation": "Solution that resists pH changes.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Equilibrium",
+    "category": "Chemistry",
+    "explanation": "State where forward and reverse reaction rates are equal.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Chatelier's Principle",
+    "category": "Chemistry",
+    "explanation": "System shifts to counteract applied stress.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Entropy",
+    "category": "Chemistry",
+    "explanation": "Measure of disorder or randomness.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Enthalpy",
+    "category": "Chemistry",
+    "explanation": "Total heat content of a system.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Free Energy",
+    "category": "Chemistry",
+    "explanation": "Energy available to do work; ΔG = ΔH - TΔS.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Catalyst",
+    "category": "Chemistry",
+    "explanation": "Speeds up reaction without being consumed.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Activation Energy",
+    "category": "Chemistry",
+    "explanation": "Minimum energy required for a reaction to occur.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Oxidation",
+    "category": "Chemistry",
+    "explanation": "Loss of electrons; increase in oxidation state.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Reduction",
+    "category": "Chemistry",
+    "explanation": "Gain of electrons; decrease in oxidation state.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Redox Reaction",
+    "category": "Chemistry",
+    "explanation": "Reaction involving transfer of electrons.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Molarity",
+    "category": "Chemistry",
+    "explanation": "Moles of solute per liter of solution.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Molality",
+    "category": "Chemistry",
+    "explanation": "Moles of solute per kilogram of solvent.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Titration",
+    "category": "Chemistry",
+    "explanation": "Determining concentration of an unknown solution.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Spectrophotometry",
+    "category": "Chemistry",
+    "explanation": "Measurement of light absorption by a solution.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Beer's Law",
+    "category": "Chemistry",
+    "explanation": "Absorbance ∝ concentration × path length.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Chromatography",
+    "category": "Chemistry",
+    "explanation": "Separation based on differential partitioning.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Distillation",
+    "category": "Chemistry",
+    "explanation": "Separation based on differences in boiling points.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Filtration",
+    "category": "Chemistry",
+    "explanation": "Separation based on particle size.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Sublimation",
+    "category": "Chemistry",
+    "explanation": "Direct transition from solid to gas.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Triple Point",
+    "category": "Chemistry",
+    "explanation": "T & P where solid, liquid, and gas coexist.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Vapor Pressure",
+    "category": "Chemistry",
+    "explanation": "Pressure exerted by vapor in equilibrium with liquid.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Boiling Point",
+    "category": "Chemistry",
+    "explanation": "Temperature where vapor pressure equals atmospheric pressure.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Freezing Point",
+    "category": "Chemistry",
+    "explanation": "Temperature where liquid becomes solid.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Mole",
+    "category": "Chemistry",
+    "explanation": "Amount containing Avogadro's number (6.022×10²³) of particles.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Avogadro's Number",
+    "category": "Chemistry",
+    "explanation": "6.022×10²³ particles per mole.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "STP",
+    "category": "Chemistry",
+    "explanation": "Standard Temperature and Pressure: 0°C and 1 atm.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Gas Law",
+    "category": "Chemistry",
+    "explanation": "PV = nRT; describes behavior of ideal gases.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Kinetic Molecular",
+    "category": "Chemistry",
+    "explanation": "Gas particles are in constant random motion.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Intermolecular Forces",
+    "category": "Chemistry",
+    "explanation": "Forces between molecules affecting physical properties.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Dispersion Forces",
+    "category": "Chemistry",
+    "explanation": "Weak temporary dipole attractions.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Dipole-Dipole Forces",
+    "category": "Chemistry",
+    "explanation": "Attractions between polar molecules.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Polar Molecule",
+    "category": "Chemistry",
+    "explanation": "Molecule with uneven charge distribution.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Nonpolar Molecule",
+    "category": "Chemistry",
+    "explanation": "Molecule with even charge distribution.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Solubility",
+    "category": "Chemistry",
+    "explanation": "Maximum amount of solute that can dissolve in solvent.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Solute",
+    "category": "Chemistry",
+    "explanation": "Substance being dissolved.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Solvent",
+    "category": "Chemistry",
+    "explanation": "Substance doing the dissolving.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Electrolyte",
+    "category": "Chemistry",
+    "explanation": "Substance that conducts electricity when dissolved.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Nonelectrolyte",
+    "category": "Chemistry",
+    "explanation": "Substance that does not conduct electricity when dissolved.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Acid",
+    "category": "Chemistry",
+    "explanation": "Proton donor; increases H+ concentration.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Base",
+    "category": "Chemistry",
+    "explanation": "Proton acceptor; increases OH- concentration.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Arrhenius Acid",
+    "category": "Chemistry",
+    "explanation": "Produces H+ ions in water.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Arrhenius Base",
+    "category": "Chemistry",
+    "explanation": "Produces OH- ions in water.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Bronsted-Lowry Acid",
+    "category": "Chemistry",
+    "explanation": "Proton donor.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Bronsted-Lowry Base",
+    "category": "Chemistry",
+    "explanation": "Proton acceptor.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Lewis Acid",
+    "category": "Chemistry",
+    "explanation": "Electron pair acceptor.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Lewis Base",
+    "category": "Chemistry",
+    "explanation": "Electron pair donor.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Conjugate Acid",
+    "category": "Chemistry",
+    "explanation": "Species formed when a base gains a proton.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Conjugate Base",
+    "category": "Chemistry",
+    "explanation": "Species formed when an acid loses a proton.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Ka",
+    "category": "Chemistry",
+    "explanation": "Acid dissociation constant; measure of acid strength.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Kb",
+    "category": "Chemistry",
+    "explanation": "Base dissociation constant; measure of base strength.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Kw",
+    "category": "Chemistry",
+    "explanation": "Ion product of water; 1×10⁻¹⁴ at 25°C.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "pKa",
+    "category": "Chemistry",
+    "explanation": "-log Ka; lower pKa means stronger acid.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Henderson-Hasselbalch",
+    "category": "Chemistry",
+    "explanation": "pH = pKa + log([A-]/[HA]).",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Half-Life",
+    "category": "Chemistry",
+    "explanation": "Time for half of substance to decay or react.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Rate Law",
+    "category": "Chemistry",
+    "explanation": "Relates reaction rate to concentration of reactants.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Rate Constant",
+    "category": "Chemistry",
+    "explanation": "Proportionality constant in rate law.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Reaction Order",
+    "category": "Chemistry",
+    "explanation": "Sum of exponents in rate law.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Activated Complex",
+    "category": "Chemistry",
+    "explanation": "High-energy transition state in reaction.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Michaelis-Menten",
+    "category": "Chemistry",
+    "explanation": "Enzyme kinetics: V = Vmax[S]/(Km + [S]).",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Km",
+    "category": "Chemistry",
+    "explanation": "Substrate concentration at 1/2 Vmax; affinity measure.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Competitive Inhibition",
+    "category": "Chemistry",
+    "explanation": "Inhibitor binds active site, competes with substrate.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Noncompetitive Inhibition",
+    "category": "Chemistry",
+    "explanation": "Inhibitor binds allosteric site, changes enzyme shape.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Allosteric Site",
+    "category": "Chemistry",
+    "explanation": "Regulatory site separate from active site.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Salt Bridge",
+    "category": "Chemistry",
+    "explanation": "Ionic bond between charged amino acids in protein.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Hydrophobic Effect",
+    "category": "Chemistry",
+    "explanation": "Tendency of nonpolar molecules to aggregate in water.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "vdW Forces",
+    "category": "Chemistry",
+    "explanation": "Weak attractions between molecules.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Atomic Number",
+    "category": "Chemistry",
+    "explanation": "Number of protons in an atom's nucleus.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Mass Number",
+    "category": "Chemistry",
+    "explanation": "Total number of protons and neutrons.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Isotope",
+    "category": "Chemistry",
+    "explanation": "Atoms of same element with different neutron count.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Electronegativity",
+    "category": "Chemistry",
+    "explanation": "Atom's ability to attract electrons in a bond.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Ionization Energy",
+    "category": "Chemistry",
+    "explanation": "Energy required to remove an electron.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Covalent Bond",
+    "category": "Chemistry",
+    "explanation": "Sharing of electron pairs between atoms.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Ionic Bond",
+    "category": "Chemistry",
+    "explanation": "Electrostatic attraction between oppositely charged ions.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Hydrogen Bond",
+    "category": "Chemistry",
+    "explanation": "Weak bond between H and electronegative atoms (O,N,F).",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "pH Scale",
+    "category": "Chemistry",
+    "explanation": "Measure of H+ concentration; ranges 0-14.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Buffer",
+    "category": "Chemistry",
+    "explanation": "Solution that resists pH changes.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Equilibrium",
+    "category": "Chemistry",
+    "explanation": "State where forward and reverse reaction rates are equal.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Chatelier's Principle",
+    "category": "Chemistry",
+    "explanation": "System shifts to counteract applied stress.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Entropy",
+    "category": "Chemistry",
+    "explanation": "Measure of disorder or randomness.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Enthalpy",
+    "category": "Chemistry",
+    "explanation": "Total heat content of a system.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Free Energy",
+    "category": "Chemistry",
+    "explanation": "Energy available to do work; ΔG = ΔH - TΔS.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Catalyst",
+    "category": "Chemistry",
+    "explanation": "Speeds up reaction without being consumed.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Activation Energy",
+    "category": "Chemistry",
+    "explanation": "Minimum energy required for a reaction to occur.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Oxidation",
+    "category": "Chemistry",
+    "explanation": "Loss of electrons; increase in oxidation state.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Reduction",
+    "category": "Chemistry",
+    "explanation": "Gain of electrons; decrease in oxidation state.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Redox Reaction",
+    "category": "Chemistry",
+    "explanation": "Reaction involving transfer of electrons.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Molarity",
+    "category": "Chemistry",
+    "explanation": "Moles of solute per liter of solution.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Molality",
+    "category": "Chemistry",
+    "explanation": "Moles of solute per kilogram of solvent.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Titration",
+    "category": "Chemistry",
+    "explanation": "Determining concentration of an unknown solution.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Spectrophotometry",
+    "category": "Chemistry",
+    "explanation": "Measurement of light absorption by a solution.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Beer's Law",
+    "category": "Chemistry",
+    "explanation": "Absorbance ∝ concentration × path length.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Chromatography",
+    "category": "Chemistry",
+    "explanation": "Separation based on differential partitioning.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Distillation",
+    "category": "Chemistry",
+    "explanation": "Separation based on differences in boiling points.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Filtration",
+    "category": "Chemistry",
+    "explanation": "Separation based on particle size.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Sublimation",
+    "category": "Chemistry",
+    "explanation": "Direct transition from solid to gas.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Triple Point",
+    "category": "Chemistry",
+    "explanation": "T & P where solid, liquid, and gas coexist.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Vapor Pressure",
+    "category": "Chemistry",
+    "explanation": "Pressure exerted by vapor in equilibrium with liquid.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Boiling Point",
+    "category": "Chemistry",
+    "explanation": "Temperature where vapor pressure equals atmospheric pressure.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Freezing Point",
+    "category": "Chemistry",
+    "explanation": "Temperature where liquid becomes solid.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Mole",
+    "category": "Chemistry",
+    "explanation": "Amount containing Avogadro's number (6.022×10²³) of particles.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Avogadro's Number",
+    "category": "Chemistry",
+    "explanation": "6.022×10²³ particles per mole.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "STP",
+    "category": "Chemistry",
+    "explanation": "Standard Temperature and Pressure: 0°C and 1 atm.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Gas Law",
+    "category": "Chemistry",
+    "explanation": "PV = nRT; describes behavior of ideal gases.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Kinetic Molecular",
+    "category": "Chemistry",
+    "explanation": "Gas particles are in constant random motion.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Intermolecular Forces",
+    "category": "Chemistry",
+    "explanation": "Forces between molecules affecting physical properties.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Dispersion Forces",
+    "category": "Chemistry",
+    "explanation": "Weak temporary dipole attractions.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Dipole-Dipole Forces",
+    "category": "Chemistry",
+    "explanation": "Attractions between polar molecules.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Polar Molecule",
+    "category": "Chemistry",
+    "explanation": "Molecule with uneven charge distribution.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Nonpolar Molecule",
+    "category": "Chemistry",
+    "explanation": "Molecule with even charge distribution.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Solubility",
+    "category": "Chemistry",
+    "explanation": "Maximum amount of solute that can dissolve in solvent.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Solute",
+    "category": "Chemistry",
+    "explanation": "Substance being dissolved.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Solvent",
+    "category": "Chemistry",
+    "explanation": "Substance doing the dissolving.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Electrolyte",
+    "category": "Chemistry",
+    "explanation": "Substance that conducts electricity when dissolved.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Nonelectrolyte",
+    "category": "Chemistry",
+    "explanation": "Substance that does not conduct electricity when dissolved.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Acid",
+    "category": "Chemistry",
+    "explanation": "Proton donor; increases H+ concentration.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Base",
+    "category": "Chemistry",
+    "explanation": "Proton acceptor; increases OH- concentration.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Arrhenius Acid",
+    "category": "Chemistry",
+    "explanation": "Produces H+ ions in water.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Arrhenius Base",
+    "category": "Chemistry",
+    "explanation": "Produces OH- ions in water.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Bronsted-Lowry Acid",
+    "category": "Chemistry",
+    "explanation": "Proton donor.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Bronsted-Lowry Base",
+    "category": "Chemistry",
+    "explanation": "Proton acceptor.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Lewis Acid",
+    "category": "Chemistry",
+    "explanation": "Electron pair acceptor.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Lewis Base",
+    "category": "Chemistry",
+    "explanation": "Electron pair donor.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Conjugate Acid",
+    "category": "Chemistry",
+    "explanation": "Species formed when a base gains a proton.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Conjugate Base",
+    "category": "Chemistry",
+    "explanation": "Species formed when an acid loses a proton.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Ka",
+    "category": "Chemistry",
+    "explanation": "Acid dissociation constant; measure of acid strength.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Kb",
+    "category": "Chemistry",
+    "explanation": "Base dissociation constant; measure of base strength.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Kw",
+    "category": "Chemistry",
+    "explanation": "Ion product of water; 1×10⁻¹⁴ at 25°C.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "pKa",
+    "category": "Chemistry",
+    "explanation": "-log Ka; lower pKa means stronger acid.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Henderson-Hasselbalch",
+    "category": "Chemistry",
+    "explanation": "pH = pKa + log([A-]/[HA]).",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Half-Life",
+    "category": "Chemistry",
+    "explanation": "Time for half of substance to decay or react.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Rate Law",
+    "category": "Chemistry",
+    "explanation": "Relates reaction rate to concentration of reactants.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Rate Constant",
+    "category": "Chemistry",
+    "explanation": "Proportionality constant in rate law.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Reaction Order",
+    "category": "Chemistry",
+    "explanation": "Sum of exponents in rate law.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Activated Complex",
+    "category": "Chemistry",
+    "explanation": "High-energy transition state in reaction.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Michaelis-Menten",
+    "category": "Chemistry",
+    "explanation": "Enzyme kinetics: V = Vmax[S]/(Km + [S]).",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Km",
+    "category": "Chemistry",
+    "explanation": "Substrate concentration at 1/2 Vmax; affinity measure.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Competitive Inhibition",
+    "category": "Chemistry",
+    "explanation": "Inhibitor binds active site, competes with substrate.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Noncompetitive Inhibition",
+    "category": "Chemistry",
+    "explanation": "Inhibitor binds allosteric site, changes enzyme shape.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Allosteric Site",
+    "category": "Chemistry",
+    "explanation": "Regulatory site separate from active site.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Salt Bridge",
+    "category": "Chemistry",
+    "explanation": "Ionic bond between charged amino acids in protein.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Hydrophobic Effect",
+    "category": "Chemistry",
+    "explanation": "Tendency of nonpolar molecules to aggregate in water.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "vdW Forces",
+    "category": "Chemistry",
+    "explanation": "Weak attractions between molecules.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Atomic Number",
+    "category": "Chemistry",
+    "explanation": "Number of protons in an atom's nucleus.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Mass Number",
+    "category": "Chemistry",
+    "explanation": "Total number of protons and neutrons.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Isotope",
+    "category": "Chemistry",
+    "explanation": "Atoms of same element with different neutron count.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Electronegativity",
+    "category": "Chemistry",
+    "explanation": "Atom's ability to attract electrons in a bond.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Ionization Energy",
+    "category": "Chemistry",
+    "explanation": "Energy required to remove an electron.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Covalent Bond",
+    "category": "Chemistry",
+    "explanation": "Sharing of electron pairs between atoms.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Ionic Bond",
+    "category": "Chemistry",
+    "explanation": "Electrostatic attraction between oppositely charged ions.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Hydrogen Bond",
+    "category": "Chemistry",
+    "explanation": "Weak bond between H and electronegative atoms (O,N,F).",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "pH Scale",
+    "category": "Chemistry",
+    "explanation": "Measure of H+ concentration; ranges 0-14.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Buffer",
+    "category": "Chemistry",
+    "explanation": "Solution that resists pH changes.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Equilibrium",
+    "category": "Chemistry",
+    "explanation": "State where forward and reverse reaction rates are equal.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Chatelier's Principle",
+    "category": "Chemistry",
+    "explanation": "System shifts to counteract applied stress.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Entropy",
+    "category": "Chemistry",
+    "explanation": "Measure of disorder or randomness.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Enthalpy",
+    "category": "Chemistry",
+    "explanation": "Total heat content of a system.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Free Energy",
+    "category": "Chemistry",
+    "explanation": "Energy available to do work; ΔG = ΔH - TΔS.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Catalyst",
+    "category": "Chemistry",
+    "explanation": "Speeds up reaction without being consumed.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Activation Energy",
+    "category": "Chemistry",
+    "explanation": "Minimum energy required for a reaction to occur.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Oxidation",
+    "category": "Chemistry",
+    "explanation": "Loss of electrons; increase in oxidation state.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Reduction",
+    "category": "Chemistry",
+    "explanation": "Gain of electrons; decrease in oxidation state.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Redox Reaction",
+    "category": "Chemistry",
+    "explanation": "Reaction involving transfer of electrons.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Molarity",
+    "category": "Chemistry",
+    "explanation": "Moles of solute per liter of solution.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Molality",
+    "category": "Chemistry",
+    "explanation": "Moles of solute per kilogram of solvent.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Titration",
+    "category": "Chemistry",
+    "explanation": "Determining concentration of an unknown solution.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Spectrophotometry",
+    "category": "Chemistry",
+    "explanation": "Measurement of light absorption by a solution.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Beer's Law",
+    "category": "Chemistry",
+    "explanation": "Absorbance ∝ concentration × path length.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Chromatography",
+    "category": "Chemistry",
+    "explanation": "Separation based on differential partitioning.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Distillation",
+    "category": "Chemistry",
+    "explanation": "Separation based on differences in boiling points.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Filtration",
+    "category": "Chemistry",
+    "explanation": "Separation based on particle size.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Sublimation",
+    "category": "Chemistry",
+    "explanation": "Direct transition from solid to gas.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Triple Point",
+    "category": "Chemistry",
+    "explanation": "T & P where solid, liquid, and gas coexist.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Vapor Pressure",
+    "category": "Chemistry",
+    "explanation": "Pressure exerted by vapor in equilibrium with liquid.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Boiling Point",
+    "category": "Chemistry",
+    "explanation": "Temperature where vapor pressure equals atmospheric pressure.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Freezing Point",
+    "category": "Chemistry",
+    "explanation": "Temperature where liquid becomes solid.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Mole",
+    "category": "Chemistry",
+    "explanation": "Amount containing Avogadro's number (6.022×10²³) of particles.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Avogadro's Number",
+    "category": "Chemistry",
+    "explanation": "6.022×10²³ particles per mole.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "STP",
+    "category": "Chemistry",
+    "explanation": "Standard Temperature and Pressure: 0°C and 1 atm.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Gas Law",
+    "category": "Chemistry",
+    "explanation": "PV = nRT; describes behavior of ideal gases.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Kinetic Molecular",
+    "category": "Chemistry",
+    "explanation": "Gas particles are in constant random motion.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Intermolecular Forces",
+    "category": "Chemistry",
+    "explanation": "Forces between molecules affecting physical properties.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Dispersion Forces",
+    "category": "Chemistry",
+    "explanation": "Weak temporary dipole attractions.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Dipole-Dipole Forces",
+    "category": "Chemistry",
+    "explanation": "Attractions between polar molecules.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Polar Molecule",
+    "category": "Chemistry",
+    "explanation": "Molecule with uneven charge distribution.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Nonpolar Molecule",
+    "category": "Chemistry",
+    "explanation": "Molecule with even charge distribution.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Solubility",
+    "category": "Chemistry",
+    "explanation": "Maximum amount of solute that can dissolve in solvent.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Solute",
+    "category": "Chemistry",
+    "explanation": "Substance being dissolved.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Solvent",
+    "category": "Chemistry",
+    "explanation": "Substance doing the dissolving.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Electrolyte",
+    "category": "Chemistry",
+    "explanation": "Substance that conducts electricity when dissolved.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Nonelectrolyte",
+    "category": "Chemistry",
+    "explanation": "Substance that does not conduct electricity when dissolved.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Acid",
+    "category": "Chemistry",
+    "explanation": "Proton donor; increases H+ concentration.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Base",
+    "category": "Chemistry",
+    "explanation": "Proton acceptor; increases OH- concentration.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Arrhenius Acid",
+    "category": "Chemistry",
+    "explanation": "Produces H+ ions in water.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Arrhenius Base",
+    "category": "Chemistry",
+    "explanation": "Produces OH- ions in water.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Bronsted-Lowry Acid",
+    "category": "Chemistry",
+    "explanation": "Proton donor.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Bronsted-Lowry Base",
+    "category": "Chemistry",
+    "explanation": "Proton acceptor.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Lewis Acid",
+    "category": "Chemistry",
+    "explanation": "Electron pair acceptor.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Lewis Base",
+    "category": "Chemistry",
+    "explanation": "Electron pair donor.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Conjugate Acid",
+    "category": "Chemistry",
+    "explanation": "Species formed when a base gains a proton.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Conjugate Base",
+    "category": "Chemistry",
+    "explanation": "Species formed when an acid loses a proton.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Ka",
+    "category": "Chemistry",
+    "explanation": "Acid dissociation constant; measure of acid strength.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Kb",
+    "category": "Chemistry",
+    "explanation": "Base dissociation constant; measure of base strength.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Kw",
+    "category": "Chemistry",
+    "explanation": "Ion product of water; 1×10⁻¹⁴ at 25°C.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "pKa",
+    "category": "Chemistry",
+    "explanation": "-log Ka; lower pKa means stronger acid.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Henderson-Hasselbalch",
+    "category": "Chemistry",
+    "explanation": "pH = pKa + log([A-]/[HA]).",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Half-Life",
+    "category": "Chemistry",
+    "explanation": "Time for half of substance to decay or react.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Rate Law",
+    "category": "Chemistry",
+    "explanation": "Relates reaction rate to concentration of reactants.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Rate Constant",
+    "category": "Chemistry",
+    "explanation": "Proportionality constant in rate law.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Reaction Order",
+    "category": "Chemistry",
+    "explanation": "Sum of exponents in rate law.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Activated Complex",
+    "category": "Chemistry",
+    "explanation": "High-energy transition state in reaction.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Michaelis-Menten",
+    "category": "Chemistry",
+    "explanation": "Enzyme kinetics: V = Vmax[S]/(Km + [S]).",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Km",
+    "category": "Chemistry",
+    "explanation": "Substrate concentration at 1/2 Vmax; affinity measure.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Competitive Inhibition",
+    "category": "Chemistry",
+    "explanation": "Inhibitor binds active site, competes with substrate.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Noncompetitive Inhibition",
+    "category": "Chemistry",
+    "explanation": "Inhibitor binds allosteric site, changes enzyme shape.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Allosteric Site",
+    "category": "Chemistry",
+    "explanation": "Regulatory site separate from active site.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Salt Bridge",
+    "category": "Chemistry",
+    "explanation": "Ionic bond between charged amino acids in protein.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Hydrophobic Effect",
+    "category": "Chemistry",
+    "explanation": "Tendency of nonpolar molecules to aggregate in water.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "vdW Forces",
+    "category": "Chemistry",
+    "explanation": "Weak attractions between molecules.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Atomic Number",
+    "category": "Chemistry",
+    "explanation": "Number of protons in an atom's nucleus.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Mass Number",
+    "category": "Chemistry",
+    "explanation": "Total number of protons and neutrons.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Isotope",
+    "category": "Chemistry",
+    "explanation": "Atoms of same element with different neutron count.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Electronegativity",
+    "category": "Chemistry",
+    "explanation": "Atom's ability to attract electrons in a bond.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Ionization Energy",
+    "category": "Chemistry",
+    "explanation": "Energy required to remove an electron.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Covalent Bond",
+    "category": "Chemistry",
+    "explanation": "Sharing of electron pairs between atoms.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Ionic Bond",
+    "category": "Chemistry",
+    "explanation": "Electrostatic attraction between oppositely charged ions.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Hydrogen Bond",
+    "category": "Chemistry",
+    "explanation": "Weak bond between H and electronegative atoms (O,N,F).",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "pH Scale",
+    "category": "Chemistry",
+    "explanation": "Measure of H+ concentration; ranges 0-14.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Buffer",
+    "category": "Chemistry",
+    "explanation": "Solution that resists pH changes.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Equilibrium",
+    "category": "Chemistry",
+    "explanation": "State where forward and reverse reaction rates are equal.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Chatelier's Principle",
+    "category": "Chemistry",
+    "explanation": "System shifts to counteract applied stress.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Entropy",
+    "category": "Chemistry",
+    "explanation": "Measure of disorder or randomness.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Enthalpy",
+    "category": "Chemistry",
+    "explanation": "Total heat content of a system.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Free Energy",
+    "category": "Chemistry",
+    "explanation": "Energy available to do work; ΔG = ΔH - TΔS.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Catalyst",
+    "category": "Chemistry",
+    "explanation": "Speeds up reaction without being consumed.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Activation Energy",
+    "category": "Chemistry",
+    "explanation": "Minimum energy required for a reaction to occur.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Oxidation",
+    "category": "Chemistry",
+    "explanation": "Loss of electrons; increase in oxidation state.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Reduction",
+    "category": "Chemistry",
+    "explanation": "Gain of electrons; decrease in oxidation state.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Redox Reaction",
+    "category": "Chemistry",
+    "explanation": "Reaction involving transfer of electrons.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Molarity",
+    "category": "Chemistry",
+    "explanation": "Moles of solute per liter of solution.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Molality",
+    "category": "Chemistry",
+    "explanation": "Moles of solute per kilogram of solvent.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Titration",
+    "category": "Chemistry",
+    "explanation": "Determining concentration of an unknown solution.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Spectrophotometry",
+    "category": "Chemistry",
+    "explanation": "Measurement of light absorption by a solution.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Beer's Law",
+    "category": "Chemistry",
+    "explanation": "Absorbance ∝ concentration × path length.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Chromatography",
+    "category": "Chemistry",
+    "explanation": "Separation based on differential partitioning.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Distillation",
+    "category": "Chemistry",
+    "explanation": "Separation based on differences in boiling points.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Filtration",
+    "category": "Chemistry",
+    "explanation": "Separation based on particle size.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Sublimation",
+    "category": "Chemistry",
+    "explanation": "Direct transition from solid to gas.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Triple Point",
+    "category": "Chemistry",
+    "explanation": "T & P where solid, liquid, and gas coexist.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Vapor Pressure",
+    "category": "Chemistry",
+    "explanation": "Pressure exerted by vapor in equilibrium with liquid.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Boiling Point",
+    "category": "Chemistry",
+    "explanation": "Temperature where vapor pressure equals atmospheric pressure.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Freezing Point",
+    "category": "Chemistry",
+    "explanation": "Temperature where liquid becomes solid.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Mole",
+    "category": "Chemistry",
+    "explanation": "Amount containing Avogadro's number (6.022×10²³) of particles.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Avogadro's Number",
+    "category": "Chemistry",
+    "explanation": "6.022×10²³ particles per mole.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "STP",
+    "category": "Chemistry",
+    "explanation": "Standard Temperature and Pressure: 0°C and 1 atm.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Gas Law",
+    "category": "Chemistry",
+    "explanation": "PV = nRT; describes behavior of ideal gases.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Kinetic Molecular",
+    "category": "Chemistry",
+    "explanation": "Gas particles are in constant random motion.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Intermolecular Forces",
+    "category": "Chemistry",
+    "explanation": "Forces between molecules affecting physical properties.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Dispersion Forces",
+    "category": "Chemistry",
+    "explanation": "Weak temporary dipole attractions.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Dipole-Dipole Forces",
+    "category": "Chemistry",
+    "explanation": "Attractions between polar molecules.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Polar Molecule",
+    "category": "Chemistry",
+    "explanation": "Molecule with uneven charge distribution.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Nonpolar Molecule",
+    "category": "Chemistry",
+    "explanation": "Molecule with even charge distribution.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Solubility",
+    "category": "Chemistry",
+    "explanation": "Maximum amount of solute that can dissolve in solvent.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Solute",
+    "category": "Chemistry",
+    "explanation": "Substance being dissolved.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Solvent",
+    "category": "Chemistry",
+    "explanation": "Substance doing the dissolving.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Electrolyte",
+    "category": "Chemistry",
+    "explanation": "Substance that conducts electricity when dissolved.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Nonelectrolyte",
+    "category": "Chemistry",
+    "explanation": "Substance that does not conduct electricity when dissolved.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Acid",
+    "category": "Chemistry",
+    "explanation": "Proton donor; increases H+ concentration.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Base",
+    "category": "Chemistry",
+    "explanation": "Proton acceptor; increases OH- concentration.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Arrhenius Acid",
+    "category": "Chemistry",
+    "explanation": "Produces H+ ions in water.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Arrhenius Base",
+    "category": "Chemistry",
+    "explanation": "Produces OH- ions in water.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Bronsted-Lowry Acid",
+    "category": "Chemistry",
+    "explanation": "Proton donor.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Bronsted-Lowry Base",
+    "category": "Chemistry",
+    "explanation": "Proton acceptor.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Lewis Acid",
+    "category": "Chemistry",
+    "explanation": "Electron pair acceptor.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Lewis Base",
+    "category": "Chemistry",
+    "explanation": "Electron pair donor.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Conjugate Acid",
+    "category": "Chemistry",
+    "explanation": "Species formed when a base gains a proton.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Conjugate Base",
+    "category": "Chemistry",
+    "explanation": "Species formed when an acid loses a proton.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Ka",
+    "category": "Chemistry",
+    "explanation": "Acid dissociation constant; measure of acid strength.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Kb",
+    "category": "Chemistry",
+    "explanation": "Base dissociation constant; measure of base strength.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Kw",
+    "category": "Chemistry",
+    "explanation": "Ion product of water; 1×10⁻¹⁴ at 25°C.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "pKa",
+    "category": "Chemistry",
+    "explanation": "-log Ka; lower pKa means stronger acid.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Henderson-Hasselbalch",
+    "category": "Chemistry",
+    "explanation": "pH = pKa + log([A-]/[HA]).",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Half-Life",
+    "category": "Chemistry",
+    "explanation": "Time for half of substance to decay or react.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Rate Law",
+    "category": "Chemistry",
+    "explanation": "Relates reaction rate to concentration of reactants.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Rate Constant",
+    "category": "Chemistry",
+    "explanation": "Proportionality constant in rate law.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Reaction Order",
+    "category": "Chemistry",
+    "explanation": "Sum of exponents in rate law.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Activated Complex",
+    "category": "Chemistry",
+    "explanation": "High-energy transition state in reaction.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Michaelis-Menten",
+    "category": "Chemistry",
+    "explanation": "Enzyme kinetics: V = Vmax[S]/(Km + [S]).",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Km",
+    "category": "Chemistry",
+    "explanation": "Substrate concentration at 1/2 Vmax; affinity measure.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Competitive Inhibition",
+    "category": "Chemistry",
+    "explanation": "Inhibitor binds active site, competes with substrate.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Noncompetitive Inhibition",
+    "category": "Chemistry",
+    "explanation": "Inhibitor binds allosteric site, changes enzyme shape.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Allosteric Site",
+    "category": "Chemistry",
+    "explanation": "Regulatory site separate from active site.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Salt Bridge",
+    "category": "Chemistry",
+    "explanation": "Ionic bond between charged amino acids in protein.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Hydrophobic Effect",
+    "category": "Chemistry",
+    "explanation": "Tendency of nonpolar molecules to aggregate in water.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "vdW Forces",
+    "category": "Chemistry",
+    "explanation": "Weak attractions between molecules.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Atomic Number",
+    "category": "Chemistry",
+    "explanation": "Number of protons in an atom's nucleus.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Mass Number",
+    "category": "Chemistry",
+    "explanation": "Total number of protons and neutrons.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Isotope",
+    "category": "Chemistry",
+    "explanation": "Atoms of same element with different neutron count.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Electronegativity",
+    "category": "Chemistry",
+    "explanation": "Atom's ability to attract electrons in a bond.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Ionization Energy",
+    "category": "Chemistry",
+    "explanation": "Energy required to remove an electron.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Covalent Bond",
+    "category": "Chemistry",
+    "explanation": "Sharing of electron pairs between atoms.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Ionic Bond",
+    "category": "Chemistry",
+    "explanation": "Electrostatic attraction between oppositely charged ions.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Hydrogen Bond",
+    "category": "Chemistry",
+    "explanation": "Weak bond between H and electronegative atoms (O,N,F).",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "pH Scale",
+    "category": "Chemistry",
+    "explanation": "Measure of H+ concentration; ranges 0-14.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Buffer",
+    "category": "Chemistry",
+    "explanation": "Solution that resists pH changes.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Equilibrium",
+    "category": "Chemistry",
+    "explanation": "State where forward and reverse reaction rates are equal.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Chatelier's Principle",
+    "category": "Chemistry",
+    "explanation": "System shifts to counteract applied stress.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Entropy",
+    "category": "Chemistry",
+    "explanation": "Measure of disorder or randomness.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Enthalpy",
+    "category": "Chemistry",
+    "explanation": "Total heat content of a system.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Free Energy",
+    "category": "Chemistry",
+    "explanation": "Energy available to do work; ΔG = ΔH - TΔS.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Catalyst",
+    "category": "Chemistry",
+    "explanation": "Speeds up reaction without being consumed.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Activation Energy",
+    "category": "Chemistry",
+    "explanation": "Minimum energy required for a reaction to occur.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Oxidation",
+    "category": "Chemistry",
+    "explanation": "Loss of electrons; increase in oxidation state.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Reduction",
+    "category": "Chemistry",
+    "explanation": "Gain of electrons; decrease in oxidation state.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Redox Reaction",
+    "category": "Chemistry",
+    "explanation": "Reaction involving transfer of electrons.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Molarity",
+    "category": "Chemistry",
+    "explanation": "Moles of solute per liter of solution.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Molality",
+    "category": "Chemistry",
+    "explanation": "Moles of solute per kilogram of solvent.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Titration",
+    "category": "Chemistry",
+    "explanation": "Determining concentration of an unknown solution.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Spectrophotometry",
+    "category": "Chemistry",
+    "explanation": "Measurement of light absorption by a solution.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Beer's Law",
+    "category": "Chemistry",
+    "explanation": "Absorbance ∝ concentration × path length.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Chromatography",
+    "category": "Chemistry",
+    "explanation": "Separation based on differential partitioning.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Distillation",
+    "category": "Chemistry",
+    "explanation": "Separation based on differences in boiling points.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Filtration",
+    "category": "Chemistry",
+    "explanation": "Separation based on particle size.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Sublimation",
+    "category": "Chemistry",
+    "explanation": "Direct transition from solid to gas.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Triple Point",
+    "category": "Chemistry",
+    "explanation": "T & P where solid, liquid, and gas coexist.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Vapor Pressure",
+    "category": "Chemistry",
+    "explanation": "Pressure exerted by vapor in equilibrium with liquid.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Boiling Point",
+    "category": "Chemistry",
+    "explanation": "Temperature where vapor pressure equals atmospheric pressure.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Freezing Point",
+    "category": "Chemistry",
+    "explanation": "Temperature where liquid becomes solid.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Mole",
+    "category": "Chemistry",
+    "explanation": "Amount containing Avogadro's number (6.022×10²³) of particles.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Avogadro's Number",
+    "category": "Chemistry",
+    "explanation": "6.022×10²³ particles per mole.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "STP",
+    "category": "Chemistry",
+    "explanation": "Standard Temperature and Pressure: 0°C and 1 atm.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Gas Law",
+    "category": "Chemistry",
+    "explanation": "PV = nRT; describes behavior of ideal gases.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Kinetic Molecular",
+    "category": "Chemistry",
+    "explanation": "Gas particles are in constant random motion.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Intermolecular Forces",
+    "category": "Chemistry",
+    "explanation": "Forces between molecules affecting physical properties.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Dispersion Forces",
+    "category": "Chemistry",
+    "explanation": "Weak temporary dipole attractions.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Dipole-Dipole Forces",
+    "category": "Chemistry",
+    "explanation": "Attractions between polar molecules.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Polar Molecule",
+    "category": "Chemistry",
+    "explanation": "Molecule with uneven charge distribution.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Nonpolar Molecule",
+    "category": "Chemistry",
+    "explanation": "Molecule with even charge distribution.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Solubility",
+    "category": "Chemistry",
+    "explanation": "Maximum amount of solute that can dissolve in solvent.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Solute",
+    "category": "Chemistry",
+    "explanation": "Substance being dissolved.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Solvent",
+    "category": "Chemistry",
+    "explanation": "Substance doing the dissolving.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Electrolyte",
+    "category": "Chemistry",
+    "explanation": "Substance that conducts electricity when dissolved.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Nonelectrolyte",
+    "category": "Chemistry",
+    "explanation": "Substance that does not conduct electricity when dissolved.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Acid",
+    "category": "Chemistry",
+    "explanation": "Proton donor; increases H+ concentration.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Base",
+    "category": "Chemistry",
+    "explanation": "Proton acceptor; increases OH- concentration.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Arrhenius Acid",
+    "category": "Chemistry",
+    "explanation": "Produces H+ ions in water.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Arrhenius Base",
+    "category": "Chemistry",
+    "explanation": "Produces OH- ions in water.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Bronsted-Lowry Acid",
+    "category": "Chemistry",
+    "explanation": "Proton donor.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Bronsted-Lowry Base",
+    "category": "Chemistry",
+    "explanation": "Proton acceptor.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Lewis Acid",
+    "category": "Chemistry",
+    "explanation": "Electron pair acceptor.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Lewis Base",
+    "category": "Chemistry",
+    "explanation": "Electron pair donor.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Conjugate Acid",
+    "category": "Chemistry",
+    "explanation": "Species formed when a base gains a proton.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Conjugate Base",
+    "category": "Chemistry",
+    "explanation": "Species formed when an acid loses a proton.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Ka",
+    "category": "Chemistry",
+    "explanation": "Acid dissociation constant; measure of acid strength.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Kb",
+    "category": "Chemistry",
+    "explanation": "Base dissociation constant; measure of base strength.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Kw",
+    "category": "Chemistry",
+    "explanation": "Ion product of water; 1×10⁻¹⁴ at 25°C.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "pKa",
+    "category": "Chemistry",
+    "explanation": "-log Ka; lower pKa means stronger acid.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Henderson-Hasselbalch",
+    "category": "Chemistry",
+    "explanation": "pH = pKa + log([A-]/[HA]).",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Half-Life",
+    "category": "Chemistry",
+    "explanation": "Time for half of substance to decay or react.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Rate Law",
+    "category": "Chemistry",
+    "explanation": "Relates reaction rate to concentration of reactants.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Rate Constant",
+    "category": "Chemistry",
+    "explanation": "Proportionality constant in rate law.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Reaction Order",
+    "category": "Chemistry",
+    "explanation": "Sum of exponents in rate law.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Activated Complex",
+    "category": "Chemistry",
+    "explanation": "High-energy transition state in reaction.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Michaelis-Menten",
+    "category": "Chemistry",
+    "explanation": "Enzyme kinetics: V = Vmax[S]/(Km + [S]).",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Km",
+    "category": "Chemistry",
+    "explanation": "Substrate concentration at 1/2 Vmax; affinity measure.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Competitive Inhibition",
+    "category": "Chemistry",
+    "explanation": "Inhibitor binds active site, competes with substrate.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Noncompetitive Inhibition",
+    "category": "Chemistry",
+    "explanation": "Inhibitor binds allosteric site, changes enzyme shape.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Allosteric Site",
+    "category": "Chemistry",
+    "explanation": "Regulatory site separate from active site.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Salt Bridge",
+    "category": "Chemistry",
+    "explanation": "Ionic bond between charged amino acids in protein.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Hydrophobic Effect",
+    "category": "Chemistry",
+    "explanation": "Tendency of nonpolar molecules to aggregate in water.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "vdW Forces",
+    "category": "Chemistry",
+    "explanation": "Weak attractions between molecules.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Atomic Number",
+    "category": "Chemistry",
+    "explanation": "Number of protons in an atom's nucleus.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Mass Number",
+    "category": "Chemistry",
+    "explanation": "Total number of protons and neutrons.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Isotope",
+    "category": "Chemistry",
+    "explanation": "Atoms of same element with different neutron count.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Electronegativity",
+    "category": "Chemistry",
+    "explanation": "Atom's ability to attract electrons in a bond.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Ionization Energy",
+    "category": "Chemistry",
+    "explanation": "Energy required to remove an electron.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Covalent Bond",
+    "category": "Chemistry",
+    "explanation": "Sharing of electron pairs between atoms.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Ionic Bond",
+    "category": "Chemistry",
+    "explanation": "Electrostatic attraction between oppositely charged ions.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Hydrogen Bond",
+    "category": "Chemistry",
+    "explanation": "Weak bond between H and electronegative atoms (O,N,F).",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "pH Scale",
+    "category": "Chemistry",
+    "explanation": "Measure of H+ concentration; ranges 0-14.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Buffer",
+    "category": "Chemistry",
+    "explanation": "Solution that resists pH changes.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Equilibrium",
+    "category": "Chemistry",
+    "explanation": "State where forward and reverse reaction rates are equal.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Chatelier's Principle",
+    "category": "Chemistry",
+    "explanation": "System shifts to counteract applied stress.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Entropy",
+    "category": "Chemistry",
+    "explanation": "Measure of disorder or randomness.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Enthalpy",
+    "category": "Chemistry",
+    "explanation": "Total heat content of a system.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Free Energy",
+    "category": "Chemistry",
+    "explanation": "Energy available to do work; ΔG = ΔH - TΔS.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Catalyst",
+    "category": "Chemistry",
+    "explanation": "Speeds up reaction without being consumed.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Activation Energy",
+    "category": "Chemistry",
+    "explanation": "Minimum energy required for a reaction to occur.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Oxidation",
+    "category": "Chemistry",
+    "explanation": "Loss of electrons; increase in oxidation state.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Reduction",
+    "category": "Chemistry",
+    "explanation": "Gain of electrons; decrease in oxidation state.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Redox Reaction",
+    "category": "Chemistry",
+    "explanation": "Reaction involving transfer of electrons.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Molarity",
+    "category": "Chemistry",
+    "explanation": "Moles of solute per liter of solution.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Molality",
+    "category": "Chemistry",
+    "explanation": "Moles of solute per kilogram of solvent.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Titration",
+    "category": "Chemistry",
+    "explanation": "Determining concentration of an unknown solution.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Spectrophotometry",
+    "category": "Chemistry",
+    "explanation": "Measurement of light absorption by a solution.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Beer's Law",
+    "category": "Chemistry",
+    "explanation": "Absorbance ∝ concentration × path length.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Chromatography",
+    "category": "Chemistry",
+    "explanation": "Separation based on differential partitioning.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Distillation",
+    "category": "Chemistry",
+    "explanation": "Separation based on differences in boiling points.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Filtration",
+    "category": "Chemistry",
+    "explanation": "Separation based on particle size.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Sublimation",
+    "category": "Chemistry",
+    "explanation": "Direct transition from solid to gas.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Triple Point",
+    "category": "Chemistry",
+    "explanation": "T & P where solid, liquid, and gas coexist.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Vapor Pressure",
+    "category": "Chemistry",
+    "explanation": "Pressure exerted by vapor in equilibrium with liquid.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Boiling Point",
+    "category": "Chemistry",
+    "explanation": "Temperature where vapor pressure equals atmospheric pressure.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Freezing Point",
+    "category": "Chemistry",
+    "explanation": "Temperature where liquid becomes solid.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Mole",
+    "category": "Chemistry",
+    "explanation": "Amount containing Avogadro's number (6.022×10²³) of particles.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Avogadro's Number",
+    "category": "Chemistry",
+    "explanation": "6.022×10²³ particles per mole.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "STP",
+    "category": "Chemistry",
+    "explanation": "Standard Temperature and Pressure: 0°C and 1 atm.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Gas Law",
+    "category": "Chemistry",
+    "explanation": "PV = nRT; describes behavior of ideal gases.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Kinetic Molecular",
+    "category": "Chemistry",
+    "explanation": "Gas particles are in constant random motion.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Intermolecular Forces",
+    "category": "Chemistry",
+    "explanation": "Forces between molecules affecting physical properties.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Dispersion Forces",
+    "category": "Chemistry",
+    "explanation": "Weak temporary dipole attractions.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Dipole-Dipole Forces",
+    "category": "Chemistry",
+    "explanation": "Attractions between polar molecules.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Polar Molecule",
+    "category": "Chemistry",
+    "explanation": "Molecule with uneven charge distribution.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Nonpolar Molecule",
+    "category": "Chemistry",
+    "explanation": "Molecule with even charge distribution.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Solubility",
+    "category": "Chemistry",
+    "explanation": "Maximum amount of solute that can dissolve in solvent.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Solute",
+    "category": "Chemistry",
+    "explanation": "Substance being dissolved.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Solvent",
+    "category": "Chemistry",
+    "explanation": "Substance doing the dissolving.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Electrolyte",
+    "category": "Chemistry",
+    "explanation": "Substance that conducts electricity when dissolved.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Nonelectrolyte",
+    "category": "Chemistry",
+    "explanation": "Substance that does not conduct electricity when dissolved.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Acid",
+    "category": "Chemistry",
+    "explanation": "Proton donor; increases H+ concentration.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Base",
+    "category": "Chemistry",
+    "explanation": "Proton acceptor; increases OH- concentration.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Arrhenius Acid",
+    "category": "Chemistry",
+    "explanation": "Produces H+ ions in water.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Arrhenius Base",
+    "category": "Chemistry",
+    "explanation": "Produces OH- ions in water.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Bronsted-Lowry Acid",
+    "category": "Chemistry",
+    "explanation": "Proton donor.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Bronsted-Lowry Base",
+    "category": "Chemistry",
+    "explanation": "Proton acceptor.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Lewis Acid",
+    "category": "Chemistry",
+    "explanation": "Electron pair acceptor.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Lewis Base",
+    "category": "Chemistry",
+    "explanation": "Electron pair donor.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Conjugate Acid",
+    "category": "Chemistry",
+    "explanation": "Species formed when a base gains a proton.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Conjugate Base",
+    "category": "Chemistry",
+    "explanation": "Species formed when an acid loses a proton.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Ka",
+    "category": "Chemistry",
+    "explanation": "Acid dissociation constant; measure of acid strength.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Kb",
+    "category": "Chemistry",
+    "explanation": "Base dissociation constant; measure of base strength.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Kw",
+    "category": "Chemistry",
+    "explanation": "Ion product of water; 1×10⁻¹⁴ at 25°C.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "pKa",
+    "category": "Chemistry",
+    "explanation": "-log Ka; lower pKa means stronger acid.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Henderson-Hasselbalch",
+    "category": "Chemistry",
+    "explanation": "pH = pKa + log([A-]/[HA]).",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Half-Life",
+    "category": "Chemistry",
+    "explanation": "Time for half of substance to decay or react.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Rate Law",
+    "category": "Chemistry",
+    "explanation": "Relates reaction rate to concentration of reactants.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Rate Constant",
+    "category": "Chemistry",
+    "explanation": "Proportionality constant in rate law.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Reaction Order",
+    "category": "Chemistry",
+    "explanation": "Sum of exponents in rate law.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Activated Complex",
+    "category": "Chemistry",
+    "explanation": "High-energy transition state in reaction.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Michaelis-Menten",
+    "category": "Chemistry",
+    "explanation": "Enzyme kinetics: V = Vmax[S]/(Km + [S]).",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Km",
+    "category": "Chemistry",
+    "explanation": "Substrate concentration at 1/2 Vmax; affinity measure.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Competitive Inhibition",
+    "category": "Chemistry",
+    "explanation": "Inhibitor binds active site, competes with substrate.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Noncompetitive Inhibition",
+    "category": "Chemistry",
+    "explanation": "Inhibitor binds allosteric site, changes enzyme shape.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Allosteric Site",
+    "category": "Chemistry",
+    "explanation": "Regulatory site separate from active site.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Salt Bridge",
+    "category": "Chemistry",
+    "explanation": "Ionic bond between charged amino acids in protein.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Hydrophobic Effect",
+    "category": "Chemistry",
+    "explanation": "Tendency of nonpolar molecules to aggregate in water.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "vdW Forces",
+    "category": "Chemistry",
+    "explanation": "Weak attractions between molecules.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Atomic Number",
+    "category": "Chemistry",
+    "explanation": "Number of protons in an atom's nucleus.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Mass Number",
+    "category": "Chemistry",
+    "explanation": "Total number of protons and neutrons.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Isotope",
+    "category": "Chemistry",
+    "explanation": "Atoms of same element with different neutron count.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Electronegativity",
+    "category": "Chemistry",
+    "explanation": "Atom's ability to attract electrons in a bond.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Ionization Energy",
+    "category": "Chemistry",
+    "explanation": "Energy required to remove an electron.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Covalent Bond",
+    "category": "Chemistry",
+    "explanation": "Sharing of electron pairs between atoms.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Ionic Bond",
+    "category": "Chemistry",
+    "explanation": "Electrostatic attraction between oppositely charged ions.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Hydrogen Bond",
+    "category": "Chemistry",
+    "explanation": "Weak bond between H and electronegative atoms (O,N,F).",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "pH Scale",
+    "category": "Chemistry",
+    "explanation": "Measure of H+ concentration; ranges 0-14.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Buffer",
+    "category": "Chemistry",
+    "explanation": "Solution that resists pH changes.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Equilibrium",
+    "category": "Chemistry",
+    "explanation": "State where forward and reverse reaction rates are equal.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Chatelier's Principle",
+    "category": "Chemistry",
+    "explanation": "System shifts to counteract applied stress.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Entropy",
+    "category": "Chemistry",
+    "explanation": "Measure of disorder or randomness.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Enthalpy",
+    "category": "Chemistry",
+    "explanation": "Total heat content of a system.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Free Energy",
+    "category": "Chemistry",
+    "explanation": "Energy available to do work; ΔG = ΔH - TΔS.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Catalyst",
+    "category": "Chemistry",
+    "explanation": "Speeds up reaction without being consumed.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Activation Energy",
+    "category": "Chemistry",
+    "explanation": "Minimum energy required for a reaction to occur.",
+    "tabooWords": [],
+    "difficulty": 4
+  }
+]

@@ -1,0 +1,4377 @@
+[
+  {
+    "term": "Skeletal System",
+    "category": "Anatomy",
+    "explanation": "Framework of bones providing structure and protection.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Skull",
+    "category": "Anatomy",
+    "explanation": "Bony structure protecting brain.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Spine",
+    "category": "Anatomy",
+    "explanation": "Column of vertebrae protecting spinal cord.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Rib Cage",
+    "category": "Anatomy",
+    "explanation": "Bony structure protecting heart and lungs.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Sternum",
+    "category": "Anatomy",
+    "explanation": "Breastbone; connects ribs.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Pelvis",
+    "category": "Anatomy",
+    "explanation": "Bony structure supporting lower body.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Long Bones",
+    "category": "Anatomy",
+    "explanation": "Bones longer than wide; femur, humerus.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Flat Bones",
+    "category": "Anatomy",
+    "explanation": "Thin, flattened bones; skull, ribs.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Irregular Bones",
+    "category": "Anatomy",
+    "explanation": "Complex-shaped bones; vertebrae.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Joints",
+    "category": "Anatomy",
+    "explanation": "Points where bones meet.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Ligament",
+    "category": "Anatomy",
+    "explanation": "Connects bone to bone.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Tendon",
+    "category": "Anatomy",
+    "explanation": "Connects muscle to bone.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Cartilage",
+    "category": "Anatomy",
+    "explanation": "Smooth tissue covering ends of bones.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Muscular System",
+    "category": "Anatomy",
+    "explanation": "System of muscles enabling movement.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Skeletal Muscle",
+    "category": "Anatomy",
+    "explanation": "Voluntary muscle attached to bone.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Cardiac Muscle",
+    "category": "Anatomy",
+    "explanation": "Involuntary muscle of heart.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Smooth Muscle",
+    "category": "Anatomy",
+    "explanation": "Involuntary muscle in organs.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Biceps",
+    "category": "Anatomy",
+    "explanation": "Muscle in upper arm; flexes elbow.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Triceps",
+    "category": "Anatomy",
+    "explanation": "Muscle in upper arm; extends elbow.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Quadriceps",
+    "category": "Anatomy",
+    "explanation": "Muscle in thigh; extends knee.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Hamstrings",
+    "category": "Anatomy",
+    "explanation": "Muscle in thigh; flexes knee.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Gluteal Muscles",
+    "category": "Anatomy",
+    "explanation": "Muscles of buttocks.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Abdominal Muscles",
+    "category": "Anatomy",
+    "explanation": "Muscles of stomach area.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Pectoralis",
+    "category": "Anatomy",
+    "explanation": "Chest muscle.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Deltoid",
+    "category": "Anatomy",
+    "explanation": "Shoulder muscle.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Latissimus Dorsi",
+    "category": "Anatomy",
+    "explanation": "Large back muscle.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Trapezius",
+    "category": "Anatomy",
+    "explanation": "Upper back and neck muscle.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Diaphragm",
+    "category": "Anatomy",
+    "explanation": "Muscle enabling breathing.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Nervous System",
+    "category": "Anatomy",
+    "explanation": "System controlling body functions.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "CNS",
+    "category": "Anatomy",
+    "explanation": "Brain and spinal cord.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "PNS",
+    "category": "Anatomy",
+    "explanation": "Nerves outside CNS.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Cranial Nerves",
+    "category": "Anatomy",
+    "explanation": "Nerves emerging from brain.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Spinal Nerves",
+    "category": "Anatomy",
+    "explanation": "Nerves emerging from spinal cord.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "ANS",
+    "category": "Anatomy",
+    "explanation": "Controls involuntary functions.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Sympathetic",
+    "category": "Anatomy",
+    "explanation": "Fight-or-flight response.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Parasympathetic",
+    "category": "Anatomy",
+    "explanation": "Rest-and-digest response.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Cardiovascular System",
+    "category": "Anatomy",
+    "explanation": "Heart and blood vessels.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Heart",
+    "category": "Anatomy",
+    "explanation": "Pump propelling blood.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Arteries",
+    "category": "Anatomy",
+    "explanation": "Blood vessels carrying blood away from heart.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Veins",
+    "category": "Anatomy",
+    "explanation": "Blood vessels carrying blood to heart.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Capillaries",
+    "category": "Anatomy",
+    "explanation": "Tiny vessels exchanging substances.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Aorta",
+    "category": "Anatomy",
+    "explanation": "Largest artery; leaves heart.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Vena Cava",
+    "category": "Anatomy",
+    "explanation": "Largest vein; enters heart.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Blood",
+    "category": "Anatomy",
+    "explanation": "Fluid carrying oxygen, nutrients, waste.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Erythrocytes",
+    "category": "Anatomy",
+    "explanation": "Cells carrying oxygen.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Leukocytes",
+    "category": "Anatomy",
+    "explanation": "Cells fighting infection.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Platelets",
+    "category": "Anatomy",
+    "explanation": "Cells helping blood clot.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Plasma",
+    "category": "Anatomy",
+    "explanation": "Liquid component of blood.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Respiration",
+    "category": "Anatomy",
+    "explanation": "System enabling breathing.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Lungs",
+    "category": "Anatomy",
+    "explanation": "Organs where gas exchange occurs.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Trachea",
+    "category": "Anatomy",
+    "explanation": "Windpipe; tube to lungs.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Bronchi",
+    "category": "Anatomy",
+    "explanation": "Tubes branching from trachea to lungs.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Bronchioles",
+    "category": "Anatomy",
+    "explanation": "Smaller tubes within lungs.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Alveoli",
+    "category": "Anatomy",
+    "explanation": "Tiny air sacs; site of gas exchange.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Digestive System",
+    "category": "Anatomy",
+    "explanation": "System breaking down food.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Mouth",
+    "category": "Anatomy",
+    "explanation": "Entry point for food.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Esophagus",
+    "category": "Anatomy",
+    "explanation": "Tube connecting mouth to stomach.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Stomach",
+    "category": "Anatomy",
+    "explanation": "Organ digesting food.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Small Intestine",
+    "category": "Anatomy",
+    "explanation": "Organ absorbing nutrients.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Large Intestine",
+    "category": "Anatomy",
+    "explanation": "Organ absorbing water and forming waste.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Liver",
+    "category": "Anatomy",
+    "explanation": "Produces bile; metabolizes substances.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Pancreas",
+    "category": "Anatomy",
+    "explanation": "Produces digestive enzymes and hormones.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Gallbladder",
+    "category": "Anatomy",
+    "explanation": "Stores bile.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Urinary System",
+    "category": "Anatomy",
+    "explanation": "System removing waste.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Kidneys",
+    "category": "Anatomy",
+    "explanation": "Organs filtering blood.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Ureters",
+    "category": "Anatomy",
+    "explanation": "Tubes connecting kidneys to bladder.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Bladder",
+    "category": "Anatomy",
+    "explanation": "Organ storing urine.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Urethra",
+    "category": "Anatomy",
+    "explanation": "Tube releasing urine.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Reproduction",
+    "category": "Anatomy",
+    "explanation": "System enabling reproduction.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Testes",
+    "category": "Anatomy",
+    "explanation": "Male organs producing sperm.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Ovaries",
+    "category": "Anatomy",
+    "explanation": "Female organs producing eggs.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Uterus",
+    "category": "Anatomy",
+    "explanation": "Organ where fetus develops.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Fallopian Tubes",
+    "category": "Anatomy",
+    "explanation": "Tubes connecting ovaries to uterus.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Vagina",
+    "category": "Anatomy",
+    "explanation": "Female reproductive canal.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Penis",
+    "category": "Anatomy",
+    "explanation": "Male reproductive organ.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Endocrine System",
+    "category": "Anatomy",
+    "explanation": "System of glands producing hormones.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Pituitary Gland",
+    "category": "Anatomy",
+    "explanation": "Master gland controlling other glands.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Thyroid Gland",
+    "category": "Anatomy",
+    "explanation": "Gland regulating metabolism.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Adrenal Glands",
+    "category": "Anatomy",
+    "explanation": "Glands producing stress hormones.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Integumentary System",
+    "category": "Anatomy",
+    "explanation": "Skin and its appendages.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Epidermis",
+    "category": "Anatomy",
+    "explanation": "Outer layer of skin.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Dermis",
+    "category": "Anatomy",
+    "explanation": "Inner layer; contains blood vessels and nerves.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Hypodermis",
+    "category": "Anatomy",
+    "explanation": "Layer beneath skin; contains fat.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Lymphatic System",
+    "category": "Anatomy",
+    "explanation": "Returns fluid to blood; immune defense.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Lymph Nodes",
+    "category": "Anatomy",
+    "explanation": "Small organs filtering lymph.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Spleen",
+    "category": "Anatomy",
+    "explanation": "Filters blood; immune function.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Thymus",
+    "category": "Anatomy",
+    "explanation": "Organ where T-cells develop.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Skeletal System",
+    "category": "Anatomy",
+    "explanation": "Framework of bones providing structure and protection.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Skull",
+    "category": "Anatomy",
+    "explanation": "Bony structure protecting brain.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Spine",
+    "category": "Anatomy",
+    "explanation": "Column of vertebrae protecting spinal cord.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Rib Cage",
+    "category": "Anatomy",
+    "explanation": "Bony structure protecting heart and lungs.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Sternum",
+    "category": "Anatomy",
+    "explanation": "Breastbone; connects ribs.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Pelvis",
+    "category": "Anatomy",
+    "explanation": "Bony structure supporting lower body.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Long Bones",
+    "category": "Anatomy",
+    "explanation": "Bones longer than wide; femur, humerus.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Flat Bones",
+    "category": "Anatomy",
+    "explanation": "Thin, flattened bones; skull, ribs.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Irregular Bones",
+    "category": "Anatomy",
+    "explanation": "Complex-shaped bones; vertebrae.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Joints",
+    "category": "Anatomy",
+    "explanation": "Points where bones meet.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Ligament",
+    "category": "Anatomy",
+    "explanation": "Connects bone to bone.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Tendon",
+    "category": "Anatomy",
+    "explanation": "Connects muscle to bone.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Cartilage",
+    "category": "Anatomy",
+    "explanation": "Smooth tissue covering ends of bones.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Muscular System",
+    "category": "Anatomy",
+    "explanation": "System of muscles enabling movement.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Skeletal Muscle",
+    "category": "Anatomy",
+    "explanation": "Voluntary muscle attached to bone.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Cardiac Muscle",
+    "category": "Anatomy",
+    "explanation": "Involuntary muscle of heart.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Smooth Muscle",
+    "category": "Anatomy",
+    "explanation": "Involuntary muscle in organs.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Biceps",
+    "category": "Anatomy",
+    "explanation": "Muscle in upper arm; flexes elbow.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Triceps",
+    "category": "Anatomy",
+    "explanation": "Muscle in upper arm; extends elbow.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Quadriceps",
+    "category": "Anatomy",
+    "explanation": "Muscle in thigh; extends knee.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Hamstrings",
+    "category": "Anatomy",
+    "explanation": "Muscle in thigh; flexes knee.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Gluteal Muscles",
+    "category": "Anatomy",
+    "explanation": "Muscles of buttocks.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Abdominal Muscles",
+    "category": "Anatomy",
+    "explanation": "Muscles of stomach area.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Pectoralis",
+    "category": "Anatomy",
+    "explanation": "Chest muscle.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Deltoid",
+    "category": "Anatomy",
+    "explanation": "Shoulder muscle.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Latissimus Dorsi",
+    "category": "Anatomy",
+    "explanation": "Large back muscle.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Trapezius",
+    "category": "Anatomy",
+    "explanation": "Upper back and neck muscle.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Diaphragm",
+    "category": "Anatomy",
+    "explanation": "Muscle enabling breathing.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Nervous System",
+    "category": "Anatomy",
+    "explanation": "System controlling body functions.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "CNS",
+    "category": "Anatomy",
+    "explanation": "Brain and spinal cord.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "PNS",
+    "category": "Anatomy",
+    "explanation": "Nerves outside CNS.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Cranial Nerves",
+    "category": "Anatomy",
+    "explanation": "Nerves emerging from brain.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Spinal Nerves",
+    "category": "Anatomy",
+    "explanation": "Nerves emerging from spinal cord.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "ANS",
+    "category": "Anatomy",
+    "explanation": "Controls involuntary functions.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Sympathetic",
+    "category": "Anatomy",
+    "explanation": "Fight-or-flight response.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Parasympathetic",
+    "category": "Anatomy",
+    "explanation": "Rest-and-digest response.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Cardiovascular System",
+    "category": "Anatomy",
+    "explanation": "Heart and blood vessels.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Heart",
+    "category": "Anatomy",
+    "explanation": "Pump propelling blood.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Arteries",
+    "category": "Anatomy",
+    "explanation": "Blood vessels carrying blood away from heart.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Veins",
+    "category": "Anatomy",
+    "explanation": "Blood vessels carrying blood to heart.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Capillaries",
+    "category": "Anatomy",
+    "explanation": "Tiny vessels exchanging substances.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Aorta",
+    "category": "Anatomy",
+    "explanation": "Largest artery; leaves heart.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Vena Cava",
+    "category": "Anatomy",
+    "explanation": "Largest vein; enters heart.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Blood",
+    "category": "Anatomy",
+    "explanation": "Fluid carrying oxygen, nutrients, waste.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Erythrocytes",
+    "category": "Anatomy",
+    "explanation": "Cells carrying oxygen.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Leukocytes",
+    "category": "Anatomy",
+    "explanation": "Cells fighting infection.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Platelets",
+    "category": "Anatomy",
+    "explanation": "Cells helping blood clot.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Plasma",
+    "category": "Anatomy",
+    "explanation": "Liquid component of blood.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Respiration",
+    "category": "Anatomy",
+    "explanation": "System enabling breathing.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Lungs",
+    "category": "Anatomy",
+    "explanation": "Organs where gas exchange occurs.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Trachea",
+    "category": "Anatomy",
+    "explanation": "Windpipe; tube to lungs.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Bronchi",
+    "category": "Anatomy",
+    "explanation": "Tubes branching from trachea to lungs.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Bronchioles",
+    "category": "Anatomy",
+    "explanation": "Smaller tubes within lungs.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Alveoli",
+    "category": "Anatomy",
+    "explanation": "Tiny air sacs; site of gas exchange.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Digestive System",
+    "category": "Anatomy",
+    "explanation": "System breaking down food.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Mouth",
+    "category": "Anatomy",
+    "explanation": "Entry point for food.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Esophagus",
+    "category": "Anatomy",
+    "explanation": "Tube connecting mouth to stomach.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Stomach",
+    "category": "Anatomy",
+    "explanation": "Organ digesting food.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Small Intestine",
+    "category": "Anatomy",
+    "explanation": "Organ absorbing nutrients.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Large Intestine",
+    "category": "Anatomy",
+    "explanation": "Organ absorbing water and forming waste.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Liver",
+    "category": "Anatomy",
+    "explanation": "Produces bile; metabolizes substances.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Pancreas",
+    "category": "Anatomy",
+    "explanation": "Produces digestive enzymes and hormones.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Gallbladder",
+    "category": "Anatomy",
+    "explanation": "Stores bile.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Urinary System",
+    "category": "Anatomy",
+    "explanation": "System removing waste.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Kidneys",
+    "category": "Anatomy",
+    "explanation": "Organs filtering blood.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Ureters",
+    "category": "Anatomy",
+    "explanation": "Tubes connecting kidneys to bladder.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Bladder",
+    "category": "Anatomy",
+    "explanation": "Organ storing urine.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Urethra",
+    "category": "Anatomy",
+    "explanation": "Tube releasing urine.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Reproduction",
+    "category": "Anatomy",
+    "explanation": "System enabling reproduction.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Testes",
+    "category": "Anatomy",
+    "explanation": "Male organs producing sperm.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Ovaries",
+    "category": "Anatomy",
+    "explanation": "Female organs producing eggs.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Uterus",
+    "category": "Anatomy",
+    "explanation": "Organ where fetus develops.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Fallopian Tubes",
+    "category": "Anatomy",
+    "explanation": "Tubes connecting ovaries to uterus.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Vagina",
+    "category": "Anatomy",
+    "explanation": "Female reproductive canal.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Penis",
+    "category": "Anatomy",
+    "explanation": "Male reproductive organ.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Endocrine System",
+    "category": "Anatomy",
+    "explanation": "System of glands producing hormones.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Pituitary Gland",
+    "category": "Anatomy",
+    "explanation": "Master gland controlling other glands.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Thyroid Gland",
+    "category": "Anatomy",
+    "explanation": "Gland regulating metabolism.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Adrenal Glands",
+    "category": "Anatomy",
+    "explanation": "Glands producing stress hormones.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Integumentary System",
+    "category": "Anatomy",
+    "explanation": "Skin and its appendages.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Epidermis",
+    "category": "Anatomy",
+    "explanation": "Outer layer of skin.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Dermis",
+    "category": "Anatomy",
+    "explanation": "Inner layer; contains blood vessels and nerves.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Hypodermis",
+    "category": "Anatomy",
+    "explanation": "Layer beneath skin; contains fat.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Lymphatic System",
+    "category": "Anatomy",
+    "explanation": "Returns fluid to blood; immune defense.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Lymph Nodes",
+    "category": "Anatomy",
+    "explanation": "Small organs filtering lymph.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Spleen",
+    "category": "Anatomy",
+    "explanation": "Filters blood; immune function.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Thymus",
+    "category": "Anatomy",
+    "explanation": "Organ where T-cells develop.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Skeletal System",
+    "category": "Anatomy",
+    "explanation": "Framework of bones providing structure and protection.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Skull",
+    "category": "Anatomy",
+    "explanation": "Bony structure protecting brain.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Spine",
+    "category": "Anatomy",
+    "explanation": "Column of vertebrae protecting spinal cord.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Rib Cage",
+    "category": "Anatomy",
+    "explanation": "Bony structure protecting heart and lungs.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Sternum",
+    "category": "Anatomy",
+    "explanation": "Breastbone; connects ribs.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Pelvis",
+    "category": "Anatomy",
+    "explanation": "Bony structure supporting lower body.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Long Bones",
+    "category": "Anatomy",
+    "explanation": "Bones longer than wide; femur, humerus.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Flat Bones",
+    "category": "Anatomy",
+    "explanation": "Thin, flattened bones; skull, ribs.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Irregular Bones",
+    "category": "Anatomy",
+    "explanation": "Complex-shaped bones; vertebrae.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Joints",
+    "category": "Anatomy",
+    "explanation": "Points where bones meet.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Ligament",
+    "category": "Anatomy",
+    "explanation": "Connects bone to bone.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Tendon",
+    "category": "Anatomy",
+    "explanation": "Connects muscle to bone.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Cartilage",
+    "category": "Anatomy",
+    "explanation": "Smooth tissue covering ends of bones.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Muscular System",
+    "category": "Anatomy",
+    "explanation": "System of muscles enabling movement.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Skeletal Muscle",
+    "category": "Anatomy",
+    "explanation": "Voluntary muscle attached to bone.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Cardiac Muscle",
+    "category": "Anatomy",
+    "explanation": "Involuntary muscle of heart.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Smooth Muscle",
+    "category": "Anatomy",
+    "explanation": "Involuntary muscle in organs.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Biceps",
+    "category": "Anatomy",
+    "explanation": "Muscle in upper arm; flexes elbow.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Triceps",
+    "category": "Anatomy",
+    "explanation": "Muscle in upper arm; extends elbow.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Quadriceps",
+    "category": "Anatomy",
+    "explanation": "Muscle in thigh; extends knee.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Hamstrings",
+    "category": "Anatomy",
+    "explanation": "Muscle in thigh; flexes knee.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Gluteal Muscles",
+    "category": "Anatomy",
+    "explanation": "Muscles of buttocks.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Abdominal Muscles",
+    "category": "Anatomy",
+    "explanation": "Muscles of stomach area.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Pectoralis",
+    "category": "Anatomy",
+    "explanation": "Chest muscle.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Deltoid",
+    "category": "Anatomy",
+    "explanation": "Shoulder muscle.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Latissimus Dorsi",
+    "category": "Anatomy",
+    "explanation": "Large back muscle.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Trapezius",
+    "category": "Anatomy",
+    "explanation": "Upper back and neck muscle.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Diaphragm",
+    "category": "Anatomy",
+    "explanation": "Muscle enabling breathing.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Nervous System",
+    "category": "Anatomy",
+    "explanation": "System controlling body functions.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "CNS",
+    "category": "Anatomy",
+    "explanation": "Brain and spinal cord.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "PNS",
+    "category": "Anatomy",
+    "explanation": "Nerves outside CNS.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Cranial Nerves",
+    "category": "Anatomy",
+    "explanation": "Nerves emerging from brain.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Spinal Nerves",
+    "category": "Anatomy",
+    "explanation": "Nerves emerging from spinal cord.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "ANS",
+    "category": "Anatomy",
+    "explanation": "Controls involuntary functions.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Sympathetic",
+    "category": "Anatomy",
+    "explanation": "Fight-or-flight response.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Parasympathetic",
+    "category": "Anatomy",
+    "explanation": "Rest-and-digest response.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Cardiovascular System",
+    "category": "Anatomy",
+    "explanation": "Heart and blood vessels.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Heart",
+    "category": "Anatomy",
+    "explanation": "Pump propelling blood.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Arteries",
+    "category": "Anatomy",
+    "explanation": "Blood vessels carrying blood away from heart.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Veins",
+    "category": "Anatomy",
+    "explanation": "Blood vessels carrying blood to heart.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Capillaries",
+    "category": "Anatomy",
+    "explanation": "Tiny vessels exchanging substances.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Aorta",
+    "category": "Anatomy",
+    "explanation": "Largest artery; leaves heart.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Vena Cava",
+    "category": "Anatomy",
+    "explanation": "Largest vein; enters heart.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Blood",
+    "category": "Anatomy",
+    "explanation": "Fluid carrying oxygen, nutrients, waste.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Erythrocytes",
+    "category": "Anatomy",
+    "explanation": "Cells carrying oxygen.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Leukocytes",
+    "category": "Anatomy",
+    "explanation": "Cells fighting infection.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Platelets",
+    "category": "Anatomy",
+    "explanation": "Cells helping blood clot.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Plasma",
+    "category": "Anatomy",
+    "explanation": "Liquid component of blood.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Respiration",
+    "category": "Anatomy",
+    "explanation": "System enabling breathing.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Lungs",
+    "category": "Anatomy",
+    "explanation": "Organs where gas exchange occurs.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Trachea",
+    "category": "Anatomy",
+    "explanation": "Windpipe; tube to lungs.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Bronchi",
+    "category": "Anatomy",
+    "explanation": "Tubes branching from trachea to lungs.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Bronchioles",
+    "category": "Anatomy",
+    "explanation": "Smaller tubes within lungs.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Alveoli",
+    "category": "Anatomy",
+    "explanation": "Tiny air sacs; site of gas exchange.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Digestive System",
+    "category": "Anatomy",
+    "explanation": "System breaking down food.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Mouth",
+    "category": "Anatomy",
+    "explanation": "Entry point for food.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Esophagus",
+    "category": "Anatomy",
+    "explanation": "Tube connecting mouth to stomach.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Stomach",
+    "category": "Anatomy",
+    "explanation": "Organ digesting food.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Small Intestine",
+    "category": "Anatomy",
+    "explanation": "Organ absorbing nutrients.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Large Intestine",
+    "category": "Anatomy",
+    "explanation": "Organ absorbing water and forming waste.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Liver",
+    "category": "Anatomy",
+    "explanation": "Produces bile; metabolizes substances.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Pancreas",
+    "category": "Anatomy",
+    "explanation": "Produces digestive enzymes and hormones.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Gallbladder",
+    "category": "Anatomy",
+    "explanation": "Stores bile.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Urinary System",
+    "category": "Anatomy",
+    "explanation": "System removing waste.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Kidneys",
+    "category": "Anatomy",
+    "explanation": "Organs filtering blood.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Ureters",
+    "category": "Anatomy",
+    "explanation": "Tubes connecting kidneys to bladder.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Bladder",
+    "category": "Anatomy",
+    "explanation": "Organ storing urine.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Urethra",
+    "category": "Anatomy",
+    "explanation": "Tube releasing urine.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Reproduction",
+    "category": "Anatomy",
+    "explanation": "System enabling reproduction.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Testes",
+    "category": "Anatomy",
+    "explanation": "Male organs producing sperm.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Ovaries",
+    "category": "Anatomy",
+    "explanation": "Female organs producing eggs.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Uterus",
+    "category": "Anatomy",
+    "explanation": "Organ where fetus develops.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Fallopian Tubes",
+    "category": "Anatomy",
+    "explanation": "Tubes connecting ovaries to uterus.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Vagina",
+    "category": "Anatomy",
+    "explanation": "Female reproductive canal.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Penis",
+    "category": "Anatomy",
+    "explanation": "Male reproductive organ.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Endocrine System",
+    "category": "Anatomy",
+    "explanation": "System of glands producing hormones.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Pituitary Gland",
+    "category": "Anatomy",
+    "explanation": "Master gland controlling other glands.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Thyroid Gland",
+    "category": "Anatomy",
+    "explanation": "Gland regulating metabolism.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Adrenal Glands",
+    "category": "Anatomy",
+    "explanation": "Glands producing stress hormones.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Integumentary System",
+    "category": "Anatomy",
+    "explanation": "Skin and its appendages.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Epidermis",
+    "category": "Anatomy",
+    "explanation": "Outer layer of skin.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Dermis",
+    "category": "Anatomy",
+    "explanation": "Inner layer; contains blood vessels and nerves.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Hypodermis",
+    "category": "Anatomy",
+    "explanation": "Layer beneath skin; contains fat.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Lymphatic System",
+    "category": "Anatomy",
+    "explanation": "Returns fluid to blood; immune defense.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Lymph Nodes",
+    "category": "Anatomy",
+    "explanation": "Small organs filtering lymph.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Spleen",
+    "category": "Anatomy",
+    "explanation": "Filters blood; immune function.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Thymus",
+    "category": "Anatomy",
+    "explanation": "Organ where T-cells develop.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Skeletal System",
+    "category": "Anatomy",
+    "explanation": "Framework of bones providing structure and protection.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Skull",
+    "category": "Anatomy",
+    "explanation": "Bony structure protecting brain.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Spine",
+    "category": "Anatomy",
+    "explanation": "Column of vertebrae protecting spinal cord.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Rib Cage",
+    "category": "Anatomy",
+    "explanation": "Bony structure protecting heart and lungs.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Sternum",
+    "category": "Anatomy",
+    "explanation": "Breastbone; connects ribs.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Pelvis",
+    "category": "Anatomy",
+    "explanation": "Bony structure supporting lower body.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Long Bones",
+    "category": "Anatomy",
+    "explanation": "Bones longer than wide; femur, humerus.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Flat Bones",
+    "category": "Anatomy",
+    "explanation": "Thin, flattened bones; skull, ribs.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Irregular Bones",
+    "category": "Anatomy",
+    "explanation": "Complex-shaped bones; vertebrae.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Joints",
+    "category": "Anatomy",
+    "explanation": "Points where bones meet.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Ligament",
+    "category": "Anatomy",
+    "explanation": "Connects bone to bone.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Tendon",
+    "category": "Anatomy",
+    "explanation": "Connects muscle to bone.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Cartilage",
+    "category": "Anatomy",
+    "explanation": "Smooth tissue covering ends of bones.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Muscular System",
+    "category": "Anatomy",
+    "explanation": "System of muscles enabling movement.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Skeletal Muscle",
+    "category": "Anatomy",
+    "explanation": "Voluntary muscle attached to bone.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Cardiac Muscle",
+    "category": "Anatomy",
+    "explanation": "Involuntary muscle of heart.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Smooth Muscle",
+    "category": "Anatomy",
+    "explanation": "Involuntary muscle in organs.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Biceps",
+    "category": "Anatomy",
+    "explanation": "Muscle in upper arm; flexes elbow.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Triceps",
+    "category": "Anatomy",
+    "explanation": "Muscle in upper arm; extends elbow.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Quadriceps",
+    "category": "Anatomy",
+    "explanation": "Muscle in thigh; extends knee.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Hamstrings",
+    "category": "Anatomy",
+    "explanation": "Muscle in thigh; flexes knee.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Gluteal Muscles",
+    "category": "Anatomy",
+    "explanation": "Muscles of buttocks.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Abdominal Muscles",
+    "category": "Anatomy",
+    "explanation": "Muscles of stomach area.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Pectoralis",
+    "category": "Anatomy",
+    "explanation": "Chest muscle.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Deltoid",
+    "category": "Anatomy",
+    "explanation": "Shoulder muscle.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Latissimus Dorsi",
+    "category": "Anatomy",
+    "explanation": "Large back muscle.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Trapezius",
+    "category": "Anatomy",
+    "explanation": "Upper back and neck muscle.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Diaphragm",
+    "category": "Anatomy",
+    "explanation": "Muscle enabling breathing.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Nervous System",
+    "category": "Anatomy",
+    "explanation": "System controlling body functions.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "CNS",
+    "category": "Anatomy",
+    "explanation": "Brain and spinal cord.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "PNS",
+    "category": "Anatomy",
+    "explanation": "Nerves outside CNS.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Cranial Nerves",
+    "category": "Anatomy",
+    "explanation": "Nerves emerging from brain.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Spinal Nerves",
+    "category": "Anatomy",
+    "explanation": "Nerves emerging from spinal cord.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "ANS",
+    "category": "Anatomy",
+    "explanation": "Controls involuntary functions.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Sympathetic",
+    "category": "Anatomy",
+    "explanation": "Fight-or-flight response.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Parasympathetic",
+    "category": "Anatomy",
+    "explanation": "Rest-and-digest response.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Cardiovascular System",
+    "category": "Anatomy",
+    "explanation": "Heart and blood vessels.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Heart",
+    "category": "Anatomy",
+    "explanation": "Pump propelling blood.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Arteries",
+    "category": "Anatomy",
+    "explanation": "Blood vessels carrying blood away from heart.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Veins",
+    "category": "Anatomy",
+    "explanation": "Blood vessels carrying blood to heart.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Capillaries",
+    "category": "Anatomy",
+    "explanation": "Tiny vessels exchanging substances.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Aorta",
+    "category": "Anatomy",
+    "explanation": "Largest artery; leaves heart.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Vena Cava",
+    "category": "Anatomy",
+    "explanation": "Largest vein; enters heart.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Blood",
+    "category": "Anatomy",
+    "explanation": "Fluid carrying oxygen, nutrients, waste.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Erythrocytes",
+    "category": "Anatomy",
+    "explanation": "Cells carrying oxygen.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Leukocytes",
+    "category": "Anatomy",
+    "explanation": "Cells fighting infection.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Platelets",
+    "category": "Anatomy",
+    "explanation": "Cells helping blood clot.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Plasma",
+    "category": "Anatomy",
+    "explanation": "Liquid component of blood.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Respiration",
+    "category": "Anatomy",
+    "explanation": "System enabling breathing.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Lungs",
+    "category": "Anatomy",
+    "explanation": "Organs where gas exchange occurs.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Trachea",
+    "category": "Anatomy",
+    "explanation": "Windpipe; tube to lungs.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Bronchi",
+    "category": "Anatomy",
+    "explanation": "Tubes branching from trachea to lungs.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Bronchioles",
+    "category": "Anatomy",
+    "explanation": "Smaller tubes within lungs.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Alveoli",
+    "category": "Anatomy",
+    "explanation": "Tiny air sacs; site of gas exchange.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Digestive System",
+    "category": "Anatomy",
+    "explanation": "System breaking down food.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Mouth",
+    "category": "Anatomy",
+    "explanation": "Entry point for food.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Esophagus",
+    "category": "Anatomy",
+    "explanation": "Tube connecting mouth to stomach.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Stomach",
+    "category": "Anatomy",
+    "explanation": "Organ digesting food.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Small Intestine",
+    "category": "Anatomy",
+    "explanation": "Organ absorbing nutrients.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Large Intestine",
+    "category": "Anatomy",
+    "explanation": "Organ absorbing water and forming waste.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Liver",
+    "category": "Anatomy",
+    "explanation": "Produces bile; metabolizes substances.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Pancreas",
+    "category": "Anatomy",
+    "explanation": "Produces digestive enzymes and hormones.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Gallbladder",
+    "category": "Anatomy",
+    "explanation": "Stores bile.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Urinary System",
+    "category": "Anatomy",
+    "explanation": "System removing waste.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Kidneys",
+    "category": "Anatomy",
+    "explanation": "Organs filtering blood.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Ureters",
+    "category": "Anatomy",
+    "explanation": "Tubes connecting kidneys to bladder.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Bladder",
+    "category": "Anatomy",
+    "explanation": "Organ storing urine.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Urethra",
+    "category": "Anatomy",
+    "explanation": "Tube releasing urine.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Reproduction",
+    "category": "Anatomy",
+    "explanation": "System enabling reproduction.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Testes",
+    "category": "Anatomy",
+    "explanation": "Male organs producing sperm.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Ovaries",
+    "category": "Anatomy",
+    "explanation": "Female organs producing eggs.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Uterus",
+    "category": "Anatomy",
+    "explanation": "Organ where fetus develops.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Fallopian Tubes",
+    "category": "Anatomy",
+    "explanation": "Tubes connecting ovaries to uterus.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Vagina",
+    "category": "Anatomy",
+    "explanation": "Female reproductive canal.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Penis",
+    "category": "Anatomy",
+    "explanation": "Male reproductive organ.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Endocrine System",
+    "category": "Anatomy",
+    "explanation": "System of glands producing hormones.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Pituitary Gland",
+    "category": "Anatomy",
+    "explanation": "Master gland controlling other glands.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Thyroid Gland",
+    "category": "Anatomy",
+    "explanation": "Gland regulating metabolism.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Adrenal Glands",
+    "category": "Anatomy",
+    "explanation": "Glands producing stress hormones.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Integumentary System",
+    "category": "Anatomy",
+    "explanation": "Skin and its appendages.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Epidermis",
+    "category": "Anatomy",
+    "explanation": "Outer layer of skin.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Dermis",
+    "category": "Anatomy",
+    "explanation": "Inner layer; contains blood vessels and nerves.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Hypodermis",
+    "category": "Anatomy",
+    "explanation": "Layer beneath skin; contains fat.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Lymphatic System",
+    "category": "Anatomy",
+    "explanation": "Returns fluid to blood; immune defense.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Lymph Nodes",
+    "category": "Anatomy",
+    "explanation": "Small organs filtering lymph.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Spleen",
+    "category": "Anatomy",
+    "explanation": "Filters blood; immune function.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Thymus",
+    "category": "Anatomy",
+    "explanation": "Organ where T-cells develop.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Skeletal System",
+    "category": "Anatomy",
+    "explanation": "Framework of bones providing structure and protection.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Skull",
+    "category": "Anatomy",
+    "explanation": "Bony structure protecting brain.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Spine",
+    "category": "Anatomy",
+    "explanation": "Column of vertebrae protecting spinal cord.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Rib Cage",
+    "category": "Anatomy",
+    "explanation": "Bony structure protecting heart and lungs.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Sternum",
+    "category": "Anatomy",
+    "explanation": "Breastbone; connects ribs.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Pelvis",
+    "category": "Anatomy",
+    "explanation": "Bony structure supporting lower body.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Long Bones",
+    "category": "Anatomy",
+    "explanation": "Bones longer than wide; femur, humerus.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Flat Bones",
+    "category": "Anatomy",
+    "explanation": "Thin, flattened bones; skull, ribs.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Irregular Bones",
+    "category": "Anatomy",
+    "explanation": "Complex-shaped bones; vertebrae.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Joints",
+    "category": "Anatomy",
+    "explanation": "Points where bones meet.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Ligament",
+    "category": "Anatomy",
+    "explanation": "Connects bone to bone.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Tendon",
+    "category": "Anatomy",
+    "explanation": "Connects muscle to bone.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Cartilage",
+    "category": "Anatomy",
+    "explanation": "Smooth tissue covering ends of bones.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Muscular System",
+    "category": "Anatomy",
+    "explanation": "System of muscles enabling movement.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Skeletal Muscle",
+    "category": "Anatomy",
+    "explanation": "Voluntary muscle attached to bone.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Cardiac Muscle",
+    "category": "Anatomy",
+    "explanation": "Involuntary muscle of heart.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Smooth Muscle",
+    "category": "Anatomy",
+    "explanation": "Involuntary muscle in organs.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Biceps",
+    "category": "Anatomy",
+    "explanation": "Muscle in upper arm; flexes elbow.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Triceps",
+    "category": "Anatomy",
+    "explanation": "Muscle in upper arm; extends elbow.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Quadriceps",
+    "category": "Anatomy",
+    "explanation": "Muscle in thigh; extends knee.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Hamstrings",
+    "category": "Anatomy",
+    "explanation": "Muscle in thigh; flexes knee.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Gluteal Muscles",
+    "category": "Anatomy",
+    "explanation": "Muscles of buttocks.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Abdominal Muscles",
+    "category": "Anatomy",
+    "explanation": "Muscles of stomach area.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Pectoralis",
+    "category": "Anatomy",
+    "explanation": "Chest muscle.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Deltoid",
+    "category": "Anatomy",
+    "explanation": "Shoulder muscle.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Latissimus Dorsi",
+    "category": "Anatomy",
+    "explanation": "Large back muscle.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Trapezius",
+    "category": "Anatomy",
+    "explanation": "Upper back and neck muscle.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Diaphragm",
+    "category": "Anatomy",
+    "explanation": "Muscle enabling breathing.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Nervous System",
+    "category": "Anatomy",
+    "explanation": "System controlling body functions.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "CNS",
+    "category": "Anatomy",
+    "explanation": "Brain and spinal cord.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "PNS",
+    "category": "Anatomy",
+    "explanation": "Nerves outside CNS.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Cranial Nerves",
+    "category": "Anatomy",
+    "explanation": "Nerves emerging from brain.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Spinal Nerves",
+    "category": "Anatomy",
+    "explanation": "Nerves emerging from spinal cord.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "ANS",
+    "category": "Anatomy",
+    "explanation": "Controls involuntary functions.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Sympathetic",
+    "category": "Anatomy",
+    "explanation": "Fight-or-flight response.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Parasympathetic",
+    "category": "Anatomy",
+    "explanation": "Rest-and-digest response.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Cardiovascular System",
+    "category": "Anatomy",
+    "explanation": "Heart and blood vessels.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Heart",
+    "category": "Anatomy",
+    "explanation": "Pump propelling blood.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Arteries",
+    "category": "Anatomy",
+    "explanation": "Blood vessels carrying blood away from heart.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Veins",
+    "category": "Anatomy",
+    "explanation": "Blood vessels carrying blood to heart.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Capillaries",
+    "category": "Anatomy",
+    "explanation": "Tiny vessels exchanging substances.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Aorta",
+    "category": "Anatomy",
+    "explanation": "Largest artery; leaves heart.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Vena Cava",
+    "category": "Anatomy",
+    "explanation": "Largest vein; enters heart.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Blood",
+    "category": "Anatomy",
+    "explanation": "Fluid carrying oxygen, nutrients, waste.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Erythrocytes",
+    "category": "Anatomy",
+    "explanation": "Cells carrying oxygen.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Leukocytes",
+    "category": "Anatomy",
+    "explanation": "Cells fighting infection.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Platelets",
+    "category": "Anatomy",
+    "explanation": "Cells helping blood clot.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Plasma",
+    "category": "Anatomy",
+    "explanation": "Liquid component of blood.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Respiration",
+    "category": "Anatomy",
+    "explanation": "System enabling breathing.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Lungs",
+    "category": "Anatomy",
+    "explanation": "Organs where gas exchange occurs.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Trachea",
+    "category": "Anatomy",
+    "explanation": "Windpipe; tube to lungs.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Bronchi",
+    "category": "Anatomy",
+    "explanation": "Tubes branching from trachea to lungs.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Bronchioles",
+    "category": "Anatomy",
+    "explanation": "Smaller tubes within lungs.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Alveoli",
+    "category": "Anatomy",
+    "explanation": "Tiny air sacs; site of gas exchange.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Digestive System",
+    "category": "Anatomy",
+    "explanation": "System breaking down food.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Mouth",
+    "category": "Anatomy",
+    "explanation": "Entry point for food.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Esophagus",
+    "category": "Anatomy",
+    "explanation": "Tube connecting mouth to stomach.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Stomach",
+    "category": "Anatomy",
+    "explanation": "Organ digesting food.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Small Intestine",
+    "category": "Anatomy",
+    "explanation": "Organ absorbing nutrients.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Large Intestine",
+    "category": "Anatomy",
+    "explanation": "Organ absorbing water and forming waste.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Liver",
+    "category": "Anatomy",
+    "explanation": "Produces bile; metabolizes substances.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Pancreas",
+    "category": "Anatomy",
+    "explanation": "Produces digestive enzymes and hormones.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Gallbladder",
+    "category": "Anatomy",
+    "explanation": "Stores bile.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Urinary System",
+    "category": "Anatomy",
+    "explanation": "System removing waste.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Kidneys",
+    "category": "Anatomy",
+    "explanation": "Organs filtering blood.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Ureters",
+    "category": "Anatomy",
+    "explanation": "Tubes connecting kidneys to bladder.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Bladder",
+    "category": "Anatomy",
+    "explanation": "Organ storing urine.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Urethra",
+    "category": "Anatomy",
+    "explanation": "Tube releasing urine.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Reproduction",
+    "category": "Anatomy",
+    "explanation": "System enabling reproduction.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Testes",
+    "category": "Anatomy",
+    "explanation": "Male organs producing sperm.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Ovaries",
+    "category": "Anatomy",
+    "explanation": "Female organs producing eggs.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Uterus",
+    "category": "Anatomy",
+    "explanation": "Organ where fetus develops.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Fallopian Tubes",
+    "category": "Anatomy",
+    "explanation": "Tubes connecting ovaries to uterus.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Vagina",
+    "category": "Anatomy",
+    "explanation": "Female reproductive canal.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Penis",
+    "category": "Anatomy",
+    "explanation": "Male reproductive organ.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Endocrine System",
+    "category": "Anatomy",
+    "explanation": "System of glands producing hormones.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Pituitary Gland",
+    "category": "Anatomy",
+    "explanation": "Master gland controlling other glands.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Thyroid Gland",
+    "category": "Anatomy",
+    "explanation": "Gland regulating metabolism.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Adrenal Glands",
+    "category": "Anatomy",
+    "explanation": "Glands producing stress hormones.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Integumentary System",
+    "category": "Anatomy",
+    "explanation": "Skin and its appendages.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Epidermis",
+    "category": "Anatomy",
+    "explanation": "Outer layer of skin.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Dermis",
+    "category": "Anatomy",
+    "explanation": "Inner layer; contains blood vessels and nerves.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Hypodermis",
+    "category": "Anatomy",
+    "explanation": "Layer beneath skin; contains fat.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Lymphatic System",
+    "category": "Anatomy",
+    "explanation": "Returns fluid to blood; immune defense.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Lymph Nodes",
+    "category": "Anatomy",
+    "explanation": "Small organs filtering lymph.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Spleen",
+    "category": "Anatomy",
+    "explanation": "Filters blood; immune function.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Thymus",
+    "category": "Anatomy",
+    "explanation": "Organ where T-cells develop.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Skeletal System",
+    "category": "Anatomy",
+    "explanation": "Framework of bones providing structure and protection.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Skull",
+    "category": "Anatomy",
+    "explanation": "Bony structure protecting brain.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Spine",
+    "category": "Anatomy",
+    "explanation": "Column of vertebrae protecting spinal cord.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Rib Cage",
+    "category": "Anatomy",
+    "explanation": "Bony structure protecting heart and lungs.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Sternum",
+    "category": "Anatomy",
+    "explanation": "Breastbone; connects ribs.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Pelvis",
+    "category": "Anatomy",
+    "explanation": "Bony structure supporting lower body.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Long Bones",
+    "category": "Anatomy",
+    "explanation": "Bones longer than wide; femur, humerus.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Flat Bones",
+    "category": "Anatomy",
+    "explanation": "Thin, flattened bones; skull, ribs.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Irregular Bones",
+    "category": "Anatomy",
+    "explanation": "Complex-shaped bones; vertebrae.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Joints",
+    "category": "Anatomy",
+    "explanation": "Points where bones meet.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Ligament",
+    "category": "Anatomy",
+    "explanation": "Connects bone to bone.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Tendon",
+    "category": "Anatomy",
+    "explanation": "Connects muscle to bone.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Cartilage",
+    "category": "Anatomy",
+    "explanation": "Smooth tissue covering ends of bones.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Muscular System",
+    "category": "Anatomy",
+    "explanation": "System of muscles enabling movement.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Skeletal Muscle",
+    "category": "Anatomy",
+    "explanation": "Voluntary muscle attached to bone.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Cardiac Muscle",
+    "category": "Anatomy",
+    "explanation": "Involuntary muscle of heart.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Smooth Muscle",
+    "category": "Anatomy",
+    "explanation": "Involuntary muscle in organs.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Biceps",
+    "category": "Anatomy",
+    "explanation": "Muscle in upper arm; flexes elbow.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Triceps",
+    "category": "Anatomy",
+    "explanation": "Muscle in upper arm; extends elbow.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Quadriceps",
+    "category": "Anatomy",
+    "explanation": "Muscle in thigh; extends knee.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Hamstrings",
+    "category": "Anatomy",
+    "explanation": "Muscle in thigh; flexes knee.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Gluteal Muscles",
+    "category": "Anatomy",
+    "explanation": "Muscles of buttocks.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Abdominal Muscles",
+    "category": "Anatomy",
+    "explanation": "Muscles of stomach area.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Pectoralis",
+    "category": "Anatomy",
+    "explanation": "Chest muscle.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Deltoid",
+    "category": "Anatomy",
+    "explanation": "Shoulder muscle.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Latissimus Dorsi",
+    "category": "Anatomy",
+    "explanation": "Large back muscle.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Trapezius",
+    "category": "Anatomy",
+    "explanation": "Upper back and neck muscle.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Diaphragm",
+    "category": "Anatomy",
+    "explanation": "Muscle enabling breathing.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Nervous System",
+    "category": "Anatomy",
+    "explanation": "System controlling body functions.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "CNS",
+    "category": "Anatomy",
+    "explanation": "Brain and spinal cord.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "PNS",
+    "category": "Anatomy",
+    "explanation": "Nerves outside CNS.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Cranial Nerves",
+    "category": "Anatomy",
+    "explanation": "Nerves emerging from brain.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Spinal Nerves",
+    "category": "Anatomy",
+    "explanation": "Nerves emerging from spinal cord.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "ANS",
+    "category": "Anatomy",
+    "explanation": "Controls involuntary functions.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Sympathetic",
+    "category": "Anatomy",
+    "explanation": "Fight-or-flight response.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Parasympathetic",
+    "category": "Anatomy",
+    "explanation": "Rest-and-digest response.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Cardiovascular System",
+    "category": "Anatomy",
+    "explanation": "Heart and blood vessels.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Heart",
+    "category": "Anatomy",
+    "explanation": "Pump propelling blood.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Arteries",
+    "category": "Anatomy",
+    "explanation": "Blood vessels carrying blood away from heart.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Veins",
+    "category": "Anatomy",
+    "explanation": "Blood vessels carrying blood to heart.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Capillaries",
+    "category": "Anatomy",
+    "explanation": "Tiny vessels exchanging substances.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Aorta",
+    "category": "Anatomy",
+    "explanation": "Largest artery; leaves heart.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Vena Cava",
+    "category": "Anatomy",
+    "explanation": "Largest vein; enters heart.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Blood",
+    "category": "Anatomy",
+    "explanation": "Fluid carrying oxygen, nutrients, waste.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Erythrocytes",
+    "category": "Anatomy",
+    "explanation": "Cells carrying oxygen.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Leukocytes",
+    "category": "Anatomy",
+    "explanation": "Cells fighting infection.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Platelets",
+    "category": "Anatomy",
+    "explanation": "Cells helping blood clot.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Plasma",
+    "category": "Anatomy",
+    "explanation": "Liquid component of blood.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Respiration",
+    "category": "Anatomy",
+    "explanation": "System enabling breathing.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Lungs",
+    "category": "Anatomy",
+    "explanation": "Organs where gas exchange occurs.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Trachea",
+    "category": "Anatomy",
+    "explanation": "Windpipe; tube to lungs.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Bronchi",
+    "category": "Anatomy",
+    "explanation": "Tubes branching from trachea to lungs.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Bronchioles",
+    "category": "Anatomy",
+    "explanation": "Smaller tubes within lungs.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Alveoli",
+    "category": "Anatomy",
+    "explanation": "Tiny air sacs; site of gas exchange.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Digestive System",
+    "category": "Anatomy",
+    "explanation": "System breaking down food.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Mouth",
+    "category": "Anatomy",
+    "explanation": "Entry point for food.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Esophagus",
+    "category": "Anatomy",
+    "explanation": "Tube connecting mouth to stomach.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Stomach",
+    "category": "Anatomy",
+    "explanation": "Organ digesting food.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Small Intestine",
+    "category": "Anatomy",
+    "explanation": "Organ absorbing nutrients.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Large Intestine",
+    "category": "Anatomy",
+    "explanation": "Organ absorbing water and forming waste.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Liver",
+    "category": "Anatomy",
+    "explanation": "Produces bile; metabolizes substances.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Pancreas",
+    "category": "Anatomy",
+    "explanation": "Produces digestive enzymes and hormones.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Gallbladder",
+    "category": "Anatomy",
+    "explanation": "Stores bile.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Urinary System",
+    "category": "Anatomy",
+    "explanation": "System removing waste.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Kidneys",
+    "category": "Anatomy",
+    "explanation": "Organs filtering blood.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Ureters",
+    "category": "Anatomy",
+    "explanation": "Tubes connecting kidneys to bladder.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Bladder",
+    "category": "Anatomy",
+    "explanation": "Organ storing urine.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Urethra",
+    "category": "Anatomy",
+    "explanation": "Tube releasing urine.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Reproduction",
+    "category": "Anatomy",
+    "explanation": "System enabling reproduction.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Testes",
+    "category": "Anatomy",
+    "explanation": "Male organs producing sperm.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Ovaries",
+    "category": "Anatomy",
+    "explanation": "Female organs producing eggs.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Uterus",
+    "category": "Anatomy",
+    "explanation": "Organ where fetus develops.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Fallopian Tubes",
+    "category": "Anatomy",
+    "explanation": "Tubes connecting ovaries to uterus.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Vagina",
+    "category": "Anatomy",
+    "explanation": "Female reproductive canal.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Penis",
+    "category": "Anatomy",
+    "explanation": "Male reproductive organ.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Endocrine System",
+    "category": "Anatomy",
+    "explanation": "System of glands producing hormones.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Pituitary Gland",
+    "category": "Anatomy",
+    "explanation": "Master gland controlling other glands.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Thyroid Gland",
+    "category": "Anatomy",
+    "explanation": "Gland regulating metabolism.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Adrenal Glands",
+    "category": "Anatomy",
+    "explanation": "Glands producing stress hormones.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Integumentary System",
+    "category": "Anatomy",
+    "explanation": "Skin and its appendages.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Epidermis",
+    "category": "Anatomy",
+    "explanation": "Outer layer of skin.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Dermis",
+    "category": "Anatomy",
+    "explanation": "Inner layer; contains blood vessels and nerves.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Hypodermis",
+    "category": "Anatomy",
+    "explanation": "Layer beneath skin; contains fat.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Lymphatic System",
+    "category": "Anatomy",
+    "explanation": "Returns fluid to blood; immune defense.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Lymph Nodes",
+    "category": "Anatomy",
+    "explanation": "Small organs filtering lymph.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Spleen",
+    "category": "Anatomy",
+    "explanation": "Filters blood; immune function.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Thymus",
+    "category": "Anatomy",
+    "explanation": "Organ where T-cells develop.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Skeletal System",
+    "category": "Anatomy",
+    "explanation": "Framework of bones providing structure and protection.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Skull",
+    "category": "Anatomy",
+    "explanation": "Bony structure protecting brain.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Spine",
+    "category": "Anatomy",
+    "explanation": "Column of vertebrae protecting spinal cord.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Rib Cage",
+    "category": "Anatomy",
+    "explanation": "Bony structure protecting heart and lungs.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Sternum",
+    "category": "Anatomy",
+    "explanation": "Breastbone; connects ribs.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Pelvis",
+    "category": "Anatomy",
+    "explanation": "Bony structure supporting lower body.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Long Bones",
+    "category": "Anatomy",
+    "explanation": "Bones longer than wide; femur, humerus.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Flat Bones",
+    "category": "Anatomy",
+    "explanation": "Thin, flattened bones; skull, ribs.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Irregular Bones",
+    "category": "Anatomy",
+    "explanation": "Complex-shaped bones; vertebrae.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Joints",
+    "category": "Anatomy",
+    "explanation": "Points where bones meet.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Ligament",
+    "category": "Anatomy",
+    "explanation": "Connects bone to bone.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Tendon",
+    "category": "Anatomy",
+    "explanation": "Connects muscle to bone.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Cartilage",
+    "category": "Anatomy",
+    "explanation": "Smooth tissue covering ends of bones.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Muscular System",
+    "category": "Anatomy",
+    "explanation": "System of muscles enabling movement.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Skeletal Muscle",
+    "category": "Anatomy",
+    "explanation": "Voluntary muscle attached to bone.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Cardiac Muscle",
+    "category": "Anatomy",
+    "explanation": "Involuntary muscle of heart.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Smooth Muscle",
+    "category": "Anatomy",
+    "explanation": "Involuntary muscle in organs.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Biceps",
+    "category": "Anatomy",
+    "explanation": "Muscle in upper arm; flexes elbow.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Triceps",
+    "category": "Anatomy",
+    "explanation": "Muscle in upper arm; extends elbow.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Quadriceps",
+    "category": "Anatomy",
+    "explanation": "Muscle in thigh; extends knee.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Hamstrings",
+    "category": "Anatomy",
+    "explanation": "Muscle in thigh; flexes knee.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Gluteal Muscles",
+    "category": "Anatomy",
+    "explanation": "Muscles of buttocks.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Abdominal Muscles",
+    "category": "Anatomy",
+    "explanation": "Muscles of stomach area.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Pectoralis",
+    "category": "Anatomy",
+    "explanation": "Chest muscle.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Deltoid",
+    "category": "Anatomy",
+    "explanation": "Shoulder muscle.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Latissimus Dorsi",
+    "category": "Anatomy",
+    "explanation": "Large back muscle.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Trapezius",
+    "category": "Anatomy",
+    "explanation": "Upper back and neck muscle.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Diaphragm",
+    "category": "Anatomy",
+    "explanation": "Muscle enabling breathing.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Nervous System",
+    "category": "Anatomy",
+    "explanation": "System controlling body functions.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "CNS",
+    "category": "Anatomy",
+    "explanation": "Brain and spinal cord.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "PNS",
+    "category": "Anatomy",
+    "explanation": "Nerves outside CNS.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Cranial Nerves",
+    "category": "Anatomy",
+    "explanation": "Nerves emerging from brain.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Spinal Nerves",
+    "category": "Anatomy",
+    "explanation": "Nerves emerging from spinal cord.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "ANS",
+    "category": "Anatomy",
+    "explanation": "Controls involuntary functions.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Sympathetic",
+    "category": "Anatomy",
+    "explanation": "Fight-or-flight response.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Parasympathetic",
+    "category": "Anatomy",
+    "explanation": "Rest-and-digest response.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Cardiovascular System",
+    "category": "Anatomy",
+    "explanation": "Heart and blood vessels.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Heart",
+    "category": "Anatomy",
+    "explanation": "Pump propelling blood.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Arteries",
+    "category": "Anatomy",
+    "explanation": "Blood vessels carrying blood away from heart.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Veins",
+    "category": "Anatomy",
+    "explanation": "Blood vessels carrying blood to heart.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Capillaries",
+    "category": "Anatomy",
+    "explanation": "Tiny vessels exchanging substances.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Aorta",
+    "category": "Anatomy",
+    "explanation": "Largest artery; leaves heart.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Vena Cava",
+    "category": "Anatomy",
+    "explanation": "Largest vein; enters heart.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Blood",
+    "category": "Anatomy",
+    "explanation": "Fluid carrying oxygen, nutrients, waste.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Erythrocytes",
+    "category": "Anatomy",
+    "explanation": "Cells carrying oxygen.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Leukocytes",
+    "category": "Anatomy",
+    "explanation": "Cells fighting infection.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Platelets",
+    "category": "Anatomy",
+    "explanation": "Cells helping blood clot.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Plasma",
+    "category": "Anatomy",
+    "explanation": "Liquid component of blood.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Respiration",
+    "category": "Anatomy",
+    "explanation": "System enabling breathing.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Lungs",
+    "category": "Anatomy",
+    "explanation": "Organs where gas exchange occurs.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Trachea",
+    "category": "Anatomy",
+    "explanation": "Windpipe; tube to lungs.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Bronchi",
+    "category": "Anatomy",
+    "explanation": "Tubes branching from trachea to lungs.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Bronchioles",
+    "category": "Anatomy",
+    "explanation": "Smaller tubes within lungs.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Alveoli",
+    "category": "Anatomy",
+    "explanation": "Tiny air sacs; site of gas exchange.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Digestive System",
+    "category": "Anatomy",
+    "explanation": "System breaking down food.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Mouth",
+    "category": "Anatomy",
+    "explanation": "Entry point for food.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Esophagus",
+    "category": "Anatomy",
+    "explanation": "Tube connecting mouth to stomach.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Stomach",
+    "category": "Anatomy",
+    "explanation": "Organ digesting food.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Small Intestine",
+    "category": "Anatomy",
+    "explanation": "Organ absorbing nutrients.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Large Intestine",
+    "category": "Anatomy",
+    "explanation": "Organ absorbing water and forming waste.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Liver",
+    "category": "Anatomy",
+    "explanation": "Produces bile; metabolizes substances.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Pancreas",
+    "category": "Anatomy",
+    "explanation": "Produces digestive enzymes and hormones.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Gallbladder",
+    "category": "Anatomy",
+    "explanation": "Stores bile.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Urinary System",
+    "category": "Anatomy",
+    "explanation": "System removing waste.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Kidneys",
+    "category": "Anatomy",
+    "explanation": "Organs filtering blood.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Ureters",
+    "category": "Anatomy",
+    "explanation": "Tubes connecting kidneys to bladder.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Bladder",
+    "category": "Anatomy",
+    "explanation": "Organ storing urine.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Urethra",
+    "category": "Anatomy",
+    "explanation": "Tube releasing urine.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Reproduction",
+    "category": "Anatomy",
+    "explanation": "System enabling reproduction.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Testes",
+    "category": "Anatomy",
+    "explanation": "Male organs producing sperm.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Ovaries",
+    "category": "Anatomy",
+    "explanation": "Female organs producing eggs.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Uterus",
+    "category": "Anatomy",
+    "explanation": "Organ where fetus develops.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Fallopian Tubes",
+    "category": "Anatomy",
+    "explanation": "Tubes connecting ovaries to uterus.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Vagina",
+    "category": "Anatomy",
+    "explanation": "Female reproductive canal.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Penis",
+    "category": "Anatomy",
+    "explanation": "Male reproductive organ.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Endocrine System",
+    "category": "Anatomy",
+    "explanation": "System of glands producing hormones.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Pituitary Gland",
+    "category": "Anatomy",
+    "explanation": "Master gland controlling other glands.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Thyroid Gland",
+    "category": "Anatomy",
+    "explanation": "Gland regulating metabolism.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Adrenal Glands",
+    "category": "Anatomy",
+    "explanation": "Glands producing stress hormones.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Integumentary System",
+    "category": "Anatomy",
+    "explanation": "Skin and its appendages.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Epidermis",
+    "category": "Anatomy",
+    "explanation": "Outer layer of skin.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Dermis",
+    "category": "Anatomy",
+    "explanation": "Inner layer; contains blood vessels and nerves.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Hypodermis",
+    "category": "Anatomy",
+    "explanation": "Layer beneath skin; contains fat.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Lymphatic System",
+    "category": "Anatomy",
+    "explanation": "Returns fluid to blood; immune defense.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Lymph Nodes",
+    "category": "Anatomy",
+    "explanation": "Small organs filtering lymph.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Spleen",
+    "category": "Anatomy",
+    "explanation": "Filters blood; immune function.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Thymus",
+    "category": "Anatomy",
+    "explanation": "Organ where T-cells develop.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Skeletal System",
+    "category": "Anatomy",
+    "explanation": "Framework of bones providing structure and protection.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Skull",
+    "category": "Anatomy",
+    "explanation": "Bony structure protecting brain.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Spine",
+    "category": "Anatomy",
+    "explanation": "Column of vertebrae protecting spinal cord.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Rib Cage",
+    "category": "Anatomy",
+    "explanation": "Bony structure protecting heart and lungs.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Sternum",
+    "category": "Anatomy",
+    "explanation": "Breastbone; connects ribs.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Pelvis",
+    "category": "Anatomy",
+    "explanation": "Bony structure supporting lower body.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Long Bones",
+    "category": "Anatomy",
+    "explanation": "Bones longer than wide; femur, humerus.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Flat Bones",
+    "category": "Anatomy",
+    "explanation": "Thin, flattened bones; skull, ribs.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Irregular Bones",
+    "category": "Anatomy",
+    "explanation": "Complex-shaped bones; vertebrae.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Joints",
+    "category": "Anatomy",
+    "explanation": "Points where bones meet.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Ligament",
+    "category": "Anatomy",
+    "explanation": "Connects bone to bone.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Tendon",
+    "category": "Anatomy",
+    "explanation": "Connects muscle to bone.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Cartilage",
+    "category": "Anatomy",
+    "explanation": "Smooth tissue covering ends of bones.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Muscular System",
+    "category": "Anatomy",
+    "explanation": "System of muscles enabling movement.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Skeletal Muscle",
+    "category": "Anatomy",
+    "explanation": "Voluntary muscle attached to bone.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Cardiac Muscle",
+    "category": "Anatomy",
+    "explanation": "Involuntary muscle of heart.",
+    "tabooWords": [],
+    "difficulty": 3
+  }
+]

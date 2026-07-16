@@ -1,0 +1,4377 @@
+[
+  {
+    "term": "Classical Conditioning",
+    "category": "Psychology",
+    "explanation": "Learning through association; Pavlov.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Operant Conditioning",
+    "category": "Psychology",
+    "explanation": "Learning through consequences; Skinner.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Positive Reinforcement",
+    "category": "Psychology",
+    "explanation": "Adding reward to increase behavior.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Negative Reinforcement",
+    "category": "Psychology",
+    "explanation": "Removing aversive stimulus to increase behavior.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Positive Punishment",
+    "category": "Psychology",
+    "explanation": "Adding aversive stimulus to decrease behavior.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Negative Punishment",
+    "category": "Psychology",
+    "explanation": "Removing reward to decrease behavior.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Observational Learning",
+    "category": "Psychology",
+    "explanation": "Learning by watching others; Bandura.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Memory",
+    "category": "Psychology",
+    "explanation": "Encoding, storing, and retrieving information.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Sensory Memory",
+    "category": "Psychology",
+    "explanation": "Brief storage of sensory information.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Short-Term Memory",
+    "category": "Psychology",
+    "explanation": "Temporary storage of small information.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Long-Term Memory",
+    "category": "Psychology",
+    "explanation": "Relatively permanent storage.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Working Memory",
+    "category": "Psychology",
+    "explanation": "Active processing of information.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Explicit Memory",
+    "category": "Psychology",
+    "explanation": "Conscious recall of facts and events.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Implicit Memory",
+    "category": "Psychology",
+    "explanation": "Unconscious memory; skills and habits.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Encoding",
+    "category": "Psychology",
+    "explanation": "Getting information into memory.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Storage",
+    "category": "Psychology",
+    "explanation": "Maintaining information in memory.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Retrieval",
+    "category": "Psychology",
+    "explanation": "Accessing stored information.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Forgetting",
+    "category": "Psychology",
+    "explanation": "Failure to retrieve information.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Amnesia",
+    "category": "Psychology",
+    "explanation": "Loss of memory due to brain damage or trauma.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Retrograde Amnesia",
+    "category": "Psychology",
+    "explanation": "Inability to recall past memories.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Anterograde Amnesia",
+    "category": "Psychology",
+    "explanation": "Inability to form new memories.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Intelligence",
+    "category": "Psychology",
+    "explanation": "Ability to learn, reason, and solve problems.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "IQ",
+    "category": "Psychology",
+    "explanation": "Intelligence quotient; standardized measure.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Emotional Intelligence",
+    "category": "Psychology",
+    "explanation": "Ability to perceive, understand, and manage emotions.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Personality",
+    "category": "Psychology",
+    "explanation": "Characteristic patterns of thoughts, feelings, and behaviors.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Trait",
+    "category": "Psychology",
+    "explanation": "Stable characteristic of personality.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Big Five",
+    "category": "Psychology",
+    "explanation": "OCEAN: openness, conscientiousness, extraversion, agreeableness, neuroticism.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Psychoanalytic Theory",
+    "category": "Psychology",
+    "explanation": "Freud; unconscious drives influence behavior.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Humanistic Theory",
+    "category": "Psychology",
+    "explanation": "Focus on human potential and self-actualization.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Behaviorism",
+    "category": "Psychology",
+    "explanation": "Focus on observable behavior.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Cognitive Psychology",
+    "category": "Psychology",
+    "explanation": "Focus on mental processes.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Neuron",
+    "category": "Psychology",
+    "explanation": "Nerve cell; basic unit of nervous system.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Synapse",
+    "category": "Psychology",
+    "explanation": "Junction between neurons.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Neurotransmitter",
+    "category": "Psychology",
+    "explanation": "Chemical transmitting across synapse.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Dopamine",
+    "category": "Psychology",
+    "explanation": "Reward and movement.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Serotonin",
+    "category": "Psychology",
+    "explanation": "Mood and sleep.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Norepinephrine",
+    "category": "Psychology",
+    "explanation": "Arousal and alertness.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Acetylcholine",
+    "category": "Psychology",
+    "explanation": "Muscle contraction and memory.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "GABA",
+    "category": "Psychology",
+    "explanation": "Inhibitory neurotransmitter.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Glutamate",
+    "category": "Psychology",
+    "explanation": "Excitatory neurotransmitter.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Brain",
+    "category": "Psychology",
+    "explanation": "Controls thoughts, emotions, behavior.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Cerebrum",
+    "category": "Psychology",
+    "explanation": "Largest brain region; higher cognitive functions.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Cerebellum",
+    "category": "Psychology",
+    "explanation": "Coordination and balance.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Brainstem",
+    "category": "Psychology",
+    "explanation": "Basic life functions.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Limbic System",
+    "category": "Psychology",
+    "explanation": "Emotion and memory.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Hippocampus",
+    "category": "Psychology",
+    "explanation": "Crucial for memory formation.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Amygdala",
+    "category": "Psychology",
+    "explanation": "Emotion, especially fear.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Hypothalamus",
+    "category": "Psychology",
+    "explanation": "Homeostasis and motivated behaviors.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Thalamus",
+    "category": "Psychology",
+    "explanation": "Relay station for sensory information.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Cortex",
+    "category": "Psychology",
+    "explanation": "Outer layer; complex cognitive functions.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Frontal Lobe",
+    "category": "Psychology",
+    "explanation": "Executive functions, decision-making, personality.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Parietal Lobe",
+    "category": "Psychology",
+    "explanation": "Sensation and spatial processing.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Temporal Lobe",
+    "category": "Psychology",
+    "explanation": "Hearing, language, memory.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Occipital Lobe",
+    "category": "Psychology",
+    "explanation": "Vision.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Stress",
+    "category": "Psychology",
+    "explanation": "Response to challenging situations.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Fight-or-Flight",
+    "category": "Psychology",
+    "explanation": "Physiological response to threat.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Adaptation Syndrome",
+    "category": "Psychology",
+    "explanation": "Alarm, resistance, exhaustion.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Coping",
+    "category": "Psychology",
+    "explanation": "Strategies to deal with stress.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Mental Health",
+    "category": "Psychology",
+    "explanation": "State of psychological well-being.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Mental Disorder",
+    "category": "Psychology",
+    "explanation": "Pattern causing distress or dysfunction.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Anxiety Disorder",
+    "category": "Psychology",
+    "explanation": "Excessive fear or anxiety.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Mood Disorder",
+    "category": "Psychology",
+    "explanation": "Disturbance in emotion.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Schizophrenia",
+    "category": "Psychology",
+    "explanation": "Psychosis, delusions, hallucinations.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Depression",
+    "category": "Psychology",
+    "explanation": "Persistent sadness, loss of interest.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Psychotherapy",
+    "category": "Psychology",
+    "explanation": "Treatment through talking.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Cognitive-Behavioral Therapy",
+    "category": "Psychology",
+    "explanation": "Changing thoughts and behaviors.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Pharmacotherapy",
+    "category": "Psychology",
+    "explanation": "Treatment using medications.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Motivation",
+    "category": "Psychology",
+    "explanation": "Drive to engage in behavior.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Intrinsic Motivation",
+    "category": "Psychology",
+    "explanation": "Motivation from internal rewards.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Extrinsic Motivation",
+    "category": "Psychology",
+    "explanation": "Motivation from external rewards.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Maslow's Hierarchy",
+    "category": "Psychology",
+    "explanation": "Hierarchy of needs.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Emotion",
+    "category": "Psychology",
+    "explanation": "Subjective experience with physiological and behavioral components.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Social Psychology",
+    "category": "Psychology",
+    "explanation": "Study of individuals in social contexts.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Attribution",
+    "category": "Psychology",
+    "explanation": "Process of explaining behavior.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Cognitive Dissonance",
+    "category": "Psychology",
+    "explanation": "Discomfort from conflicting thoughts.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Conformity",
+    "category": "Psychology",
+    "explanation": "Changing behavior to match group.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Obedience",
+    "category": "Psychology",
+    "explanation": "Following authority figures' commands.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Prejudice",
+    "category": "Psychology",
+    "explanation": "Preconceived negative judgment.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Stereotype",
+    "category": "Psychology",
+    "explanation": "Belief about characteristics of a group.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Discrimination",
+    "category": "Psychology",
+    "explanation": "Unfair treatment based on group membership.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Classical Conditioning",
+    "category": "Psychology",
+    "explanation": "Learning through association; Pavlov.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Operant Conditioning",
+    "category": "Psychology",
+    "explanation": "Learning through consequences; Skinner.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Positive Reinforcement",
+    "category": "Psychology",
+    "explanation": "Adding reward to increase behavior.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Negative Reinforcement",
+    "category": "Psychology",
+    "explanation": "Removing aversive stimulus to increase behavior.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Positive Punishment",
+    "category": "Psychology",
+    "explanation": "Adding aversive stimulus to decrease behavior.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Negative Punishment",
+    "category": "Psychology",
+    "explanation": "Removing reward to decrease behavior.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Observational Learning",
+    "category": "Psychology",
+    "explanation": "Learning by watching others; Bandura.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Memory",
+    "category": "Psychology",
+    "explanation": "Encoding, storing, and retrieving information.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Sensory Memory",
+    "category": "Psychology",
+    "explanation": "Brief storage of sensory information.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Short-Term Memory",
+    "category": "Psychology",
+    "explanation": "Temporary storage of small information.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Long-Term Memory",
+    "category": "Psychology",
+    "explanation": "Relatively permanent storage.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Working Memory",
+    "category": "Psychology",
+    "explanation": "Active processing of information.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Explicit Memory",
+    "category": "Psychology",
+    "explanation": "Conscious recall of facts and events.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Implicit Memory",
+    "category": "Psychology",
+    "explanation": "Unconscious memory; skills and habits.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Encoding",
+    "category": "Psychology",
+    "explanation": "Getting information into memory.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Storage",
+    "category": "Psychology",
+    "explanation": "Maintaining information in memory.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Retrieval",
+    "category": "Psychology",
+    "explanation": "Accessing stored information.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Forgetting",
+    "category": "Psychology",
+    "explanation": "Failure to retrieve information.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Amnesia",
+    "category": "Psychology",
+    "explanation": "Loss of memory due to brain damage or trauma.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Retrograde Amnesia",
+    "category": "Psychology",
+    "explanation": "Inability to recall past memories.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Anterograde Amnesia",
+    "category": "Psychology",
+    "explanation": "Inability to form new memories.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Intelligence",
+    "category": "Psychology",
+    "explanation": "Ability to learn, reason, and solve problems.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "IQ",
+    "category": "Psychology",
+    "explanation": "Intelligence quotient; standardized measure.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Emotional Intelligence",
+    "category": "Psychology",
+    "explanation": "Ability to perceive, understand, and manage emotions.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Personality",
+    "category": "Psychology",
+    "explanation": "Characteristic patterns of thoughts, feelings, and behaviors.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Trait",
+    "category": "Psychology",
+    "explanation": "Stable characteristic of personality.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Big Five",
+    "category": "Psychology",
+    "explanation": "OCEAN: openness, conscientiousness, extraversion, agreeableness, neuroticism.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Psychoanalytic Theory",
+    "category": "Psychology",
+    "explanation": "Freud; unconscious drives influence behavior.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Humanistic Theory",
+    "category": "Psychology",
+    "explanation": "Focus on human potential and self-actualization.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Behaviorism",
+    "category": "Psychology",
+    "explanation": "Focus on observable behavior.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Cognitive Psychology",
+    "category": "Psychology",
+    "explanation": "Focus on mental processes.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Neuron",
+    "category": "Psychology",
+    "explanation": "Nerve cell; basic unit of nervous system.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Synapse",
+    "category": "Psychology",
+    "explanation": "Junction between neurons.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Neurotransmitter",
+    "category": "Psychology",
+    "explanation": "Chemical transmitting across synapse.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Dopamine",
+    "category": "Psychology",
+    "explanation": "Reward and movement.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Serotonin",
+    "category": "Psychology",
+    "explanation": "Mood and sleep.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Norepinephrine",
+    "category": "Psychology",
+    "explanation": "Arousal and alertness.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Acetylcholine",
+    "category": "Psychology",
+    "explanation": "Muscle contraction and memory.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "GABA",
+    "category": "Psychology",
+    "explanation": "Inhibitory neurotransmitter.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Glutamate",
+    "category": "Psychology",
+    "explanation": "Excitatory neurotransmitter.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Brain",
+    "category": "Psychology",
+    "explanation": "Controls thoughts, emotions, behavior.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Cerebrum",
+    "category": "Psychology",
+    "explanation": "Largest brain region; higher cognitive functions.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Cerebellum",
+    "category": "Psychology",
+    "explanation": "Coordination and balance.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Brainstem",
+    "category": "Psychology",
+    "explanation": "Basic life functions.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Limbic System",
+    "category": "Psychology",
+    "explanation": "Emotion and memory.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Hippocampus",
+    "category": "Psychology",
+    "explanation": "Crucial for memory formation.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Amygdala",
+    "category": "Psychology",
+    "explanation": "Emotion, especially fear.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Hypothalamus",
+    "category": "Psychology",
+    "explanation": "Homeostasis and motivated behaviors.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Thalamus",
+    "category": "Psychology",
+    "explanation": "Relay station for sensory information.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Cortex",
+    "category": "Psychology",
+    "explanation": "Outer layer; complex cognitive functions.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Frontal Lobe",
+    "category": "Psychology",
+    "explanation": "Executive functions, decision-making, personality.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Parietal Lobe",
+    "category": "Psychology",
+    "explanation": "Sensation and spatial processing.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Temporal Lobe",
+    "category": "Psychology",
+    "explanation": "Hearing, language, memory.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Occipital Lobe",
+    "category": "Psychology",
+    "explanation": "Vision.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Stress",
+    "category": "Psychology",
+    "explanation": "Response to challenging situations.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Fight-or-Flight",
+    "category": "Psychology",
+    "explanation": "Physiological response to threat.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Adaptation Syndrome",
+    "category": "Psychology",
+    "explanation": "Alarm, resistance, exhaustion.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Coping",
+    "category": "Psychology",
+    "explanation": "Strategies to deal with stress.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Mental Health",
+    "category": "Psychology",
+    "explanation": "State of psychological well-being.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Mental Disorder",
+    "category": "Psychology",
+    "explanation": "Pattern causing distress or dysfunction.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Anxiety Disorder",
+    "category": "Psychology",
+    "explanation": "Excessive fear or anxiety.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Mood Disorder",
+    "category": "Psychology",
+    "explanation": "Disturbance in emotion.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Schizophrenia",
+    "category": "Psychology",
+    "explanation": "Psychosis, delusions, hallucinations.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Depression",
+    "category": "Psychology",
+    "explanation": "Persistent sadness, loss of interest.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Psychotherapy",
+    "category": "Psychology",
+    "explanation": "Treatment through talking.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Cognitive-Behavioral Therapy",
+    "category": "Psychology",
+    "explanation": "Changing thoughts and behaviors.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Pharmacotherapy",
+    "category": "Psychology",
+    "explanation": "Treatment using medications.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Motivation",
+    "category": "Psychology",
+    "explanation": "Drive to engage in behavior.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Intrinsic Motivation",
+    "category": "Psychology",
+    "explanation": "Motivation from internal rewards.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Extrinsic Motivation",
+    "category": "Psychology",
+    "explanation": "Motivation from external rewards.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Maslow's Hierarchy",
+    "category": "Psychology",
+    "explanation": "Hierarchy of needs.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Emotion",
+    "category": "Psychology",
+    "explanation": "Subjective experience with physiological and behavioral components.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Social Psychology",
+    "category": "Psychology",
+    "explanation": "Study of individuals in social contexts.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Attribution",
+    "category": "Psychology",
+    "explanation": "Process of explaining behavior.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Cognitive Dissonance",
+    "category": "Psychology",
+    "explanation": "Discomfort from conflicting thoughts.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Conformity",
+    "category": "Psychology",
+    "explanation": "Changing behavior to match group.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Obedience",
+    "category": "Psychology",
+    "explanation": "Following authority figures' commands.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Prejudice",
+    "category": "Psychology",
+    "explanation": "Preconceived negative judgment.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Stereotype",
+    "category": "Psychology",
+    "explanation": "Belief about characteristics of a group.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Discrimination",
+    "category": "Psychology",
+    "explanation": "Unfair treatment based on group membership.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Classical Conditioning",
+    "category": "Psychology",
+    "explanation": "Learning through association; Pavlov.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Operant Conditioning",
+    "category": "Psychology",
+    "explanation": "Learning through consequences; Skinner.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Positive Reinforcement",
+    "category": "Psychology",
+    "explanation": "Adding reward to increase behavior.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Negative Reinforcement",
+    "category": "Psychology",
+    "explanation": "Removing aversive stimulus to increase behavior.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Positive Punishment",
+    "category": "Psychology",
+    "explanation": "Adding aversive stimulus to decrease behavior.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Negative Punishment",
+    "category": "Psychology",
+    "explanation": "Removing reward to decrease behavior.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Observational Learning",
+    "category": "Psychology",
+    "explanation": "Learning by watching others; Bandura.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Memory",
+    "category": "Psychology",
+    "explanation": "Encoding, storing, and retrieving information.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Sensory Memory",
+    "category": "Psychology",
+    "explanation": "Brief storage of sensory information.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Short-Term Memory",
+    "category": "Psychology",
+    "explanation": "Temporary storage of small information.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Long-Term Memory",
+    "category": "Psychology",
+    "explanation": "Relatively permanent storage.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Working Memory",
+    "category": "Psychology",
+    "explanation": "Active processing of information.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Explicit Memory",
+    "category": "Psychology",
+    "explanation": "Conscious recall of facts and events.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Implicit Memory",
+    "category": "Psychology",
+    "explanation": "Unconscious memory; skills and habits.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Encoding",
+    "category": "Psychology",
+    "explanation": "Getting information into memory.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Storage",
+    "category": "Psychology",
+    "explanation": "Maintaining information in memory.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Retrieval",
+    "category": "Psychology",
+    "explanation": "Accessing stored information.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Forgetting",
+    "category": "Psychology",
+    "explanation": "Failure to retrieve information.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Amnesia",
+    "category": "Psychology",
+    "explanation": "Loss of memory due to brain damage or trauma.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Retrograde Amnesia",
+    "category": "Psychology",
+    "explanation": "Inability to recall past memories.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Anterograde Amnesia",
+    "category": "Psychology",
+    "explanation": "Inability to form new memories.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Intelligence",
+    "category": "Psychology",
+    "explanation": "Ability to learn, reason, and solve problems.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "IQ",
+    "category": "Psychology",
+    "explanation": "Intelligence quotient; standardized measure.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Emotional Intelligence",
+    "category": "Psychology",
+    "explanation": "Ability to perceive, understand, and manage emotions.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Personality",
+    "category": "Psychology",
+    "explanation": "Characteristic patterns of thoughts, feelings, and behaviors.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Trait",
+    "category": "Psychology",
+    "explanation": "Stable characteristic of personality.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Big Five",
+    "category": "Psychology",
+    "explanation": "OCEAN: openness, conscientiousness, extraversion, agreeableness, neuroticism.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Psychoanalytic Theory",
+    "category": "Psychology",
+    "explanation": "Freud; unconscious drives influence behavior.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Humanistic Theory",
+    "category": "Psychology",
+    "explanation": "Focus on human potential and self-actualization.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Behaviorism",
+    "category": "Psychology",
+    "explanation": "Focus on observable behavior.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Cognitive Psychology",
+    "category": "Psychology",
+    "explanation": "Focus on mental processes.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Neuron",
+    "category": "Psychology",
+    "explanation": "Nerve cell; basic unit of nervous system.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Synapse",
+    "category": "Psychology",
+    "explanation": "Junction between neurons.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Neurotransmitter",
+    "category": "Psychology",
+    "explanation": "Chemical transmitting across synapse.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Dopamine",
+    "category": "Psychology",
+    "explanation": "Reward and movement.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Serotonin",
+    "category": "Psychology",
+    "explanation": "Mood and sleep.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Norepinephrine",
+    "category": "Psychology",
+    "explanation": "Arousal and alertness.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Acetylcholine",
+    "category": "Psychology",
+    "explanation": "Muscle contraction and memory.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "GABA",
+    "category": "Psychology",
+    "explanation": "Inhibitory neurotransmitter.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Glutamate",
+    "category": "Psychology",
+    "explanation": "Excitatory neurotransmitter.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Brain",
+    "category": "Psychology",
+    "explanation": "Controls thoughts, emotions, behavior.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Cerebrum",
+    "category": "Psychology",
+    "explanation": "Largest brain region; higher cognitive functions.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Cerebellum",
+    "category": "Psychology",
+    "explanation": "Coordination and balance.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Brainstem",
+    "category": "Psychology",
+    "explanation": "Basic life functions.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Limbic System",
+    "category": "Psychology",
+    "explanation": "Emotion and memory.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Hippocampus",
+    "category": "Psychology",
+    "explanation": "Crucial for memory formation.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Amygdala",
+    "category": "Psychology",
+    "explanation": "Emotion, especially fear.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Hypothalamus",
+    "category": "Psychology",
+    "explanation": "Homeostasis and motivated behaviors.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Thalamus",
+    "category": "Psychology",
+    "explanation": "Relay station for sensory information.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Cortex",
+    "category": "Psychology",
+    "explanation": "Outer layer; complex cognitive functions.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Frontal Lobe",
+    "category": "Psychology",
+    "explanation": "Executive functions, decision-making, personality.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Parietal Lobe",
+    "category": "Psychology",
+    "explanation": "Sensation and spatial processing.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Temporal Lobe",
+    "category": "Psychology",
+    "explanation": "Hearing, language, memory.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Occipital Lobe",
+    "category": "Psychology",
+    "explanation": "Vision.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Stress",
+    "category": "Psychology",
+    "explanation": "Response to challenging situations.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Fight-or-Flight",
+    "category": "Psychology",
+    "explanation": "Physiological response to threat.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Adaptation Syndrome",
+    "category": "Psychology",
+    "explanation": "Alarm, resistance, exhaustion.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Coping",
+    "category": "Psychology",
+    "explanation": "Strategies to deal with stress.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Mental Health",
+    "category": "Psychology",
+    "explanation": "State of psychological well-being.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Mental Disorder",
+    "category": "Psychology",
+    "explanation": "Pattern causing distress or dysfunction.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Anxiety Disorder",
+    "category": "Psychology",
+    "explanation": "Excessive fear or anxiety.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Mood Disorder",
+    "category": "Psychology",
+    "explanation": "Disturbance in emotion.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Schizophrenia",
+    "category": "Psychology",
+    "explanation": "Psychosis, delusions, hallucinations.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Depression",
+    "category": "Psychology",
+    "explanation": "Persistent sadness, loss of interest.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Psychotherapy",
+    "category": "Psychology",
+    "explanation": "Treatment through talking.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Cognitive-Behavioral Therapy",
+    "category": "Psychology",
+    "explanation": "Changing thoughts and behaviors.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Pharmacotherapy",
+    "category": "Psychology",
+    "explanation": "Treatment using medications.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Motivation",
+    "category": "Psychology",
+    "explanation": "Drive to engage in behavior.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Intrinsic Motivation",
+    "category": "Psychology",
+    "explanation": "Motivation from internal rewards.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Extrinsic Motivation",
+    "category": "Psychology",
+    "explanation": "Motivation from external rewards.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Maslow's Hierarchy",
+    "category": "Psychology",
+    "explanation": "Hierarchy of needs.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Emotion",
+    "category": "Psychology",
+    "explanation": "Subjective experience with physiological and behavioral components.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Social Psychology",
+    "category": "Psychology",
+    "explanation": "Study of individuals in social contexts.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Attribution",
+    "category": "Psychology",
+    "explanation": "Process of explaining behavior.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Cognitive Dissonance",
+    "category": "Psychology",
+    "explanation": "Discomfort from conflicting thoughts.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Conformity",
+    "category": "Psychology",
+    "explanation": "Changing behavior to match group.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Obedience",
+    "category": "Psychology",
+    "explanation": "Following authority figures' commands.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Prejudice",
+    "category": "Psychology",
+    "explanation": "Preconceived negative judgment.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Stereotype",
+    "category": "Psychology",
+    "explanation": "Belief about characteristics of a group.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Discrimination",
+    "category": "Psychology",
+    "explanation": "Unfair treatment based on group membership.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Classical Conditioning",
+    "category": "Psychology",
+    "explanation": "Learning through association; Pavlov.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Operant Conditioning",
+    "category": "Psychology",
+    "explanation": "Learning through consequences; Skinner.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Positive Reinforcement",
+    "category": "Psychology",
+    "explanation": "Adding reward to increase behavior.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Negative Reinforcement",
+    "category": "Psychology",
+    "explanation": "Removing aversive stimulus to increase behavior.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Positive Punishment",
+    "category": "Psychology",
+    "explanation": "Adding aversive stimulus to decrease behavior.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Negative Punishment",
+    "category": "Psychology",
+    "explanation": "Removing reward to decrease behavior.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Observational Learning",
+    "category": "Psychology",
+    "explanation": "Learning by watching others; Bandura.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Memory",
+    "category": "Psychology",
+    "explanation": "Encoding, storing, and retrieving information.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Sensory Memory",
+    "category": "Psychology",
+    "explanation": "Brief storage of sensory information.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Short-Term Memory",
+    "category": "Psychology",
+    "explanation": "Temporary storage of small information.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Long-Term Memory",
+    "category": "Psychology",
+    "explanation": "Relatively permanent storage.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Working Memory",
+    "category": "Psychology",
+    "explanation": "Active processing of information.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Explicit Memory",
+    "category": "Psychology",
+    "explanation": "Conscious recall of facts and events.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Implicit Memory",
+    "category": "Psychology",
+    "explanation": "Unconscious memory; skills and habits.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Encoding",
+    "category": "Psychology",
+    "explanation": "Getting information into memory.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Storage",
+    "category": "Psychology",
+    "explanation": "Maintaining information in memory.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Retrieval",
+    "category": "Psychology",
+    "explanation": "Accessing stored information.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Forgetting",
+    "category": "Psychology",
+    "explanation": "Failure to retrieve information.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Amnesia",
+    "category": "Psychology",
+    "explanation": "Loss of memory due to brain damage or trauma.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Retrograde Amnesia",
+    "category": "Psychology",
+    "explanation": "Inability to recall past memories.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Anterograde Amnesia",
+    "category": "Psychology",
+    "explanation": "Inability to form new memories.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Intelligence",
+    "category": "Psychology",
+    "explanation": "Ability to learn, reason, and solve problems.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "IQ",
+    "category": "Psychology",
+    "explanation": "Intelligence quotient; standardized measure.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Emotional Intelligence",
+    "category": "Psychology",
+    "explanation": "Ability to perceive, understand, and manage emotions.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Personality",
+    "category": "Psychology",
+    "explanation": "Characteristic patterns of thoughts, feelings, and behaviors.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Trait",
+    "category": "Psychology",
+    "explanation": "Stable characteristic of personality.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Big Five",
+    "category": "Psychology",
+    "explanation": "OCEAN: openness, conscientiousness, extraversion, agreeableness, neuroticism.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Psychoanalytic Theory",
+    "category": "Psychology",
+    "explanation": "Freud; unconscious drives influence behavior.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Humanistic Theory",
+    "category": "Psychology",
+    "explanation": "Focus on human potential and self-actualization.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Behaviorism",
+    "category": "Psychology",
+    "explanation": "Focus on observable behavior.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Cognitive Psychology",
+    "category": "Psychology",
+    "explanation": "Focus on mental processes.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Neuron",
+    "category": "Psychology",
+    "explanation": "Nerve cell; basic unit of nervous system.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Synapse",
+    "category": "Psychology",
+    "explanation": "Junction between neurons.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Neurotransmitter",
+    "category": "Psychology",
+    "explanation": "Chemical transmitting across synapse.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Dopamine",
+    "category": "Psychology",
+    "explanation": "Reward and movement.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Serotonin",
+    "category": "Psychology",
+    "explanation": "Mood and sleep.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Norepinephrine",
+    "category": "Psychology",
+    "explanation": "Arousal and alertness.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Acetylcholine",
+    "category": "Psychology",
+    "explanation": "Muscle contraction and memory.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "GABA",
+    "category": "Psychology",
+    "explanation": "Inhibitory neurotransmitter.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Glutamate",
+    "category": "Psychology",
+    "explanation": "Excitatory neurotransmitter.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Brain",
+    "category": "Psychology",
+    "explanation": "Controls thoughts, emotions, behavior.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Cerebrum",
+    "category": "Psychology",
+    "explanation": "Largest brain region; higher cognitive functions.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Cerebellum",
+    "category": "Psychology",
+    "explanation": "Coordination and balance.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Brainstem",
+    "category": "Psychology",
+    "explanation": "Basic life functions.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Limbic System",
+    "category": "Psychology",
+    "explanation": "Emotion and memory.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Hippocampus",
+    "category": "Psychology",
+    "explanation": "Crucial for memory formation.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Amygdala",
+    "category": "Psychology",
+    "explanation": "Emotion, especially fear.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Hypothalamus",
+    "category": "Psychology",
+    "explanation": "Homeostasis and motivated behaviors.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Thalamus",
+    "category": "Psychology",
+    "explanation": "Relay station for sensory information.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Cortex",
+    "category": "Psychology",
+    "explanation": "Outer layer; complex cognitive functions.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Frontal Lobe",
+    "category": "Psychology",
+    "explanation": "Executive functions, decision-making, personality.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Parietal Lobe",
+    "category": "Psychology",
+    "explanation": "Sensation and spatial processing.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Temporal Lobe",
+    "category": "Psychology",
+    "explanation": "Hearing, language, memory.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Occipital Lobe",
+    "category": "Psychology",
+    "explanation": "Vision.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Stress",
+    "category": "Psychology",
+    "explanation": "Response to challenging situations.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Fight-or-Flight",
+    "category": "Psychology",
+    "explanation": "Physiological response to threat.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Adaptation Syndrome",
+    "category": "Psychology",
+    "explanation": "Alarm, resistance, exhaustion.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Coping",
+    "category": "Psychology",
+    "explanation": "Strategies to deal with stress.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Mental Health",
+    "category": "Psychology",
+    "explanation": "State of psychological well-being.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Mental Disorder",
+    "category": "Psychology",
+    "explanation": "Pattern causing distress or dysfunction.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Anxiety Disorder",
+    "category": "Psychology",
+    "explanation": "Excessive fear or anxiety.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Mood Disorder",
+    "category": "Psychology",
+    "explanation": "Disturbance in emotion.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Schizophrenia",
+    "category": "Psychology",
+    "explanation": "Psychosis, delusions, hallucinations.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Depression",
+    "category": "Psychology",
+    "explanation": "Persistent sadness, loss of interest.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Psychotherapy",
+    "category": "Psychology",
+    "explanation": "Treatment through talking.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Cognitive-Behavioral Therapy",
+    "category": "Psychology",
+    "explanation": "Changing thoughts and behaviors.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Pharmacotherapy",
+    "category": "Psychology",
+    "explanation": "Treatment using medications.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Motivation",
+    "category": "Psychology",
+    "explanation": "Drive to engage in behavior.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Intrinsic Motivation",
+    "category": "Psychology",
+    "explanation": "Motivation from internal rewards.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Extrinsic Motivation",
+    "category": "Psychology",
+    "explanation": "Motivation from external rewards.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Maslow's Hierarchy",
+    "category": "Psychology",
+    "explanation": "Hierarchy of needs.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Emotion",
+    "category": "Psychology",
+    "explanation": "Subjective experience with physiological and behavioral components.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Social Psychology",
+    "category": "Psychology",
+    "explanation": "Study of individuals in social contexts.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Attribution",
+    "category": "Psychology",
+    "explanation": "Process of explaining behavior.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Cognitive Dissonance",
+    "category": "Psychology",
+    "explanation": "Discomfort from conflicting thoughts.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Conformity",
+    "category": "Psychology",
+    "explanation": "Changing behavior to match group.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Obedience",
+    "category": "Psychology",
+    "explanation": "Following authority figures' commands.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Prejudice",
+    "category": "Psychology",
+    "explanation": "Preconceived negative judgment.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Stereotype",
+    "category": "Psychology",
+    "explanation": "Belief about characteristics of a group.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Discrimination",
+    "category": "Psychology",
+    "explanation": "Unfair treatment based on group membership.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Classical Conditioning",
+    "category": "Psychology",
+    "explanation": "Learning through association; Pavlov.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Operant Conditioning",
+    "category": "Psychology",
+    "explanation": "Learning through consequences; Skinner.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Positive Reinforcement",
+    "category": "Psychology",
+    "explanation": "Adding reward to increase behavior.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Negative Reinforcement",
+    "category": "Psychology",
+    "explanation": "Removing aversive stimulus to increase behavior.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Positive Punishment",
+    "category": "Psychology",
+    "explanation": "Adding aversive stimulus to decrease behavior.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Negative Punishment",
+    "category": "Psychology",
+    "explanation": "Removing reward to decrease behavior.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Observational Learning",
+    "category": "Psychology",
+    "explanation": "Learning by watching others; Bandura.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Memory",
+    "category": "Psychology",
+    "explanation": "Encoding, storing, and retrieving information.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Sensory Memory",
+    "category": "Psychology",
+    "explanation": "Brief storage of sensory information.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Short-Term Memory",
+    "category": "Psychology",
+    "explanation": "Temporary storage of small information.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Long-Term Memory",
+    "category": "Psychology",
+    "explanation": "Relatively permanent storage.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Working Memory",
+    "category": "Psychology",
+    "explanation": "Active processing of information.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Explicit Memory",
+    "category": "Psychology",
+    "explanation": "Conscious recall of facts and events.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Implicit Memory",
+    "category": "Psychology",
+    "explanation": "Unconscious memory; skills and habits.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Encoding",
+    "category": "Psychology",
+    "explanation": "Getting information into memory.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Storage",
+    "category": "Psychology",
+    "explanation": "Maintaining information in memory.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Retrieval",
+    "category": "Psychology",
+    "explanation": "Accessing stored information.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Forgetting",
+    "category": "Psychology",
+    "explanation": "Failure to retrieve information.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Amnesia",
+    "category": "Psychology",
+    "explanation": "Loss of memory due to brain damage or trauma.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Retrograde Amnesia",
+    "category": "Psychology",
+    "explanation": "Inability to recall past memories.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Anterograde Amnesia",
+    "category": "Psychology",
+    "explanation": "Inability to form new memories.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Intelligence",
+    "category": "Psychology",
+    "explanation": "Ability to learn, reason, and solve problems.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "IQ",
+    "category": "Psychology",
+    "explanation": "Intelligence quotient; standardized measure.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Emotional Intelligence",
+    "category": "Psychology",
+    "explanation": "Ability to perceive, understand, and manage emotions.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Personality",
+    "category": "Psychology",
+    "explanation": "Characteristic patterns of thoughts, feelings, and behaviors.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Trait",
+    "category": "Psychology",
+    "explanation": "Stable characteristic of personality.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Big Five",
+    "category": "Psychology",
+    "explanation": "OCEAN: openness, conscientiousness, extraversion, agreeableness, neuroticism.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Psychoanalytic Theory",
+    "category": "Psychology",
+    "explanation": "Freud; unconscious drives influence behavior.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Humanistic Theory",
+    "category": "Psychology",
+    "explanation": "Focus on human potential and self-actualization.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Behaviorism",
+    "category": "Psychology",
+    "explanation": "Focus on observable behavior.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Cognitive Psychology",
+    "category": "Psychology",
+    "explanation": "Focus on mental processes.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Neuron",
+    "category": "Psychology",
+    "explanation": "Nerve cell; basic unit of nervous system.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Synapse",
+    "category": "Psychology",
+    "explanation": "Junction between neurons.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Neurotransmitter",
+    "category": "Psychology",
+    "explanation": "Chemical transmitting across synapse.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Dopamine",
+    "category": "Psychology",
+    "explanation": "Reward and movement.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Serotonin",
+    "category": "Psychology",
+    "explanation": "Mood and sleep.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Norepinephrine",
+    "category": "Psychology",
+    "explanation": "Arousal and alertness.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Acetylcholine",
+    "category": "Psychology",
+    "explanation": "Muscle contraction and memory.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "GABA",
+    "category": "Psychology",
+    "explanation": "Inhibitory neurotransmitter.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Glutamate",
+    "category": "Psychology",
+    "explanation": "Excitatory neurotransmitter.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Brain",
+    "category": "Psychology",
+    "explanation": "Controls thoughts, emotions, behavior.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Cerebrum",
+    "category": "Psychology",
+    "explanation": "Largest brain region; higher cognitive functions.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Cerebellum",
+    "category": "Psychology",
+    "explanation": "Coordination and balance.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Brainstem",
+    "category": "Psychology",
+    "explanation": "Basic life functions.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Limbic System",
+    "category": "Psychology",
+    "explanation": "Emotion and memory.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Hippocampus",
+    "category": "Psychology",
+    "explanation": "Crucial for memory formation.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Amygdala",
+    "category": "Psychology",
+    "explanation": "Emotion, especially fear.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Hypothalamus",
+    "category": "Psychology",
+    "explanation": "Homeostasis and motivated behaviors.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Thalamus",
+    "category": "Psychology",
+    "explanation": "Relay station for sensory information.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Cortex",
+    "category": "Psychology",
+    "explanation": "Outer layer; complex cognitive functions.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Frontal Lobe",
+    "category": "Psychology",
+    "explanation": "Executive functions, decision-making, personality.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Parietal Lobe",
+    "category": "Psychology",
+    "explanation": "Sensation and spatial processing.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Temporal Lobe",
+    "category": "Psychology",
+    "explanation": "Hearing, language, memory.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Occipital Lobe",
+    "category": "Psychology",
+    "explanation": "Vision.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Stress",
+    "category": "Psychology",
+    "explanation": "Response to challenging situations.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Fight-or-Flight",
+    "category": "Psychology",
+    "explanation": "Physiological response to threat.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Adaptation Syndrome",
+    "category": "Psychology",
+    "explanation": "Alarm, resistance, exhaustion.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Coping",
+    "category": "Psychology",
+    "explanation": "Strategies to deal with stress.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Mental Health",
+    "category": "Psychology",
+    "explanation": "State of psychological well-being.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Mental Disorder",
+    "category": "Psychology",
+    "explanation": "Pattern causing distress or dysfunction.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Anxiety Disorder",
+    "category": "Psychology",
+    "explanation": "Excessive fear or anxiety.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Mood Disorder",
+    "category": "Psychology",
+    "explanation": "Disturbance in emotion.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Schizophrenia",
+    "category": "Psychology",
+    "explanation": "Psychosis, delusions, hallucinations.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Depression",
+    "category": "Psychology",
+    "explanation": "Persistent sadness, loss of interest.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Psychotherapy",
+    "category": "Psychology",
+    "explanation": "Treatment through talking.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Cognitive-Behavioral Therapy",
+    "category": "Psychology",
+    "explanation": "Changing thoughts and behaviors.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Pharmacotherapy",
+    "category": "Psychology",
+    "explanation": "Treatment using medications.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Motivation",
+    "category": "Psychology",
+    "explanation": "Drive to engage in behavior.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Intrinsic Motivation",
+    "category": "Psychology",
+    "explanation": "Motivation from internal rewards.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Extrinsic Motivation",
+    "category": "Psychology",
+    "explanation": "Motivation from external rewards.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Maslow's Hierarchy",
+    "category": "Psychology",
+    "explanation": "Hierarchy of needs.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Emotion",
+    "category": "Psychology",
+    "explanation": "Subjective experience with physiological and behavioral components.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Social Psychology",
+    "category": "Psychology",
+    "explanation": "Study of individuals in social contexts.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Attribution",
+    "category": "Psychology",
+    "explanation": "Process of explaining behavior.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Cognitive Dissonance",
+    "category": "Psychology",
+    "explanation": "Discomfort from conflicting thoughts.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Conformity",
+    "category": "Psychology",
+    "explanation": "Changing behavior to match group.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Obedience",
+    "category": "Psychology",
+    "explanation": "Following authority figures' commands.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Prejudice",
+    "category": "Psychology",
+    "explanation": "Preconceived negative judgment.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Stereotype",
+    "category": "Psychology",
+    "explanation": "Belief about characteristics of a group.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Discrimination",
+    "category": "Psychology",
+    "explanation": "Unfair treatment based on group membership.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Classical Conditioning",
+    "category": "Psychology",
+    "explanation": "Learning through association; Pavlov.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Operant Conditioning",
+    "category": "Psychology",
+    "explanation": "Learning through consequences; Skinner.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Positive Reinforcement",
+    "category": "Psychology",
+    "explanation": "Adding reward to increase behavior.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Negative Reinforcement",
+    "category": "Psychology",
+    "explanation": "Removing aversive stimulus to increase behavior.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Positive Punishment",
+    "category": "Psychology",
+    "explanation": "Adding aversive stimulus to decrease behavior.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Negative Punishment",
+    "category": "Psychology",
+    "explanation": "Removing reward to decrease behavior.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Observational Learning",
+    "category": "Psychology",
+    "explanation": "Learning by watching others; Bandura.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Memory",
+    "category": "Psychology",
+    "explanation": "Encoding, storing, and retrieving information.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Sensory Memory",
+    "category": "Psychology",
+    "explanation": "Brief storage of sensory information.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Short-Term Memory",
+    "category": "Psychology",
+    "explanation": "Temporary storage of small information.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Long-Term Memory",
+    "category": "Psychology",
+    "explanation": "Relatively permanent storage.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Working Memory",
+    "category": "Psychology",
+    "explanation": "Active processing of information.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Explicit Memory",
+    "category": "Psychology",
+    "explanation": "Conscious recall of facts and events.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Implicit Memory",
+    "category": "Psychology",
+    "explanation": "Unconscious memory; skills and habits.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Encoding",
+    "category": "Psychology",
+    "explanation": "Getting information into memory.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Storage",
+    "category": "Psychology",
+    "explanation": "Maintaining information in memory.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Retrieval",
+    "category": "Psychology",
+    "explanation": "Accessing stored information.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Forgetting",
+    "category": "Psychology",
+    "explanation": "Failure to retrieve information.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Amnesia",
+    "category": "Psychology",
+    "explanation": "Loss of memory due to brain damage or trauma.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Retrograde Amnesia",
+    "category": "Psychology",
+    "explanation": "Inability to recall past memories.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Anterograde Amnesia",
+    "category": "Psychology",
+    "explanation": "Inability to form new memories.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Intelligence",
+    "category": "Psychology",
+    "explanation": "Ability to learn, reason, and solve problems.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "IQ",
+    "category": "Psychology",
+    "explanation": "Intelligence quotient; standardized measure.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Emotional Intelligence",
+    "category": "Psychology",
+    "explanation": "Ability to perceive, understand, and manage emotions.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Personality",
+    "category": "Psychology",
+    "explanation": "Characteristic patterns of thoughts, feelings, and behaviors.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Trait",
+    "category": "Psychology",
+    "explanation": "Stable characteristic of personality.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Big Five",
+    "category": "Psychology",
+    "explanation": "OCEAN: openness, conscientiousness, extraversion, agreeableness, neuroticism.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Psychoanalytic Theory",
+    "category": "Psychology",
+    "explanation": "Freud; unconscious drives influence behavior.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Humanistic Theory",
+    "category": "Psychology",
+    "explanation": "Focus on human potential and self-actualization.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Behaviorism",
+    "category": "Psychology",
+    "explanation": "Focus on observable behavior.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Cognitive Psychology",
+    "category": "Psychology",
+    "explanation": "Focus on mental processes.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Neuron",
+    "category": "Psychology",
+    "explanation": "Nerve cell; basic unit of nervous system.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Synapse",
+    "category": "Psychology",
+    "explanation": "Junction between neurons.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Neurotransmitter",
+    "category": "Psychology",
+    "explanation": "Chemical transmitting across synapse.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Dopamine",
+    "category": "Psychology",
+    "explanation": "Reward and movement.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Serotonin",
+    "category": "Psychology",
+    "explanation": "Mood and sleep.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Norepinephrine",
+    "category": "Psychology",
+    "explanation": "Arousal and alertness.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Acetylcholine",
+    "category": "Psychology",
+    "explanation": "Muscle contraction and memory.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "GABA",
+    "category": "Psychology",
+    "explanation": "Inhibitory neurotransmitter.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Glutamate",
+    "category": "Psychology",
+    "explanation": "Excitatory neurotransmitter.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Brain",
+    "category": "Psychology",
+    "explanation": "Controls thoughts, emotions, behavior.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Cerebrum",
+    "category": "Psychology",
+    "explanation": "Largest brain region; higher cognitive functions.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Cerebellum",
+    "category": "Psychology",
+    "explanation": "Coordination and balance.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Brainstem",
+    "category": "Psychology",
+    "explanation": "Basic life functions.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Limbic System",
+    "category": "Psychology",
+    "explanation": "Emotion and memory.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Hippocampus",
+    "category": "Psychology",
+    "explanation": "Crucial for memory formation.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Amygdala",
+    "category": "Psychology",
+    "explanation": "Emotion, especially fear.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Hypothalamus",
+    "category": "Psychology",
+    "explanation": "Homeostasis and motivated behaviors.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Thalamus",
+    "category": "Psychology",
+    "explanation": "Relay station for sensory information.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Cortex",
+    "category": "Psychology",
+    "explanation": "Outer layer; complex cognitive functions.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Frontal Lobe",
+    "category": "Psychology",
+    "explanation": "Executive functions, decision-making, personality.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Parietal Lobe",
+    "category": "Psychology",
+    "explanation": "Sensation and spatial processing.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Temporal Lobe",
+    "category": "Psychology",
+    "explanation": "Hearing, language, memory.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Occipital Lobe",
+    "category": "Psychology",
+    "explanation": "Vision.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Stress",
+    "category": "Psychology",
+    "explanation": "Response to challenging situations.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Fight-or-Flight",
+    "category": "Psychology",
+    "explanation": "Physiological response to threat.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Adaptation Syndrome",
+    "category": "Psychology",
+    "explanation": "Alarm, resistance, exhaustion.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Coping",
+    "category": "Psychology",
+    "explanation": "Strategies to deal with stress.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Mental Health",
+    "category": "Psychology",
+    "explanation": "State of psychological well-being.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Mental Disorder",
+    "category": "Psychology",
+    "explanation": "Pattern causing distress or dysfunction.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Anxiety Disorder",
+    "category": "Psychology",
+    "explanation": "Excessive fear or anxiety.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Mood Disorder",
+    "category": "Psychology",
+    "explanation": "Disturbance in emotion.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Schizophrenia",
+    "category": "Psychology",
+    "explanation": "Psychosis, delusions, hallucinations.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Depression",
+    "category": "Psychology",
+    "explanation": "Persistent sadness, loss of interest.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Psychotherapy",
+    "category": "Psychology",
+    "explanation": "Treatment through talking.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Cognitive-Behavioral Therapy",
+    "category": "Psychology",
+    "explanation": "Changing thoughts and behaviors.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Pharmacotherapy",
+    "category": "Psychology",
+    "explanation": "Treatment using medications.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Motivation",
+    "category": "Psychology",
+    "explanation": "Drive to engage in behavior.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Intrinsic Motivation",
+    "category": "Psychology",
+    "explanation": "Motivation from internal rewards.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Extrinsic Motivation",
+    "category": "Psychology",
+    "explanation": "Motivation from external rewards.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Maslow's Hierarchy",
+    "category": "Psychology",
+    "explanation": "Hierarchy of needs.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Emotion",
+    "category": "Psychology",
+    "explanation": "Subjective experience with physiological and behavioral components.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Social Psychology",
+    "category": "Psychology",
+    "explanation": "Study of individuals in social contexts.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Attribution",
+    "category": "Psychology",
+    "explanation": "Process of explaining behavior.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Cognitive Dissonance",
+    "category": "Psychology",
+    "explanation": "Discomfort from conflicting thoughts.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Conformity",
+    "category": "Psychology",
+    "explanation": "Changing behavior to match group.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Obedience",
+    "category": "Psychology",
+    "explanation": "Following authority figures' commands.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Prejudice",
+    "category": "Psychology",
+    "explanation": "Preconceived negative judgment.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Stereotype",
+    "category": "Psychology",
+    "explanation": "Belief about characteristics of a group.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Discrimination",
+    "category": "Psychology",
+    "explanation": "Unfair treatment based on group membership.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Classical Conditioning",
+    "category": "Psychology",
+    "explanation": "Learning through association; Pavlov.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Operant Conditioning",
+    "category": "Psychology",
+    "explanation": "Learning through consequences; Skinner.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Positive Reinforcement",
+    "category": "Psychology",
+    "explanation": "Adding reward to increase behavior.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Negative Reinforcement",
+    "category": "Psychology",
+    "explanation": "Removing aversive stimulus to increase behavior.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Positive Punishment",
+    "category": "Psychology",
+    "explanation": "Adding aversive stimulus to decrease behavior.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Negative Punishment",
+    "category": "Psychology",
+    "explanation": "Removing reward to decrease behavior.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Observational Learning",
+    "category": "Psychology",
+    "explanation": "Learning by watching others; Bandura.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Memory",
+    "category": "Psychology",
+    "explanation": "Encoding, storing, and retrieving information.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Sensory Memory",
+    "category": "Psychology",
+    "explanation": "Brief storage of sensory information.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Short-Term Memory",
+    "category": "Psychology",
+    "explanation": "Temporary storage of small information.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Long-Term Memory",
+    "category": "Psychology",
+    "explanation": "Relatively permanent storage.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Working Memory",
+    "category": "Psychology",
+    "explanation": "Active processing of information.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Explicit Memory",
+    "category": "Psychology",
+    "explanation": "Conscious recall of facts and events.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Implicit Memory",
+    "category": "Psychology",
+    "explanation": "Unconscious memory; skills and habits.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Encoding",
+    "category": "Psychology",
+    "explanation": "Getting information into memory.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Storage",
+    "category": "Psychology",
+    "explanation": "Maintaining information in memory.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Retrieval",
+    "category": "Psychology",
+    "explanation": "Accessing stored information.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Forgetting",
+    "category": "Psychology",
+    "explanation": "Failure to retrieve information.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Amnesia",
+    "category": "Psychology",
+    "explanation": "Loss of memory due to brain damage or trauma.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Retrograde Amnesia",
+    "category": "Psychology",
+    "explanation": "Inability to recall past memories.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Anterograde Amnesia",
+    "category": "Psychology",
+    "explanation": "Inability to form new memories.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Intelligence",
+    "category": "Psychology",
+    "explanation": "Ability to learn, reason, and solve problems.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "IQ",
+    "category": "Psychology",
+    "explanation": "Intelligence quotient; standardized measure.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Emotional Intelligence",
+    "category": "Psychology",
+    "explanation": "Ability to perceive, understand, and manage emotions.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Personality",
+    "category": "Psychology",
+    "explanation": "Characteristic patterns of thoughts, feelings, and behaviors.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Trait",
+    "category": "Psychology",
+    "explanation": "Stable characteristic of personality.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Big Five",
+    "category": "Psychology",
+    "explanation": "OCEAN: openness, conscientiousness, extraversion, agreeableness, neuroticism.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Psychoanalytic Theory",
+    "category": "Psychology",
+    "explanation": "Freud; unconscious drives influence behavior.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Humanistic Theory",
+    "category": "Psychology",
+    "explanation": "Focus on human potential and self-actualization.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Behaviorism",
+    "category": "Psychology",
+    "explanation": "Focus on observable behavior.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Cognitive Psychology",
+    "category": "Psychology",
+    "explanation": "Focus on mental processes.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Neuron",
+    "category": "Psychology",
+    "explanation": "Nerve cell; basic unit of nervous system.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Synapse",
+    "category": "Psychology",
+    "explanation": "Junction between neurons.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Neurotransmitter",
+    "category": "Psychology",
+    "explanation": "Chemical transmitting across synapse.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Dopamine",
+    "category": "Psychology",
+    "explanation": "Reward and movement.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Serotonin",
+    "category": "Psychology",
+    "explanation": "Mood and sleep.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Norepinephrine",
+    "category": "Psychology",
+    "explanation": "Arousal and alertness.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Acetylcholine",
+    "category": "Psychology",
+    "explanation": "Muscle contraction and memory.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "GABA",
+    "category": "Psychology",
+    "explanation": "Inhibitory neurotransmitter.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Glutamate",
+    "category": "Psychology",
+    "explanation": "Excitatory neurotransmitter.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Brain",
+    "category": "Psychology",
+    "explanation": "Controls thoughts, emotions, behavior.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Cerebrum",
+    "category": "Psychology",
+    "explanation": "Largest brain region; higher cognitive functions.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Cerebellum",
+    "category": "Psychology",
+    "explanation": "Coordination and balance.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Brainstem",
+    "category": "Psychology",
+    "explanation": "Basic life functions.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Limbic System",
+    "category": "Psychology",
+    "explanation": "Emotion and memory.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Hippocampus",
+    "category": "Psychology",
+    "explanation": "Crucial for memory formation.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Amygdala",
+    "category": "Psychology",
+    "explanation": "Emotion, especially fear.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Hypothalamus",
+    "category": "Psychology",
+    "explanation": "Homeostasis and motivated behaviors.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Thalamus",
+    "category": "Psychology",
+    "explanation": "Relay station for sensory information.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Cortex",
+    "category": "Psychology",
+    "explanation": "Outer layer; complex cognitive functions.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Frontal Lobe",
+    "category": "Psychology",
+    "explanation": "Executive functions, decision-making, personality.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Parietal Lobe",
+    "category": "Psychology",
+    "explanation": "Sensation and spatial processing.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Temporal Lobe",
+    "category": "Psychology",
+    "explanation": "Hearing, language, memory.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Occipital Lobe",
+    "category": "Psychology",
+    "explanation": "Vision.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Stress",
+    "category": "Psychology",
+    "explanation": "Response to challenging situations.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Fight-or-Flight",
+    "category": "Psychology",
+    "explanation": "Physiological response to threat.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Adaptation Syndrome",
+    "category": "Psychology",
+    "explanation": "Alarm, resistance, exhaustion.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Coping",
+    "category": "Psychology",
+    "explanation": "Strategies to deal with stress.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Mental Health",
+    "category": "Psychology",
+    "explanation": "State of psychological well-being.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Mental Disorder",
+    "category": "Psychology",
+    "explanation": "Pattern causing distress or dysfunction.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Anxiety Disorder",
+    "category": "Psychology",
+    "explanation": "Excessive fear or anxiety.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Mood Disorder",
+    "category": "Psychology",
+    "explanation": "Disturbance in emotion.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Schizophrenia",
+    "category": "Psychology",
+    "explanation": "Psychosis, delusions, hallucinations.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Depression",
+    "category": "Psychology",
+    "explanation": "Persistent sadness, loss of interest.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Psychotherapy",
+    "category": "Psychology",
+    "explanation": "Treatment through talking.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Cognitive-Behavioral Therapy",
+    "category": "Psychology",
+    "explanation": "Changing thoughts and behaviors.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Pharmacotherapy",
+    "category": "Psychology",
+    "explanation": "Treatment using medications.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Motivation",
+    "category": "Psychology",
+    "explanation": "Drive to engage in behavior.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Intrinsic Motivation",
+    "category": "Psychology",
+    "explanation": "Motivation from internal rewards.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Extrinsic Motivation",
+    "category": "Psychology",
+    "explanation": "Motivation from external rewards.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Maslow's Hierarchy",
+    "category": "Psychology",
+    "explanation": "Hierarchy of needs.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Emotion",
+    "category": "Psychology",
+    "explanation": "Subjective experience with physiological and behavioral components.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Social Psychology",
+    "category": "Psychology",
+    "explanation": "Study of individuals in social contexts.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Attribution",
+    "category": "Psychology",
+    "explanation": "Process of explaining behavior.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Cognitive Dissonance",
+    "category": "Psychology",
+    "explanation": "Discomfort from conflicting thoughts.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Conformity",
+    "category": "Psychology",
+    "explanation": "Changing behavior to match group.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Obedience",
+    "category": "Psychology",
+    "explanation": "Following authority figures' commands.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Prejudice",
+    "category": "Psychology",
+    "explanation": "Preconceived negative judgment.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Stereotype",
+    "category": "Psychology",
+    "explanation": "Belief about characteristics of a group.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Discrimination",
+    "category": "Psychology",
+    "explanation": "Unfair treatment based on group membership.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Classical Conditioning",
+    "category": "Psychology",
+    "explanation": "Learning through association; Pavlov.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Operant Conditioning",
+    "category": "Psychology",
+    "explanation": "Learning through consequences; Skinner.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Positive Reinforcement",
+    "category": "Psychology",
+    "explanation": "Adding reward to increase behavior.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Negative Reinforcement",
+    "category": "Psychology",
+    "explanation": "Removing aversive stimulus to increase behavior.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Positive Punishment",
+    "category": "Psychology",
+    "explanation": "Adding aversive stimulus to decrease behavior.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Negative Punishment",
+    "category": "Psychology",
+    "explanation": "Removing reward to decrease behavior.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Observational Learning",
+    "category": "Psychology",
+    "explanation": "Learning by watching others; Bandura.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Memory",
+    "category": "Psychology",
+    "explanation": "Encoding, storing, and retrieving information.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Sensory Memory",
+    "category": "Psychology",
+    "explanation": "Brief storage of sensory information.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Short-Term Memory",
+    "category": "Psychology",
+    "explanation": "Temporary storage of small information.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Long-Term Memory",
+    "category": "Psychology",
+    "explanation": "Relatively permanent storage.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Working Memory",
+    "category": "Psychology",
+    "explanation": "Active processing of information.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Explicit Memory",
+    "category": "Psychology",
+    "explanation": "Conscious recall of facts and events.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Implicit Memory",
+    "category": "Psychology",
+    "explanation": "Unconscious memory; skills and habits.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Encoding",
+    "category": "Psychology",
+    "explanation": "Getting information into memory.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Storage",
+    "category": "Psychology",
+    "explanation": "Maintaining information in memory.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Retrieval",
+    "category": "Psychology",
+    "explanation": "Accessing stored information.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Forgetting",
+    "category": "Psychology",
+    "explanation": "Failure to retrieve information.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Amnesia",
+    "category": "Psychology",
+    "explanation": "Loss of memory due to brain damage or trauma.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Retrograde Amnesia",
+    "category": "Psychology",
+    "explanation": "Inability to recall past memories.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Anterograde Amnesia",
+    "category": "Psychology",
+    "explanation": "Inability to form new memories.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Intelligence",
+    "category": "Psychology",
+    "explanation": "Ability to learn, reason, and solve problems.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "IQ",
+    "category": "Psychology",
+    "explanation": "Intelligence quotient; standardized measure.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Emotional Intelligence",
+    "category": "Psychology",
+    "explanation": "Ability to perceive, understand, and manage emotions.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Personality",
+    "category": "Psychology",
+    "explanation": "Characteristic patterns of thoughts, feelings, and behaviors.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Trait",
+    "category": "Psychology",
+    "explanation": "Stable characteristic of personality.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Big Five",
+    "category": "Psychology",
+    "explanation": "OCEAN: openness, conscientiousness, extraversion, agreeableness, neuroticism.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Psychoanalytic Theory",
+    "category": "Psychology",
+    "explanation": "Freud; unconscious drives influence behavior.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Humanistic Theory",
+    "category": "Psychology",
+    "explanation": "Focus on human potential and self-actualization.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Behaviorism",
+    "category": "Psychology",
+    "explanation": "Focus on observable behavior.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Cognitive Psychology",
+    "category": "Psychology",
+    "explanation": "Focus on mental processes.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Neuron",
+    "category": "Psychology",
+    "explanation": "Nerve cell; basic unit of nervous system.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Synapse",
+    "category": "Psychology",
+    "explanation": "Junction between neurons.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Neurotransmitter",
+    "category": "Psychology",
+    "explanation": "Chemical transmitting across synapse.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Dopamine",
+    "category": "Psychology",
+    "explanation": "Reward and movement.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Serotonin",
+    "category": "Psychology",
+    "explanation": "Mood and sleep.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Norepinephrine",
+    "category": "Psychology",
+    "explanation": "Arousal and alertness.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Acetylcholine",
+    "category": "Psychology",
+    "explanation": "Muscle contraction and memory.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "GABA",
+    "category": "Psychology",
+    "explanation": "Inhibitory neurotransmitter.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Glutamate",
+    "category": "Psychology",
+    "explanation": "Excitatory neurotransmitter.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Brain",
+    "category": "Psychology",
+    "explanation": "Controls thoughts, emotions, behavior.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Cerebrum",
+    "category": "Psychology",
+    "explanation": "Largest brain region; higher cognitive functions.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Cerebellum",
+    "category": "Psychology",
+    "explanation": "Coordination and balance.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Brainstem",
+    "category": "Psychology",
+    "explanation": "Basic life functions.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Limbic System",
+    "category": "Psychology",
+    "explanation": "Emotion and memory.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Hippocampus",
+    "category": "Psychology",
+    "explanation": "Crucial for memory formation.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Amygdala",
+    "category": "Psychology",
+    "explanation": "Emotion, especially fear.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Hypothalamus",
+    "category": "Psychology",
+    "explanation": "Homeostasis and motivated behaviors.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Thalamus",
+    "category": "Psychology",
+    "explanation": "Relay station for sensory information.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Cortex",
+    "category": "Psychology",
+    "explanation": "Outer layer; complex cognitive functions.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Frontal Lobe",
+    "category": "Psychology",
+    "explanation": "Executive functions, decision-making, personality.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Parietal Lobe",
+    "category": "Psychology",
+    "explanation": "Sensation and spatial processing.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Temporal Lobe",
+    "category": "Psychology",
+    "explanation": "Hearing, language, memory.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Occipital Lobe",
+    "category": "Psychology",
+    "explanation": "Vision.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Stress",
+    "category": "Psychology",
+    "explanation": "Response to challenging situations.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Fight-or-Flight",
+    "category": "Psychology",
+    "explanation": "Physiological response to threat.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Adaptation Syndrome",
+    "category": "Psychology",
+    "explanation": "Alarm, resistance, exhaustion.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Coping",
+    "category": "Psychology",
+    "explanation": "Strategies to deal with stress.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Mental Health",
+    "category": "Psychology",
+    "explanation": "State of psychological well-being.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Mental Disorder",
+    "category": "Psychology",
+    "explanation": "Pattern causing distress or dysfunction.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Anxiety Disorder",
+    "category": "Psychology",
+    "explanation": "Excessive fear or anxiety.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Mood Disorder",
+    "category": "Psychology",
+    "explanation": "Disturbance in emotion.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Schizophrenia",
+    "category": "Psychology",
+    "explanation": "Psychosis, delusions, hallucinations.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Depression",
+    "category": "Psychology",
+    "explanation": "Persistent sadness, loss of interest.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Psychotherapy",
+    "category": "Psychology",
+    "explanation": "Treatment through talking.",
+    "tabooWords": [],
+    "difficulty": 5
+  }
+]
