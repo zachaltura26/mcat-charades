@@ -1,0 +1,4377 @@
+[
+  {
+    "term": "Alanine",
+    "category": "Amino Acids",
+    "explanation": "Ala (A) - Nonpolar, aliphatic side chain.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Arginine",
+    "category": "Amino Acids",
+    "explanation": "Arg (R) - Positively charged basic side chain.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Asparagine",
+    "category": "Amino Acids",
+    "explanation": "Asn (N) - Polar, uncharged side chain.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Aspartic Acid",
+    "category": "Amino Acids",
+    "explanation": "Asp (D) - Negatively charged acidic side chain.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Cysteine",
+    "category": "Amino Acids",
+    "explanation": "Cys (C) - Polar side chain with thiol (-SH) group.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Glutamine",
+    "category": "Amino Acids",
+    "explanation": "Gln (Q) - Polar, uncharged side chain with amide.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Glutamic Acid",
+    "category": "Amino Acids",
+    "explanation": "Glu (E) - Negatively charged acidic side chain.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Glycine",
+    "category": "Amino Acids",
+    "explanation": "Gly (G) - Simplest nonpolar amino acid.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Histidine",
+    "category": "Amino Acids",
+    "explanation": "His (H) - Aromatic basic side chain.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Isoleucine",
+    "category": "Amino Acids",
+    "explanation": "Ile (I) - Aliphatic branched nonpolar.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Leucine",
+    "category": "Amino Acids",
+    "explanation": "Leu (L) - Aliphatic branched nonpolar.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Lysine",
+    "category": "Amino Acids",
+    "explanation": "Lys (K) - Positively charged basic side chain.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Methionine",
+    "category": "Amino Acids",
+    "explanation": "Met (M) - Nonpolar thioether side chain.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Phenylalanine",
+    "category": "Amino Acids",
+    "explanation": "Phe (F) - Nonpolar hydrophobic aromatic.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Proline",
+    "category": "Amino Acids",
+    "explanation": "Pro (P) - Rigid cyclic secondary amino acid.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Serine",
+    "category": "Amino Acids",
+    "explanation": "Ser (S) - Polar uncharged with hydroxyl (-OH).",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Threonine",
+    "category": "Amino Acids",
+    "explanation": "Thr (T) - Polar uncharged with secondary alcohol.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Tryptophan",
+    "category": "Amino Acids",
+    "explanation": "Trp (W) - Bulky bicyclic aromatic nonpolar.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Tyrosine",
+    "category": "Amino Acids",
+    "explanation": "Tyr (Y) - Amphipathic aromatic polar.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Valine",
+    "category": "Amino Acids",
+    "explanation": "Val (V) - Aliphatic branched nonpolar.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Alanine",
+    "category": "Amino Acids",
+    "explanation": "Ala (A) - Nonpolar, aliphatic side chain.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Arginine",
+    "category": "Amino Acids",
+    "explanation": "Arg (R) - Positively charged basic side chain.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Asparagine",
+    "category": "Amino Acids",
+    "explanation": "Asn (N) - Polar, uncharged side chain.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Aspartic Acid",
+    "category": "Amino Acids",
+    "explanation": "Asp (D) - Negatively charged acidic side chain.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Cysteine",
+    "category": "Amino Acids",
+    "explanation": "Cys (C) - Polar side chain with thiol (-SH) group.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Glutamine",
+    "category": "Amino Acids",
+    "explanation": "Gln (Q) - Polar, uncharged side chain with amide.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Glutamic Acid",
+    "category": "Amino Acids",
+    "explanation": "Glu (E) - Negatively charged acidic side chain.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Glycine",
+    "category": "Amino Acids",
+    "explanation": "Gly (G) - Simplest nonpolar amino acid.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Histidine",
+    "category": "Amino Acids",
+    "explanation": "His (H) - Aromatic basic side chain.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Isoleucine",
+    "category": "Amino Acids",
+    "explanation": "Ile (I) - Aliphatic branched nonpolar.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Leucine",
+    "category": "Amino Acids",
+    "explanation": "Leu (L) - Aliphatic branched nonpolar.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Lysine",
+    "category": "Amino Acids",
+    "explanation": "Lys (K) - Positively charged basic side chain.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Methionine",
+    "category": "Amino Acids",
+    "explanation": "Met (M) - Nonpolar thioether side chain.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Phenylalanine",
+    "category": "Amino Acids",
+    "explanation": "Phe (F) - Nonpolar hydrophobic aromatic.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Proline",
+    "category": "Amino Acids",
+    "explanation": "Pro (P) - Rigid cyclic secondary amino acid.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Serine",
+    "category": "Amino Acids",
+    "explanation": "Ser (S) - Polar uncharged with hydroxyl (-OH).",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Threonine",
+    "category": "Amino Acids",
+    "explanation": "Thr (T) - Polar uncharged with secondary alcohol.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Tryptophan",
+    "category": "Amino Acids",
+    "explanation": "Trp (W) - Bulky bicyclic aromatic nonpolar.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Tyrosine",
+    "category": "Amino Acids",
+    "explanation": "Tyr (Y) - Amphipathic aromatic polar.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Valine",
+    "category": "Amino Acids",
+    "explanation": "Val (V) - Aliphatic branched nonpolar.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Alanine",
+    "category": "Amino Acids",
+    "explanation": "Ala (A) - Nonpolar, aliphatic side chain.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Arginine",
+    "category": "Amino Acids",
+    "explanation": "Arg (R) - Positively charged basic side chain.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Asparagine",
+    "category": "Amino Acids",
+    "explanation": "Asn (N) - Polar, uncharged side chain.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Aspartic Acid",
+    "category": "Amino Acids",
+    "explanation": "Asp (D) - Negatively charged acidic side chain.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Cysteine",
+    "category": "Amino Acids",
+    "explanation": "Cys (C) - Polar side chain with thiol (-SH) group.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Glutamine",
+    "category": "Amino Acids",
+    "explanation": "Gln (Q) - Polar, uncharged side chain with amide.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Glutamic Acid",
+    "category": "Amino Acids",
+    "explanation": "Glu (E) - Negatively charged acidic side chain.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Glycine",
+    "category": "Amino Acids",
+    "explanation": "Gly (G) - Simplest nonpolar amino acid.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Histidine",
+    "category": "Amino Acids",
+    "explanation": "His (H) - Aromatic basic side chain.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Isoleucine",
+    "category": "Amino Acids",
+    "explanation": "Ile (I) - Aliphatic branched nonpolar.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Leucine",
+    "category": "Amino Acids",
+    "explanation": "Leu (L) - Aliphatic branched nonpolar.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Lysine",
+    "category": "Amino Acids",
+    "explanation": "Lys (K) - Positively charged basic side chain.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Methionine",
+    "category": "Amino Acids",
+    "explanation": "Met (M) - Nonpolar thioether side chain.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Phenylalanine",
+    "category": "Amino Acids",
+    "explanation": "Phe (F) - Nonpolar hydrophobic aromatic.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Proline",
+    "category": "Amino Acids",
+    "explanation": "Pro (P) - Rigid cyclic secondary amino acid.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Serine",
+    "category": "Amino Acids",
+    "explanation": "Ser (S) - Polar uncharged with hydroxyl (-OH).",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Threonine",
+    "category": "Amino Acids",
+    "explanation": "Thr (T) - Polar uncharged with secondary alcohol.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Tryptophan",
+    "category": "Amino Acids",
+    "explanation": "Trp (W) - Bulky bicyclic aromatic nonpolar.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Tyrosine",
+    "category": "Amino Acids",
+    "explanation": "Tyr (Y) - Amphipathic aromatic polar.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Valine",
+    "category": "Amino Acids",
+    "explanation": "Val (V) - Aliphatic branched nonpolar.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Alanine",
+    "category": "Amino Acids",
+    "explanation": "Ala (A) - Nonpolar, aliphatic side chain.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Arginine",
+    "category": "Amino Acids",
+    "explanation": "Arg (R) - Positively charged basic side chain.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Asparagine",
+    "category": "Amino Acids",
+    "explanation": "Asn (N) - Polar, uncharged side chain.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Aspartic Acid",
+    "category": "Amino Acids",
+    "explanation": "Asp (D) - Negatively charged acidic side chain.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Cysteine",
+    "category": "Amino Acids",
+    "explanation": "Cys (C) - Polar side chain with thiol (-SH) group.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Glutamine",
+    "category": "Amino Acids",
+    "explanation": "Gln (Q) - Polar, uncharged side chain with amide.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Glutamic Acid",
+    "category": "Amino Acids",
+    "explanation": "Glu (E) - Negatively charged acidic side chain.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Glycine",
+    "category": "Amino Acids",
+    "explanation": "Gly (G) - Simplest nonpolar amino acid.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Histidine",
+    "category": "Amino Acids",
+    "explanation": "His (H) - Aromatic basic side chain.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Isoleucine",
+    "category": "Amino Acids",
+    "explanation": "Ile (I) - Aliphatic branched nonpolar.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Leucine",
+    "category": "Amino Acids",
+    "explanation": "Leu (L) - Aliphatic branched nonpolar.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Lysine",
+    "category": "Amino Acids",
+    "explanation": "Lys (K) - Positively charged basic side chain.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Methionine",
+    "category": "Amino Acids",
+    "explanation": "Met (M) - Nonpolar thioether side chain.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Phenylalanine",
+    "category": "Amino Acids",
+    "explanation": "Phe (F) - Nonpolar hydrophobic aromatic.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Proline",
+    "category": "Amino Acids",
+    "explanation": "Pro (P) - Rigid cyclic secondary amino acid.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Serine",
+    "category": "Amino Acids",
+    "explanation": "Ser (S) - Polar uncharged with hydroxyl (-OH).",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Threonine",
+    "category": "Amino Acids",
+    "explanation": "Thr (T) - Polar uncharged with secondary alcohol.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Tryptophan",
+    "category": "Amino Acids",
+    "explanation": "Trp (W) - Bulky bicyclic aromatic nonpolar.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Tyrosine",
+    "category": "Amino Acids",
+    "explanation": "Tyr (Y) - Amphipathic aromatic polar.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Valine",
+    "category": "Amino Acids",
+    "explanation": "Val (V) - Aliphatic branched nonpolar.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Alanine",
+    "category": "Amino Acids",
+    "explanation": "Ala (A) - Nonpolar, aliphatic side chain.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Arginine",
+    "category": "Amino Acids",
+    "explanation": "Arg (R) - Positively charged basic side chain.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Asparagine",
+    "category": "Amino Acids",
+    "explanation": "Asn (N) - Polar, uncharged side chain.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Aspartic Acid",
+    "category": "Amino Acids",
+    "explanation": "Asp (D) - Negatively charged acidic side chain.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Cysteine",
+    "category": "Amino Acids",
+    "explanation": "Cys (C) - Polar side chain with thiol (-SH) group.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Glutamine",
+    "category": "Amino Acids",
+    "explanation": "Gln (Q) - Polar, uncharged side chain with amide.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Glutamic Acid",
+    "category": "Amino Acids",
+    "explanation": "Glu (E) - Negatively charged acidic side chain.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Glycine",
+    "category": "Amino Acids",
+    "explanation": "Gly (G) - Simplest nonpolar amino acid.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Histidine",
+    "category": "Amino Acids",
+    "explanation": "His (H) - Aromatic basic side chain.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Isoleucine",
+    "category": "Amino Acids",
+    "explanation": "Ile (I) - Aliphatic branched nonpolar.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Leucine",
+    "category": "Amino Acids",
+    "explanation": "Leu (L) - Aliphatic branched nonpolar.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Lysine",
+    "category": "Amino Acids",
+    "explanation": "Lys (K) - Positively charged basic side chain.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Methionine",
+    "category": "Amino Acids",
+    "explanation": "Met (M) - Nonpolar thioether side chain.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Phenylalanine",
+    "category": "Amino Acids",
+    "explanation": "Phe (F) - Nonpolar hydrophobic aromatic.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Proline",
+    "category": "Amino Acids",
+    "explanation": "Pro (P) - Rigid cyclic secondary amino acid.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Serine",
+    "category": "Amino Acids",
+    "explanation": "Ser (S) - Polar uncharged with hydroxyl (-OH).",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Threonine",
+    "category": "Amino Acids",
+    "explanation": "Thr (T) - Polar uncharged with secondary alcohol.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Tryptophan",
+    "category": "Amino Acids",
+    "explanation": "Trp (W) - Bulky bicyclic aromatic nonpolar.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Tyrosine",
+    "category": "Amino Acids",
+    "explanation": "Tyr (Y) - Amphipathic aromatic polar.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Valine",
+    "category": "Amino Acids",
+    "explanation": "Val (V) - Aliphatic branched nonpolar.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Alanine",
+    "category": "Amino Acids",
+    "explanation": "Ala (A) - Nonpolar, aliphatic side chain.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Arginine",
+    "category": "Amino Acids",
+    "explanation": "Arg (R) - Positively charged basic side chain.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Asparagine",
+    "category": "Amino Acids",
+    "explanation": "Asn (N) - Polar, uncharged side chain.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Aspartic Acid",
+    "category": "Amino Acids",
+    "explanation": "Asp (D) - Negatively charged acidic side chain.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Cysteine",
+    "category": "Amino Acids",
+    "explanation": "Cys (C) - Polar side chain with thiol (-SH) group.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Glutamine",
+    "category": "Amino Acids",
+    "explanation": "Gln (Q) - Polar, uncharged side chain with amide.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Glutamic Acid",
+    "category": "Amino Acids",
+    "explanation": "Glu (E) - Negatively charged acidic side chain.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Glycine",
+    "category": "Amino Acids",
+    "explanation": "Gly (G) - Simplest nonpolar amino acid.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Histidine",
+    "category": "Amino Acids",
+    "explanation": "His (H) - Aromatic basic side chain.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Isoleucine",
+    "category": "Amino Acids",
+    "explanation": "Ile (I) - Aliphatic branched nonpolar.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Leucine",
+    "category": "Amino Acids",
+    "explanation": "Leu (L) - Aliphatic branched nonpolar.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Lysine",
+    "category": "Amino Acids",
+    "explanation": "Lys (K) - Positively charged basic side chain.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Methionine",
+    "category": "Amino Acids",
+    "explanation": "Met (M) - Nonpolar thioether side chain.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Phenylalanine",
+    "category": "Amino Acids",
+    "explanation": "Phe (F) - Nonpolar hydrophobic aromatic.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Proline",
+    "category": "Amino Acids",
+    "explanation": "Pro (P) - Rigid cyclic secondary amino acid.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Serine",
+    "category": "Amino Acids",
+    "explanation": "Ser (S) - Polar uncharged with hydroxyl (-OH).",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Threonine",
+    "category": "Amino Acids",
+    "explanation": "Thr (T) - Polar uncharged with secondary alcohol.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Tryptophan",
+    "category": "Amino Acids",
+    "explanation": "Trp (W) - Bulky bicyclic aromatic nonpolar.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Tyrosine",
+    "category": "Amino Acids",
+    "explanation": "Tyr (Y) - Amphipathic aromatic polar.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Valine",
+    "category": "Amino Acids",
+    "explanation": "Val (V) - Aliphatic branched nonpolar.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Alanine",
+    "category": "Amino Acids",
+    "explanation": "Ala (A) - Nonpolar, aliphatic side chain.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Arginine",
+    "category": "Amino Acids",
+    "explanation": "Arg (R) - Positively charged basic side chain.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Asparagine",
+    "category": "Amino Acids",
+    "explanation": "Asn (N) - Polar, uncharged side chain.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Aspartic Acid",
+    "category": "Amino Acids",
+    "explanation": "Asp (D) - Negatively charged acidic side chain.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Cysteine",
+    "category": "Amino Acids",
+    "explanation": "Cys (C) - Polar side chain with thiol (-SH) group.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Glutamine",
+    "category": "Amino Acids",
+    "explanation": "Gln (Q) - Polar, uncharged side chain with amide.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Glutamic Acid",
+    "category": "Amino Acids",
+    "explanation": "Glu (E) - Negatively charged acidic side chain.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Glycine",
+    "category": "Amino Acids",
+    "explanation": "Gly (G) - Simplest nonpolar amino acid.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Histidine",
+    "category": "Amino Acids",
+    "explanation": "His (H) - Aromatic basic side chain.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Isoleucine",
+    "category": "Amino Acids",
+    "explanation": "Ile (I) - Aliphatic branched nonpolar.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Leucine",
+    "category": "Amino Acids",
+    "explanation": "Leu (L) - Aliphatic branched nonpolar.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Lysine",
+    "category": "Amino Acids",
+    "explanation": "Lys (K) - Positively charged basic side chain.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Methionine",
+    "category": "Amino Acids",
+    "explanation": "Met (M) - Nonpolar thioether side chain.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Phenylalanine",
+    "category": "Amino Acids",
+    "explanation": "Phe (F) - Nonpolar hydrophobic aromatic.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Proline",
+    "category": "Amino Acids",
+    "explanation": "Pro (P) - Rigid cyclic secondary amino acid.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Serine",
+    "category": "Amino Acids",
+    "explanation": "Ser (S) - Polar uncharged with hydroxyl (-OH).",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Threonine",
+    "category": "Amino Acids",
+    "explanation": "Thr (T) - Polar uncharged with secondary alcohol.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Tryptophan",
+    "category": "Amino Acids",
+    "explanation": "Trp (W) - Bulky bicyclic aromatic nonpolar.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Tyrosine",
+    "category": "Amino Acids",
+    "explanation": "Tyr (Y) - Amphipathic aromatic polar.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Valine",
+    "category": "Amino Acids",
+    "explanation": "Val (V) - Aliphatic branched nonpolar.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Alanine",
+    "category": "Amino Acids",
+    "explanation": "Ala (A) - Nonpolar, aliphatic side chain.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Arginine",
+    "category": "Amino Acids",
+    "explanation": "Arg (R) - Positively charged basic side chain.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Asparagine",
+    "category": "Amino Acids",
+    "explanation": "Asn (N) - Polar, uncharged side chain.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Aspartic Acid",
+    "category": "Amino Acids",
+    "explanation": "Asp (D) - Negatively charged acidic side chain.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Cysteine",
+    "category": "Amino Acids",
+    "explanation": "Cys (C) - Polar side chain with thiol (-SH) group.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Glutamine",
+    "category": "Amino Acids",
+    "explanation": "Gln (Q) - Polar, uncharged side chain with amide.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Glutamic Acid",
+    "category": "Amino Acids",
+    "explanation": "Glu (E) - Negatively charged acidic side chain.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Glycine",
+    "category": "Amino Acids",
+    "explanation": "Gly (G) - Simplest nonpolar amino acid.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Histidine",
+    "category": "Amino Acids",
+    "explanation": "His (H) - Aromatic basic side chain.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Isoleucine",
+    "category": "Amino Acids",
+    "explanation": "Ile (I) - Aliphatic branched nonpolar.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Leucine",
+    "category": "Amino Acids",
+    "explanation": "Leu (L) - Aliphatic branched nonpolar.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Lysine",
+    "category": "Amino Acids",
+    "explanation": "Lys (K) - Positively charged basic side chain.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Methionine",
+    "category": "Amino Acids",
+    "explanation": "Met (M) - Nonpolar thioether side chain.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Phenylalanine",
+    "category": "Amino Acids",
+    "explanation": "Phe (F) - Nonpolar hydrophobic aromatic.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Proline",
+    "category": "Amino Acids",
+    "explanation": "Pro (P) - Rigid cyclic secondary amino acid.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Serine",
+    "category": "Amino Acids",
+    "explanation": "Ser (S) - Polar uncharged with hydroxyl (-OH).",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Threonine",
+    "category": "Amino Acids",
+    "explanation": "Thr (T) - Polar uncharged with secondary alcohol.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Tryptophan",
+    "category": "Amino Acids",
+    "explanation": "Trp (W) - Bulky bicyclic aromatic nonpolar.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Tyrosine",
+    "category": "Amino Acids",
+    "explanation": "Tyr (Y) - Amphipathic aromatic polar.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Valine",
+    "category": "Amino Acids",
+    "explanation": "Val (V) - Aliphatic branched nonpolar.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Alanine",
+    "category": "Amino Acids",
+    "explanation": "Ala (A) - Nonpolar, aliphatic side chain.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Arginine",
+    "category": "Amino Acids",
+    "explanation": "Arg (R) - Positively charged basic side chain.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Asparagine",
+    "category": "Amino Acids",
+    "explanation": "Asn (N) - Polar, uncharged side chain.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Aspartic Acid",
+    "category": "Amino Acids",
+    "explanation": "Asp (D) - Negatively charged acidic side chain.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Cysteine",
+    "category": "Amino Acids",
+    "explanation": "Cys (C) - Polar side chain with thiol (-SH) group.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Glutamine",
+    "category": "Amino Acids",
+    "explanation": "Gln (Q) - Polar, uncharged side chain with amide.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Glutamic Acid",
+    "category": "Amino Acids",
+    "explanation": "Glu (E) - Negatively charged acidic side chain.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Glycine",
+    "category": "Amino Acids",
+    "explanation": "Gly (G) - Simplest nonpolar amino acid.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Histidine",
+    "category": "Amino Acids",
+    "explanation": "His (H) - Aromatic basic side chain.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Isoleucine",
+    "category": "Amino Acids",
+    "explanation": "Ile (I) - Aliphatic branched nonpolar.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Leucine",
+    "category": "Amino Acids",
+    "explanation": "Leu (L) - Aliphatic branched nonpolar.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Lysine",
+    "category": "Amino Acids",
+    "explanation": "Lys (K) - Positively charged basic side chain.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Methionine",
+    "category": "Amino Acids",
+    "explanation": "Met (M) - Nonpolar thioether side chain.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Phenylalanine",
+    "category": "Amino Acids",
+    "explanation": "Phe (F) - Nonpolar hydrophobic aromatic.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Proline",
+    "category": "Amino Acids",
+    "explanation": "Pro (P) - Rigid cyclic secondary amino acid.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Serine",
+    "category": "Amino Acids",
+    "explanation": "Ser (S) - Polar uncharged with hydroxyl (-OH).",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Threonine",
+    "category": "Amino Acids",
+    "explanation": "Thr (T) - Polar uncharged with secondary alcohol.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Tryptophan",
+    "category": "Amino Acids",
+    "explanation": "Trp (W) - Bulky bicyclic aromatic nonpolar.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Tyrosine",
+    "category": "Amino Acids",
+    "explanation": "Tyr (Y) - Amphipathic aromatic polar.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Valine",
+    "category": "Amino Acids",
+    "explanation": "Val (V) - Aliphatic branched nonpolar.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Alanine",
+    "category": "Amino Acids",
+    "explanation": "Ala (A) - Nonpolar, aliphatic side chain.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Arginine",
+    "category": "Amino Acids",
+    "explanation": "Arg (R) - Positively charged basic side chain.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Asparagine",
+    "category": "Amino Acids",
+    "explanation": "Asn (N) - Polar, uncharged side chain.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Aspartic Acid",
+    "category": "Amino Acids",
+    "explanation": "Asp (D) - Negatively charged acidic side chain.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Cysteine",
+    "category": "Amino Acids",
+    "explanation": "Cys (C) - Polar side chain with thiol (-SH) group.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Glutamine",
+    "category": "Amino Acids",
+    "explanation": "Gln (Q) - Polar, uncharged side chain with amide.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Glutamic Acid",
+    "category": "Amino Acids",
+    "explanation": "Glu (E) - Negatively charged acidic side chain.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Glycine",
+    "category": "Amino Acids",
+    "explanation": "Gly (G) - Simplest nonpolar amino acid.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Histidine",
+    "category": "Amino Acids",
+    "explanation": "His (H) - Aromatic basic side chain.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Isoleucine",
+    "category": "Amino Acids",
+    "explanation": "Ile (I) - Aliphatic branched nonpolar.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Leucine",
+    "category": "Amino Acids",
+    "explanation": "Leu (L) - Aliphatic branched nonpolar.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Lysine",
+    "category": "Amino Acids",
+    "explanation": "Lys (K) - Positively charged basic side chain.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Methionine",
+    "category": "Amino Acids",
+    "explanation": "Met (M) - Nonpolar thioether side chain.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Phenylalanine",
+    "category": "Amino Acids",
+    "explanation": "Phe (F) - Nonpolar hydrophobic aromatic.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Proline",
+    "category": "Amino Acids",
+    "explanation": "Pro (P) - Rigid cyclic secondary amino acid.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Serine",
+    "category": "Amino Acids",
+    "explanation": "Ser (S) - Polar uncharged with hydroxyl (-OH).",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Threonine",
+    "category": "Amino Acids",
+    "explanation": "Thr (T) - Polar uncharged with secondary alcohol.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Tryptophan",
+    "category": "Amino Acids",
+    "explanation": "Trp (W) - Bulky bicyclic aromatic nonpolar.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Tyrosine",
+    "category": "Amino Acids",
+    "explanation": "Tyr (Y) - Amphipathic aromatic polar.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Valine",
+    "category": "Amino Acids",
+    "explanation": "Val (V) - Aliphatic branched nonpolar.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Alanine",
+    "category": "Amino Acids",
+    "explanation": "Ala (A) - Nonpolar, aliphatic side chain.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Arginine",
+    "category": "Amino Acids",
+    "explanation": "Arg (R) - Positively charged basic side chain.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Asparagine",
+    "category": "Amino Acids",
+    "explanation": "Asn (N) - Polar, uncharged side chain.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Aspartic Acid",
+    "category": "Amino Acids",
+    "explanation": "Asp (D) - Negatively charged acidic side chain.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Cysteine",
+    "category": "Amino Acids",
+    "explanation": "Cys (C) - Polar side chain with thiol (-SH) group.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Glutamine",
+    "category": "Amino Acids",
+    "explanation": "Gln (Q) - Polar, uncharged side chain with amide.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Glutamic Acid",
+    "category": "Amino Acids",
+    "explanation": "Glu (E) - Negatively charged acidic side chain.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Glycine",
+    "category": "Amino Acids",
+    "explanation": "Gly (G) - Simplest nonpolar amino acid.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Histidine",
+    "category": "Amino Acids",
+    "explanation": "His (H) - Aromatic basic side chain.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Isoleucine",
+    "category": "Amino Acids",
+    "explanation": "Ile (I) - Aliphatic branched nonpolar.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Leucine",
+    "category": "Amino Acids",
+    "explanation": "Leu (L) - Aliphatic branched nonpolar.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Lysine",
+    "category": "Amino Acids",
+    "explanation": "Lys (K) - Positively charged basic side chain.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Methionine",
+    "category": "Amino Acids",
+    "explanation": "Met (M) - Nonpolar thioether side chain.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Phenylalanine",
+    "category": "Amino Acids",
+    "explanation": "Phe (F) - Nonpolar hydrophobic aromatic.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Proline",
+    "category": "Amino Acids",
+    "explanation": "Pro (P) - Rigid cyclic secondary amino acid.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Serine",
+    "category": "Amino Acids",
+    "explanation": "Ser (S) - Polar uncharged with hydroxyl (-OH).",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Threonine",
+    "category": "Amino Acids",
+    "explanation": "Thr (T) - Polar uncharged with secondary alcohol.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Tryptophan",
+    "category": "Amino Acids",
+    "explanation": "Trp (W) - Bulky bicyclic aromatic nonpolar.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Tyrosine",
+    "category": "Amino Acids",
+    "explanation": "Tyr (Y) - Amphipathic aromatic polar.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Valine",
+    "category": "Amino Acids",
+    "explanation": "Val (V) - Aliphatic branched nonpolar.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Alanine",
+    "category": "Amino Acids",
+    "explanation": "Ala (A) - Nonpolar, aliphatic side chain.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Arginine",
+    "category": "Amino Acids",
+    "explanation": "Arg (R) - Positively charged basic side chain.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Asparagine",
+    "category": "Amino Acids",
+    "explanation": "Asn (N) - Polar, uncharged side chain.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Aspartic Acid",
+    "category": "Amino Acids",
+    "explanation": "Asp (D) - Negatively charged acidic side chain.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Cysteine",
+    "category": "Amino Acids",
+    "explanation": "Cys (C) - Polar side chain with thiol (-SH) group.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Glutamine",
+    "category": "Amino Acids",
+    "explanation": "Gln (Q) - Polar, uncharged side chain with amide.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Glutamic Acid",
+    "category": "Amino Acids",
+    "explanation": "Glu (E) - Negatively charged acidic side chain.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Glycine",
+    "category": "Amino Acids",
+    "explanation": "Gly (G) - Simplest nonpolar amino acid.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Histidine",
+    "category": "Amino Acids",
+    "explanation": "His (H) - Aromatic basic side chain.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Isoleucine",
+    "category": "Amino Acids",
+    "explanation": "Ile (I) - Aliphatic branched nonpolar.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Leucine",
+    "category": "Amino Acids",
+    "explanation": "Leu (L) - Aliphatic branched nonpolar.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Lysine",
+    "category": "Amino Acids",
+    "explanation": "Lys (K) - Positively charged basic side chain.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Methionine",
+    "category": "Amino Acids",
+    "explanation": "Met (M) - Nonpolar thioether side chain.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Phenylalanine",
+    "category": "Amino Acids",
+    "explanation": "Phe (F) - Nonpolar hydrophobic aromatic.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Proline",
+    "category": "Amino Acids",
+    "explanation": "Pro (P) - Rigid cyclic secondary amino acid.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Serine",
+    "category": "Amino Acids",
+    "explanation": "Ser (S) - Polar uncharged with hydroxyl (-OH).",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Threonine",
+    "category": "Amino Acids",
+    "explanation": "Thr (T) - Polar uncharged with secondary alcohol.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Tryptophan",
+    "category": "Amino Acids",
+    "explanation": "Trp (W) - Bulky bicyclic aromatic nonpolar.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Tyrosine",
+    "category": "Amino Acids",
+    "explanation": "Tyr (Y) - Amphipathic aromatic polar.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Valine",
+    "category": "Amino Acids",
+    "explanation": "Val (V) - Aliphatic branched nonpolar.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Alanine",
+    "category": "Amino Acids",
+    "explanation": "Ala (A) - Nonpolar, aliphatic side chain.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Arginine",
+    "category": "Amino Acids",
+    "explanation": "Arg (R) - Positively charged basic side chain.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Asparagine",
+    "category": "Amino Acids",
+    "explanation": "Asn (N) - Polar, uncharged side chain.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Aspartic Acid",
+    "category": "Amino Acids",
+    "explanation": "Asp (D) - Negatively charged acidic side chain.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Cysteine",
+    "category": "Amino Acids",
+    "explanation": "Cys (C) - Polar side chain with thiol (-SH) group.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Glutamine",
+    "category": "Amino Acids",
+    "explanation": "Gln (Q) - Polar, uncharged side chain with amide.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Glutamic Acid",
+    "category": "Amino Acids",
+    "explanation": "Glu (E) - Negatively charged acidic side chain.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Glycine",
+    "category": "Amino Acids",
+    "explanation": "Gly (G) - Simplest nonpolar amino acid.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Histidine",
+    "category": "Amino Acids",
+    "explanation": "His (H) - Aromatic basic side chain.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Isoleucine",
+    "category": "Amino Acids",
+    "explanation": "Ile (I) - Aliphatic branched nonpolar.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Leucine",
+    "category": "Amino Acids",
+    "explanation": "Leu (L) - Aliphatic branched nonpolar.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Lysine",
+    "category": "Amino Acids",
+    "explanation": "Lys (K) - Positively charged basic side chain.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Methionine",
+    "category": "Amino Acids",
+    "explanation": "Met (M) - Nonpolar thioether side chain.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Phenylalanine",
+    "category": "Amino Acids",
+    "explanation": "Phe (F) - Nonpolar hydrophobic aromatic.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Proline",
+    "category": "Amino Acids",
+    "explanation": "Pro (P) - Rigid cyclic secondary amino acid.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Serine",
+    "category": "Amino Acids",
+    "explanation": "Ser (S) - Polar uncharged with hydroxyl (-OH).",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Threonine",
+    "category": "Amino Acids",
+    "explanation": "Thr (T) - Polar uncharged with secondary alcohol.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Tryptophan",
+    "category": "Amino Acids",
+    "explanation": "Trp (W) - Bulky bicyclic aromatic nonpolar.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Tyrosine",
+    "category": "Amino Acids",
+    "explanation": "Tyr (Y) - Amphipathic aromatic polar.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Valine",
+    "category": "Amino Acids",
+    "explanation": "Val (V) - Aliphatic branched nonpolar.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Alanine",
+    "category": "Amino Acids",
+    "explanation": "Ala (A) - Nonpolar, aliphatic side chain.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Arginine",
+    "category": "Amino Acids",
+    "explanation": "Arg (R) - Positively charged basic side chain.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Asparagine",
+    "category": "Amino Acids",
+    "explanation": "Asn (N) - Polar, uncharged side chain.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Aspartic Acid",
+    "category": "Amino Acids",
+    "explanation": "Asp (D) - Negatively charged acidic side chain.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Cysteine",
+    "category": "Amino Acids",
+    "explanation": "Cys (C) - Polar side chain with thiol (-SH) group.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Glutamine",
+    "category": "Amino Acids",
+    "explanation": "Gln (Q) - Polar, uncharged side chain with amide.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Glutamic Acid",
+    "category": "Amino Acids",
+    "explanation": "Glu (E) - Negatively charged acidic side chain.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Glycine",
+    "category": "Amino Acids",
+    "explanation": "Gly (G) - Simplest nonpolar amino acid.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Histidine",
+    "category": "Amino Acids",
+    "explanation": "His (H) - Aromatic basic side chain.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Isoleucine",
+    "category": "Amino Acids",
+    "explanation": "Ile (I) - Aliphatic branched nonpolar.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Leucine",
+    "category": "Amino Acids",
+    "explanation": "Leu (L) - Aliphatic branched nonpolar.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Lysine",
+    "category": "Amino Acids",
+    "explanation": "Lys (K) - Positively charged basic side chain.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Methionine",
+    "category": "Amino Acids",
+    "explanation": "Met (M) - Nonpolar thioether side chain.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Phenylalanine",
+    "category": "Amino Acids",
+    "explanation": "Phe (F) - Nonpolar hydrophobic aromatic.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Proline",
+    "category": "Amino Acids",
+    "explanation": "Pro (P) - Rigid cyclic secondary amino acid.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Serine",
+    "category": "Amino Acids",
+    "explanation": "Ser (S) - Polar uncharged with hydroxyl (-OH).",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Threonine",
+    "category": "Amino Acids",
+    "explanation": "Thr (T) - Polar uncharged with secondary alcohol.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Tryptophan",
+    "category": "Amino Acids",
+    "explanation": "Trp (W) - Bulky bicyclic aromatic nonpolar.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Tyrosine",
+    "category": "Amino Acids",
+    "explanation": "Tyr (Y) - Amphipathic aromatic polar.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Valine",
+    "category": "Amino Acids",
+    "explanation": "Val (V) - Aliphatic branched nonpolar.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Alanine",
+    "category": "Amino Acids",
+    "explanation": "Ala (A) - Nonpolar, aliphatic side chain.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Arginine",
+    "category": "Amino Acids",
+    "explanation": "Arg (R) - Positively charged basic side chain.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Asparagine",
+    "category": "Amino Acids",
+    "explanation": "Asn (N) - Polar, uncharged side chain.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Aspartic Acid",
+    "category": "Amino Acids",
+    "explanation": "Asp (D) - Negatively charged acidic side chain.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Cysteine",
+    "category": "Amino Acids",
+    "explanation": "Cys (C) - Polar side chain with thiol (-SH) group.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Glutamine",
+    "category": "Amino Acids",
+    "explanation": "Gln (Q) - Polar, uncharged side chain with amide.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Glutamic Acid",
+    "category": "Amino Acids",
+    "explanation": "Glu (E) - Negatively charged acidic side chain.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Glycine",
+    "category": "Amino Acids",
+    "explanation": "Gly (G) - Simplest nonpolar amino acid.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Histidine",
+    "category": "Amino Acids",
+    "explanation": "His (H) - Aromatic basic side chain.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Isoleucine",
+    "category": "Amino Acids",
+    "explanation": "Ile (I) - Aliphatic branched nonpolar.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Leucine",
+    "category": "Amino Acids",
+    "explanation": "Leu (L) - Aliphatic branched nonpolar.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Lysine",
+    "category": "Amino Acids",
+    "explanation": "Lys (K) - Positively charged basic side chain.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Methionine",
+    "category": "Amino Acids",
+    "explanation": "Met (M) - Nonpolar thioether side chain.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Phenylalanine",
+    "category": "Amino Acids",
+    "explanation": "Phe (F) - Nonpolar hydrophobic aromatic.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Proline",
+    "category": "Amino Acids",
+    "explanation": "Pro (P) - Rigid cyclic secondary amino acid.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Serine",
+    "category": "Amino Acids",
+    "explanation": "Ser (S) - Polar uncharged with hydroxyl (-OH).",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Threonine",
+    "category": "Amino Acids",
+    "explanation": "Thr (T) - Polar uncharged with secondary alcohol.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Tryptophan",
+    "category": "Amino Acids",
+    "explanation": "Trp (W) - Bulky bicyclic aromatic nonpolar.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Tyrosine",
+    "category": "Amino Acids",
+    "explanation": "Tyr (Y) - Amphipathic aromatic polar.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Valine",
+    "category": "Amino Acids",
+    "explanation": "Val (V) - Aliphatic branched nonpolar.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Alanine",
+    "category": "Amino Acids",
+    "explanation": "Ala (A) - Nonpolar, aliphatic side chain.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Arginine",
+    "category": "Amino Acids",
+    "explanation": "Arg (R) - Positively charged basic side chain.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Asparagine",
+    "category": "Amino Acids",
+    "explanation": "Asn (N) - Polar, uncharged side chain.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Aspartic Acid",
+    "category": "Amino Acids",
+    "explanation": "Asp (D) - Negatively charged acidic side chain.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Cysteine",
+    "category": "Amino Acids",
+    "explanation": "Cys (C) - Polar side chain with thiol (-SH) group.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Glutamine",
+    "category": "Amino Acids",
+    "explanation": "Gln (Q) - Polar, uncharged side chain with amide.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Glutamic Acid",
+    "category": "Amino Acids",
+    "explanation": "Glu (E) - Negatively charged acidic side chain.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Glycine",
+    "category": "Amino Acids",
+    "explanation": "Gly (G) - Simplest nonpolar amino acid.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Histidine",
+    "category": "Amino Acids",
+    "explanation": "His (H) - Aromatic basic side chain.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Isoleucine",
+    "category": "Amino Acids",
+    "explanation": "Ile (I) - Aliphatic branched nonpolar.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Leucine",
+    "category": "Amino Acids",
+    "explanation": "Leu (L) - Aliphatic branched nonpolar.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Lysine",
+    "category": "Amino Acids",
+    "explanation": "Lys (K) - Positively charged basic side chain.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Methionine",
+    "category": "Amino Acids",
+    "explanation": "Met (M) - Nonpolar thioether side chain.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Phenylalanine",
+    "category": "Amino Acids",
+    "explanation": "Phe (F) - Nonpolar hydrophobic aromatic.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Proline",
+    "category": "Amino Acids",
+    "explanation": "Pro (P) - Rigid cyclic secondary amino acid.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Serine",
+    "category": "Amino Acids",
+    "explanation": "Ser (S) - Polar uncharged with hydroxyl (-OH).",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Threonine",
+    "category": "Amino Acids",
+    "explanation": "Thr (T) - Polar uncharged with secondary alcohol.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Tryptophan",
+    "category": "Amino Acids",
+    "explanation": "Trp (W) - Bulky bicyclic aromatic nonpolar.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Tyrosine",
+    "category": "Amino Acids",
+    "explanation": "Tyr (Y) - Amphipathic aromatic polar.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Valine",
+    "category": "Amino Acids",
+    "explanation": "Val (V) - Aliphatic branched nonpolar.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Alanine",
+    "category": "Amino Acids",
+    "explanation": "Ala (A) - Nonpolar, aliphatic side chain.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Arginine",
+    "category": "Amino Acids",
+    "explanation": "Arg (R) - Positively charged basic side chain.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Asparagine",
+    "category": "Amino Acids",
+    "explanation": "Asn (N) - Polar, uncharged side chain.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Aspartic Acid",
+    "category": "Amino Acids",
+    "explanation": "Asp (D) - Negatively charged acidic side chain.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Cysteine",
+    "category": "Amino Acids",
+    "explanation": "Cys (C) - Polar side chain with thiol (-SH) group.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Glutamine",
+    "category": "Amino Acids",
+    "explanation": "Gln (Q) - Polar, uncharged side chain with amide.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Glutamic Acid",
+    "category": "Amino Acids",
+    "explanation": "Glu (E) - Negatively charged acidic side chain.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Glycine",
+    "category": "Amino Acids",
+    "explanation": "Gly (G) - Simplest nonpolar amino acid.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Histidine",
+    "category": "Amino Acids",
+    "explanation": "His (H) - Aromatic basic side chain.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Isoleucine",
+    "category": "Amino Acids",
+    "explanation": "Ile (I) - Aliphatic branched nonpolar.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Leucine",
+    "category": "Amino Acids",
+    "explanation": "Leu (L) - Aliphatic branched nonpolar.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Lysine",
+    "category": "Amino Acids",
+    "explanation": "Lys (K) - Positively charged basic side chain.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Methionine",
+    "category": "Amino Acids",
+    "explanation": "Met (M) - Nonpolar thioether side chain.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Phenylalanine",
+    "category": "Amino Acids",
+    "explanation": "Phe (F) - Nonpolar hydrophobic aromatic.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Proline",
+    "category": "Amino Acids",
+    "explanation": "Pro (P) - Rigid cyclic secondary amino acid.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Serine",
+    "category": "Amino Acids",
+    "explanation": "Ser (S) - Polar uncharged with hydroxyl (-OH).",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Threonine",
+    "category": "Amino Acids",
+    "explanation": "Thr (T) - Polar uncharged with secondary alcohol.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Tryptophan",
+    "category": "Amino Acids",
+    "explanation": "Trp (W) - Bulky bicyclic aromatic nonpolar.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Tyrosine",
+    "category": "Amino Acids",
+    "explanation": "Tyr (Y) - Amphipathic aromatic polar.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Valine",
+    "category": "Amino Acids",
+    "explanation": "Val (V) - Aliphatic branched nonpolar.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Alanine",
+    "category": "Amino Acids",
+    "explanation": "Ala (A) - Nonpolar, aliphatic side chain.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Arginine",
+    "category": "Amino Acids",
+    "explanation": "Arg (R) - Positively charged basic side chain.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Asparagine",
+    "category": "Amino Acids",
+    "explanation": "Asn (N) - Polar, uncharged side chain.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Aspartic Acid",
+    "category": "Amino Acids",
+    "explanation": "Asp (D) - Negatively charged acidic side chain.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Cysteine",
+    "category": "Amino Acids",
+    "explanation": "Cys (C) - Polar side chain with thiol (-SH) group.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Glutamine",
+    "category": "Amino Acids",
+    "explanation": "Gln (Q) - Polar, uncharged side chain with amide.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Glutamic Acid",
+    "category": "Amino Acids",
+    "explanation": "Glu (E) - Negatively charged acidic side chain.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Glycine",
+    "category": "Amino Acids",
+    "explanation": "Gly (G) - Simplest nonpolar amino acid.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Histidine",
+    "category": "Amino Acids",
+    "explanation": "His (H) - Aromatic basic side chain.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Isoleucine",
+    "category": "Amino Acids",
+    "explanation": "Ile (I) - Aliphatic branched nonpolar.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Leucine",
+    "category": "Amino Acids",
+    "explanation": "Leu (L) - Aliphatic branched nonpolar.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Lysine",
+    "category": "Amino Acids",
+    "explanation": "Lys (K) - Positively charged basic side chain.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Methionine",
+    "category": "Amino Acids",
+    "explanation": "Met (M) - Nonpolar thioether side chain.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Phenylalanine",
+    "category": "Amino Acids",
+    "explanation": "Phe (F) - Nonpolar hydrophobic aromatic.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Proline",
+    "category": "Amino Acids",
+    "explanation": "Pro (P) - Rigid cyclic secondary amino acid.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Serine",
+    "category": "Amino Acids",
+    "explanation": "Ser (S) - Polar uncharged with hydroxyl (-OH).",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Threonine",
+    "category": "Amino Acids",
+    "explanation": "Thr (T) - Polar uncharged with secondary alcohol.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Tryptophan",
+    "category": "Amino Acids",
+    "explanation": "Trp (W) - Bulky bicyclic aromatic nonpolar.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Tyrosine",
+    "category": "Amino Acids",
+    "explanation": "Tyr (Y) - Amphipathic aromatic polar.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Valine",
+    "category": "Amino Acids",
+    "explanation": "Val (V) - Aliphatic branched nonpolar.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Alanine",
+    "category": "Amino Acids",
+    "explanation": "Ala (A) - Nonpolar, aliphatic side chain.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Arginine",
+    "category": "Amino Acids",
+    "explanation": "Arg (R) - Positively charged basic side chain.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Asparagine",
+    "category": "Amino Acids",
+    "explanation": "Asn (N) - Polar, uncharged side chain.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Aspartic Acid",
+    "category": "Amino Acids",
+    "explanation": "Asp (D) - Negatively charged acidic side chain.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Cysteine",
+    "category": "Amino Acids",
+    "explanation": "Cys (C) - Polar side chain with thiol (-SH) group.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Glutamine",
+    "category": "Amino Acids",
+    "explanation": "Gln (Q) - Polar, uncharged side chain with amide.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Glutamic Acid",
+    "category": "Amino Acids",
+    "explanation": "Glu (E) - Negatively charged acidic side chain.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Glycine",
+    "category": "Amino Acids",
+    "explanation": "Gly (G) - Simplest nonpolar amino acid.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Histidine",
+    "category": "Amino Acids",
+    "explanation": "His (H) - Aromatic basic side chain.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Isoleucine",
+    "category": "Amino Acids",
+    "explanation": "Ile (I) - Aliphatic branched nonpolar.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Leucine",
+    "category": "Amino Acids",
+    "explanation": "Leu (L) - Aliphatic branched nonpolar.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Lysine",
+    "category": "Amino Acids",
+    "explanation": "Lys (K) - Positively charged basic side chain.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Methionine",
+    "category": "Amino Acids",
+    "explanation": "Met (M) - Nonpolar thioether side chain.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Phenylalanine",
+    "category": "Amino Acids",
+    "explanation": "Phe (F) - Nonpolar hydrophobic aromatic.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Proline",
+    "category": "Amino Acids",
+    "explanation": "Pro (P) - Rigid cyclic secondary amino acid.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Serine",
+    "category": "Amino Acids",
+    "explanation": "Ser (S) - Polar uncharged with hydroxyl (-OH).",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Threonine",
+    "category": "Amino Acids",
+    "explanation": "Thr (T) - Polar uncharged with secondary alcohol.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Tryptophan",
+    "category": "Amino Acids",
+    "explanation": "Trp (W) - Bulky bicyclic aromatic nonpolar.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Tyrosine",
+    "category": "Amino Acids",
+    "explanation": "Tyr (Y) - Amphipathic aromatic polar.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Valine",
+    "category": "Amino Acids",
+    "explanation": "Val (V) - Aliphatic branched nonpolar.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Alanine",
+    "category": "Amino Acids",
+    "explanation": "Ala (A) - Nonpolar, aliphatic side chain.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Arginine",
+    "category": "Amino Acids",
+    "explanation": "Arg (R) - Positively charged basic side chain.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Asparagine",
+    "category": "Amino Acids",
+    "explanation": "Asn (N) - Polar, uncharged side chain.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Aspartic Acid",
+    "category": "Amino Acids",
+    "explanation": "Asp (D) - Negatively charged acidic side chain.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Cysteine",
+    "category": "Amino Acids",
+    "explanation": "Cys (C) - Polar side chain with thiol (-SH) group.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Glutamine",
+    "category": "Amino Acids",
+    "explanation": "Gln (Q) - Polar, uncharged side chain with amide.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Glutamic Acid",
+    "category": "Amino Acids",
+    "explanation": "Glu (E) - Negatively charged acidic side chain.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Glycine",
+    "category": "Amino Acids",
+    "explanation": "Gly (G) - Simplest nonpolar amino acid.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Histidine",
+    "category": "Amino Acids",
+    "explanation": "His (H) - Aromatic basic side chain.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Isoleucine",
+    "category": "Amino Acids",
+    "explanation": "Ile (I) - Aliphatic branched nonpolar.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Leucine",
+    "category": "Amino Acids",
+    "explanation": "Leu (L) - Aliphatic branched nonpolar.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Lysine",
+    "category": "Amino Acids",
+    "explanation": "Lys (K) - Positively charged basic side chain.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Methionine",
+    "category": "Amino Acids",
+    "explanation": "Met (M) - Nonpolar thioether side chain.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Phenylalanine",
+    "category": "Amino Acids",
+    "explanation": "Phe (F) - Nonpolar hydrophobic aromatic.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Proline",
+    "category": "Amino Acids",
+    "explanation": "Pro (P) - Rigid cyclic secondary amino acid.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Serine",
+    "category": "Amino Acids",
+    "explanation": "Ser (S) - Polar uncharged with hydroxyl (-OH).",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Threonine",
+    "category": "Amino Acids",
+    "explanation": "Thr (T) - Polar uncharged with secondary alcohol.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Tryptophan",
+    "category": "Amino Acids",
+    "explanation": "Trp (W) - Bulky bicyclic aromatic nonpolar.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Tyrosine",
+    "category": "Amino Acids",
+    "explanation": "Tyr (Y) - Amphipathic aromatic polar.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Valine",
+    "category": "Amino Acids",
+    "explanation": "Val (V) - Aliphatic branched nonpolar.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Alanine",
+    "category": "Amino Acids",
+    "explanation": "Ala (A) - Nonpolar, aliphatic side chain.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Arginine",
+    "category": "Amino Acids",
+    "explanation": "Arg (R) - Positively charged basic side chain.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Asparagine",
+    "category": "Amino Acids",
+    "explanation": "Asn (N) - Polar, uncharged side chain.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Aspartic Acid",
+    "category": "Amino Acids",
+    "explanation": "Asp (D) - Negatively charged acidic side chain.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Cysteine",
+    "category": "Amino Acids",
+    "explanation": "Cys (C) - Polar side chain with thiol (-SH) group.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Glutamine",
+    "category": "Amino Acids",
+    "explanation": "Gln (Q) - Polar, uncharged side chain with amide.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Glutamic Acid",
+    "category": "Amino Acids",
+    "explanation": "Glu (E) - Negatively charged acidic side chain.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Glycine",
+    "category": "Amino Acids",
+    "explanation": "Gly (G) - Simplest nonpolar amino acid.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Histidine",
+    "category": "Amino Acids",
+    "explanation": "His (H) - Aromatic basic side chain.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Isoleucine",
+    "category": "Amino Acids",
+    "explanation": "Ile (I) - Aliphatic branched nonpolar.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Leucine",
+    "category": "Amino Acids",
+    "explanation": "Leu (L) - Aliphatic branched nonpolar.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Lysine",
+    "category": "Amino Acids",
+    "explanation": "Lys (K) - Positively charged basic side chain.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Methionine",
+    "category": "Amino Acids",
+    "explanation": "Met (M) - Nonpolar thioether side chain.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Phenylalanine",
+    "category": "Amino Acids",
+    "explanation": "Phe (F) - Nonpolar hydrophobic aromatic.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Proline",
+    "category": "Amino Acids",
+    "explanation": "Pro (P) - Rigid cyclic secondary amino acid.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Serine",
+    "category": "Amino Acids",
+    "explanation": "Ser (S) - Polar uncharged with hydroxyl (-OH).",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Threonine",
+    "category": "Amino Acids",
+    "explanation": "Thr (T) - Polar uncharged with secondary alcohol.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Tryptophan",
+    "category": "Amino Acids",
+    "explanation": "Trp (W) - Bulky bicyclic aromatic nonpolar.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Tyrosine",
+    "category": "Amino Acids",
+    "explanation": "Tyr (Y) - Amphipathic aromatic polar.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Valine",
+    "category": "Amino Acids",
+    "explanation": "Val (V) - Aliphatic branched nonpolar.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Alanine",
+    "category": "Amino Acids",
+    "explanation": "Ala (A) - Nonpolar, aliphatic side chain.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Arginine",
+    "category": "Amino Acids",
+    "explanation": "Arg (R) - Positively charged basic side chain.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Asparagine",
+    "category": "Amino Acids",
+    "explanation": "Asn (N) - Polar, uncharged side chain.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Aspartic Acid",
+    "category": "Amino Acids",
+    "explanation": "Asp (D) - Negatively charged acidic side chain.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Cysteine",
+    "category": "Amino Acids",
+    "explanation": "Cys (C) - Polar side chain with thiol (-SH) group.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Glutamine",
+    "category": "Amino Acids",
+    "explanation": "Gln (Q) - Polar, uncharged side chain with amide.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Glutamic Acid",
+    "category": "Amino Acids",
+    "explanation": "Glu (E) - Negatively charged acidic side chain.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Glycine",
+    "category": "Amino Acids",
+    "explanation": "Gly (G) - Simplest nonpolar amino acid.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Histidine",
+    "category": "Amino Acids",
+    "explanation": "His (H) - Aromatic basic side chain.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Isoleucine",
+    "category": "Amino Acids",
+    "explanation": "Ile (I) - Aliphatic branched nonpolar.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Leucine",
+    "category": "Amino Acids",
+    "explanation": "Leu (L) - Aliphatic branched nonpolar.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Lysine",
+    "category": "Amino Acids",
+    "explanation": "Lys (K) - Positively charged basic side chain.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Methionine",
+    "category": "Amino Acids",
+    "explanation": "Met (M) - Nonpolar thioether side chain.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Phenylalanine",
+    "category": "Amino Acids",
+    "explanation": "Phe (F) - Nonpolar hydrophobic aromatic.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Proline",
+    "category": "Amino Acids",
+    "explanation": "Pro (P) - Rigid cyclic secondary amino acid.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Serine",
+    "category": "Amino Acids",
+    "explanation": "Ser (S) - Polar uncharged with hydroxyl (-OH).",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Threonine",
+    "category": "Amino Acids",
+    "explanation": "Thr (T) - Polar uncharged with secondary alcohol.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Tryptophan",
+    "category": "Amino Acids",
+    "explanation": "Trp (W) - Bulky bicyclic aromatic nonpolar.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Tyrosine",
+    "category": "Amino Acids",
+    "explanation": "Tyr (Y) - Amphipathic aromatic polar.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Valine",
+    "category": "Amino Acids",
+    "explanation": "Val (V) - Aliphatic branched nonpolar.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Alanine",
+    "category": "Amino Acids",
+    "explanation": "Ala (A) - Nonpolar, aliphatic side chain.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Arginine",
+    "category": "Amino Acids",
+    "explanation": "Arg (R) - Positively charged basic side chain.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Asparagine",
+    "category": "Amino Acids",
+    "explanation": "Asn (N) - Polar, uncharged side chain.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Aspartic Acid",
+    "category": "Amino Acids",
+    "explanation": "Asp (D) - Negatively charged acidic side chain.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Cysteine",
+    "category": "Amino Acids",
+    "explanation": "Cys (C) - Polar side chain with thiol (-SH) group.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Glutamine",
+    "category": "Amino Acids",
+    "explanation": "Gln (Q) - Polar, uncharged side chain with amide.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Glutamic Acid",
+    "category": "Amino Acids",
+    "explanation": "Glu (E) - Negatively charged acidic side chain.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Glycine",
+    "category": "Amino Acids",
+    "explanation": "Gly (G) - Simplest nonpolar amino acid.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Histidine",
+    "category": "Amino Acids",
+    "explanation": "His (H) - Aromatic basic side chain.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Isoleucine",
+    "category": "Amino Acids",
+    "explanation": "Ile (I) - Aliphatic branched nonpolar.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Leucine",
+    "category": "Amino Acids",
+    "explanation": "Leu (L) - Aliphatic branched nonpolar.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Lysine",
+    "category": "Amino Acids",
+    "explanation": "Lys (K) - Positively charged basic side chain.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Methionine",
+    "category": "Amino Acids",
+    "explanation": "Met (M) - Nonpolar thioether side chain.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Phenylalanine",
+    "category": "Amino Acids",
+    "explanation": "Phe (F) - Nonpolar hydrophobic aromatic.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Proline",
+    "category": "Amino Acids",
+    "explanation": "Pro (P) - Rigid cyclic secondary amino acid.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Serine",
+    "category": "Amino Acids",
+    "explanation": "Ser (S) - Polar uncharged with hydroxyl (-OH).",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Threonine",
+    "category": "Amino Acids",
+    "explanation": "Thr (T) - Polar uncharged with secondary alcohol.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Tryptophan",
+    "category": "Amino Acids",
+    "explanation": "Trp (W) - Bulky bicyclic aromatic nonpolar.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Tyrosine",
+    "category": "Amino Acids",
+    "explanation": "Tyr (Y) - Amphipathic aromatic polar.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Valine",
+    "category": "Amino Acids",
+    "explanation": "Val (V) - Aliphatic branched nonpolar.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Alanine",
+    "category": "Amino Acids",
+    "explanation": "Ala (A) - Nonpolar, aliphatic side chain.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Arginine",
+    "category": "Amino Acids",
+    "explanation": "Arg (R) - Positively charged basic side chain.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Asparagine",
+    "category": "Amino Acids",
+    "explanation": "Asn (N) - Polar, uncharged side chain.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Aspartic Acid",
+    "category": "Amino Acids",
+    "explanation": "Asp (D) - Negatively charged acidic side chain.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Cysteine",
+    "category": "Amino Acids",
+    "explanation": "Cys (C) - Polar side chain with thiol (-SH) group.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Glutamine",
+    "category": "Amino Acids",
+    "explanation": "Gln (Q) - Polar, uncharged side chain with amide.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Glutamic Acid",
+    "category": "Amino Acids",
+    "explanation": "Glu (E) - Negatively charged acidic side chain.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Glycine",
+    "category": "Amino Acids",
+    "explanation": "Gly (G) - Simplest nonpolar amino acid.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Histidine",
+    "category": "Amino Acids",
+    "explanation": "His (H) - Aromatic basic side chain.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Isoleucine",
+    "category": "Amino Acids",
+    "explanation": "Ile (I) - Aliphatic branched nonpolar.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Leucine",
+    "category": "Amino Acids",
+    "explanation": "Leu (L) - Aliphatic branched nonpolar.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Lysine",
+    "category": "Amino Acids",
+    "explanation": "Lys (K) - Positively charged basic side chain.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Methionine",
+    "category": "Amino Acids",
+    "explanation": "Met (M) - Nonpolar thioether side chain.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Phenylalanine",
+    "category": "Amino Acids",
+    "explanation": "Phe (F) - Nonpolar hydrophobic aromatic.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Proline",
+    "category": "Amino Acids",
+    "explanation": "Pro (P) - Rigid cyclic secondary amino acid.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Serine",
+    "category": "Amino Acids",
+    "explanation": "Ser (S) - Polar uncharged with hydroxyl (-OH).",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Threonine",
+    "category": "Amino Acids",
+    "explanation": "Thr (T) - Polar uncharged with secondary alcohol.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Tryptophan",
+    "category": "Amino Acids",
+    "explanation": "Trp (W) - Bulky bicyclic aromatic nonpolar.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Tyrosine",
+    "category": "Amino Acids",
+    "explanation": "Tyr (Y) - Amphipathic aromatic polar.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Valine",
+    "category": "Amino Acids",
+    "explanation": "Val (V) - Aliphatic branched nonpolar.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Alanine",
+    "category": "Amino Acids",
+    "explanation": "Ala (A) - Nonpolar, aliphatic side chain.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Arginine",
+    "category": "Amino Acids",
+    "explanation": "Arg (R) - Positively charged basic side chain.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Asparagine",
+    "category": "Amino Acids",
+    "explanation": "Asn (N) - Polar, uncharged side chain.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Aspartic Acid",
+    "category": "Amino Acids",
+    "explanation": "Asp (D) - Negatively charged acidic side chain.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Cysteine",
+    "category": "Amino Acids",
+    "explanation": "Cys (C) - Polar side chain with thiol (-SH) group.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Glutamine",
+    "category": "Amino Acids",
+    "explanation": "Gln (Q) - Polar, uncharged side chain with amide.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Glutamic Acid",
+    "category": "Amino Acids",
+    "explanation": "Glu (E) - Negatively charged acidic side chain.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Glycine",
+    "category": "Amino Acids",
+    "explanation": "Gly (G) - Simplest nonpolar amino acid.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Histidine",
+    "category": "Amino Acids",
+    "explanation": "His (H) - Aromatic basic side chain.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Isoleucine",
+    "category": "Amino Acids",
+    "explanation": "Ile (I) - Aliphatic branched nonpolar.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Leucine",
+    "category": "Amino Acids",
+    "explanation": "Leu (L) - Aliphatic branched nonpolar.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Lysine",
+    "category": "Amino Acids",
+    "explanation": "Lys (K) - Positively charged basic side chain.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Methionine",
+    "category": "Amino Acids",
+    "explanation": "Met (M) - Nonpolar thioether side chain.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Phenylalanine",
+    "category": "Amino Acids",
+    "explanation": "Phe (F) - Nonpolar hydrophobic aromatic.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Proline",
+    "category": "Amino Acids",
+    "explanation": "Pro (P) - Rigid cyclic secondary amino acid.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Serine",
+    "category": "Amino Acids",
+    "explanation": "Ser (S) - Polar uncharged with hydroxyl (-OH).",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Threonine",
+    "category": "Amino Acids",
+    "explanation": "Thr (T) - Polar uncharged with secondary alcohol.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Tryptophan",
+    "category": "Amino Acids",
+    "explanation": "Trp (W) - Bulky bicyclic aromatic nonpolar.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Tyrosine",
+    "category": "Amino Acids",
+    "explanation": "Tyr (Y) - Amphipathic aromatic polar.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Valine",
+    "category": "Amino Acids",
+    "explanation": "Val (V) - Aliphatic branched nonpolar.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Alanine",
+    "category": "Amino Acids",
+    "explanation": "Ala (A) - Nonpolar, aliphatic side chain.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Arginine",
+    "category": "Amino Acids",
+    "explanation": "Arg (R) - Positively charged basic side chain.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Asparagine",
+    "category": "Amino Acids",
+    "explanation": "Asn (N) - Polar, uncharged side chain.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Aspartic Acid",
+    "category": "Amino Acids",
+    "explanation": "Asp (D) - Negatively charged acidic side chain.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Cysteine",
+    "category": "Amino Acids",
+    "explanation": "Cys (C) - Polar side chain with thiol (-SH) group.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Glutamine",
+    "category": "Amino Acids",
+    "explanation": "Gln (Q) - Polar, uncharged side chain with amide.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Glutamic Acid",
+    "category": "Amino Acids",
+    "explanation": "Glu (E) - Negatively charged acidic side chain.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Glycine",
+    "category": "Amino Acids",
+    "explanation": "Gly (G) - Simplest nonpolar amino acid.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Histidine",
+    "category": "Amino Acids",
+    "explanation": "His (H) - Aromatic basic side chain.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Isoleucine",
+    "category": "Amino Acids",
+    "explanation": "Ile (I) - Aliphatic branched nonpolar.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Leucine",
+    "category": "Amino Acids",
+    "explanation": "Leu (L) - Aliphatic branched nonpolar.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Lysine",
+    "category": "Amino Acids",
+    "explanation": "Lys (K) - Positively charged basic side chain.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Methionine",
+    "category": "Amino Acids",
+    "explanation": "Met (M) - Nonpolar thioether side chain.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Phenylalanine",
+    "category": "Amino Acids",
+    "explanation": "Phe (F) - Nonpolar hydrophobic aromatic.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Proline",
+    "category": "Amino Acids",
+    "explanation": "Pro (P) - Rigid cyclic secondary amino acid.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Serine",
+    "category": "Amino Acids",
+    "explanation": "Ser (S) - Polar uncharged with hydroxyl (-OH).",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Threonine",
+    "category": "Amino Acids",
+    "explanation": "Thr (T) - Polar uncharged with secondary alcohol.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Tryptophan",
+    "category": "Amino Acids",
+    "explanation": "Trp (W) - Bulky bicyclic aromatic nonpolar.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Tyrosine",
+    "category": "Amino Acids",
+    "explanation": "Tyr (Y) - Amphipathic aromatic polar.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Valine",
+    "category": "Amino Acids",
+    "explanation": "Val (V) - Aliphatic branched nonpolar.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Alanine",
+    "category": "Amino Acids",
+    "explanation": "Ala (A) - Nonpolar, aliphatic side chain.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Arginine",
+    "category": "Amino Acids",
+    "explanation": "Arg (R) - Positively charged basic side chain.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Asparagine",
+    "category": "Amino Acids",
+    "explanation": "Asn (N) - Polar, uncharged side chain.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Aspartic Acid",
+    "category": "Amino Acids",
+    "explanation": "Asp (D) - Negatively charged acidic side chain.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Cysteine",
+    "category": "Amino Acids",
+    "explanation": "Cys (C) - Polar side chain with thiol (-SH) group.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Glutamine",
+    "category": "Amino Acids",
+    "explanation": "Gln (Q) - Polar, uncharged side chain with amide.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Glutamic Acid",
+    "category": "Amino Acids",
+    "explanation": "Glu (E) - Negatively charged acidic side chain.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Glycine",
+    "category": "Amino Acids",
+    "explanation": "Gly (G) - Simplest nonpolar amino acid.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Histidine",
+    "category": "Amino Acids",
+    "explanation": "His (H) - Aromatic basic side chain.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Isoleucine",
+    "category": "Amino Acids",
+    "explanation": "Ile (I) - Aliphatic branched nonpolar.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Leucine",
+    "category": "Amino Acids",
+    "explanation": "Leu (L) - Aliphatic branched nonpolar.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Lysine",
+    "category": "Amino Acids",
+    "explanation": "Lys (K) - Positively charged basic side chain.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Methionine",
+    "category": "Amino Acids",
+    "explanation": "Met (M) - Nonpolar thioether side chain.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Phenylalanine",
+    "category": "Amino Acids",
+    "explanation": "Phe (F) - Nonpolar hydrophobic aromatic.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Proline",
+    "category": "Amino Acids",
+    "explanation": "Pro (P) - Rigid cyclic secondary amino acid.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Serine",
+    "category": "Amino Acids",
+    "explanation": "Ser (S) - Polar uncharged with hydroxyl (-OH).",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Threonine",
+    "category": "Amino Acids",
+    "explanation": "Thr (T) - Polar uncharged with secondary alcohol.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Tryptophan",
+    "category": "Amino Acids",
+    "explanation": "Trp (W) - Bulky bicyclic aromatic nonpolar.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Tyrosine",
+    "category": "Amino Acids",
+    "explanation": "Tyr (Y) - Amphipathic aromatic polar.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Valine",
+    "category": "Amino Acids",
+    "explanation": "Val (V) - Aliphatic branched nonpolar.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Alanine",
+    "category": "Amino Acids",
+    "explanation": "Ala (A) - Nonpolar, aliphatic side chain.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Arginine",
+    "category": "Amino Acids",
+    "explanation": "Arg (R) - Positively charged basic side chain.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Asparagine",
+    "category": "Amino Acids",
+    "explanation": "Asn (N) - Polar, uncharged side chain.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Aspartic Acid",
+    "category": "Amino Acids",
+    "explanation": "Asp (D) - Negatively charged acidic side chain.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Cysteine",
+    "category": "Amino Acids",
+    "explanation": "Cys (C) - Polar side chain with thiol (-SH) group.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Glutamine",
+    "category": "Amino Acids",
+    "explanation": "Gln (Q) - Polar, uncharged side chain with amide.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Glutamic Acid",
+    "category": "Amino Acids",
+    "explanation": "Glu (E) - Negatively charged acidic side chain.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Glycine",
+    "category": "Amino Acids",
+    "explanation": "Gly (G) - Simplest nonpolar amino acid.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Histidine",
+    "category": "Amino Acids",
+    "explanation": "His (H) - Aromatic basic side chain.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Isoleucine",
+    "category": "Amino Acids",
+    "explanation": "Ile (I) - Aliphatic branched nonpolar.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Leucine",
+    "category": "Amino Acids",
+    "explanation": "Leu (L) - Aliphatic branched nonpolar.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Lysine",
+    "category": "Amino Acids",
+    "explanation": "Lys (K) - Positively charged basic side chain.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Methionine",
+    "category": "Amino Acids",
+    "explanation": "Met (M) - Nonpolar thioether side chain.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Phenylalanine",
+    "category": "Amino Acids",
+    "explanation": "Phe (F) - Nonpolar hydrophobic aromatic.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Proline",
+    "category": "Amino Acids",
+    "explanation": "Pro (P) - Rigid cyclic secondary amino acid.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Serine",
+    "category": "Amino Acids",
+    "explanation": "Ser (S) - Polar uncharged with hydroxyl (-OH).",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Threonine",
+    "category": "Amino Acids",
+    "explanation": "Thr (T) - Polar uncharged with secondary alcohol.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Tryptophan",
+    "category": "Amino Acids",
+    "explanation": "Trp (W) - Bulky bicyclic aromatic nonpolar.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Tyrosine",
+    "category": "Amino Acids",
+    "explanation": "Tyr (Y) - Amphipathic aromatic polar.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Valine",
+    "category": "Amino Acids",
+    "explanation": "Val (V) - Aliphatic branched nonpolar.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Alanine",
+    "category": "Amino Acids",
+    "explanation": "Ala (A) - Nonpolar, aliphatic side chain.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Arginine",
+    "category": "Amino Acids",
+    "explanation": "Arg (R) - Positively charged basic side chain.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Asparagine",
+    "category": "Amino Acids",
+    "explanation": "Asn (N) - Polar, uncharged side chain.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Aspartic Acid",
+    "category": "Amino Acids",
+    "explanation": "Asp (D) - Negatively charged acidic side chain.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Cysteine",
+    "category": "Amino Acids",
+    "explanation": "Cys (C) - Polar side chain with thiol (-SH) group.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Glutamine",
+    "category": "Amino Acids",
+    "explanation": "Gln (Q) - Polar, uncharged side chain with amide.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Glutamic Acid",
+    "category": "Amino Acids",
+    "explanation": "Glu (E) - Negatively charged acidic side chain.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Glycine",
+    "category": "Amino Acids",
+    "explanation": "Gly (G) - Simplest nonpolar amino acid.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Histidine",
+    "category": "Amino Acids",
+    "explanation": "His (H) - Aromatic basic side chain.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Isoleucine",
+    "category": "Amino Acids",
+    "explanation": "Ile (I) - Aliphatic branched nonpolar.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Leucine",
+    "category": "Amino Acids",
+    "explanation": "Leu (L) - Aliphatic branched nonpolar.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Lysine",
+    "category": "Amino Acids",
+    "explanation": "Lys (K) - Positively charged basic side chain.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Methionine",
+    "category": "Amino Acids",
+    "explanation": "Met (M) - Nonpolar thioether side chain.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Phenylalanine",
+    "category": "Amino Acids",
+    "explanation": "Phe (F) - Nonpolar hydrophobic aromatic.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Proline",
+    "category": "Amino Acids",
+    "explanation": "Pro (P) - Rigid cyclic secondary amino acid.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Serine",
+    "category": "Amino Acids",
+    "explanation": "Ser (S) - Polar uncharged with hydroxyl (-OH).",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Threonine",
+    "category": "Amino Acids",
+    "explanation": "Thr (T) - Polar uncharged with secondary alcohol.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Tryptophan",
+    "category": "Amino Acids",
+    "explanation": "Trp (W) - Bulky bicyclic aromatic nonpolar.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Tyrosine",
+    "category": "Amino Acids",
+    "explanation": "Tyr (Y) - Amphipathic aromatic polar.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Valine",
+    "category": "Amino Acids",
+    "explanation": "Val (V) - Aliphatic branched nonpolar.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Alanine",
+    "category": "Amino Acids",
+    "explanation": "Ala (A) - Nonpolar, aliphatic side chain.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Arginine",
+    "category": "Amino Acids",
+    "explanation": "Arg (R) - Positively charged basic side chain.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Asparagine",
+    "category": "Amino Acids",
+    "explanation": "Asn (N) - Polar, uncharged side chain.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Aspartic Acid",
+    "category": "Amino Acids",
+    "explanation": "Asp (D) - Negatively charged acidic side chain.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Cysteine",
+    "category": "Amino Acids",
+    "explanation": "Cys (C) - Polar side chain with thiol (-SH) group.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Glutamine",
+    "category": "Amino Acids",
+    "explanation": "Gln (Q) - Polar, uncharged side chain with amide.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Glutamic Acid",
+    "category": "Amino Acids",
+    "explanation": "Glu (E) - Negatively charged acidic side chain.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Glycine",
+    "category": "Amino Acids",
+    "explanation": "Gly (G) - Simplest nonpolar amino acid.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Histidine",
+    "category": "Amino Acids",
+    "explanation": "His (H) - Aromatic basic side chain.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Isoleucine",
+    "category": "Amino Acids",
+    "explanation": "Ile (I) - Aliphatic branched nonpolar.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Leucine",
+    "category": "Amino Acids",
+    "explanation": "Leu (L) - Aliphatic branched nonpolar.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Lysine",
+    "category": "Amino Acids",
+    "explanation": "Lys (K) - Positively charged basic side chain.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Methionine",
+    "category": "Amino Acids",
+    "explanation": "Met (M) - Nonpolar thioether side chain.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Phenylalanine",
+    "category": "Amino Acids",
+    "explanation": "Phe (F) - Nonpolar hydrophobic aromatic.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Proline",
+    "category": "Amino Acids",
+    "explanation": "Pro (P) - Rigid cyclic secondary amino acid.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Serine",
+    "category": "Amino Acids",
+    "explanation": "Ser (S) - Polar uncharged with hydroxyl (-OH).",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Threonine",
+    "category": "Amino Acids",
+    "explanation": "Thr (T) - Polar uncharged with secondary alcohol.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Tryptophan",
+    "category": "Amino Acids",
+    "explanation": "Trp (W) - Bulky bicyclic aromatic nonpolar.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Tyrosine",
+    "category": "Amino Acids",
+    "explanation": "Tyr (Y) - Amphipathic aromatic polar.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Valine",
+    "category": "Amino Acids",
+    "explanation": "Val (V) - Aliphatic branched nonpolar.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Alanine",
+    "category": "Amino Acids",
+    "explanation": "Ala (A) - Nonpolar, aliphatic side chain.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Arginine",
+    "category": "Amino Acids",
+    "explanation": "Arg (R) - Positively charged basic side chain.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Asparagine",
+    "category": "Amino Acids",
+    "explanation": "Asn (N) - Polar, uncharged side chain.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Aspartic Acid",
+    "category": "Amino Acids",
+    "explanation": "Asp (D) - Negatively charged acidic side chain.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Cysteine",
+    "category": "Amino Acids",
+    "explanation": "Cys (C) - Polar side chain with thiol (-SH) group.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Glutamine",
+    "category": "Amino Acids",
+    "explanation": "Gln (Q) - Polar, uncharged side chain with amide.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Glutamic Acid",
+    "category": "Amino Acids",
+    "explanation": "Glu (E) - Negatively charged acidic side chain.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Glycine",
+    "category": "Amino Acids",
+    "explanation": "Gly (G) - Simplest nonpolar amino acid.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Histidine",
+    "category": "Amino Acids",
+    "explanation": "His (H) - Aromatic basic side chain.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Isoleucine",
+    "category": "Amino Acids",
+    "explanation": "Ile (I) - Aliphatic branched nonpolar.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Leucine",
+    "category": "Amino Acids",
+    "explanation": "Leu (L) - Aliphatic branched nonpolar.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Lysine",
+    "category": "Amino Acids",
+    "explanation": "Lys (K) - Positively charged basic side chain.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Methionine",
+    "category": "Amino Acids",
+    "explanation": "Met (M) - Nonpolar thioether side chain.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Phenylalanine",
+    "category": "Amino Acids",
+    "explanation": "Phe (F) - Nonpolar hydrophobic aromatic.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Proline",
+    "category": "Amino Acids",
+    "explanation": "Pro (P) - Rigid cyclic secondary amino acid.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Serine",
+    "category": "Amino Acids",
+    "explanation": "Ser (S) - Polar uncharged with hydroxyl (-OH).",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Threonine",
+    "category": "Amino Acids",
+    "explanation": "Thr (T) - Polar uncharged with secondary alcohol.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Tryptophan",
+    "category": "Amino Acids",
+    "explanation": "Trp (W) - Bulky bicyclic aromatic nonpolar.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Tyrosine",
+    "category": "Amino Acids",
+    "explanation": "Tyr (Y) - Amphipathic aromatic polar.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Valine",
+    "category": "Amino Acids",
+    "explanation": "Val (V) - Aliphatic branched nonpolar.",
+    "tabooWords": [],
+    "difficulty": 5
+  },
+  {
+    "term": "Alanine",
+    "category": "Amino Acids",
+    "explanation": "Ala (A) - Nonpolar, aliphatic side chain.",
+    "tabooWords": [],
+    "difficulty": 1
+  },
+  {
+    "term": "Arginine",
+    "category": "Amino Acids",
+    "explanation": "Arg (R) - Positively charged basic side chain.",
+    "tabooWords": [],
+    "difficulty": 2
+  },
+  {
+    "term": "Asparagine",
+    "category": "Amino Acids",
+    "explanation": "Asn (N) - Polar, uncharged side chain.",
+    "tabooWords": [],
+    "difficulty": 3
+  },
+  {
+    "term": "Aspartic Acid",
+    "category": "Amino Acids",
+    "explanation": "Asp (D) - Negatively charged acidic side chain.",
+    "tabooWords": [],
+    "difficulty": 4
+  },
+  {
+    "term": "Cysteine",
+    "category": "Amino Acids",
+    "explanation": "Cys (C) - Polar side chain with thiol (-SH) group.",
+    "tabooWords": [],
+    "difficulty": 5
+  }
+]

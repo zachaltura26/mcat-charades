@@ -1,0 +1,38 @@
+{
+  "version": 1,
+  "total": 5000,
+  "topics": {
+    "Chemistry": {
+      "file": "data/chemistry.json",
+      "count": 625
+    },
+    "Biology": {
+      "file": "data/biology.json",
+      "count": 625
+    },
+    "Biochemistry": {
+      "file": "data/biochemistry.json",
+      "count": 625
+    },
+    "Psychology": {
+      "file": "data/psychology.json",
+      "count": 625
+    },
+    "Anatomy": {
+      "file": "data/anatomy.json",
+      "count": 625
+    },
+    "Physiology": {
+      "file": "data/physiology.json",
+      "count": 625
+    },
+    "Earth Science": {
+      "file": "data/earth-science.json",
+      "count": 625
+    },
+    "Amino Acids": {
+      "file": "data/amino-acids.json",
+      "count": 625
+    }
+  }
+}
