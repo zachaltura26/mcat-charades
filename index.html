@@ -5,24 +5,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="High Yield">
 <meta name="mobile-web-app-capable" content="yes">
-<link rel="manifest" href="data:application/json,{
-  &quot;name&quot;: &quot;High Yield! MCAT&quot;,
-  &quot;short_name&quot;: &quot;High Yield&quot;,
-  &quot;description&quot;: &quot;MCAT heads-up study game&quot;,
-  &quot;start_url&quot;: &quot;.&quot;,
-  &quot;display&quot;: &quot;standalone&quot;,
-  &quot;background_color&quot;: &quot;#0A0A0A&quot;,
-  &quot;theme_color&quot;: &quot;#3B82F6&quot;,
-  &quot;icons&quot;: [
-    {
-      &quot;src&quot;: &quot;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Crect width='512' height='512' rx='64' fill='%233B82F6'/%3E%3Ctext x='256' y='320' font-family='sans-serif' font-size='280' text-anchor='middle' fill='white'%3E🧠%3C/text%3E%3C/svg%3E&quot;,
-      &quot;sizes&quot;: &quot;512x512&quot;,
-      &quot;type&quot;: &quot;image/svg+xml&quot;,
-      &quot;purpose&quot;: &quot;any maskable&quot;
-    }
-  ]
-}">
+<meta name="theme-color" content="#101827">
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png">
 <title>High Yield! MCAT Heads-Up</title>
 <link href="https://fonts.googleapis.com/css2?family=Chango&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <style>
@@ -42,6 +30,7 @@
   --text-dim: #555555;
   --blue: #3B82F6;
   --blue-hover: #2563EB;
+  --teal: #14B8C8;
   --red: #EF4444;
   --red-hover: #DC2626;
   --green: #34D399;
@@ -360,30 +349,53 @@ html, body {
 .btn-secondary { background: var(--bg-card); color: var(--text-primary); border: 1px solid var(--border); }
 .btn-ghost { background: transparent; color: var(--text-secondary); border: 1px solid var(--border); box-shadow: none; padding: 10px 18px; font-size: 13px; }
 .btn-sm { padding: 10px 16px; font-size: 13px; border-radius: 8px; }
+.ui-icon {
+  width: 18px;
+  height: 18px;
+  flex: 0 0 auto;
+  stroke: currentColor;
+  stroke-width: 2.2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  fill: none;
+}
+.ui-icon.solid { fill: currentColor; stroke: none; }
+.icon-badge {
+  width: 30px;
+  height: 30px;
+  border-radius: 9px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255,255,255,0.06);
+  color: var(--text-secondary);
+}
+.btn .icon-badge, .btn-original .icon-badge { margin-left: -4px; }
 
 .btn-original {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 10px;
-  padding: 16px 24px;
+  justify-content: flex-start;
+  gap: 12px;
+  padding: 14px 18px;
   border-radius: var(--radius-sm);
-  border: none;
   cursor: pointer;
   font-family: 'Inter', sans-serif;
-  font-weight: 600;
+  font-weight: 800;
   font-size: 15px;
   transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
   width: 100%;
   background: var(--bg-card);
-  color: var(--text-secondary);
+  color: var(--text-primary);
   border: 1px solid var(--border);
   min-height: 52px;
+  text-align: left;
 }
 .btn-original:active { transform: scale(0.97); }
-.btn-original.primary { background: linear-gradient(135deg, var(--blue), var(--violet)); color: white; border: none; font-weight: 800; box-shadow: 0 14px 32px rgba(59, 130, 246, 0.24); }
-.btn-original.primary:active { background: var(--blue-hover); }
-.btn-original.red { background: linear-gradient(135deg, var(--red), var(--amber)); color: white; border: none; font-weight: 800; box-shadow: 0 14px 32px rgba(239, 68, 68, 0.18); }
+.btn-original.primary { background: #14B8C8; color: #061014; border: none; font-weight: 900; box-shadow: 0 14px 32px rgba(20, 184, 200, 0.24); }
+.btn-original.primary .icon-badge { background: rgba(6, 16, 20, 0.12); color: #061014; }
+.btn-original.primary:active { background: #0E9AAA; }
+.btn-original.red { background: rgba(245, 158, 11, 0.12); color: var(--amber); border: 1px solid rgba(245, 158, 11, 0.24); font-weight: 800; box-shadow: none; }
 .btn-original.red:active { background: var(--red-hover); }
 .btn-original.ghost { background: transparent; color: var(--text-secondary); border: 1px solid var(--border); }
 
@@ -396,7 +408,8 @@ html, body {
   border-bottom: 1px solid var(--border);
   background: var(--bg-secondary);
 }
-.nav-back { background: none; border: none; color: var(--text-secondary); font-size: 14px; font-weight: 600; cursor: pointer; padding: 4px 0; transition: color 0.2s; }
+.nav-back { background: none; border: none; color: var(--text-secondary); font-size: 14px; font-weight: 600; cursor: pointer; padding: 4px 0; transition: color 0.2s; display: inline-flex; align-items: center; gap: 6px; }
+.nav-back .ui-icon { width: 16px; height: 16px; }
 .nav-back:hover { color: var(--text-primary); }
 .nav-title { font-family: 'Chango', cursive; font-size: 18px; color: var(--text-primary); letter-spacing: .4px; }
 
@@ -438,40 +451,100 @@ html, body {
 
 .flashcard-logo {
   position: relative;
-  display: inline-block;
-  padding: 10px 20px;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 0 20px;
   margin: 0 auto;
 }
-.flashcard-logo .card-back {
-  position: absolute;
-  width: 160px;
-  height: 110px;
-  background: linear-gradient(135deg, rgba(59, 130, 246, 0.06), rgba(239, 68, 68, 0.04));
-  border: 1px solid rgba(255,255,255,0.04);
-  border-radius: 12px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) rotate(-6deg) translateX(-12px) translateY(4px);
-  pointer-events: none;
-  z-index: 0;
+.title-card-stack {
+  --title-card-w: 56px;
+  --title-card-h: 38px;
+  --title-card-step: 28px;
+  --title-card-pad: 8px;
+  position: relative;
+  width: calc((var(--title-card-pad) * 2) + var(--title-card-w) + (var(--title-card-step) * 3));
+  max-width: calc(100vw - 72px);
+  height: 58px;
+  margin: 0 auto 10px;
+  overflow: visible;
 }
-.flashcard-logo .card-front {
+.title-card-stack .card-square {
   position: absolute;
-  width: 160px;
-  height: 110px;
-  background: linear-gradient(135deg, rgba(59, 130, 246, 0.08), rgba(239, 68, 68, 0.06));
-  border: 1px solid rgba(255,255,255,0.06);
-  border-radius: 12px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) rotate(3deg) translateX(12px) translateY(-4px);
+  width: var(--title-card-w);
+  height: var(--title-card-h);
+  border-radius: 10px;
   pointer-events: none;
-  z-index: 0;
-  box-shadow: 0 8px 40px rgba(0,0,0,0.3);
+  overflow: hidden;
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.10), transparent 45%),
+    linear-gradient(135deg, rgba(24, 24, 24, 0.98), rgba(12, 12, 12, 0.96));
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  box-shadow: 0 12px 26px rgba(0, 0, 0, 0.26);
+  transform: translateY(0) rotate(var(--tilt));
+  animation: titleCardFloat 4.8s ease-in-out infinite;
+  animation-delay: var(--delay);
+  will-change: transform;
+}
+.title-card-stack .card-square::before {
+  content: '';
+  position: absolute;
+  top: 8px;
+  left: 9px;
+  right: 9px;
+  height: 5px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--accent), var(--accent-2));
+}
+.title-card-stack .card-square::after {
+  content: '';
+  position: absolute;
+  left: 10px;
+  right: 18px;
+  bottom: 10px;
+  height: 4px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.16);
+}
+.title-card-stack .card-square:nth-child(1) {
+  --tilt: -9deg;
+  --lift: -4px;
+  --delay: -0.2s;
+  --accent: var(--teal);
+  --accent-2: var(--blue);
+  top: 14px;
+  left: var(--title-card-pad);
+}
+.title-card-stack .card-square:nth-child(2) {
+  --tilt: 5deg;
+  --lift: -7px;
+  --delay: -1.1s;
+  --accent: var(--amber);
+  --accent-2: var(--red);
+  top: 5px;
+  left: calc(var(--title-card-pad) + var(--title-card-step));
+}
+.title-card-stack .card-square:nth-child(3) {
+  --tilt: -4deg;
+  --lift: -5px;
+  --delay: -2s;
+  --accent: var(--violet);
+  --accent-2: var(--blue);
+  top: 13px;
+  left: calc(var(--title-card-pad) + (var(--title-card-step) * 2));
+}
+.title-card-stack .card-square:nth-child(4) {
+  --tilt: 8deg;
+  --lift: -6px;
+  --delay: -2.8s;
+  --accent: var(--green);
+  --accent-2: var(--teal);
+  top: 7px;
+  left: calc(var(--title-card-pad) + (var(--title-card-step) * 3));
 }
 .flashcard-logo > * { position: relative; z-index: 1; }
 
-.home-emoji { font-size: 44px; line-height: 1; display: block; margin-bottom: 4px; position: relative; z-index: 2; }
 .home-title {
   font-family: 'Chango', cursive;
   font-size: 48px;
@@ -491,8 +564,15 @@ html, body {
   animation: gentleFloat 4s ease-in-out infinite 0.5s;
 }
 @keyframes gentleFloat { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-4px); } }
+@keyframes titleCardFloat {
+  0%, 100% { transform: translateY(0) rotate(var(--tilt)); }
+  50% { transform: translateY(var(--lift)) rotate(calc(var(--tilt) + 1.5deg)); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .title-card-stack .card-square { animation: none; }
+}
 
-.home-sub { font-size: 11px; color: var(--text-dim); letter-spacing: 3px; text-transform: uppercase; margin-top: 6px; font-weight: 600; }
+.home-sub { font-size: 11px; color: var(--text-dim); letter-spacing: 3px; text-transform: uppercase; margin-top: 12px; font-weight: 600; }
 .home-badge {
   display: inline-flex;
   align-items: center;
@@ -510,6 +590,55 @@ html, body {
 .home-footer { display: flex; justify-content: center; gap: 16px; margin-top: 4px; }
 .home-footer button { background: none; border: none; color: var(--text-dim); font-size: 12px; font-weight: 500; cursor: pointer; padding: 6px 12px; transition: color 0.2s; font-family: 'Inter', sans-serif; }
 .home-footer button:hover { color: var(--text-secondary); }
+.launch-card {
+  width: 100%;
+  max-width: 380px;
+  border: 1px solid rgba(59, 130, 246, 0.22);
+  border-radius: var(--radius-sm);
+  background: rgba(24, 24, 24, 0.78);
+  padding: 12px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.launch-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.launch-title { font-size: 12px; font-weight: 900; color: var(--text-primary); }
+.launch-sub { font-size: 11px; color: var(--text-dim); line-height: 1.4; }
+.bank-health {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  border-radius: var(--radius-full);
+  padding: 5px 9px;
+  font-size: 9px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: var(--green);
+  background: rgba(52, 211, 153, 0.15);
+  white-space: nowrap;
+}
+.bank-health.warning { color: var(--amber); background: rgba(245, 158, 11, 0.14); }
+.bank-health.error { color: var(--red); background: rgba(239, 68, 68, 0.14); }
+.daily-strip {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 10px;
+  border-top: 1px solid var(--border);
+  padding-top: 9px;
+}
+.daily-strip strong { font-size: 12px; color: var(--text-primary); }
+.daily-strip span { display: block; font-size: 10px; color: var(--text-dim); margin-top: 2px; }
+.daily-chip {
+  border-radius: var(--radius-full);
+  border: 1px solid rgba(245, 158, 11, 0.25);
+  background: rgba(245, 158, 11, 0.1);
+  color: var(--amber);
+  padding: 6px 10px;
+  font-size: 10px;
+  font-weight: 900;
+  white-space: nowrap;
+}
 
 /* ──────── TOPICS ──────── */
 #topics { background: var(--bg-secondary); }
@@ -525,13 +654,32 @@ html, body {
   gap: 4px;
   transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
   background: var(--bg-card);
-  min-height: 80px;
+  min-height: 106px;
 }
 .topic-card:active { transform: scale(0.96); }
 .topic-card.selected { border-color: rgba(59, 130, 246, 0.72); background: linear-gradient(135deg, rgba(59, 130, 246, 0.16), rgba(139, 92, 246, 0.08)); box-shadow: inset 0 0 0 1px rgba(59, 130, 246, 0.18); }
-.topic-icon { font-size: 24px; line-height: 1; }
+.topic-icon {
+  width: 31px;
+  height: 31px;
+  border-radius: 9px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(20, 184, 200, 0.12);
+  color: #67E8F9;
+  border: 1px solid rgba(20, 184, 200, 0.2);
+  font-size: 11px;
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: 0;
+}
+.topic-icon .ui-icon {
+  width: 18px;
+  height: 18px;
+}
 .topic-name { font-size: 13px; font-weight: 800; color: var(--text-primary); overflow-wrap: anywhere; }
-.topic-count { font-size: 10px; color: var(--text-dim); }
+.topic-desc { font-size: 10px; color: var(--text-secondary); line-height: 1.3; margin-top: 2px; max-width: 130px; }
+.topic-count { font-size: 10px; color: var(--text-dim); margin-top: 3px; }
 .topic-check {
   position: absolute;
   top: 10px;
@@ -552,6 +700,8 @@ html, body {
 
 .mode-grid { display: grid; grid-template-columns: 1fr; gap: 8px; padding: 0 16px; }
 .mode-card {
+  --mode-accent: var(--blue);
+  --mode-rgb: 59, 130, 246;
   border: 1px solid var(--border);
   border-radius: var(--radius-sm);
   background: var(--bg-card);
@@ -566,17 +716,34 @@ html, body {
 }
 .mode-card:active { transform: scale(0.98); }
 .mode-card.selected {
-  border-color: rgba(59, 130, 246, 0.72);
-  background: linear-gradient(135deg, rgba(59, 130, 246, 0.14), rgba(52, 211, 153, 0.08));
+  border-color: rgba(var(--mode-rgb), 0.64);
+  background: linear-gradient(135deg, rgba(var(--mode-rgb), 0.16), rgba(255,255,255,0.03));
+  box-shadow: inset 3px 0 0 rgba(var(--mode-rgb), 0.85);
 }
-.mode-icon { font-size: 23px; line-height: 1; }
+.mode-card[data-mode="classic"] { --mode-accent: #38BDF8; --mode-rgb: 56, 189, 248; }
+.mode-card[data-mode="taboo"] { --mode-accent: #F87171; --mode-rgb: 248, 113, 113; }
+.mode-card[data-mode="sprint"] { --mode-accent: #F59E0B; --mode-rgb: 245, 158, 11; }
+.mode-card[data-mode="weak"] { --mode-accent: #A78BFA; --mode-rgb: 167, 139, 250; }
+.mode-card[data-mode="teams"] { --mode-accent: #34D399; --mode-rgb: 52, 211, 153; }
+.mode-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 9px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--mode-accent);
+  background: rgba(var(--mode-rgb), 0.12);
+  border: 1px solid rgba(var(--mode-rgb), 0.24);
+}
 .mode-name { font-size: 13px; font-weight: 900; color: var(--text-primary); }
 .mode-sub { font-size: 10px; color: var(--text-dim); margin-top: 2px; line-height: 1.35; }
 .mode-tag {
   font-size: 9px;
   font-weight: 900;
-  color: var(--text-secondary);
-  border: 1px solid var(--border);
+  color: var(--mode-accent);
+  border: 1px solid rgba(var(--mode-rgb), 0.28);
+  background: rgba(var(--mode-rgb), 0.08);
   border-radius: var(--radius-full);
   padding: 4px 7px;
   text-transform: uppercase;
@@ -661,6 +828,19 @@ html, body {
 }
 .mini-panel-title { font-size: 12px; font-weight: 900; color: var(--text-primary); }
 .mini-panel-sub { font-size: 11px; color: var(--text-dim); margin-top: 3px; line-height: 1.45; }
+.bank-note {
+  margin: 0 16px 14px;
+  border: 1px solid rgba(245, 158, 11, 0.22);
+  border-radius: var(--radius-sm);
+  background: rgba(245, 158, 11, 0.08);
+  padding: 10px 12px;
+  color: var(--text-secondary);
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 1.45;
+  display: none;
+}
+.bank-note.active { display: block; }
 
 .settings-card {
   background: var(--bg-card);
@@ -792,7 +972,8 @@ input[type=range] { width: 110px; accent-color: var(--blue); background: transpa
   padding: 24px 20px;
   text-align: center;
 }
-.ai-hero-icon { font-size: 40px; margin-bottom: 8px; }
+.ai-hero-icon { margin-bottom: 8px; color: #67E8F9; }
+.ai-hero-icon .ui-icon { width: 42px; height: 42px; }
 .ai-hero-title { font-family: 'Chango', cursive; font-size: 20px; color: var(--text-primary); }
 .ai-hero-sub { font-size: 13px; color: var(--text-secondary); margin-top: 6px; line-height: 1.5; }
 
@@ -863,7 +1044,8 @@ input[type=range] { width: 110px; accent-color: var(--blue); background: transpa
 }
 .upload-zone:active { transform: scale(0.98); }
 #file-input { position: absolute; inset: 0; opacity: 0; cursor: pointer; }
-.upload-icon { font-size: 30px; margin-bottom: 6px; }
+.upload-icon { margin-bottom: 6px; color: var(--text-secondary); }
+.upload-icon .ui-icon { width: 30px; height: 30px; }
 .upload-title { font-size: 15px; font-weight: 800; color: var(--blue); }
 .upload-sub { font-size: 12px; color: var(--text-dim); margin-top: 3px; }
 
@@ -923,7 +1105,8 @@ input[type=range] { width: 110px; accent-color: var(--blue); background: transpa
 }
 #countdown.active { display: flex; }
 .cd-num { font-family: 'Chango', cursive; font-size: 90px; color: var(--text-primary); transition: transform 0.2s; margin-top: 20px;}
-.rotate-icon { font-size: 50px; margin-bottom: 20px; animation: tilt-phone 2s infinite ease-in-out; }
+.rotate-icon { margin-bottom: 20px; animation: tilt-phone 2s infinite ease-in-out; color: var(--text-primary); }
+.rotate-icon .ui-icon { width: 54px; height: 54px; }
 .rotate-text { font-size: 24px; font-weight: 700; color: #F59E0B; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 10px; }
 
 @keyframes tilt-phone {
@@ -1020,6 +1203,15 @@ input[type=range] { width: 110px; accent-color: var(--blue); background: transpa
   font-size: 11px;
   line-height: 1.4;
 }
+.ad-label {
+  align-self: stretch;
+  text-align: center;
+  color: var(--text-dim);
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
 .ad-break-note {
   color: var(--text-dim);
   font-size: 11px;
@@ -1055,7 +1247,7 @@ input[type=range] { width: 110px; accent-color: var(--blue); background: transpa
 }
 
 .results-header { text-align: center; padding: 24px 20px 0; flex-shrink: 0; }
-.results-trophy { font-size: 56px; line-height: 1; margin-bottom: 4px; }
+.results-trophy { font-family: 'Chango', cursive; font-size: 50px; line-height: 1; margin-bottom: 4px; color: #67E8F9; }
 .results-title {
   font-family: 'Chango', cursive;
   font-size: 28px;
@@ -1359,6 +1551,91 @@ input[type=range] { width: 110px; accent-color: var(--blue); background: transpa
 .install-banner .btn { width: auto; padding: 10px 20px; font-size: 13px; }
 .install-banner .btn-close { background: none; border: none; color: var(--text-dim); font-size: 20px; cursor: pointer; padding: 4px 8px; }
 
+.install-thanks-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 12050;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 18px;
+  background: rgba(10, 10, 10, 0.78);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+}
+.install-thanks-overlay.active { display: flex; }
+.install-thanks-card {
+  width: min(100%, 380px);
+  border: 1px solid rgba(52, 211, 153, 0.26);
+  border-radius: var(--radius);
+  background: #141414;
+  padding: 18px;
+  text-align: center;
+  box-shadow: 0 24px 70px rgba(0,0,0,0.45);
+}
+.install-thanks-icon {
+  width: 72px;
+  height: 72px;
+  border-radius: 18px;
+  margin: 0 auto 12px;
+  object-fit: cover;
+  box-shadow: 0 14px 36px rgba(0,0,0,0.32);
+}
+.install-thanks-title {
+  font-family: 'Chango', cursive;
+  color: var(--text-primary);
+  font-size: 25px;
+  line-height: 1.08;
+}
+.install-thanks-copy {
+  color: var(--text-secondary);
+  font-size: 13px;
+  line-height: 1.5;
+  margin: 9px 0 14px;
+}
+
+.tutorial-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 12000;
+  background: rgba(10, 10, 10, 0.82);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 18px;
+}
+.tutorial-overlay.active { display: flex; }
+.tutorial-card {
+  width: min(100%, 420px);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: var(--radius);
+  background: #141414;
+  padding: 18px;
+  box-shadow: 0 24px 70px rgba(0,0,0,0.45);
+}
+.tutorial-kicker { font-size: 10px; font-weight: 900; color: var(--green); text-transform: uppercase; letter-spacing: 1px; }
+.tutorial-title { font-family: 'Chango', cursive; font-size: 28px; margin-top: 4px; color: var(--text-primary); }
+.tutorial-copy { color: var(--text-secondary); font-size: 13px; line-height: 1.5; margin-top: 8px; }
+.tutorial-steps { display: grid; gap: 8px; margin: 14px 0; }
+.tutorial-step {
+  display: grid;
+  grid-template-columns: 34px 1fr;
+  gap: 10px;
+  align-items: center;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: rgba(255,255,255,0.03);
+  padding: 10px;
+}
+.tutorial-step-icon { line-height: 1; color: #67E8F9; }
+.tutorial-step-icon .ui-icon { width: 22px; height: 22px; }
+.tutorial-step strong { display: block; font-size: 12px; color: var(--text-primary); }
+.tutorial-step span { display: block; font-size: 11px; color: var(--text-dim); margin-top: 2px; line-height: 1.35; }
+.tutorial-actions { display: flex; justify-content: center; }
+.tutorial-actions .btn { min-height: 44px; width: min(100%, 220px); }
+
 .offline-indicator {
   display: inline-flex;
   align-items: center;
@@ -1414,6 +1691,17 @@ input[type=range] { width: 110px; accent-color: var(--blue); background: transpa
   line-height: 1;
 }
 .dash-stat-l { color: var(--text-dim); font-size: 10px; font-weight: 900; letter-spacing: 1px; text-transform: uppercase; margin-top: 5px; }
+.daily-panel {
+  margin: 0 16px;
+  border: 1px solid rgba(245, 158, 11, 0.25);
+  border-radius: var(--radius-sm);
+  background: linear-gradient(135deg, rgba(245, 158, 11, 0.12), rgba(59, 130, 246, 0.07));
+  padding: 14px;
+}
+.daily-panel-top { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.daily-panel-title { font-size: 13px; font-weight: 900; color: var(--text-primary); }
+.daily-panel-sub { color: var(--text-dim); font-size: 11px; margin-top: 3px; line-height: 1.4; }
+.daily-panel-score { font-family: 'Chango', cursive; color: var(--amber); font-size: 28px; line-height: 1; }
 .badge-grid { display: grid; grid-template-columns: 1fr; gap: 8px; padding: 0 16px; }
 .badge-card {
   border: 1px solid var(--border);
@@ -1430,7 +1718,19 @@ input[type=range] { width: 110px; accent-color: var(--blue); background: transpa
   border-color: rgba(245, 158, 11, 0.34);
   background: rgba(245, 158, 11, 0.09);
 }
-.badge-icon { font-size: 24px; line-height: 1; }
+.badge-icon {
+  min-width: 36px;
+  height: 28px;
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255,255,255,0.06);
+  color: var(--amber);
+  font-size: 10px;
+  font-weight: 900;
+  line-height: 1;
+}
 .badge-name { font-size: 13px; font-weight: 900; color: var(--text-primary); }
 .badge-desc { font-size: 11px; color: var(--text-dim); margin-top: 2px; line-height: 1.35; }
 .mastery-list { display: flex; flex-direction: column; gap: 8px; padding: 0 16px 18px; }
@@ -1459,9 +1759,20 @@ input[type=range] { width: 110px; accent-color: var(--blue); background: transpa
 
 @media (max-width: 520px) {
   #home { padding: 32px 20px; gap: 26px; }
+  .title-card-stack {
+    --title-card-w: 50px;
+    --title-card-h: 34px;
+    --title-card-step: 24px;
+    --title-card-pad: 10px;
+    height: 52px;
+    margin-bottom: 8px;
+  }
+  .title-card-stack .card-square::before { top: 7px; height: 4px; }
+  .title-card-stack .card-square::after { bottom: 8px; height: 3px; }
   .home-title { font-size: 42px; }
   .home-footer { flex-wrap: wrap; gap: 8px; }
-  .topic-card { min-height: 86px; padding: 15px 12px; }
+  .topic-card { min-height: 112px; padding: 15px 12px; }
+  .topic-desc { max-width: 118px; }
   .nav-title { font-size: 16px; }
   .score-pill { min-width: 64px; font-size: 11px; }
   .game-hud { left: 16px; right: 16px; }
@@ -1495,6 +1806,38 @@ input[type=range] { width: 110px; accent-color: var(--blue); background: transpa
 <body>
 <div id="app">
 
+<svg aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden">
+  <symbol id="i-play" viewBox="0 0 24 24"><path d="M8 5v14l11-7-11-7z"/></symbol>
+  <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></symbol>
+  <symbol id="i-chart" viewBox="0 0 24 24"><path d="M4 19V5"/><path d="M4 19h16"/><path d="M8 16v-5"/><path d="M12 16V8"/><path d="M16 16v-3"/></symbol>
+  <symbol id="i-slash" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M5.7 5.7l12.6 12.6"/></symbol>
+  <symbol id="i-spark" viewBox="0 0 24 24"><path d="M12 2l1.7 6.3L20 10l-6.3 1.7L12 18l-1.7-6.3L4 10l6.3-1.7L12 2z"/><path d="M19 15l.8 2.2L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.8L19 15z"/></symbol>
+  <symbol id="i-wand" viewBox="0 0 24 24"><path d="M15 4l5 5"/><path d="M14 5l-9 9 5 5 9-9-5-5z"/><path d="M4 4h.01M9 2h.01M2 9h.01"/></symbol>
+  <symbol id="i-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></symbol>
+  <symbol id="i-zap" viewBox="0 0 24 24"><path d="M13 2L4 14h7l-1 8 9-12h-7l1-8z"/></symbol>
+  <symbol id="i-brain" viewBox="0 0 24 24"><path d="M9 4a3 3 0 0 0-3 3 3 3 0 0 0-2 5 3 3 0 0 0 3 5h2V4z"/><path d="M15 4a3 3 0 0 1 3 3 3 3 0 0 1 2 5 3 3 0 0 1-3 5h-2V4z"/><path d="M9 9H6M15 9h3M9 14H6M15 14h3"/></symbol>
+  <symbol id="i-flag" viewBox="0 0 24 24"><path d="M5 21V4"/><path d="M5 4h12l-2 4 2 4H5"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 18h2"/></symbol>
+  <symbol id="i-refresh" viewBox="0 0 24 24"><path d="M20 6v5h-5"/><path d="M4 18v-5h5"/><path d="M18 9a7 7 0 0 0-12-3l-2 2"/><path d="M6 15a7 7 0 0 0 12 3l2-2"/></symbol>
+  <symbol id="i-share" viewBox="0 0 24 24"><path d="M4 12v7a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-7"/><path d="M12 16V4"/><path d="M7 9l5-5 5 5"/></symbol>
+  <symbol id="i-home" viewBox="0 0 24 24"><path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/><path d="M10 20v-6h4v6"/></symbol>
+  <symbol id="i-arrow-left" viewBox="0 0 24 24"><path d="M19 12H5"/><path d="M12 19l-7-7 7-7"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></symbol>
+  <symbol id="i-skip" viewBox="0 0 24 24"><path d="M5 5l9 7-9 7V5z"/><path d="M19 5v14"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24"><path d="M12 3l2.8 5.7 6.2.9-4.5 4.4 1.1 6.2L12 17.2 6.4 20.2 7.5 14 3 9.6l6.2-.9L12 3z"/></symbol>
+  <symbol id="i-upload" viewBox="0 0 24 24"><path d="M12 16V4"/><path d="M7 9l5-5 5 5"/><path d="M5 20h14"/></symbol>
+  <symbol id="i-edit" viewBox="0 0 24 24"><path d="M4 20h4l11-11-4-4L4 16v4z"/><path d="M13 6l4 4"/></symbol>
+  <symbol id="i-layers" viewBox="0 0 24 24"><path d="M12 3l9 5-9 5-9-5 9-5z"/><path d="M3 12l9 5 9-5"/><path d="M3 16l9 5 9-5"/></symbol>
+  <symbol id="i-atom" viewBox="0 0 24 24"><circle cx="12" cy="12" r="1.5"/><ellipse cx="12" cy="12" rx="9" ry="3.6"/><ellipse cx="12" cy="12" rx="9" ry="3.6" transform="rotate(60 12 12)"/><ellipse cx="12" cy="12" rx="9" ry="3.6" transform="rotate(120 12 12)"/></symbol>
+  <symbol id="i-leaf" viewBox="0 0 24 24"><path d="M20 4c-8.2.2-13.5 3.5-15 9.8C3.9 18.5 7.5 21 11.3 19.2 16 17 18.8 11.6 20 4z"/><path d="M5 20c3-5 7-8 12-10"/></symbol>
+  <symbol id="i-flask" viewBox="0 0 24 24"><path d="M9 3h6"/><path d="M10 3v5l-5.8 9.3A2.4 2.4 0 0 0 6.2 21h11.6a2.4 2.4 0 0 0 2-3.7L14 8V3"/><path d="M7.6 16h8.8"/></symbol>
+  <symbol id="i-network" viewBox="0 0 24 24"><circle cx="6" cy="7" r="2"/><circle cx="18" cy="7" r="2"/><circle cx="12" cy="17" r="2"/><path d="M8 8.2l3 6.2M16 8.2l-3 6.2M8 7h8"/></symbol>
+  <symbol id="i-heartbeat" viewBox="0 0 24 24"><path d="M20.8 4.9a5.2 5.2 0 0 0-7.4 0L12 6.3l-1.4-1.4a5.2 5.2 0 0 0-7.4 7.4L12 21l5-5"/><path d="M13 15h2l1.3-3 1.4 6 1.3-3h2"/></symbol>
+  <symbol id="i-pulse" viewBox="0 0 24 24"><path d="M3 12h4l2-6 4 12 2-6h6"/></symbol>
+  <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3c2.3 2.4 3.5 5.4 3.5 9S14.3 18.6 12 21c-2.3-2.4-3.5-5.4-3.5-9S9.7 5.4 12 3z"/></symbol>
+  <symbol id="i-helix" viewBox="0 0 24 24"><path d="M7 3c7 3 7 15 0 18"/><path d="M17 3c-7 3-7 15 0 18"/><path d="M8.5 7h7M8.5 12h7M8.5 17h7"/></symbol>
+</svg>
+
 <div class="install-banner" id="installBanner">
   <div><div class="install-banner-text"><strong>High Yield!</strong> Install for the best experience</div></div>
   <div style="display:flex;gap:8px;align-items:center;">
@@ -1503,12 +1846,41 @@ input[type=range] { width: 110px; accent-color: var(--blue); background: transpa
   </div>
 </div>
 
+<div class="install-thanks-overlay" id="install-thanks-overlay" role="dialog" aria-modal="true" aria-labelledby="install-thanks-title">
+  <div class="install-thanks-card">
+    <img class="install-thanks-icon" src="icons/icon-192.png" alt="">
+    <div class="install-thanks-title" id="install-thanks-title">Thanks for downloading!</div>
+    <div class="install-thanks-copy">High Yield is now one tap away. Start a Daily Challenge or pass the phone around for a quick MCAT charades round.</div>
+    <button class="btn btn-primary" onclick="closeInstallThanks()">Start Playing</button>
+  </div>
+</div>
+
+<div class="tutorial-overlay" id="tutorial-overlay" role="dialog" aria-modal="true" aria-labelledby="tutorial-title">
+  <div class="tutorial-card">
+    <div class="tutorial-kicker">Quick start</div>
+    <div class="tutorial-title" id="tutorial-title">How to Play</div>
+    <div class="tutorial-copy">Hold the phone to your forehead with the screen facing your friends. They describe the MCAT term while you guess.</div>
+    <div class="tutorial-steps">
+      <div class="tutorial-step"><div class="tutorial-step-icon"><svg class="ui-icon"><use href="#i-phone"></use></svg></div><div><strong>Screen faces out</strong><span>Your friends read the card, you guess the term.</span></div></div>
+      <div class="tutorial-step"><div class="tutorial-step-icon"><svg class="ui-icon"><use href="#i-check"></use></svg></div><div><strong>Tilt down for correct</strong><span>Face toward the floor when you get it.</span></div></div>
+      <div class="tutorial-step"><div class="tutorial-step-icon"><svg class="ui-icon"><use href="#i-skip"></use></svg></div><div><strong>Tilt up to skip</strong><span>Face toward the ceiling if you miss it.</span></div></div>
+      <div class="tutorial-step"><div class="tutorial-step-icon"><svg class="ui-icon"><use href="#i-target"></use></svg></div><div><strong>Tap controls work too</strong><span>Left side skips, right side scores if gyro permission fails.</span></div></div>
+    </div>
+    <div class="tutorial-actions">
+      <button class="btn btn-primary" onclick="completeTutorial(true)">Got it</button>
+    </div>
+  </div>
+</div>
+
 <div class="screen active" id="home">
   <div class="home-header">
     <div class="flashcard-logo">
-      <div class="card-back"></div>
-      <div class="card-front"></div>
-      <span class="home-emoji">🧠</span>
+      <div class="title-card-stack" aria-hidden="true">
+        <div class="card-square"></div>
+        <div class="card-square"></div>
+        <div class="card-square"></div>
+        <div class="card-square"></div>
+      </div>
       <div class="home-title"><span class="high">High</span> <span class="yield">Yield!</span></div>
     </div>
     <div class="home-sub">MCAT Heads-Up Study Game</div>
@@ -1518,16 +1890,30 @@ input[type=range] { width: 110px; accent-color: var(--blue); background: transpa
     </div>
   </div>
   <div class="home-actions">
-    <button class="btn-original primary" onclick="showScreen('topics')">▶ Start Game</button>
-    <button class="btn-original" onclick="startDailyChallenge()">☀️ Daily Challenge</button>
-    <button class="btn-original" onclick="showDashboard()">📊 Progress Dashboard</button>
-    <button class="btn-original" onclick="showNoAdsUpgrade()">🚫 Remove Ads · $2.99</button>
-    <button class="btn-original red" onclick="showPremiumFeature('AI Deck from Slides')">✨ AI Deck from Slides · Premium</button>
-    <button class="btn-original ghost" onclick="showPremiumFeature('Custom AI Deck Maker')">🤖 Custom AI Deck Maker · Premium</button>
+    <button class="btn-original primary" onclick="showScreen('topics')"><span class="icon-badge"><svg class="ui-icon solid"><use href="#i-play"></use></svg></span><span>Start Game</span></button>
+    <button class="btn-original" id="daily-home-btn" onclick="startDailyChallenge()"><span class="icon-badge"><svg class="ui-icon"><use href="#i-sun"></use></svg></span><span>Daily Challenge</span></button>
+    <button class="btn-original" onclick="showDashboard()"><span class="icon-badge"><svg class="ui-icon"><use href="#i-chart"></use></svg></span><span>Your Recall Stats</span></button>
+    <button class="btn-original" onclick="showNoAdsUpgrade()"><span class="icon-badge"><svg class="ui-icon"><use href="#i-slash"></use></svg></span><span>Remove Ads · $2.99</span></button>
+    <button class="btn-original red" onclick="showPremiumFeature('AI Deck from Slides')"><span class="icon-badge"><svg class="ui-icon"><use href="#i-spark"></use></svg></span><span>AI Deck from Slides · Premium</span></button>
+    <button class="btn-original ghost" onclick="showPremiumFeature('Custom AI Deck Maker')"><span class="icon-badge"><svg class="ui-icon"><use href="#i-wand"></use></svg></span><span>Custom Deck Maker · Premium</span></button>
+  </div>
+  <div class="launch-card">
+    <div class="launch-row">
+      <div>
+        <div class="launch-title">Launch status</div>
+        <div class="launch-sub" id="bank-status-detail">Checking the question bank...</div>
+      </div>
+      <div class="bank-health" id="bank-health">Checking</div>
+    </div>
+    <div class="daily-strip">
+      <div><strong id="daily-status-title">Daily Challenge ready</strong><span id="daily-status-sub">15 date-seeded cards refresh each day.</span></div>
+      <div class="daily-chip" id="daily-streak-chip">0 day streak</div>
+    </div>
   </div>
   <div class="home-footer">
     <button onclick="showScreen('topics')">Settings</button>
     <button onclick="showDashboard()">Stats</button>
+    <button onclick="showTutorial()">How to Play</button>
     <button onclick="resetCardCycle()">Reset Cards</button>
     <button id="pwaInstallBtn" style="display:none;">📲 Install App</button>
   </div>
@@ -1535,35 +1921,36 @@ input[type=range] { width: 110px; accent-color: var(--blue); background: transpa
 
 <div class="screen" id="topics">
   <div class="nav-bar">
-    <button class="nav-back" onclick="showScreen('home')">‹ Back</button>
+    <button class="nav-back" onclick="showScreen('home')"><svg class="ui-icon"><use href="#i-arrow-left"></use></svg> Back</button>
     <span class="nav-title">Choose Topics</span>
     <span style="font-size:12px;color:var(--text-dim);font-weight:600" id="selected-count">0 selected</span>
   </div>
   <div class="scroll-body" style="display:flex;flex-direction:column;gap:0;padding-bottom:8px">
-    <div class="section-label">Question banks. <span id="ai-status-badge" class="ai-status-badge on">5,000 cards</span></div>
+    <div class="section-label">Question banks. <span id="ai-status-badge" class="ai-status-badge on">Checking bank</span></div>
+    <div class="bank-note" id="bank-warning">Mini fallback bank is active. On GitHub Pages, upload the full <strong>data</strong> folder next to <strong>index.html</strong>, then hard refresh.</div>
     <div class="topics-grid" style="margin-bottom:14px">
-      <div class="topic-card t-chem"    data-topic="Chemistry"    onclick="toggleTopic(this)"><div class="topic-check">✓</div><div class="topic-icon">⚗️</div><div><div class="topic-name">Chemistry</div><div class="topic-count" id="count-chem">Chemistry</div></div></div>
-      <div class="topic-card t-bio"     data-topic="Biology"      onclick="toggleTopic(this)"><div class="topic-check">✓</div><div class="topic-icon">🌿</div><div><div class="topic-name">Biology</div><div class="topic-count" id="count-bio">Biology</div></div></div>
-      <div class="topic-card t-biochem" data-topic="Biochemistry" onclick="toggleTopic(this)"><div class="topic-check">✓</div><div class="topic-icon">🔬</div><div><div class="topic-name">Biochemistry</div><div class="topic-count" id="count-biochem">Biochemistry</div></div></div>
-      <div class="topic-card t-psych"   data-topic="Psychology"   onclick="toggleTopic(this)"><div class="topic-check">✓</div><div class="topic-icon">🧩</div><div><div class="topic-name">Psychology</div><div class="topic-count" id="count-psych">Psychology</div></div></div>
-      <div class="topic-card t-anatomy" data-topic="Anatomy"      onclick="toggleTopic(this)"><div class="topic-check">✓</div><div class="topic-icon">🫀</div><div><div class="topic-name">Anatomy</div><div class="topic-count" id="count-anatomy">Anatomy</div></div></div>
-      <div class="topic-card t-phys"    data-topic="Physiology"   onclick="toggleTopic(this)"><div class="topic-check">✓</div><div class="topic-icon">⚡</div><div><div class="topic-name">Physiology</div><div class="topic-count" id="count-phys">Physiology</div></div></div>
-      <div class="topic-card t-earth"   data-topic="Earth Science"onclick="toggleTopic(this)"><div class="topic-check">✓</div><div class="topic-icon">🌍</div><div><div class="topic-name">Earth Science</div><div class="topic-count" id="count-earth">Earth Science</div></div></div>
-      <div class="topic-card t-amino"   data-topic="Amino Acids"  onclick="toggleTopic(this)"><div class="topic-check">✓</div><div class="topic-icon">🧬</div><div><div class="topic-name">Amino Acids</div><div class="topic-count" id="count-amino">Amino Acids</div></div></div>
+      <div class="topic-card t-chem"    data-topic="Chemistry"    onclick="toggleTopic(this)"><div class="topic-check">✓</div><div class="topic-icon"><svg class="ui-icon"><use href="#i-atom"></use></svg></div><div><div class="topic-name">Chemistry</div><div class="topic-desc">Reactions, bonding, acids, and equilibrium.</div><div class="topic-count" id="count-chem">Chemistry</div></div></div>
+      <div class="topic-card t-bio"     data-topic="Biology"      onclick="toggleTopic(this)"><div class="topic-check">✓</div><div class="topic-icon"><svg class="ui-icon"><use href="#i-leaf"></use></svg></div><div><div class="topic-name">Biology</div><div class="topic-desc">Cells, genetics, evolution, and organisms.</div><div class="topic-count" id="count-bio">Biology</div></div></div>
+      <div class="topic-card t-biochem" data-topic="Biochemistry" onclick="toggleTopic(this)"><div class="topic-check">✓</div><div class="topic-icon"><svg class="ui-icon"><use href="#i-flask"></use></svg></div><div><div class="topic-name">Biochemistry</div><div class="topic-desc">Enzymes, metabolism, proteins, and pathways.</div><div class="topic-count" id="count-biochem">Biochemistry</div></div></div>
+      <div class="topic-card t-psych"   data-topic="Psychology"   onclick="toggleTopic(this)"><div class="topic-check">✓</div><div class="topic-icon"><svg class="ui-icon"><use href="#i-network"></use></svg></div><div><div class="topic-name">Psychology</div><div class="topic-desc">Behavior, cognition, learning, and society.</div><div class="topic-count" id="count-psych">Psychology</div></div></div>
+      <div class="topic-card t-anatomy" data-topic="Anatomy"      onclick="toggleTopic(this)"><div class="topic-check">✓</div><div class="topic-icon"><svg class="ui-icon"><use href="#i-heartbeat"></use></svg></div><div><div class="topic-name">Anatomy</div><div class="topic-desc">Body structures, organs, tissues, and locations.</div><div class="topic-count" id="count-anatomy">Anatomy</div></div></div>
+      <div class="topic-card t-phys"    data-topic="Physiology"   onclick="toggleTopic(this)"><div class="topic-check">✓</div><div class="topic-icon"><svg class="ui-icon"><use href="#i-pulse"></use></svg></div><div><div class="topic-name">Physiology</div><div class="topic-desc">How systems work, regulate, and respond.</div><div class="topic-count" id="count-phys">Physiology</div></div></div>
+      <div class="topic-card t-earth"   data-topic="Earth Science"onclick="toggleTopic(this)"><div class="topic-check">✓</div><div class="topic-icon"><svg class="ui-icon"><use href="#i-globe"></use></svg></div><div><div class="topic-name">Earth Science</div><div class="topic-desc">Earth systems, fluids, atmosphere, and environment.</div><div class="topic-count" id="count-earth">Earth Science</div></div></div>
+      <div class="topic-card t-amino"   data-topic="Amino Acids"  onclick="toggleTopic(this)"><div class="topic-check">✓</div><div class="topic-icon"><svg class="ui-icon"><use href="#i-helix"></use></svg></div><div><div class="topic-name">Amino Acids</div><div class="topic-desc">Structures, charges, polarity, and abbreviations.</div><div class="topic-count" id="count-amino">Amino Acids</div></div></div>
     </div>
     <div id="custom-decks-section" style="display:none"><div class="section-label">My Decks</div><div class="topics-grid" id="custom-decks-grid" style="margin-bottom:14px"></div></div>
 
-    <div class="section-label">🎮 Game Mode</div>
+    <div class="section-label">Game Mode</div>
     <div class="mode-grid" style="margin-bottom:14px">
-      <div class="mode-card selected" data-mode="classic" onclick="setGameMode('classic')"><div class="mode-icon">🎯</div><div><div class="mode-name">Classic Heads-Up</div><div class="mode-sub">Balanced round for quick review or group play.</div></div><span class="mode-tag">60s</span></div>
-      <div class="mode-card" data-mode="taboo" onclick="setGameMode('taboo')"><div class="mode-icon">🚫</div><div><div class="mode-name">Taboo Mode</div><div class="mode-sub">Adds forbidden clue words for a more chaotic party round.</div></div><span class="mode-tag">Harder</span></div>
-      <div class="mode-card" data-mode="sprint" onclick="setGameMode('sprint')"><div class="mode-icon">⚡</div><div><div class="mode-name">MCAT Sprint</div><div class="mode-sub">45 seconds, faster pressure, higher streak focus.</div></div><span class="mode-tag">45s</span></div>
-      <div class="mode-card" data-mode="weak" onclick="setGameMode('weak')"><div class="mode-icon">🧠</div><div><div class="mode-name">Weak Spot Review</div><div class="mode-sub">Replays missed and skipped cards from previous rounds.</div></div><span class="mode-tag" id="weak-count">0</span></div>
-      <div class="mode-card" data-mode="teams" onclick="setGameMode('teams')"><div class="mode-icon">🏁</div><div><div class="mode-name">Team Battle</div><div class="mode-sub">Named players, best-of face-offs, and a running party score.</div></div><span class="mode-tag" id="team-active-label">Team A</span></div>
+      <div class="mode-card selected" data-mode="classic" onclick="setGameMode('classic')"><div class="mode-icon"><svg class="ui-icon"><use href="#i-target"></use></svg></div><div><div class="mode-name">Classic Heads-Up</div><div class="mode-sub">Balanced round for quick review or group play.</div></div><span class="mode-tag">60s</span></div>
+      <div class="mode-card" data-mode="taboo" onclick="setGameMode('taboo')"><div class="mode-icon"><svg class="ui-icon"><use href="#i-slash"></use></svg></div><div><div class="mode-name">Taboo Mode</div><div class="mode-sub">Adds forbidden clue words for a more chaotic party round.</div></div><span class="mode-tag">Harder</span></div>
+      <div class="mode-card" data-mode="sprint" onclick="setGameMode('sprint')"><div class="mode-icon"><svg class="ui-icon"><use href="#i-zap"></use></svg></div><div><div class="mode-name">MCAT Sprint</div><div class="mode-sub">45 seconds, faster pressure, higher streak focus.</div></div><span class="mode-tag">45s</span></div>
+      <div class="mode-card" data-mode="weak" onclick="setGameMode('weak')"><div class="mode-icon"><svg class="ui-icon"><use href="#i-brain"></use></svg></div><div><div class="mode-name">Weak Spot Review</div><div class="mode-sub">Replays missed and skipped cards from previous rounds.</div></div><span class="mode-tag" id="weak-count">0</span></div>
+      <div class="mode-card" data-mode="teams" onclick="setGameMode('teams')"><div class="mode-icon"><svg class="ui-icon"><use href="#i-flag"></use></svg></div><div><div class="mode-name">Team Battle</div><div class="mode-sub">Named players, best-of face-offs, and a running party score.</div></div><span class="mode-tag" id="team-active-label">Team A</span></div>
     </div>
 
     <div class="team-setup" id="team-setup">
-      <div class="section-label">🏁 Team Battle Setup</div>
+      <div class="section-label">Team Battle Setup</div>
       <div class="settings-card" style="margin-bottom:14px">
         <div class="team-setup-grid">
           <label class="team-field"><span>Team A name</span><input class="team-input" id="team-a-name" maxlength="24" value="Team A" oninput="updateTeamName('A', this.value)"></label>
@@ -1585,12 +1972,12 @@ input[type=range] { width: 110px; accent-color: var(--blue); background: transpa
     </div>
 
     <div id="subtopic-section" style="display:none">
-      <div class="section-label">🧪 Subtopics</div>
+      <div class="section-label">Optional Filters</div>
       <div class="subtopic-wrap" id="subtopic-wrap"></div>
-      <div class="mini-panel"><div class="mini-panel-title" id="subtopic-title">All selected topic cards</div><div class="mini-panel-sub" id="subtopic-sub">Pick chips to narrow a round to a pathway, body system, formula set, or psych theme.</div></div>
+      <div class="mini-panel"><div class="mini-panel-title" id="subtopic-title">All selected topic cards</div><div class="mini-panel-sub" id="subtopic-sub">Filter chips show smaller slices inside a 625-card topic. Leave them off to use the full selected bank.</div></div>
     </div>
 
-    <div class="section-label">🎯 Adaptive Difficulty</div>
+    <div class="section-label">Adaptive Difficulty</div>
     <div class="settings-card" style="margin-bottom:14px">
       <div class="diff-row">
         <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:4px">
@@ -1603,7 +1990,7 @@ input[type=range] { width: 110px; accent-color: var(--blue); background: transpa
       </div>
     </div>
 
-    <div class="section-label">⚙️ Round Settings</div>
+    <div class="section-label">Round Settings</div>
     <div class="settings-card" style="margin-bottom:14px">
       <div class="settings-row">
         <div><div class="settings-lbl">Timer</div><div class="settings-sub" id="timer-label">60 seconds</div></div>
@@ -1632,15 +2019,15 @@ input[type=range] { width: 110px; accent-color: var(--blue); background: transpa
       </div>
     </div>
 
-    <div class="section-label">📱 Heads-Up Controls</div>
+    <div class="section-label">Heads-Up Controls</div>
     <div class="settings-card" style="margin:0 16px 14px;font-size:13px;color:var(--text-secondary);line-height:1.8;font-weight:500">
-      <div>📱 Hold phone to forehead, screen facing OUT</div>
-      <div><span style="color:var(--blue);font-weight:700">Tilt head DOWN (face toward floor)</span> → Got it! ✅</div>
-      <div><span style="color:var(--red);font-weight:700">Tilt head UP (face toward ceiling)</span> → Skip ⏭️</div>
+      <div>Hold phone to forehead, screen facing out</div>
+      <div><span style="color:var(--blue);font-weight:700">Tilt head down</span> = got it</div>
+      <div><span style="color:var(--red);font-weight:700">Tilt head up</span> = skip</div>
       <div style="margin-top:4px;font-size:11px;color:var(--text-dim);font-weight:400">Or tap left side to skip, right side to score.</div>
     </div>
 
-    <div class="section-label">📊 Card Cycle</div>
+    <div class="section-label">Card Cycle</div>
     <div class="settings-card" style="margin:0 16px 14px;">
       <div style="display:flex;align-items:center;justify-content:space-between;padding:4px 0;">
         <span style="font-size:13px;font-weight:600;color:var(--text-primary);">Cards seen</span>
@@ -1651,7 +2038,7 @@ input[type=range] { width: 110px; accent-color: var(--blue); background: transpa
         <span style="font-size:13px;color:var(--text-secondary);" id="total-count">0</span>
       </div>
       <div style="margin-top:8px;"><div style="display:flex;gap:4px;flex-wrap:wrap;" id="cycle-dots"></div></div>
-      <button class="btn btn-secondary btn-sm" style="margin-top:10px;" onclick="resetCardCycle()">🔄 Reset Card Cycle</button>
+      <button class="btn btn-secondary btn-sm" style="margin-top:10px;" onclick="resetCardCycle()"><svg class="ui-icon"><use href="#i-refresh"></use></svg> Reset Card Cycle</button>
     </div>
   </div>
   
@@ -1667,7 +2054,7 @@ input[type=range] { width: 110px; accent-color: var(--blue); background: transpa
 </div>
 
 <div class="screen" id="countdown">
-  <div class="rotate-icon">📱</div>
+  <div class="rotate-icon"><svg class="ui-icon"><use href="#i-phone"></use></svg></div>
   <div class="rotate-text">Turn Phone Sideways</div>
   <div class="cd-num" id="countdown-num">3</div>
   <div class="cd-steps">
@@ -1687,7 +2074,7 @@ input[type=range] { width: 110px; accent-color: var(--blue); background: transpa
         <span class="score-pill correct">✓ <span id="hud-correct">0</span></span>
         <span class="score-pill wrong">↷ <span id="hud-wrong">0</span></span>
         <span class="score-pill tier">T<span id="hud-tier">1</span></span>
-        <span class="score-pill streak">🔥 <span id="hud-streak">0</span></span>
+        <span class="score-pill streak">Streak <span id="hud-streak">0</span></span>
         <span class="score-pill points">+ <span id="hud-points">0</span></span>
       </div>
     </div>
@@ -1706,7 +2093,7 @@ input[type=range] { width: 110px; accent-color: var(--blue); background: transpa
 
 <div class="screen" id="results">
   <div class="results-header">
-    <div class="results-trophy" id="results-trophy">🏆</div>
+    <div class="results-trophy" id="results-trophy">HY</div>
     <div class="results-title" id="results-title">Round Over!</div>
     <div class="results-sub" id="results-sub">Tap any term to review</div>
   </div>
@@ -1742,40 +2129,41 @@ input[type=range] { width: 110px; accent-color: var(--blue); background: transpa
     <div class="acc-bar"><div class="acc-fill" id="acc-fill"></div></div>
   </div>
   <div class="review-scroll">
-    <div id="rv-correct-section" style="display:none"><div class="rv-label">✅ Correct</div><div id="rv-correct-list"></div></div>
-    <div id="rv-wrong-section" style="display:none"><div class="rv-label">⏭️ Missed Words</div><div id="rv-wrong-list"></div></div>
+    <div id="rv-correct-section" style="display:none"><div class="rv-label">Correct</div><div id="rv-correct-list"></div></div>
+    <div id="rv-wrong-section" style="display:none"><div class="rv-label">Missed Words</div><div id="rv-wrong-list"></div></div>
   </div>
   <div class="results-actions">
-    <button class="btn btn-primary" id="play-again-btn" onclick="playAgainFromResults()">▶ Play Again</button>
-    <button class="btn btn-secondary" id="review-missed-btn" onclick="continueAfterResults(() => startReviewRound('missed'))">🧠 Review Missed Cards</button>
-    <button class="btn btn-secondary" id="review-hard-btn" onclick="continueAfterResults(() => startReviewRound('hard'))">🔥 Replay Hard Cards</button>
-    <button class="btn btn-secondary" id="reset-team-btn" style="display:none" onclick="resetTeamBattle(true)">🏁 Reset Team Battle</button>
-    <button class="btn btn-secondary" onclick="shareLastResult()">↗ Share Result</button>
-    <button class="btn btn-secondary" onclick="continueAfterResults(() => showScreen('topics'))">← Change Topics</button>
-    <button class="btn btn-secondary" onclick="continueAfterResults(() => showScreen('home'))">⌂ Home</button>
+    <button class="btn btn-primary" id="play-again-btn" onclick="playAgainFromResults()"><svg class="ui-icon solid"><use href="#i-play"></use></svg> Play Again</button>
+    <button class="btn btn-secondary" id="review-missed-btn" onclick="continueAfterResults(() => startReviewRound('missed'))"><svg class="ui-icon"><use href="#i-brain"></use></svg> Review Missed Cards</button>
+    <button class="btn btn-secondary" id="review-hard-btn" onclick="continueAfterResults(() => startReviewRound('hard'))"><svg class="ui-icon"><use href="#i-zap"></use></svg> Replay Hard Cards</button>
+    <button class="btn btn-secondary" id="reset-team-btn" style="display:none" onclick="resetTeamBattle(true)"><svg class="ui-icon"><use href="#i-flag"></use></svg> Reset Team Battle</button>
+    <button class="btn btn-secondary" onclick="shareLastResult()"><svg class="ui-icon"><use href="#i-share"></use></svg> Share Result</button>
+    <button class="btn btn-secondary" onclick="continueAfterResults(() => showScreen('topics'))"><svg class="ui-icon"><use href="#i-arrow-left"></use></svg> Change Topics</button>
+    <button class="btn btn-secondary" onclick="continueAfterResults(() => showScreen('home'))"><svg class="ui-icon"><use href="#i-home"></use></svg> Home</button>
   </div>
 </div>
 
 <div class="screen" id="ad-break">
   <div class="ad-break-card">
-    <div class="ad-break-kicker">Ad break</div>
+    <div class="ad-break-kicker">Advertisement</div>
     <div class="ad-break-title">Quick Break</div>
-    <div class="ad-break-sub">Thanks for keeping High Yield free.</div>
+    <div class="ad-break-sub">Optional sponsor break after your results.</div>
     <div class="ad-slot" id="ad-slot">
-      <strong>Ad slot</strong>
-      <span>Replace this placeholder with your ad network code when you publish.</span>
+      <div class="ad-label">Advertisement</div>
+      <strong>Ad slot ready</strong>
+      <span>Add your ad network client and slot IDs in the app config before publishing.</span>
     </div>
-    <div class="ad-break-note" id="ad-break-note">Continue in 3...</div>
-    <button class="btn btn-primary" id="ad-continue-btn" onclick="finishAdBreak()" disabled>Continue</button>
+    <div class="ad-break-note" id="ad-break-note">You can continue when ready.</div>
+    <button class="btn btn-primary" id="ad-continue-btn" onclick="finishAdBreak()">Continue</button>
     <button class="btn btn-secondary btn-sm" style="margin-top:10px" onclick="showNoAdsUpgrade()">Remove ads · $2.99</button>
   </div>
 </div>
 
 <div class="screen" id="dashboard">
   <div class="nav-bar">
-    <button class="nav-back" onclick="showScreen('home')">‹ Back</button>
+    <button class="nav-back" onclick="showScreen('home')"><svg class="ui-icon"><use href="#i-arrow-left"></use></svg> Back</button>
     <span class="nav-title">Progress</span>
-    <span style="font-size:18px">📊</span>
+    <span class="icon-badge"><svg class="ui-icon"><use href="#i-chart"></use></svg></span>
   </div>
   <div class="scroll-body" style="display:flex;flex-direction:column;gap:14px;padding-bottom:18px">
     <div class="dash-hero">
@@ -1788,33 +2176,40 @@ input[type=range] { width: 110px; accent-color: var(--blue); background: transpa
       <div class="dash-stat"><div class="dash-stat-n" id="dash-accuracy">0%</div><div class="dash-stat-l">Accuracy</div></div>
       <div class="dash-stat"><div class="dash-stat-n" id="dash-streak">0</div><div class="dash-stat-l">Best Streak</div></div>
     </div>
-    <div class="section-label">🏅 Achievements</div>
+    <div class="daily-panel">
+      <div class="daily-panel-top">
+        <div><div class="daily-panel-title">Daily Challenge</div><div class="daily-panel-sub" id="dash-daily-sub">Complete today's run to build a streak.</div></div>
+        <div class="daily-panel-score" id="dash-daily-streak">0</div>
+      </div>
+    </div>
+    <div class="section-label">Achievements</div>
     <div class="badge-grid" id="achievement-grid"></div>
-    <div class="section-label">📚 Topic Mastery</div>
+    <div class="section-label">Topic Mastery</div>
     <div class="mastery-list" id="mastery-list"></div>
     <div class="section-label">Saved Study Sets</div>
     <div style="padding:0 16px;display:flex;flex-direction:column;gap:10px">
-      <button class="btn btn-secondary" onclick="startReviewRound('favorites')">⭐ Review Favorites</button>
-      <button class="btn btn-secondary" onclick="startReviewRound('missed')">🧠 Review Missed Cards</button>
+      <button class="btn btn-secondary" onclick="startReviewRound('favorites')"><svg class="ui-icon"><use href="#i-star"></use></svg> Review Favorites</button>
+      <button class="btn btn-secondary" onclick="startReviewRound('missed')"><svg class="ui-icon"><use href="#i-brain"></use></svg> Review Missed Cards</button>
+      <button class="btn btn-secondary" onclick="exportFlaggedCards()"><svg class="ui-icon"><use href="#i-flag"></use></svg> Flagged Card Export</button>
     </div>
   </div>
 </div>
 
 <div class="screen" id="ai-builder">
   <div class="nav-bar">
-    <button class="nav-back" onclick="showScreen('home')">‹ Back</button>
+    <button class="nav-back" onclick="showScreen('home')"><svg class="ui-icon"><use href="#i-arrow-left"></use></svg> Back</button>
     <span class="nav-title">AI Deck Builder</span>
-    <span style="font-size:18px">✨</span>
+    <span class="icon-badge"><svg class="ui-icon"><use href="#i-spark"></use></svg></span>
   </div>
   <div class="scroll-body" style="display:flex;flex-direction:column;gap:14px;padding:12px 0 28px">
     <div class="ai-hero">
-      <div class="ai-hero-icon">📑</div>
+      <div class="ai-hero-icon"><svg class="ui-icon"><use href="#i-layers"></use></svg></div>
       <div class="ai-hero-title">Upload Your Lecture Slides</div>
       <div class="ai-hero-sub">Premium feature placeholder. Public AI deck generation will run through a private backend, never a browser key.</div>
     </div>
     <div class="upload-zone" onclick="document.getElementById('file-input').click()">
       <input type="file" id="file-input" accept=".pdf,image/*" multiple onchange="handleFiles(this.files)">
-      <div class="upload-icon">📎</div>
+      <div class="upload-icon"><svg class="ui-icon"><use href="#i-upload"></use></svg></div>
       <div class="upload-title">Tap to upload slides</div>
       <div class="upload-sub">PDF or images · Multiple files OK</div>
     </div>
@@ -1823,7 +2218,7 @@ input[type=range] { width: 110px; accent-color: var(--blue); background: transpa
       <div class="opt-row"><div><div class="opt-label">Terms to generate</div><div class="opt-sub">Per file</div></div><select class="opt-select" id="opt-count"><option value="10">10 terms</option><option value="15" selected>15 terms</option><option value="20">20 terms</option><option value="30">30 terms</option></select></div>
       <div class="opt-row"><div><div class="opt-label">Focus</div><div class="opt-sub">What to prioritize</div></div><select class="opt-select" id="opt-focus"><option value="key concepts">Key concepts</option><option value="definitions">Definitions</option><option value="mechanisms">Mechanisms</option><option value="clinical applications">Clinical applications</option></select></div>
     </div>
-    <div style="padding:0 16px"><button class="btn btn-secondary btn-sm" id="btn-generate" onclick="generateSlidesDeck()" disabled style="opacity:.4;pointer-events:none">✨ Generate Deck</button></div>
+    <div style="padding:0 16px"><button class="btn btn-secondary btn-sm" id="btn-generate" onclick="generateSlidesDeck()" disabled style="opacity:.4;pointer-events:none"><svg class="ui-icon"><use href="#i-spark"></use></svg> Generate Deck</button></div>
     <div class="ai-status" id="ai-status"><div class="ai-status-title"><span class="spinner">⟳</span> Premium builder pending</div><div class="ai-status-text pulse" id="ai-status-text">Backend generation will be added later.</div></div>
     <div class="generated-deck" id="generated-deck">
       <div class="gen-deck-header"><div><div class="gen-deck-title" id="gen-deck-title">Custom Deck</div><div class="gen-deck-count" id="gen-deck-count">0 terms</div></div><button class="btn btn-primary btn-sm" style="width:auto" onclick="addGeneratedDeck()">+ Add to Game</button></div>
@@ -1834,17 +2229,17 @@ input[type=range] { width: 110px; accent-color: var(--blue); background: transpa
 
 <div class="screen" id="ai-prompt-builder">
   <div class="nav-bar">
-    <button class="nav-back" onclick="showScreen('home')">‹ Back</button>
+    <button class="nav-back" onclick="showScreen('home')"><svg class="ui-icon"><use href="#i-arrow-left"></use></svg> Back</button>
     <span class="nav-title">Custom AI Maker</span>
-    <span style="font-size:18px">🤖</span>
+    <span class="icon-badge"><svg class="ui-icon"><use href="#i-wand"></use></svg></span>
   </div>
   <div class="scroll-body" style="display:flex;flex-direction:column;gap:14px;padding:12px 0 28px">
-    <div class="ai-hero"><div class="ai-hero-icon">✍️</div><div class="ai-hero-title">Destroy Any Topic Gaps</div><div class="ai-hero-sub">Premium feature placeholder. Custom generation will use a private backend in the paid version.</div></div>
+    <div class="ai-hero"><div class="ai-hero-icon"><svg class="ui-icon"><use href="#i-edit"></use></svg></div><div class="ai-hero-title">Build a Custom Deck</div><div class="ai-hero-sub">Premium feature placeholder. Custom generation will use a private backend in the paid version.</div></div>
     <textarea class="prompt-textarea" id="ai-custom-prompt" placeholder="E.g., Renal clearance calculations, G-protein signaling cascades, or cognitive bias traps..."></textarea>
     <div class="ai-options">
       <div class="opt-row"><div><div class="opt-label">Cards to generate</div><div class="opt-sub">Deck size</div></div><select class="opt-select" id="opt-prompt-count"><option value="10">10 terms</option><option value="15" selected>15 terms</option><option value="20">20 terms</option><option value="30">30 terms</option></select></div>
     </div>
-    <div style="padding:0 16px"><button class="btn btn-secondary btn-sm" id="btn-prompt-generate" onclick="generateCustomPromptDeck()">🤖 Build Custom Deck</button></div>
+    <div style="padding:0 16px"><button class="btn btn-secondary btn-sm" id="btn-prompt-generate" onclick="generateCustomPromptDeck()"><svg class="ui-icon"><use href="#i-wand"></use></svg> Build Custom Deck</button></div>
     <div class="ai-status" id="ai-prompt-status"><div class="ai-status-title"><span class="spinner">⟳</span> Premium builder pending</div><div class="ai-status-text pulse" id="ai-prompt-status-text">Backend generation will be added later.</div></div>
     <div class="generated-deck" id="generated-prompt-deck">
       <div class="gen-deck-header"><div><div class="gen-deck-title" id="gen-prompt-deck-title">Custom Deck</div><div class="gen-deck-count" id="gen-prompt-deck-count">0 terms</div></div><button class="btn btn-primary btn-sm" style="width:auto" onclick="addGeneratedPromptDeck()">+ Add to Game</button></div>
@@ -2493,6 +2888,9 @@ function showScreen(id) {
     if (id === 'dashboard') {
       renderDashboard();
     }
+    if (id === 'home') {
+      updateHomeLaunchState();
+    }
   }, 300);
 }
 window.showScreen = showScreen;
@@ -2504,6 +2902,48 @@ function showNoAdsUpgrade() {
   alert('Ad-free upgrade placeholder: connect this to Stripe, App Store, or Google Play billing before launch. Price target: $2.99.');
 }
 window.showNoAdsUpgrade = showNoAdsUpgrade;
+
+const TUTORIAL_STORAGE = 'highYieldTutorialSeenV1';
+const INSTALL_THANKS_STORAGE = 'highYieldInstallThanksV1';
+function showTutorial() {
+  const overlay = document.getElementById('tutorial-overlay');
+  if (overlay) overlay.classList.add('active');
+}
+function completeTutorial(saveSeen = true) {
+  const overlay = document.getElementById('tutorial-overlay');
+  if (overlay) overlay.classList.remove('active');
+  if (saveSeen) {
+    try { localStorage.setItem(TUTORIAL_STORAGE, '1'); } catch(e) {}
+  }
+}
+function maybeShowFirstRunTutorial() {
+  try {
+    if (localStorage.getItem(TUTORIAL_STORAGE)) return;
+  } catch(e) {}
+  setTimeout(showTutorial, 650);
+}
+window.showTutorial = showTutorial;
+window.completeTutorial = completeTutorial;
+function isStandaloneApp() {
+  return window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone === true;
+}
+function showInstallThanks(force = false) {
+  try {
+    if (!force && localStorage.getItem(INSTALL_THANKS_STORAGE)) return;
+    localStorage.setItem(INSTALL_THANKS_STORAGE, '1');
+  } catch(e) {}
+  const overlay = document.getElementById('install-thanks-overlay');
+  if (overlay) overlay.classList.add('active');
+}
+function closeInstallThanks() {
+  const overlay = document.getElementById('install-thanks-overlay');
+  if (overlay) overlay.classList.remove('active');
+}
+function maybeShowInstallThanksOnLaunch() {
+  if (!isStandaloneApp()) return;
+  setTimeout(() => showInstallThanks(false), 500);
+}
+window.closeInstallThanks = closeInstallThanks;
 
 function showGameScreen(id) {
   document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
@@ -2529,6 +2969,7 @@ function saveAdBreakState() {
   try { localStorage.setItem(AD_BREAK_STORAGE, JSON.stringify(adBreakState)); } catch(e) {}
 }
 function noteRoundForAdBreak(totalCards) {
+  if (!AD_CONFIG.enabled) return;
   if (!totalCards || totalCards <= 0) return;
   if (adBreakState.pending) return;
   adBreakState.roundsSinceAd = (adBreakState.roundsSinceAd || 0) + 1;
@@ -2540,32 +2981,58 @@ function hasPendingAdBreak() {
 }
 function continueAfterResults(action) {
   const nextAction = typeof action === 'function' ? action : () => {};
-  if (currentScreenId === 'results' && hasPendingAdBreak()) {
+  if (AD_CONFIG.enabled && currentScreenId === 'results' && hasPendingAdBreak()) {
     showAdBreak(nextAction);
     return;
   }
   nextAction();
+}
+function loadAdsenseScript(client) {
+  if (!client || document.querySelector('script[data-high-yield-adsense]')) return;
+  const script = document.createElement('script');
+  script.async = true;
+  script.crossOrigin = 'anonymous';
+  script.dataset.highYieldAdsense = 'true';
+  script.src = `https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${encodeURIComponent(client)}`;
+  document.head.appendChild(script);
+}
+function renderAdSlot() {
+  const slot = document.getElementById('ad-slot');
+  if (!slot) return;
+  const client = String(AD_CONFIG.adsenseClient || '').trim();
+  const postResultsSlot = String(AD_CONFIG.postResultsSlot || '').trim();
+  if (AD_CONFIG.provider === 'adsense' && client && postResultsSlot) {
+    loadAdsenseScript(client);
+    slot.innerHTML = `
+      <div class="ad-label">Advertisement</div>
+      <ins class="adsbygoogle"
+        style="display:block;min-height:250px"
+        data-ad-client="${escapeHTML(client)}"
+        data-ad-slot="${escapeHTML(postResultsSlot)}"
+        data-ad-format="auto"
+        data-full-width-responsive="true"></ins>
+    `;
+    setTimeout(() => {
+      try { (window.adsbygoogle = window.adsbygoogle || []).push({}); }
+      catch(e) { console.warn('Ad slot did not render yet:', e.message); }
+    }, 250);
+    return;
+  }
+  slot.innerHTML = `
+    <div class="ad-label">Advertisement</div>
+    <strong>Ad slot ready</strong>
+    <span>Set AD_CONFIG.provider to 'adsense' and paste your public client and slot IDs before publishing.</span>
+  `;
 }
 function showAdBreak(nextAction) {
   pendingAdContinuation = typeof nextAction === 'function' ? nextAction : null;
   clearInterval(adCountdownInterval);
   const btn = document.getElementById('ad-continue-btn');
   const note = document.getElementById('ad-break-note');
-  let remaining = AD_COUNTDOWN_SECONDS;
-  if (btn) btn.disabled = true;
-  if (note) note.textContent = `Continue in ${remaining}...`;
+  if (btn) btn.disabled = false;
+  if (note) note.textContent = 'You can continue when ready.';
+  renderAdSlot();
   showGameScreen('ad-break');
-  adCountdownInterval = setInterval(() => {
-    remaining -= 1;
-    if (remaining > 0) {
-      if (note) note.textContent = `Continue in ${remaining}...`;
-      return;
-    }
-    clearInterval(adCountdownInterval);
-    adCountdownInterval = null;
-    if (note) note.textContent = 'Ready when you are.';
-    if (btn) btn.disabled = false;
-  }, 1000);
 }
 function finishAdBreak() {
   clearInterval(adCountdownInterval);
@@ -2592,7 +3059,7 @@ window.addEventListener('beforeinstallprompt', (e) => { e.preventDefault(); defe
 installBtn.addEventListener('click', async () => { if (deferredPrompt) { deferredPrompt.prompt(); const result = await deferredPrompt.userChoice; if (result.outcome === 'accepted') { installBanner.classList.remove('show'); pwaInstallBtn.style.display = 'none'; } deferredPrompt = null; } });
 dismissBtn.addEventListener('click', () => { installBanner.classList.remove('show'); });
 pwaInstallBtn.addEventListener('click', async () => { if (deferredPrompt) { deferredPrompt.prompt(); const result = await deferredPrompt.userChoice; if (result.outcome === 'accepted') { installBanner.classList.remove('show'); pwaInstallBtn.style.display = 'none'; } deferredPrompt = null; } });
-window.addEventListener('appinstalled', () => { installBanner.classList.remove('show'); pwaInstallBtn.style.display = 'none'; });
+window.addEventListener('appinstalled', () => { installBanner.classList.remove('show'); pwaInstallBtn.style.display = 'none'; showInstallThanks(true); });
 
 // Offline Mode
 function updateOnlineStatus() {
@@ -2632,6 +3099,70 @@ const WORD_BANK_COUNTS = {
   'Amino Acids': 625
 };
 let externalWordBanks = {};
+const EXPECTED_BANK_TOTAL = Object.values(WORD_BANK_COUNTS).reduce((sum, count) => sum + count, 0);
+let bankPreloadStarted = false;
+
+function getBankReport() {
+  const topics = Object.keys(WORD_BANK_COUNTS);
+  const counts = {};
+  let total = 0;
+  let fullTopics = 0;
+  let fallbackTopics = 0;
+  topics.forEach(topic => {
+    const count = (getTopicBank(topic) || []).filter(isUsableCard).length;
+    counts[topic] = count;
+    total += count;
+    if (count >= WORD_BANK_COUNTS[topic]) fullTopics++;
+    if (count > 0 && count < WORD_BANK_COUNTS[topic]) fallbackTopics++;
+  });
+  return {
+    counts,
+    total,
+    fullTopics,
+    fallbackTopics,
+    isFull: total >= EXPECTED_BANK_TOTAL && fullTopics === topics.length,
+    hasFallback: fallbackTopics > 0 || total < EXPECTED_BANK_TOTAL
+  };
+}
+
+function updateBankStatusUI() {
+  const report = getBankReport();
+  const badge = document.getElementById('ai-status-badge');
+  const homeStatus = document.getElementById('home-ai-status');
+  const health = document.getElementById('bank-health');
+  const detail = document.getElementById('bank-status-detail');
+  const warning = document.getElementById('bank-warning');
+  const label = report.isFull ? 'Full bank' : report.total > 0 ? 'Mini fallback' : 'Missing bank';
+  const detailText = report.isFull
+    ? `${EXPECTED_BANK_TOTAL.toLocaleString()} cards loaded across 8 question banks.`
+    : `${report.total.toLocaleString()} cards loaded. Full launch bank needs the data folder on GitHub Pages.`;
+  if (badge) {
+    badge.textContent = report.isFull ? `${EXPECTED_BANK_TOTAL.toLocaleString()} cards` : `${report.total.toLocaleString()} fallback cards`;
+    badge.className = `ai-status-badge ${report.isFull ? 'on' : 'offline'}`;
+  }
+  if (homeStatus) homeStatus.textContent = report.isFull ? '5,000-card bank ready' : 'Mini fallback bank active';
+  if (health) {
+    health.textContent = label;
+    health.className = `bank-health ${report.isFull ? '' : report.total > 0 ? 'warning' : 'error'}`;
+  }
+  if (detail) detail.textContent = detailText;
+  if (warning) warning.classList.toggle('active', !report.isFull);
+  return report;
+}
+
+async function preloadLaunchBanks() {
+  if (bankPreloadStarted) return;
+  bankPreloadStarted = true;
+  updateBankStatusUI();
+  try {
+    await Promise.all(Object.keys(WORD_BANK_FILES).map(loadWordBankTopic));
+  } catch(e) {
+    console.warn('Bank preload check failed:', e.message);
+  }
+  updateCountLabels();
+  updateCycleUI();
+  updateBankStatusUI();
+}
 
 function escapeHTML(value) {
   return String(value ?? '').replace(/[&<>"']/g, ch => ({
@@ -2641,6 +3172,9 @@ function escapeHTML(value) {
     '"': '&quot;',
     "'": '&#39;'
   }[ch]));
+}
+function iconMarkup(name, solid = false) {
+  return `<svg class="ui-icon ${solid ? 'solid' : ''}"><use href="#i-${escapeHTML(name)}"></use></svg>`;
 }
 function clampNumber(value, min, max) {
   const n = Number(value);
@@ -2721,7 +3255,7 @@ function ensureCardCycleShape() {
   if (!cardCycle.generated || typeof cardCycle.generated !== 'object') cardCycle.generated = {};
 }
 function markCardSeen(card) { ensureCardCycleShape(); const id = getCardId(card); if (!cardCycle.seen[id]) { cardCycle.seen[id] = true; saveCardCycle(); updateCycleUI(); } }
-function resetCardCycle() { if (confirm('Reset card cycle?')) { cardCycle.seen = {}; cardCycle.generated = {}; saveCardCycle(); rebuildPools(); updateCycleUI(); alert('✅ Card cycle reset!'); } }
+function resetCardCycle() { if (confirm('Reset card cycle?')) { cardCycle.seen = {}; cardCycle.generated = {}; saveCardCycle(); rebuildPools(); updateCycleUI(); alert('Card cycle reset.'); } }
 function saveCardCycle() { try { localStorage.setItem('cardCycle', JSON.stringify(cardCycle)); } catch(e) {} }
 function loadCardCycle() {
   try {
@@ -2747,10 +3281,11 @@ async function loadWordBankTopic(topic) {
   const bundled = window.HIGH_YIELD_WORD_BANKS && window.HIGH_YIELD_WORD_BANKS[topic];
   if (Array.isArray(bundled) && bundled.length) {
     externalWordBanks[topic] = bundled.filter(isUsableCard).map(card => normalizeCard(card, topic));
+    updateBankStatusUI();
     return getTopicBank(topic);
   }
   try {
-    const resp = await fetch(WORD_BANK_FILES[topic], { cache: 'force-cache' });
+    const resp = await fetch(WORD_BANK_FILES[topic], { cache: 'no-cache' });
     if (!resp.ok) throw new Error(`Could not load ${topic}`);
     const cards = await resp.json();
     if (!Array.isArray(cards) || !cards.length) throw new Error(`Empty bank for ${topic}`);
@@ -2759,16 +3294,66 @@ async function loadWordBankTopic(topic) {
     console.warn(`Using embedded fallback bank for ${topic}:`, e.message);
     externalWordBanks[topic] = (OFFLINE_BANK[topic] || []).filter(isUsableCard).map(card => normalizeCard(card, topic));
   }
+  updateBankStatusUI();
   return getTopicBank(topic);
 }
 async function loadSelectedWordBanks(topics) {
   await Promise.all((topics || []).map(loadWordBankTopic));
   updateCountLabels();
   updateCycleUI();
+  updateBankStatusUI();
 }
 function getTodayKey() {
   const now = new Date();
   return `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')}`;
+}
+function getDateKeyOffset(daysAgo = 0) {
+  const date = new Date();
+  date.setDate(date.getDate() - Math.max(0, Number(daysAgo) || 0));
+  return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}`;
+}
+function getDailyStreakData(progress = ensureProgress()) {
+  const daily = progress.daily || {};
+  let streak = 0;
+  let offset = daily[getTodayKey()]?.completed ? 0 : 1;
+  while (daily[getDateKeyOffset(offset)]?.completed) {
+    streak++;
+    offset++;
+  }
+  const completedDates = Object.keys(daily).filter(key => daily[key]?.completed).sort();
+  let best = 0;
+  let run = 0;
+  let previous = null;
+  completedDates.forEach(key => {
+    const current = new Date(`${key}T12:00:00`);
+    if (previous) {
+      const diff = Math.round((current - previous) / 86400000);
+      run = diff === 1 ? run + 1 : 1;
+    } else {
+      run = 1;
+    }
+    best = Math.max(best, run);
+    previous = current;
+  });
+  const todayEntry = daily[getTodayKey()] || null;
+  return { streak, best, completedToday: Boolean(todayEntry?.completed), todayScore: todayEntry?.score || null };
+}
+function updateHomeLaunchState() {
+  updateBankStatusUI();
+  const p = ensureProgress();
+  const streak = getDailyStreakData(p);
+  const title = document.getElementById('daily-status-title');
+  const sub = document.getElementById('daily-status-sub');
+  const chip = document.getElementById('daily-streak-chip');
+  const dailyBtn = document.getElementById('daily-home-btn');
+  if (title) title.textContent = streak.completedToday ? `Daily complete: ${streak.todayScore}` : 'Daily Challenge ready';
+  if (sub) sub.textContent = streak.completedToday ? 'Replay it for practice, or come back tomorrow for a fresh set.' : '15 date-seeded cards refresh each day.';
+  if (chip) chip.textContent = `${streak.streak} day streak`;
+  if (dailyBtn) {
+    const label = dailyBtn.querySelector('span:last-child');
+    if (label) label.textContent = streak.completedToday ? 'Replay Daily Challenge' : 'Daily Challenge';
+    else dailyBtn.textContent = streak.completedToday ? 'Replay Daily Challenge' : 'Daily Challenge';
+  }
 }
 function getAdaptiveTierForStreak(streak) {
   const s = Number(streak) || 0;
@@ -2838,7 +3423,7 @@ function lockDeckPool(cards, options = {}) {
     all.forEach(c => delete cardCycle.seen[getCardId(c)]);
     saveCardCycle();
     unseenCards = [...all];
-    console.log("🔄 All cards viewed! Local memory cycle automatically refreshed.");
+    console.log("All cards viewed. Local memory cycle automatically refreshed.");
   }
   
   // Shuffle only the valid unseen cards
@@ -2920,10 +3505,7 @@ function configureApiKey() {
 }
 
 function testAPIAvailability() {
-  const statusBadge = document.getElementById('ai-status-badge');
-  const homeStatus = document.getElementById('home-ai-status');
-  if (statusBadge) { statusBadge.textContent = '5,000 cards'; statusBadge.className = 'ai-status-badge on'; }
-  if (homeStatus) homeStatus.textContent = '5,000-card bank ready';
+  updateBankStatusUI();
   updateCountLabels();
   updateSelectedCount();
 }
@@ -2947,9 +3529,10 @@ function updateCountLabels() {
     const count = loaded.length || WORD_BANK_COUNTS[topic] || 0;
     el.textContent = `${count.toLocaleString()} cards`;
   });
+  updateBankStatusUI();
 }
 
-const DIFF_CONFIG = { 1: { badge: '⭐ Tier 1 — Highest Yield', prompt: 'Tier 1 — HIGHEST YIELD' }, 2: { badge: '🌟 Tier 2 — High Yield', prompt: 'Tier 2 — HIGH YIELD' }, 3: { badge: '🎯 Tier 3 — Moderate', prompt: 'Tier 3 — MODERATE YIELD' }, 4: { badge: '🔥 Tier 4 — Low Yield', prompt: 'Tier 4 — LOW YIELD' }, 5: { badge: '💀 Tier 5 — Expert', prompt: 'Tier 5 — EXPERT' } };
+const DIFF_CONFIG = { 1: { badge: 'Tier 1 — Highest Yield', prompt: 'Tier 1 — HIGHEST YIELD' }, 2: { badge: 'Tier 2 — High Yield', prompt: 'Tier 2 — HIGH YIELD' }, 3: { badge: 'Tier 3 — Moderate', prompt: 'Tier 3 — MODERATE YIELD' }, 4: { badge: 'Tier 4 — Low Yield', prompt: 'Tier 4 — LOW YIELD' }, 5: { badge: 'Tier 5 — Expert', prompt: 'Tier 5 — EXPERT' } };
 const MCAT_MIN = 472;
 const MCAT_MAX = 528;
 let currentDifficulty = 1;
@@ -2970,7 +3553,12 @@ const TEAM_BATTLE_STORAGE = 'highYieldTeamBattleV1';
 let teamBattle = getDefaultTeamBattle();
 const AD_BREAK_STORAGE = 'highYieldAdBreakV1';
 const AD_ROUND_INTERVAL = 3;
-const AD_COUNTDOWN_SECONDS = 3;
+const AD_CONFIG = {
+  enabled: true,
+  provider: 'placeholder',
+  adsenseClient: '',
+  postResultsSlot: ''
+};
 let adBreakState = { roundsSinceAd: 0, pending: false, totalShown: 0 };
 let pendingAdContinuation = null;
 let adCountdownInterval = null;
@@ -3318,14 +3906,15 @@ const TOPIC_SUBTOPICS = {
 };
 
 const ACHIEVEMENTS = [
-  { id: 'first_round', icon: '🎬', name: 'First Round', desc: 'Finish your first High Yield round.', check: p => p.rounds >= 1 },
-  { id: 'five_fifteen', icon: '🏆', name: '515 Club', desc: 'Score 515 or higher in any round.', check: p => p.bestScore >= 515 },
-  { id: 'elite_522', icon: '🌟', name: 'Elite Recall', desc: 'Score 522 or higher in any round.', check: p => p.bestScore >= 522 },
-  { id: 'streak_7', icon: '🔥', name: 'Seven Straight', desc: 'Reach a 7-card streak.', check: p => p.bestStreak >= 7 },
-  { id: 'no_skip', icon: '🎯', name: 'No-Skip Round', desc: 'Finish a round with at least 8 cards and no skips.', check: p => p.noSkipRounds >= 1 },
-  { id: 'daily_3', icon: '☀️', name: 'Daily Habit', desc: 'Complete three daily challenges.', check: p => p.dailyCompletions >= 3 },
-  { id: 'taboo_win', icon: '🚫', name: 'Taboo Master', desc: 'Score 505+ with taboo words on.', check: p => p.tabooWins >= 1 },
-  { id: 'card_250', icon: '📚', name: '250 Cards Deep', desc: 'See 250 cards across rounds.', check: p => p.cardsSeen >= 250 }
+  { id: 'first_round', icon: '1st', name: 'First Round', desc: 'Finish your first High Yield round.', check: p => p.rounds >= 1 },
+  { id: 'five_fifteen', icon: '515', name: '515 Club', desc: 'Score 515 or higher in any round.', check: p => p.bestScore >= 515 },
+  { id: 'elite_522', icon: '522', name: 'Elite Recall', desc: 'Score 522 or higher in any round.', check: p => p.bestScore >= 522 },
+  { id: 'streak_7', icon: '7x', name: 'Seven Straight', desc: 'Reach a 7-card streak.', check: p => p.bestStreak >= 7 },
+  { id: 'no_skip', icon: 'NS', name: 'No-Skip Round', desc: 'Finish a round with at least 8 cards and no skips.', check: p => p.noSkipRounds >= 1 },
+  { id: 'daily_3', icon: 'D3', name: 'Daily Habit', desc: 'Complete three daily challenges.', check: p => p.dailyCompletions >= 3 },
+  { id: 'daily_7', icon: 'D7', name: 'Week Streak', desc: 'Complete seven daily challenges in a row.', check: p => getDailyStreakData(p).best >= 7 },
+  { id: 'taboo_win', icon: 'NO', name: 'Taboo Master', desc: 'Score 505+ with taboo words on.', check: p => p.tabooWins >= 1 },
+  { id: 'card_250', icon: '250', name: '250 Cards Deep', desc: 'See 250 cards across rounds.', check: p => p.cardsSeen >= 250 }
 ];
 
 function getDifficultyWeight(difficulty) {
@@ -3408,6 +3997,7 @@ function getDefaultProgress() {
     noSkipRounds: 0,
     tabooWins: 0,
     dailyCompletions: 0,
+    bestDailyScore: MCAT_MIN,
     daily: {},
     topics: {},
     missedCards: [],
@@ -3433,6 +4023,7 @@ function loadProgress() {
   progressData.achievements = progressData.achievements || {};
   progressData.daily = progressData.daily || {};
   progressData.recentScores = Array.isArray(progressData.recentScores) ? progressData.recentScores : [];
+  progressData.bestDailyScore = Math.max(MCAT_MIN, Math.round(Number(progressData.bestDailyScore) || MCAT_MIN));
 }
 function ensureProgress() {
   if (!progressData) loadProgress();
@@ -3489,6 +4080,27 @@ function reportCard(termId) {
   p.reports = mergeCardList(p.reports, [{ ...source, reportedAt: new Date().toISOString() }], 200);
   saveProgress();
   alert('Flagged. You can clean these up before publishing.');
+}
+function exportFlaggedCards() {
+  const reports = ensureProgress().reports || [];
+  if (!reports.length) {
+    alert('No flagged cards yet.');
+    return;
+  }
+  const payload = {
+    exportedAt: new Date().toISOString(),
+    count: reports.length,
+    cards: reports
+  };
+  const blob = new Blob([JSON.stringify(payload, null, 2)], { type: 'application/json' });
+  const url = URL.createObjectURL(blob);
+  const link = document.createElement('a');
+  link.href = url;
+  link.download = `high-yield-flagged-cards-${getTodayKey()}.json`;
+  document.body.appendChild(link);
+  link.click();
+  link.remove();
+  setTimeout(() => URL.revokeObjectURL(url), 500);
 }
 function deriveRoundInsights(log) {
   const byTopic = {};
@@ -3550,10 +4162,13 @@ function updateProgressAfterRound(scoreData, log, pct) {
   });
 
   if (currentGameMode === 'daily') {
+    p.bestDailyScore = Math.max(p.bestDailyScore || MCAT_MIN, scoreData.score || MCAT_MIN);
     p.daily[today] = {
       completed: true,
       score: scoreData.score,
       pct,
+      correct,
+      total: safeLog.length,
       date: new Date().toISOString()
     };
   }
@@ -3566,6 +4181,7 @@ function updateProgressAfterRound(scoreData, log, pct) {
     }
   });
   saveProgress();
+  updateHomeLaunchState();
   return newlyUnlocked;
 }
 function updateModeLabels() {
@@ -3622,6 +4238,15 @@ function renderDashboard() {
   if (cardsEl) cardsEl.textContent = p.cardsSeen || 0;
   if (accEl) accEl.textContent = `${accuracy}%`;
   if (streakEl) streakEl.textContent = p.bestStreak || 0;
+  const dailyData = getDailyStreakData(p);
+  const dailyStreakEl = document.getElementById('dash-daily-streak');
+  const dailySubEl = document.getElementById('dash-daily-sub');
+  if (dailyStreakEl) dailyStreakEl.textContent = dailyData.streak || 0;
+  if (dailySubEl) {
+    dailySubEl.textContent = dailyData.completedToday
+      ? `Today: ${dailyData.todayScore} · best daily ${p.bestDailyScore || MCAT_MIN} · best streak ${dailyData.best}`
+      : `Not done today · best daily ${p.bestDailyScore || MCAT_MIN} · best streak ${dailyData.best}`;
+  }
 
   const badgeGrid = document.getElementById('achievement-grid');
   if (badgeGrid) {
@@ -3730,7 +4355,8 @@ async function startDailyChallenge() {
   const p = ensureProgress();
   const today = getTodayKey();
   if (p.daily?.[today]?.completed) {
-    const again = confirm(`Today's Daily Challenge is complete: ${p.daily[today].score}. Replay as practice?`);
+    const streak = getDailyStreakData(p);
+    const again = confirm(`Today's Daily Challenge is complete: ${p.daily[today].score}. Current streak: ${streak.streak} day${streak.streak === 1 ? '' : 's'}. Replay as practice?`);
     if (!again) return;
   }
   currentGameMode = 'daily';
@@ -3781,9 +4407,13 @@ function shareLastResult() {
   const teamPrefix = lastRoundResult.mode === 'teams' && lastRoundResult.playerName
     ? `${lastRoundResult.playerName} for ${lastRoundResult.teamName}: `
     : '';
-  const text = `High Yield! MCAT Heads-Up: ${teamPrefix}${lastRoundResult.score} (${lastRoundResult.correct}/${lastRoundResult.total}) · best streak ${lastRoundResult.maxStreak}`;
+  const dailyData = getDailyStreakData();
+  const dailyLine = lastRoundResult.mode === 'daily' ? `\nDaily streak: ${dailyData.streak}` : '';
+  const modeLine = lastRoundResult.modeLabel || 'Round';
+  const appUrl = location.protocol.startsWith('http') ? `\n${location.origin}${location.pathname}` : '';
+  const text = `High Yield! MCAT Heads-Up\n${modeLine}: ${teamPrefix}${lastRoundResult.score}\nCards: ${lastRoundResult.correct}/${lastRoundResult.total}\nBest streak: ${lastRoundResult.maxStreak}${dailyLine}${appUrl}`;
   if (navigator.share) {
-    navigator.share({ text }).catch(() => {});
+    navigator.share({ title: 'High Yield! MCAT result', text }).catch(() => {});
   } else if (navigator.clipboard) {
     navigator.clipboard.writeText(text).then(() => alert('Result copied.'));
   } else {
@@ -4036,7 +4666,7 @@ function renderCard() {
     gameState.currentCard = card;
     
     const sourceClass = card.isAI ? 'ai' : 'offline';
-    const sourceLabel = gameState.roundLabel || (card.isAI ? '✨ Premium Deck' : '📚 Word Bank');
+    const sourceLabel = gameState.roundLabel || (card.isAI ? 'Premium Deck' : 'Word Bank');
     const tabooHTML = gameSettings.tabooEnabled ? (card.tabooWords || [])
       .map(word => `<span class="taboo-chip">${escapeHTML(word)}</span>`)
       .join('') : '';
@@ -4091,7 +4721,7 @@ function markWrong() {
   setRoundTierForStreak(0);
   gameState.wrong++;
   updateGameHud();
-  setGameBg('wrong'); flash('⏭️');
+  setGameBg('wrong'); flash('Skip');
   actionTimeout = setTimeout(() => { if (gameState.active && !gameState.ended) renderCard(); }, 500);
 }
 function startTimer() {
@@ -4143,11 +4773,11 @@ function endGame() {
   document.getElementById('acc-pct').textContent = pct + '%';
   document.getElementById('res-mcat').textContent = scoreData.score;
   document.getElementById('res-mcat-detail').textContent = `${total} cards · avg tier ${scoreData.avgDifficulty.toFixed(1)} · best streak ${scoreData.maxStreak} · max tier ${gameState.maxTierReached || 1}`;
-  let trophy = '💪', title = 'Keep Building!';
-  if (scoreData.score >= 522) { trophy = '🌟'; title = 'Elite Round!'; }
-  else if (scoreData.score >= 515) { trophy = '🏆'; title = 'MCAT Ready!'; }
-  else if (scoreData.score >= 505) { trophy = '📚'; title = 'Solid Round!'; }
-  else if (scoreData.score >= 495) { trophy = '🎯'; title = 'Getting Warmer!'; }
+  let trophy = 'HY', title = 'Keep Building!';
+  if (scoreData.score >= 522) { trophy = '522'; title = 'Elite Round!'; }
+  else if (scoreData.score >= 515) { trophy = '515'; title = 'MCAT Ready!'; }
+  else if (scoreData.score >= 505) { trophy = '505'; title = 'Solid Round!'; }
+  else if (scoreData.score >= 495) { trophy = '495'; title = 'Getting Warmer!'; }
   document.getElementById('results-trophy').textContent = trophy;
   document.getElementById('results-title').textContent = title;
   document.getElementById('results-sub').textContent = total ? `${modeLabel} · MCAT-style ${scoreData.score}` : 'No cards scored yet · try a shorter warm-up';
@@ -4167,7 +4797,7 @@ function endGame() {
       teamSummary = recordTeamRound(scoreData, correct, wrong, total, pct);
       renderTeamBattleResults(teamSummary);
       if (teamSummary.complete && teamBattle.winner) {
-        document.getElementById('results-trophy').textContent = '🏁';
+        document.getElementById('results-trophy').textContent = 'WIN';
         document.getElementById('results-title').textContent = `${getTeamName(teamBattle.winner)} Wins!`;
         document.getElementById('results-sub').textContent = `Best of ${teamBattle.bestOf} · final series ${teamBattle.series.A}-${teamBattle.series.B}`;
       } else {
@@ -4205,10 +4835,10 @@ function endGame() {
       .map(word => `<span class="rv-meta-pill">No ${escapeHTML(word)}</span>`)
       .join('') : '';
     const multiplier = item.result === 'correct' ? `${formatMultiplier(item.multiplier || 1)}x` : 'streak reset';
-    return `<div class="rv-item ${cls}" onclick="this.classList.toggle('open')"><div class="rv-header"><div class="rv-left"><span class="rv-icon">${icon}</span><div><div class="rv-term">${escapeHTML(safe.term)}</div><div class="rv-cat">${escapeHTML(safe.category || 'General')} · Tier ${safe.difficulty}</div></div></div><span class="rv-chev">▾</span></div><div class="rv-body"><div class="rv-body-inner">${escapeHTML(safe.explanation || 'No explanation.')}<div class="rv-meta"><span class="rv-meta-pill">${Number(item.points) || 0} pts</span><span class="rv-meta-pill">${multiplier}</span>${tabooTags}<button class="rv-meta-pill" onclick="event.stopPropagation();saveFavoriteCard('${actionId}')">⭐ Save</button><button class="rv-meta-pill" onclick="event.stopPropagation();reportCard('${actionId}')">Flag</button></div></div></div></div>`;
+    return `<div class="rv-item ${cls}" onclick="this.classList.toggle('open')"><div class="rv-header"><div class="rv-left"><span class="rv-icon">${icon}</span><div><div class="rv-term">${escapeHTML(safe.term)}</div><div class="rv-cat">${escapeHTML(safe.category || 'General')} · Tier ${safe.difficulty}</div></div></div><span class="rv-chev">▾</span></div><div class="rv-body"><div class="rv-body-inner">${escapeHTML(safe.explanation || 'No explanation.')}<div class="rv-meta"><span class="rv-meta-pill">${Number(item.points) || 0} pts</span><span class="rv-meta-pill">${multiplier}</span>${tabooTags}<button class="rv-meta-pill" onclick="event.stopPropagation();saveFavoriteCard('${actionId}')">Save</button><button class="rv-meta-pill" onclick="event.stopPropagation();reportCard('${actionId}')">Flag</button></div></div></div></div>`;
   };
-  document.getElementById('rv-correct-list').innerHTML = ci.map(item => reviewHTML(item, '✅', 'rv-correct')).join('');
-  document.getElementById('rv-wrong-list').innerHTML = wi.map(item => reviewHTML(item, '⏭️', 'rv-wrong')).join('');
+  document.getElementById('rv-correct-list').innerHTML = ci.map(item => reviewHTML(item, '✓', 'rv-correct')).join('');
+  document.getElementById('rv-wrong-list').innerHTML = wi.map(item => reviewHTML(item, '↷', 'rv-wrong')).join('');
   const reviewMissedBtn = document.getElementById('review-missed-btn');
   const reviewHardBtn = document.getElementById('review-hard-btn');
   if (reviewMissedBtn) reviewMissedBtn.style.display = getStoredCards('missed').length ? 'flex' : 'none';
@@ -4218,9 +4848,11 @@ function endGame() {
   const playAgainBtn = document.getElementById('play-again-btn');
   if (playAgainBtn) {
     if (gameState.mode === 'teams') {
-      playAgainBtn.textContent = teamBattle.complete ? '🏁 New Team Battle' : `▶ Start ${getTeamNextLabel()}`;
+      playAgainBtn.innerHTML = teamBattle.complete
+        ? `${iconMarkup('flag')} New Team Battle`
+        : `${iconMarkup('play', true)} Start ${escapeHTML(getTeamNextLabel())}`;
     } else {
-      playAgainBtn.textContent = '▶ Play Again';
+      playAgainBtn.innerHTML = `${iconMarkup('play', true)} Play Again`;
     }
   }
   try { if (screen.orientation && screen.orientation.unlock) screen.orientation.unlock(); } catch(e) {}
@@ -4256,9 +4888,9 @@ function updateSelectedCount() {
   const enabled = total > 0 || weakReady;
   btn.style.opacity = enabled ? '1' : '0.4';
   btn.style.pointerEvents = enabled ? 'auto' : 'none';
-  if (currentGameMode === 'weak') btn.textContent = weakReady ? '🧠 Start Weak Spot Review' : 'No missed cards yet';
-  else if (currentGameMode === 'teams') btn.textContent = total > 0 ? (teamBattle.complete ? '🏁 Start New Team Battle' : `🏁 Start ${getTeamNextLabel()}`) : 'Select at least one topic';
-  else btn.textContent = total > 0 ? `▶ Start ${MODE_CONFIG[currentGameMode]?.label || 'Round'}` : 'Select at least one topic';
+  if (currentGameMode === 'weak') btn.textContent = weakReady ? 'Start Weak Spot Review' : 'No missed cards yet';
+  else if (currentGameMode === 'teams') btn.textContent = total > 0 ? (teamBattle.complete ? 'Start New Team Battle' : `Start ${getTeamNextLabel()}`) : 'Select at least one topic';
+  else btn.textContent = total > 0 ? `Start ${MODE_CONFIG[currentGameMode]?.label || 'Round'}` : 'Select at least one topic';
 }
 function updateDifficulty(val) { currentDifficulty = val; document.getElementById('diff-badge').textContent = DIFF_CONFIG[val].badge; updateCycleUI(); refreshSubtopicOptions(); }
 
@@ -4293,7 +4925,7 @@ function renderCustomDecks() {
   const grid = document.getElementById('custom-decks-grid');
   const section = document.getElementById('custom-decks-section');
   if (!grid || !section) return;
-  grid.innerHTML = customDecks.map(d => `<div class="topic-card t-custom" data-custom="${escapeHTML(d.id)}" onclick="this.classList.toggle('selected');updateSelectedCount();updateCycleUI();"><div class="topic-check">✓</div><div class="topic-icon">✨</div><div><div class="topic-name">${escapeHTML(d.name)}</div><div class="topic-count">${d.terms.length} terms</div></div></div>`).join('');
+  grid.innerHTML = customDecks.map(d => `<div class="topic-card t-custom" data-custom="${escapeHTML(d.id)}" onclick="this.classList.toggle('selected');updateSelectedCount();updateCycleUI();"><div class="topic-check">✓</div><div class="topic-icon">${iconMarkup('layers')}</div><div><div class="topic-name">${escapeHTML(d.name)}</div><div class="topic-count">${d.terms.length} terms</div></div></div>`).join('');
   section.style.display = customDecks.length ? 'block' : 'none';
 }
 function handleFiles(files) { showPremiumFeature('AI Deck from Slides'); }
@@ -4354,8 +4986,12 @@ updateSelectedCount();
 updateCycleUI();
 updateModeLabels();
 syncSettingsToggles();
-console.log('✅ High Yield! MCAT Ready!');
-console.log('📚 Static word bank size: 5000 cards across JSON topic files.');
+updateHomeLaunchState();
+maybeShowInstallThanksOnLaunch();
+maybeShowFirstRunTutorial();
+preloadLaunchBanks();
+console.log('High Yield! MCAT Ready!');
+console.log('Static word bank size: 5000 cards across JSON topic files.');
 </script>
 </body>
 </html>
