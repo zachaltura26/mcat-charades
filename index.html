@@ -4,10 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
 <meta name="apple-mobile-web-app-title" content="High Yield">
 <meta name="mobile-web-app-capable" content="yes">
-<meta name="theme-color" content="#101827">
+<meta name="theme-color" content="#FFF8ED">
 <link rel="manifest" href="manifest.json">
 <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png">
@@ -123,13 +123,11 @@ html, body {
 .screen.active > .home-header,
 .screen.active > .home-actions,
 .screen.active > .launch-card,
-.screen.active > .home-footer,
 #results.active > * {
   animation: screenRise 0.44s cubic-bezier(0.2, 0.9, 0.2, 1) both;
 }
 .screen.active > .home-actions { animation-delay: 0.06s; }
 .screen.active > .launch-card { animation-delay: 0.12s; }
-.screen.active > .home-footer { animation-delay: 0.18s; }
 @keyframes screenRise {
   from { opacity: 0; transform: translateY(18px) scale(0.98); }
   to { opacity: 1; transform: translateY(0) scale(1); }
@@ -1977,19 +1975,24 @@ input[type=range] { width: 110px; accent-color: var(--blue); background: transpa
   align-items: center;
   justify-content: center;
   padding: 18px;
-  background: rgba(10, 10, 10, 0.78);
+  background:
+    radial-gradient(circle at 50% 12%, rgba(255, 90, 20, 0.10), transparent 30%),
+    rgba(255, 253, 247, 0.94);
   backdrop-filter: blur(18px);
   -webkit-backdrop-filter: blur(18px);
 }
 .install-thanks-overlay.active { display: flex; }
 .install-thanks-card {
   width: min(100%, 380px);
-  border: 1px solid rgba(52, 211, 153, 0.26);
+  border: 1px solid rgba(7, 38, 74, 0.10);
   border-radius: var(--radius);
-  background: #141414;
+  background:
+    linear-gradient(135deg, rgba(20, 184, 200, 0.10), rgba(255, 90, 20, 0.08)),
+    #fff;
   padding: 18px;
+  color: var(--navy);
   text-align: center;
-  box-shadow: 0 24px 70px rgba(0,0,0,0.45);
+  box-shadow: 0 24px 70px rgba(7, 38, 74, 0.22);
 }
 .install-thanks-icon {
   width: 72px;
@@ -2001,13 +2004,13 @@ input[type=range] { width: 110px; accent-color: var(--blue); background: transpa
 }
 .install-thanks-title {
   font-family: var(--font-heading);
-  color: var(--text-primary);
+  color: var(--navy);
   font-size: 25px;
   line-height: 1.08;
 }
 .install-thanks-copy {
-  color: var(--text-secondary);
-  font-size: 13px;
+  color: rgba(7, 38, 74, 0.76);
+  font-size: 14px;
   line-height: 1.5;
   margin: 9px 0 14px;
 }
@@ -2020,7 +2023,9 @@ input[type=range] { width: 110px; accent-color: var(--blue); background: transpa
   align-items: center;
   justify-content: center;
   padding: 18px;
-  background: rgba(10, 10, 10, 0.78);
+  background:
+    radial-gradient(circle at 50% 12%, rgba(20, 184, 200, 0.10), transparent 30%),
+    rgba(255, 253, 247, 0.94);
   backdrop-filter: blur(18px);
   -webkit-backdrop-filter: blur(18px);
 }
@@ -3713,6 +3718,109 @@ textarea,
     width: min(86vw, 620px);
   }
 }
+
+/* Mobile shell corrections */
+html,
+body,
+#app,
+.screen,
+#game {
+  background-color: var(--bg-primary);
+}
+
+#home {
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: max(36px, calc(env(safe-area-inset-bottom, 0px) + 28px));
+}
+
+@media (orientation: landscape) {
+  #game {
+    width: 100vw;
+    width: 100svw;
+    height: 100vh;
+    height: 100svh;
+    background: var(--bg-primary);
+  }
+  #game .game-inner {
+    padding:
+      max(46px, calc(env(safe-area-inset-top, 0px) + 38px))
+      max(14px, calc(env(safe-area-inset-right, 0px) + 14px))
+      max(38px, calc(env(safe-area-inset-bottom, 0px) + 30px))
+      max(14px, calc(env(safe-area-inset-left, 0px) + 14px));
+  }
+  #game .game-card-stage {
+    width: min(94vw, 920px);
+    width: min(94svw, 920px);
+    max-width: calc(100vw - 28px);
+    max-width: calc(100svw - 28px);
+  }
+  #game .card-term {
+    width: 100%;
+    min-height: min(64vh, 350px);
+    min-height: min(64svh, 350px);
+    max-height: calc(100vh - 104px);
+    max-height: calc(100svh - 104px);
+    padding: clamp(16px, 4.5vh, 30px) clamp(20px, 5vw, 44px);
+  }
+  #game .card-term .term-text {
+    font-size: clamp(40px, 16vh, 88px);
+    font-size: clamp(40px, 16svh, 88px);
+  }
+  #game .game-dog {
+    right: clamp(-34px, -3.5vw, -18px);
+    bottom: clamp(-24px, -4vh, -10px);
+  }
+  #game .game-hud {
+    top: max(8px, env(safe-area-inset-top, 0px));
+    left: max(12px, calc(env(safe-area-inset-left, 0px) + 12px));
+    right: max(12px, calc(env(safe-area-inset-right, 0px) + 12px));
+  }
+  #game .score-hud {
+    gap: 5px;
+    padding: 5px;
+  }
+  #game .score-pill {
+    min-width: auto;
+    padding: 6px 8px;
+    font-size: 11px;
+  }
+  #game .tap-hints {
+    left: max(14px, calc(env(safe-area-inset-left, 0px) + 14px));
+    right: max(14px, calc(env(safe-area-inset-right, 0px) + 14px));
+    bottom: max(8px, env(safe-area-inset-bottom, 0px));
+  }
+}
+
+@media (orientation: portrait) {
+  #game.active .game-bg {
+    width: 100%;
+    height: 100%;
+    transform: none;
+  }
+  #game .game-inner {
+    padding:
+      max(44px, calc(env(safe-area-inset-top, 0px) + 36px))
+      max(12px, calc(env(safe-area-inset-right, 0px) + 12px))
+      max(34px, calc(env(safe-area-inset-bottom, 0px) + 26px))
+      max(12px, calc(env(safe-area-inset-left, 0px) + 12px));
+  }
+  #game .game-card-stage {
+    width: min(92vh, 780px);
+    max-width: calc(100vh - 28px);
+  }
+  #game .card-term {
+    min-height: min(58vw, 360px);
+    max-height: calc(100vw - 102px);
+  }
+}
+
+@media (orientation: portrait) and (max-width: 520px) {
+  #game .game-card-stage {
+    width: min(92vh, 780px);
+    max-width: calc(100vh - 28px);
+  }
+}
 </style>
 </head>
 <body>
@@ -3831,6 +3939,7 @@ textarea,
       <button class="premium-mini" onclick="showPremiumFeature('Custom AI Deck Maker')"><span class="icon-badge"><svg class="ui-icon"><use href="#i-wand"></use></svg></span><span>Custom Deck Maker</span></button>
       <div class="premium-bundle-tag">Premium</div>
     </div>
+    <button class="btn-original" onclick="showTutorial()"><span class="icon-badge"><svg class="ui-icon"><use href="#i-phone"></use></svg></span><span>How to Play</span></button>
   </div>
   <div class="launch-card">
     <div class="launch-row">
@@ -3845,14 +3954,6 @@ textarea,
       <div class="daily-chip" id="daily-streak-chip">0 day streak</div>
     </div>
     <button class="btn btn-secondary btn-sm launch-check-btn" onclick="showLaunchChecklist()"><svg class="ui-icon"><use href="#i-check"></use></svg> Launch Checklist</button>
-  </div>
-  <div class="home-footer">
-    <button class="active" onclick="showScreen('home')"><svg class="ui-icon"><use href="#i-home"></use></svg><span>Home</span></button>
-    <button onclick="showScreen('topics')"><svg class="ui-icon"><use href="#i-layers"></use></svg><span>Decks</span></button>
-    <button onclick="showDashboard()"><svg class="ui-icon"><use href="#i-chart"></use></svg><span>Progress</span></button>
-    <button onclick="showTutorial()"><svg class="ui-icon"><use href="#i-phone"></use></svg><span>How</span></button>
-    <button onclick="resetCardCycle()"><svg class="ui-icon"><use href="#i-refresh"></use></svg><span>Cycle</span></button>
-    <button id="pwaInstallBtn" style="display:none;"><svg class="ui-icon"><use href="#i-upload"></use></svg><span>Install</span></button>
   </div>
 </div>
 
@@ -3977,11 +4078,15 @@ textarea,
         <span style="font-size:13px;color:var(--text-secondary);" id="seen-count">0</span>
       </div>
       <div style="display:flex;align-items:center;justify-content:space-between;padding:4px 0;border-top:1px solid var(--border);">
-        <span style="font-size:13px;font-weight:600;color:var(--text-primary);">Total available</span>
+        <span style="font-size:13px;font-weight:600;color:var(--text-primary);">Unique in cycle</span>
         <span style="font-size:13px;color:var(--text-secondary);" id="total-count">0</span>
       </div>
+      <div style="display:flex;align-items:center;justify-content:space-between;padding:4px 0;border-top:1px solid var(--border);">
+        <span style="font-size:13px;font-weight:600;color:var(--text-primary);">Full bank selected</span>
+        <span style="font-size:13px;color:var(--text-secondary);" id="bank-count">0</span>
+      </div>
       <div style="margin-top:8px;"><div style="display:flex;gap:4px;flex-wrap:wrap;" id="cycle-dots"></div></div>
-      <div class="cycle-reset-note">Use this if you want previously seen cards to appear again in future rounds.</div>
+      <div class="cycle-reset-note">Repeat prevention tracks unique playable prompts, so duplicated raw bank rows do not show the same term over and over.</div>
       <button class="btn btn-danger btn-sm" onclick="resetCardCycle()"><svg class="ui-icon"><use href="#i-refresh"></use></svg> Clear Seen Cards</button>
     </div>
   </div>
@@ -5184,11 +5289,30 @@ const installBanner = document.getElementById('installBanner');
 const installBtn = document.getElementById('installBtn');
 const dismissBtn = document.getElementById('dismissInstall');
 const pwaInstallBtn = document.getElementById('pwaInstallBtn');
-window.addEventListener('beforeinstallprompt', (e) => { e.preventDefault(); deferredPrompt = e; installBanner.classList.add('show'); pwaInstallBtn.style.display = 'inline-block'; });
-installBtn.addEventListener('click', async () => { if (deferredPrompt) { deferredPrompt.prompt(); const result = await deferredPrompt.userChoice; if (result.outcome === 'accepted') { installBanner.classList.remove('show'); pwaInstallBtn.style.display = 'none'; } deferredPrompt = null; } });
-dismissBtn.addEventListener('click', () => { installBanner.classList.remove('show'); });
-pwaInstallBtn.addEventListener('click', async () => { if (deferredPrompt) { deferredPrompt.prompt(); const result = await deferredPrompt.userChoice; if (result.outcome === 'accepted') { installBanner.classList.remove('show'); pwaInstallBtn.style.display = 'none'; } deferredPrompt = null; } });
-window.addEventListener('appinstalled', () => { installBanner.classList.remove('show'); pwaInstallBtn.style.display = 'none'; showInstallThanks(true); });
+async function promptPwaInstall() {
+  if (!deferredPrompt) return;
+  deferredPrompt.prompt();
+  const result = await deferredPrompt.userChoice;
+  if (result.outcome === 'accepted') {
+    installBanner?.classList.remove('show');
+    if (pwaInstallBtn) pwaInstallBtn.style.display = 'none';
+  }
+  deferredPrompt = null;
+}
+window.addEventListener('beforeinstallprompt', (e) => {
+  e.preventDefault();
+  deferredPrompt = e;
+  installBanner?.classList.add('show');
+  if (pwaInstallBtn) pwaInstallBtn.style.display = 'inline-block';
+});
+installBtn?.addEventListener('click', promptPwaInstall);
+dismissBtn?.addEventListener('click', () => { installBanner?.classList.remove('show'); });
+pwaInstallBtn?.addEventListener('click', promptPwaInstall);
+window.addEventListener('appinstalled', () => {
+  installBanner?.classList.remove('show');
+  if (pwaInstallBtn) pwaInstallBtn.style.display = 'none';
+  showInstallThanks(true);
+});
 
 // Offline Mode
 function updateOnlineStatus() {
@@ -5695,17 +5819,23 @@ function getNextCard() {
 function updateCycleUI() {
   let totalCardsInPool = 0;
   let seenCardsInPool = 0;
+  let selectedBankTotal = 0;
   
   // Build a temporary set of all active IDs based on exactly what is selected
   const activeIds = new Set();
   
   selectedTopics.forEach(topic => { 
+      selectedBankTotal += WORD_BANK_COUNTS[topic] || getTopicBank(topic).filter(isUsableCard).length || 0;
       filterBankCardsForRound(getTopicBank(topic), topic).forEach(c => activeIds.add(getCardId(normalizeCard(c, topic))));
   });
   
   document.querySelectorAll('[data-custom].selected').forEach(el => { 
       const cd = customDecks.find(d => d.id === el.dataset.custom); 
-      if (cd) cd.terms.filter(isUsableCard).forEach(c => activeIds.add(getCardId(normalizeCard(c, cd.name))));
+      if (cd) {
+        const usableCustom = cd.terms.filter(isUsableCard);
+        selectedBankTotal += usableCustom.length;
+        usableCustom.forEach(c => activeIds.add(getCardId(normalizeCard(c, cd.name))));
+      }
   });
   
   totalCardsInPool = activeIds.size;
@@ -5718,9 +5848,11 @@ function updateCycleUI() {
   // Update DOM elements safely
   const totalEl = document.getElementById('total-count');
   const seenEl = document.getElementById('seen-count');
+  const bankEl = document.getElementById('bank-count');
   
   if (totalEl) totalEl.textContent = totalCardsInPool;
   if (seenEl) seenEl.textContent = seenCardsInPool;
+  if (bankEl) bankEl.textContent = selectedBankTotal.toLocaleString();
   
   // Render the little blue tracking dots
   const dotsContainer = document.getElementById('cycle-dots');
