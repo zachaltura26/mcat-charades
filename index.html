@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
 <meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="High Yield">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="theme-color" content="#FFF8ED">
@@ -2114,7 +2114,9 @@ input[type=range] { width: 110px; accent-color: var(--blue); background: transpa
   position: fixed;
   inset: 0;
   z-index: 12000;
-  background: rgba(10, 10, 10, 0.82);
+  background:
+    radial-gradient(circle at 50% 12%, rgba(20, 184, 200, 0.10), transparent 30%),
+    rgba(255, 253, 247, 0.94);
   backdrop-filter: blur(18px);
   -webkit-backdrop-filter: blur(18px);
   display: none;
@@ -2125,30 +2127,43 @@ input[type=range] { width: 110px; accent-color: var(--blue); background: transpa
 .tutorial-overlay.active { display: flex; }
 .tutorial-card {
   width: min(100%, 420px);
-  border: 1px solid rgba(255,255,255,0.12);
+  border: 1px solid rgba(7, 38, 74, 0.10);
   border-radius: var(--radius);
-  background: #141414;
+  background:
+    linear-gradient(135deg, rgba(20, 184, 200, 0.10), rgba(255, 90, 20, 0.08)),
+    #fff;
   padding: 18px;
-  box-shadow: 0 24px 70px rgba(0,0,0,0.45);
+  color: var(--navy);
+  box-shadow: 0 24px 70px rgba(7, 38, 74, 0.22);
 }
-.tutorial-kicker { font-size: 10px; font-weight: 700; color: var(--green); text-transform: uppercase; letter-spacing: 1px; }
-.tutorial-title { font-family: var(--font-heading); font-size: 28px; margin-top: 4px; color: var(--text-primary); }
-.tutorial-copy { color: var(--text-secondary); font-size: 13px; line-height: 1.5; margin-top: 8px; }
+.tutorial-kicker { font-size: 10px; font-weight: 700; color: var(--orange); text-transform: uppercase; letter-spacing: 1px; }
+.tutorial-title { font-family: var(--font-heading); font-size: 28px; margin-top: 4px; color: var(--navy); }
+.tutorial-copy { color: rgba(7, 38, 74, 0.76); font-size: 14px; line-height: 1.5; margin-top: 8px; }
 .tutorial-steps { display: grid; gap: 8px; margin: 14px 0; }
 .tutorial-step {
   display: grid;
   grid-template-columns: 34px 1fr;
   gap: 10px;
   align-items: center;
-  border: 1px solid var(--border);
+  border: 1px solid rgba(7, 38, 74, 0.10);
   border-radius: var(--radius-sm);
-  background: rgba(255,255,255,0.03);
+  background: rgba(255,255,255,0.84);
   padding: 10px;
+  box-shadow: 0 8px 18px rgba(7, 38, 74, 0.06);
 }
-.tutorial-step-icon { line-height: 1; color: #67E8F9; }
+.tutorial-step-icon {
+  width: 34px;
+  height: 34px;
+  display: grid;
+  place-items: center;
+  border-radius: 10px;
+  color: var(--blue);
+  background: rgba(11, 111, 232, 0.09);
+  line-height: 1;
+}
 .tutorial-step-icon .ui-icon { width: 22px; height: 22px; }
-.tutorial-step strong { display: block; font-size: 12px; color: var(--text-primary); }
-.tutorial-step span { display: block; font-size: 11px; color: var(--text-dim); margin-top: 2px; line-height: 1.35; }
+.tutorial-step strong { display: block; font-size: 13px; color: var(--navy); }
+.tutorial-step span { display: block; font-size: 12px; color: rgba(7, 38, 74, 0.68); margin-top: 2px; line-height: 1.35; }
 .tutorial-actions { display: flex; justify-content: center; }
 .tutorial-actions .btn { min-height: 44px; width: min(100%, 220px); }
 
@@ -3728,6 +3743,12 @@ body,
   background-color: var(--bg-primary);
 }
 
+html.is-game-shell,
+html.is-game-shell body,
+html.is-game-shell #app {
+  background: var(--app-status-bg, var(--navy)) !important;
+}
+
 #app::before {
   content: "";
   position: fixed;
@@ -3752,32 +3773,33 @@ body,
     width: 100svw;
     height: 100vh;
     height: 100svh;
-    background: var(--bg-primary);
+    background: var(--navy);
   }
   #game .game-inner {
     padding:
-      max(46px, calc(env(safe-area-inset-top, 0px) + 38px))
+      max(42px, calc(env(safe-area-inset-top, 0px) + 34px))
       max(14px, calc(env(safe-area-inset-right, 0px) + 14px))
-      max(38px, calc(env(safe-area-inset-bottom, 0px) + 30px))
+      max(42px, calc(env(safe-area-inset-bottom, 0px) + 34px))
       max(14px, calc(env(safe-area-inset-left, 0px) + 14px));
   }
   #game .game-card-stage {
-    width: min(94vw, 920px);
-    width: min(94svw, 920px);
-    max-width: calc(100vw - 28px);
-    max-width: calc(100svw - 28px);
+    width: min(96vw, 1020px);
+    width: min(96svw, 1020px);
+    max-width: calc(100vw - 24px);
+    max-width: calc(100svw - 24px);
   }
   #game .card-term {
     width: 100%;
-    min-height: min(64vh, 350px);
-    min-height: min(64svh, 350px);
+    height: min(68vh, 410px);
+    height: min(68svh, 410px);
+    min-height: 0;
     max-height: calc(100vh - 104px);
     max-height: calc(100svh - 104px);
-    padding: clamp(16px, 4.5vh, 30px) clamp(20px, 5vw, 44px);
+    padding: clamp(14px, 4vh, 28px) clamp(18px, 5vw, 48px);
   }
   #game .card-term .term-text {
-    font-size: clamp(58px, 23vh, 132px);
-    font-size: clamp(58px, 23svh, 132px);
+    font-size: clamp(64px, 28vh, 156px);
+    font-size: clamp(64px, 28svh, 156px);
   }
   #game .game-dog {
     right: clamp(-34px, -3.5vw, -18px);
@@ -3791,6 +3813,8 @@ body,
   #game .score-hud {
     gap: 5px;
     padding: 5px;
+    max-width: 58vw;
+    overflow: hidden;
   }
   #game .score-pill {
     min-width: auto;
@@ -3802,9 +3826,29 @@ body,
     right: max(14px, calc(env(safe-area-inset-right, 0px) + 14px));
     bottom: max(8px, env(safe-area-inset-bottom, 0px));
   }
+  #game #timer-text {
+    position: absolute;
+    left: 50%;
+    bottom: max(6px, env(safe-area-inset-bottom, 0px));
+    transform: translateX(-50%);
+    margin: 0;
+    color: rgba(255,255,255,0.50);
+    font-size: clamp(34px, 10vh, 56px);
+    font-size: clamp(34px, 10svh, 56px);
+  }
 }
 
 @media (orientation: portrait) {
+  #game.active {
+    width: 100vw;
+    width: 100svw;
+    height: 100vh;
+    height: 100svh;
+    transform: none;
+    transform-origin: center;
+    top: 0;
+    left: 0;
+  }
   #game.active .game-bg {
     width: 100%;
     height: 100%;
@@ -3812,25 +3856,68 @@ body,
   }
   #game .game-inner {
     padding:
-      max(44px, calc(env(safe-area-inset-top, 0px) + 36px))
-      max(12px, calc(env(safe-area-inset-right, 0px) + 12px))
-      max(34px, calc(env(safe-area-inset-bottom, 0px) + 26px))
-      max(12px, calc(env(safe-area-inset-left, 0px) + 12px));
+      max(72px, calc(env(safe-area-inset-top, 0px) + 54px))
+      max(14px, calc(env(safe-area-inset-right, 0px) + 14px))
+      max(58px, calc(env(safe-area-inset-bottom, 0px) + 46px))
+      max(14px, calc(env(safe-area-inset-left, 0px) + 14px));
   }
   #game .game-card-stage {
-    width: min(92vh, 780px);
-    max-width: calc(100vh - 28px);
+    width: min(94vw, 560px);
+    max-width: calc(100vw - 24px);
   }
   #game .card-term {
-    min-height: min(58vw, 360px);
-    max-height: calc(100vw - 102px);
+    height: min(62vh, 560px);
+    height: min(62svh, 560px);
+    min-height: 0;
+    max-height: calc(100vh - 164px);
+    max-height: calc(100svh - 164px);
+    padding: clamp(20px, 6vw, 34px);
+  }
+  #game .card-term .term-text {
+    font-size: clamp(58px, 16vw, 128px);
+  }
+  #game .game-hud {
+    top: max(10px, env(safe-area-inset-top, 0px));
+    left: max(10px, env(safe-area-inset-left, 0px));
+    right: max(10px, env(safe-area-inset-right, 0px));
+    gap: 8px;
+  }
+  #game .score-hud {
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 4px;
+    max-width: min(62vw, 300px);
+    padding: 5px;
+  }
+  #game .score-pill {
+    min-width: auto;
+    padding: 5px 7px;
+    font-size: 10px;
+  }
+  #game .hud-mode-chip {
+    max-width: 112px;
+    padding: 6px 8px;
+  }
+  #game #timer-text {
+    position: absolute;
+    left: 50%;
+    bottom: max(10px, env(safe-area-inset-bottom, 0px));
+    transform: translateX(-50%);
+    margin: 0;
+    color: rgba(255,255,255,0.48);
+    font-size: clamp(36px, 12vw, 58px);
+  }
+  #game .tap-hints {
+    left: max(12px, env(safe-area-inset-left, 0px));
+    right: max(12px, env(safe-area-inset-right, 0px));
+    bottom: max(12px, env(safe-area-inset-bottom, 0px));
   }
 }
 
 @media (orientation: portrait) and (max-width: 520px) {
   #game .game-card-stage {
-    width: min(92vh, 780px);
-    max-width: calc(100vh - 28px);
+    width: min(94vw, 560px);
+    max-width: calc(100vw - 24px);
   }
 }
 </style>
@@ -4990,16 +5077,21 @@ const OFFLINE_BANK = {
    ─────────────────────────────────────────────── */
 let currentScreenId = 'home';
 let isTransitioning = false;
-function setMobileShellColor(color = '#FFF8ED') {
-  const safeColor = String(color || '#FFF8ED');
+const APP_SHELL_COLOR = '#FFF8ED';
+const GAME_SHELL_COLOR = '#062B52';
+function setMobileShellColor(color = APP_SHELL_COLOR, gameShell = false) {
+  const safeColor = String(color || APP_SHELL_COLOR);
   const themeMeta = document.querySelector('meta[name="theme-color"]');
   if (themeMeta) themeMeta.setAttribute('content', safeColor);
   document.documentElement.style.setProperty('--app-status-bg', safeColor);
+  const isGameShell = Boolean(gameShell);
+  document.documentElement.classList.toggle('is-game-shell', isGameShell);
+  if (document.body) document.body.classList.toggle('is-game-shell', isGameShell);
 }
 function showScreen(id) {
   if (isTransitioning || id === currentScreenId) return;
   isTransitioning = true;
-  setMobileShellColor('#FFF8ED');
+  setMobileShellColor(APP_SHELL_COLOR, false);
   const currentEl = document.getElementById(currentScreenId);
   const nextEl = document.getElementById(id);
   if (!currentEl || !nextEl) { isTransitioning = false; return; }
@@ -5153,8 +5245,8 @@ function fitCardTermText() {
   termText.style.whiteSpace = '';
   termText.style.overflowWrap = '';
   const cardBox = card.getBoundingClientRect();
-  const maxTextHeight = Math.max(110, cardBox.height * 0.66);
-  const maxTextWidth = Math.max(180, cardBox.width - 34);
+  const maxTextHeight = Math.max(128, cardBox.height * 0.72);
+  const maxTextWidth = Math.max(190, cardBox.width - 30);
   const term = termText.textContent.trim();
   const isSingleWord = !/\s/.test(term);
   const isLongMultiWord = !isSingleWord && term.length > 24;
@@ -5162,17 +5254,17 @@ function fitCardTermText() {
   termText.classList.toggle('multi-word', !isSingleWord);
   termText.style.whiteSpace = isSingleWord ? 'nowrap' : 'normal';
   termText.style.overflowWrap = 'normal';
-  const desiredFromHeight = cardBox.height * (isSingleWord ? 0.54 : isLongMultiWord ? 0.42 : 0.48);
-  const desiredFromWidth = cardBox.width * (isSingleWord ? 0.18 : 0.16);
+  const desiredFromHeight = cardBox.height * (isSingleWord ? 0.64 : isLongMultiWord ? 0.50 : 0.56);
+  const desiredFromWidth = cardBox.width * (isSingleWord ? 0.22 : 0.19);
   const base = Math.min(
-    isSingleWord ? 148 : isLongMultiWord ? 118 : 132,
-    Math.max(58, desiredFromHeight, desiredFromWidth)
+    isSingleWord ? 188 : isLongMultiWord ? 150 : 168,
+    Math.max(68, desiredFromHeight, desiredFromWidth)
   );
   let size = base;
   termText.style.fontSize = `${size}px`;
   termText.style.lineHeight = isSingleWord ? '1' : '1.03';
   while (
-    size > 22 &&
+    size > 28 &&
     (
       termText.scrollWidth > maxTextWidth ||
       termText.scrollHeight > maxTextHeight ||
@@ -5183,6 +5275,15 @@ function fitCardTermText() {
     termText.style.fontSize = `${size}px`;
   }
 }
+function refitGameCardSoon() {
+  if (currentScreenId !== 'game') return;
+  requestAnimationFrame(() => {
+    fitCardTermText();
+    setMobileShellColor(GAME_SHELL_COLOR, true);
+  });
+}
+window.addEventListener('resize', refitGameCardSoon);
+window.addEventListener('orientationchange', () => setTimeout(refitGameCardSoon, 240));
 function getAminoVisualHTML(card) {
   if (String(card?.category || '').toLowerCase() !== 'amino acids') return '';
   const code1 = String(card?.code1 || '').trim();
@@ -5210,7 +5311,7 @@ function showGameScreen(id) {
   const el = document.getElementById(id);
   if (el) el.classList.add('active');
   if (id === 'game') { document.getElementById('game').style.display = 'flex'; } else { document.getElementById('game').style.display = 'none'; }
-  setMobileShellColor('#FFF8ED');
+  setMobileShellColor(id === 'game' ? GAME_SHELL_COLOR : APP_SHELL_COLOR, id === 'game');
   currentScreenId = id;
 }
 
@@ -7241,8 +7342,8 @@ function renderCard() {
 }
 function setGameBg(s) {
   document.getElementById('game-bg').className = 'game-bg ' + s;
-  const colors = { neutral: '#FFF8ED', correct: '#EDF9F2', wrong: '#FFF0F0' };
-  setMobileShellColor(colors[s] || '#FFF8ED');
+  const colors = { neutral: GAME_SHELL_COLOR, correct: '#073C54', wrong: '#351B2A' };
+  setMobileShellColor(colors[s] || GAME_SHELL_COLOR, true);
 }
 function flash(emoji) { const el = document.getElementById('flash-overlay'); el.textContent = emoji; el.className = 'flash-overlay show'; setTimeout(() => { el.className = 'flash-overlay'; }, 420); }
 function showCardFeedback(kind, mainText, subText = '') {
@@ -7307,7 +7408,7 @@ function markCurrentCardMissedOnTimeout() {
 }
 function startTimer() {
   clearInterval(timerInterval);
-  function upd() { const t = gameState.timeLeft; const tt = document.getElementById('timer-text'); tt.textContent = t; tt.style.color = t <= 10 ? 'var(--red)' : t <= 20 ? 'var(--blue)' : 'var(--text-dim)'; }
+  function upd() { const t = gameState.timeLeft; const tt = document.getElementById('timer-text'); tt.textContent = t; tt.style.color = t <= 10 ? 'var(--red)' : t <= 20 ? 'var(--orange)' : 'rgba(255,255,255,0.52)'; }
   upd();
   timerInterval = setInterval(() => {
     if (!gameState.active || gameState.ended) return;
