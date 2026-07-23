@@ -1953,8 +1953,8 @@ input[type=range] { width: 110px; accent-color: var(--blue); background: transpa
   left: 0;
   right: 0;
   padding: 16px 20px;
-  background: var(--bg-card);
-  border-top: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.96);
+  border-top: 1px solid rgba(7, 38, 74, 0.10);
   display: none;
   align-items: center;
   justify-content: space-between;
@@ -1964,10 +1964,10 @@ input[type=range] { width: 110px; accent-color: var(--blue); background: transpa
   -webkit-backdrop-filter: blur(20px);
 }
 .install-banner.show { display: flex; }
-.install-banner-text { font-size: 13px; font-weight: 500; color: var(--text-secondary); }
-.install-banner-text strong { color: var(--text-primary); }
+.install-banner-text { font-size: 13px; font-weight: 600; color: var(--navy); }
+.install-banner-text strong { color: var(--orange); }
 .install-banner .btn { width: auto; padding: 10px 20px; font-size: 13px; }
-.install-banner .btn-close { background: none; border: none; color: var(--text-dim); font-size: 20px; cursor: pointer; padding: 4px 8px; }
+.install-banner .btn-close { background: none; border: none; color: rgba(7, 38, 74, 0.62); font-size: 20px; cursor: pointer; padding: 4px 8px; }
 
 .install-thanks-overlay {
   position: fixed;
@@ -2027,36 +2027,38 @@ input[type=range] { width: 110px; accent-color: var(--blue); background: transpa
 .add-home-overlay.active { display: flex; }
 .add-home-card {
   width: min(100%, 390px);
-  border: 1px solid rgba(20, 184, 200, 0.24);
+  border: 1px solid rgba(7, 38, 74, 0.10);
   border-radius: var(--radius);
   background:
-    linear-gradient(135deg, rgba(20, 184, 200, 0.08), rgba(245, 158, 11, 0.05)),
-    #141414;
+    linear-gradient(135deg, rgba(20, 184, 200, 0.12), rgba(255, 90, 20, 0.08)),
+    #fffdf7;
   padding: 18px;
-  box-shadow: 0 24px 70px rgba(0,0,0,0.45);
+  color: var(--navy);
+  box-shadow: 0 24px 70px rgba(7, 38, 74, 0.22);
 }
 .add-home-icon {
-  width: 48px;
-  height: 48px;
-  border-radius: 14px;
+  width: 56px;
+  height: 56px;
+  border-radius: 16px;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #67E8F9;
-  background: rgba(20, 184, 200, 0.12);
-  border: 1px solid rgba(20, 184, 200, 0.22);
+  color: var(--blue);
+  background: #fff;
+  border: 2px solid rgba(11, 111, 232, 0.16);
   margin-bottom: 12px;
+  box-shadow: 0 12px 26px rgba(7, 38, 74, 0.12);
 }
-.add-home-icon .ui-icon { width: 24px; height: 24px; }
+.add-home-icon .ui-icon { width: 28px; height: 28px; }
 .add-home-title {
   font-family: var(--font-heading);
-  color: var(--text-primary);
+  color: var(--navy);
   font-size: 24px;
   line-height: 1.1;
 }
 .add-home-copy {
-  color: var(--text-secondary);
-  font-size: 13px;
+  color: rgba(7, 38, 74, 0.76);
+  font-size: 14px;
   line-height: 1.5;
   margin: 8px 0 14px;
 }
@@ -2066,10 +2068,11 @@ input[type=range] { width: 110px; accent-color: var(--blue); background: transpa
   grid-template-columns: 28px 1fr;
   gap: 10px;
   align-items: center;
-  border: 1px solid var(--border);
+  border: 1px solid rgba(7, 38, 74, 0.10);
   border-radius: var(--radius-sm);
-  background: rgba(255,255,255,0.03);
+  background: rgba(255,255,255,0.82);
   padding: 10px;
+  box-shadow: 0 8px 18px rgba(7, 38, 74, 0.06);
 }
 .add-home-step-num {
   width: 28px;
@@ -2078,13 +2081,29 @@ input[type=range] { width: 110px; accent-color: var(--blue); background: transpa
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--text-primary);
-  background: rgba(255,255,255,0.07);
+  color: #fff;
+  background: var(--orange);
   font-size: 11px;
   font-weight: 700;
 }
-.add-home-step strong { display: block; color: var(--text-primary); font-size: 12px; }
-.add-home-step span { display: block; color: var(--text-dim); font-size: 11px; line-height: 1.35; margin-top: 2px; }
+.add-home-step strong { display: block; color: var(--navy); font-size: 13px; }
+.add-home-step span { display: block; color: rgba(7, 38, 74, 0.68); font-size: 12px; line-height: 1.35; margin-top: 2px; }
+.add-home-inline-icon {
+  width: 24px;
+  height: 24px;
+  display: inline-grid;
+  place-items: center;
+  margin: 0 3px;
+  border: 1px solid rgba(11, 111, 232, 0.18);
+  border-radius: 7px;
+  color: var(--blue);
+  background: #fff;
+  vertical-align: middle;
+}
+.add-home-inline-icon .ui-icon {
+  width: 16px;
+  height: 16px;
+}
 
 .tutorial-overlay {
   position: fixed;
@@ -3732,7 +3751,7 @@ textarea,
 </svg>
 
 <div class="install-banner" id="installBanner">
-  <div><div class="install-banner-text"><strong>High Yield!</strong> Install for the best experience</div></div>
+  <div><div class="install-banner-text"><strong>High Yield!</strong> Add it to your home screen for the app version.</div></div>
   <div style="display:flex;gap:8px;align-items:center;">
     <button class="btn btn-primary btn-sm" id="installBtn">Install</button>
     <button class="btn-close" id="dismissInstall">✕</button>
@@ -3752,11 +3771,11 @@ textarea,
   <div class="add-home-card">
     <div class="add-home-icon"><svg class="ui-icon"><use href="#i-share"></use></svg></div>
     <div class="add-home-title" id="add-home-title">Add High Yield to your home screen</div>
-    <div class="add-home-copy">For the app-like version, save this link to your phone before your first round.</div>
+    <div class="add-home-copy">For the app-like version, use your browser's share or menu button, then choose Add to Home Screen.</div>
     <div class="add-home-steps">
-      <div class="add-home-step"><div class="add-home-step-num">1</div><div><strong>Open the link in Safari</strong><span>If you are on iPhone, Safari gives the cleanest home-screen install.</span></div></div>
-      <div class="add-home-step"><div class="add-home-step-num">2</div><div><strong>Tap the Share button</strong><span>Use the square-with-arrow icon at the bottom of Safari.</span></div></div>
-      <div class="add-home-step"><div class="add-home-step-num">3</div><div><strong>Choose Add to Home Screen</strong><span>High Yield will launch like an app from your phone.</span></div></div>
+      <div class="add-home-step"><div class="add-home-step-num">1</div><div><strong>Open the game link in your phone browser</strong><span>Safari, Chrome, and other mobile browsers usually support adding sites to your home screen.</span></div></div>
+      <div class="add-home-step"><div class="add-home-step-num">2</div><div><strong>Tap the Share or menu button <span class="add-home-inline-icon"><svg class="ui-icon"><use href="#i-share"></use></svg></span></strong><span>Look for the square-with-arrow icon, or the browser's three-dot menu if you do not see it.</span></div></div>
+      <div class="add-home-step"><div class="add-home-step-num">3</div><div><strong>Choose Add to Home Screen</strong><span>After it saves, High Yield opens like a normal app from your phone.</span></div></div>
     </div>
     <button class="btn btn-primary" onclick="closeAddHomeInstructions()">Got it</button>
   </div>
