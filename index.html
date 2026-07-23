@@ -383,11 +383,11 @@ html, body {
   font-weight: 700;
   text-shadow: none;
 }
-.card-term.slide-out { transform: translateY(-30px) scale(0.95); opacity: 0; }
-.card-term.slide-in { transform: translateY(30px) scale(0.95); opacity: 0; }
-.card-term.slide-in-active { transform: translateY(0) scale(1); opacity: 1; }
+.card-term.slide-out { transform: translateY(-10px); opacity: 0; }
+.card-term.slide-in { transform: translateY(10px); opacity: 0; }
+.card-term.slide-in-active { transform: translateY(0); opacity: 1; }
 .card-term.feedback-card {
-  transform: translateY(0) scale(1);
+  transform: translateY(0);
   opacity: 1;
   text-shadow: none;
 }
@@ -2683,18 +2683,18 @@ input[type=range] { width: 110px; accent-color: var(--blue); background: transpa
 }
 .game-bg.neutral {
   background:
-    radial-gradient(circle at 84% 58%, rgba(255,255,255,0.12), transparent 24%),
-    linear-gradient(135deg, #062B52, #041C38);
+    radial-gradient(circle at 84% 58%, rgba(255,255,255,0.10), transparent 24%),
+    var(--navy);
 }
 .game-bg.correct {
   background:
-    radial-gradient(circle at 80% 58%, rgba(95, 164, 99, 0.32), transparent 25%),
-    linear-gradient(135deg, #062B52, #073C54);
+    radial-gradient(circle at 80% 58%, rgba(95, 164, 99, 0.28), transparent 25%),
+    var(--navy);
 }
 .game-bg.wrong {
   background:
-    radial-gradient(circle at 80% 58%, rgba(239, 68, 68, 0.25), transparent 25%),
-    linear-gradient(135deg, #062B52, #351B2A);
+    radial-gradient(circle at 80% 58%, rgba(239, 68, 68, 0.22), transparent 25%),
+    var(--navy);
 }
 .game-hud { color: #fff; }
 .score-hud {
@@ -3615,8 +3615,11 @@ body,
 }
 
 html.is-game-shell,
+html.game-active,
 html.is-game-shell body,
-html.is-game-shell #app {
+html.game-active body,
+html.is-game-shell #app,
+html.game-active #app {
   width: 100%;
   height: 100%;
   min-height: 100dvh;
@@ -3625,9 +3628,27 @@ html.is-game-shell #app {
   overscroll-behavior: none;
 }
 
-body.is-game-shell {
+html.game-active::before {
+  content: "";
   position: fixed;
   inset: 0;
+  width: 100vw;
+  width: 100dvw;
+  height: 100vh;
+  height: 100dvh;
+  background: var(--navy);
+  z-index: 9998;
+  pointer-events: none;
+}
+
+body.is-game-shell,
+body.game-active {
+  position: fixed;
+  inset: 0;
+}
+
+html.game-active #app::before {
+  background: var(--navy);
 }
 
 #app::before {
@@ -3649,7 +3670,8 @@ body.is-game-shell {
 }
 
 #game,
-#game.active {
+#game.active,
+#game.game-active {
   position: fixed !important;
   top: 0 !important;
   left: 0 !important;
@@ -3690,7 +3712,7 @@ body.is-game-shell {
   height: 100%;
   min-height: 100%;
   display: grid;
-  grid-template-rows: auto minmax(0, 1fr) auto;
+  grid-template-rows: clamp(34px, 8vmin, 48px) minmax(0, 1fr) clamp(30px, 7vmin, 54px);
   align-items: stretch;
   justify-items: center;
   gap: clamp(7px, 1.4vmin, 12px);
@@ -3776,10 +3798,12 @@ body.is-game-shell {
 }
 
 #game .card-term {
+  --game-term-size: clamp(78px, min(17.5vw, 42dvh), 210px);
   position: relative;
   z-index: 5;
   width: min(100%, 1140px);
   height: 100%;
+  min-width: 0;
   min-height: 0;
   max-height: none;
   margin: 0;
@@ -3792,23 +3816,49 @@ body.is-game-shell {
   padding-bottom: clamp(42px, 8vmin, 78px);
   border-radius: clamp(18px, 4vmin, 34px);
   overflow: hidden;
+  contain: layout paint;
 }
 
+#game .card-term.slide-out,
+#game .card-term.slide-in,
+#game .card-term.slide-in-active,
+#game .card-term.feedback-card {
+  width: min(100%, 1140px);
+  height: 100%;
+  min-height: 0;
+  max-height: none;
+}
+
+#game .card-term.slide-out { transform: translateY(-8px); }
+#game .card-term.slide-in { transform: translateY(8px); }
+#game .card-term.slide-in-active,
+#game .card-term.feedback-card { transform: translateY(0); }
+
 #game .card-term .term-text {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.035em;
   width: 100%;
   max-width: 100%;
+  min-width: 0;
   align-self: center;
   justify-self: center;
   color: var(--navy);
-  font-size: clamp(76px, 22vw, 220px);
-  font-size: clamp(76px, min(22vw, 45dvh), 220px);
-  line-height: 0.92;
+  font-size: var(--game-term-size);
+  line-height: 0.95;
   text-align: center;
   text-wrap: balance;
   overflow-wrap: normal;
   word-break: normal;
   hyphens: none;
+}
+
+#game .card-term .term-line {
+  display: block;
+  max-width: 100%;
+  white-space: nowrap;
 }
 
 #game .card-term .term-text.single-word {
@@ -3858,7 +3908,7 @@ body.is-game-shell {
 }
 
 #game .card-term.feedback-card .term-feedback {
-  font-size: clamp(72px, 18vw, 190px);
+  font-size: var(--game-term-size);
   line-height: 0.88;
 }
 
@@ -3925,7 +3975,7 @@ body.is-game-shell {
 }
 
 @media (orientation: portrait) {
-  #game.active {
+  #game.active.game-active {
     width: 100vh;
     width: 100dvh;
     height: 100vw;
@@ -3935,7 +3985,7 @@ body.is-game-shell {
     transform-origin: top left;
   }
 
-  #game.active .game-inner {
+  #game.active.game-active .game-inner {
     padding:
       max(10px, env(safe-area-inset-left, 0px), env(safe-area-inset-right, 0px))
       max(12px, env(safe-area-inset-top, 0px), env(safe-area-inset-bottom, 0px));
@@ -3943,7 +3993,7 @@ body.is-game-shell {
 }
 
 @media (orientation: landscape) {
-  #game.active {
+  #game.active.game-active {
     width: 100vw;
     width: 100dvw;
     height: 100vh;
@@ -5159,6 +5209,55 @@ let currentScreenId = 'home';
 let isTransitioning = false;
 const APP_SHELL_COLOR = '#FFF8ED';
 const GAME_SHELL_COLOR = '#062B52';
+let gameRoundFullscreenEntered = false;
+let gameOrientationSessionActive = false;
+let gameOrientationLockPromise = null;
+function setGameViewportActive(active) {
+  const isActive = Boolean(active);
+  document.documentElement.classList.toggle('game-active', isActive);
+  if (document.body) document.body.classList.toggle('game-active', isActive);
+  const app = document.getElementById('app');
+  if (app) app.classList.toggle('game-active', isActive);
+  const game = document.getElementById('game');
+  if (game) game.classList.toggle('game-active', isActive);
+}
+async function requestGameOrientationLockForRound() {
+  if (gameOrientationLockPromise) return gameOrientationLockPromise;
+  gameOrientationSessionActive = true;
+  gameOrientationLockPromise = (async () => {
+    try {
+      const root = document.documentElement;
+      if (!document.fullscreenElement && root?.requestFullscreen) {
+        try {
+          await root.requestFullscreen({ navigationUI: 'hide' });
+          gameRoundFullscreenEntered = true;
+        } catch(e) {}
+      }
+      const orientation = window.screen?.orientation;
+      if (orientation?.lock) {
+        try {
+          await orientation.lock('landscape-primary');
+        } catch(primaryError) {
+          try { await orientation.lock('landscape'); } catch(e) {}
+        }
+      }
+    } catch(e) {}
+    finally { gameOrientationLockPromise = null; }
+  })();
+  return gameOrientationLockPromise;
+}
+function releaseGameOrientationLockForRound() {
+  gameOrientationSessionActive = false;
+  setGameViewportActive(false);
+  try { if (window.screen?.orientation?.unlock) window.screen.orientation.unlock(); } catch(e) {}
+  if (gameRoundFullscreenEntered && document.fullscreenElement && document.exitFullscreen) {
+    try {
+      const result = document.exitFullscreen();
+      if (result && typeof result.catch === 'function') result.catch(() => {});
+    } catch(e) {}
+  }
+  gameRoundFullscreenEntered = false;
+}
 function setMobileShellColor(color = APP_SHELL_COLOR, gameShell = false) {
   const safeColor = String(color || APP_SHELL_COLOR);
   const themeMeta = document.querySelector('meta[name="theme-color"]');
@@ -5168,6 +5267,7 @@ function setMobileShellColor(color = APP_SHELL_COLOR, gameShell = false) {
   const isGameShell = Boolean(gameShell);
   document.documentElement.classList.toggle('is-game-shell', isGameShell);
   if (document.body) document.body.classList.toggle('is-game-shell', isGameShell);
+  setGameViewportActive(isGameShell);
   const app = document.getElementById('app');
   if (app) app.style.backgroundColor = isGameShell ? safeColor : '';
 }
@@ -5342,48 +5442,132 @@ function handleGameSurfaceTap(event) {
 }
 window.handleGameSurfaceTap = handleGameSurfaceTap;
 
+function getTermMeasureNode(termText) {
+  let node = document.getElementById('term-measure-node');
+  if (!node) {
+    node = document.createElement('span');
+    node.id = 'term-measure-node';
+    node.setAttribute('aria-hidden', 'true');
+    node.style.position = 'fixed';
+    node.style.left = '-10000px';
+    node.style.top = '-10000px';
+    node.style.visibility = 'hidden';
+    node.style.whiteSpace = 'nowrap';
+    node.style.pointerEvents = 'none';
+    document.body.appendChild(node);
+  }
+  const style = getComputedStyle(termText);
+  node.style.fontFamily = style.fontFamily;
+  node.style.fontWeight = style.fontWeight;
+  node.style.fontStyle = style.fontStyle;
+  node.style.letterSpacing = style.letterSpacing;
+  node.style.textTransform = style.textTransform;
+  return node;
+}
+
+function measureTermLine(text, size, termText) {
+  const node = getTermMeasureNode(termText);
+  node.style.fontSize = `${size}px`;
+  node.style.lineHeight = '0.95';
+  node.textContent = text;
+  return node.getBoundingClientRect().width;
+}
+
+function getLineCombos(words, lineCount) {
+  const combos = [];
+  if (lineCount === 1) return [[words.join(' ')]];
+  if (lineCount === 2) {
+    for (let i = 1; i < words.length; i++) {
+      combos.push([words.slice(0, i).join(' '), words.slice(i).join(' ')]);
+    }
+  }
+  if (lineCount === 3) {
+    for (let i = 1; i < words.length - 1; i++) {
+      for (let j = i + 1; j < words.length; j++) {
+        combos.push([words.slice(0, i).join(' '), words.slice(i, j).join(' '), words.slice(j).join(' ')]);
+      }
+    }
+  }
+  return combos;
+}
+
+function chooseBalancedTermLines(words, lineCount, size, maxWidth, maxHeight, termText) {
+  const lineHeight = size * 0.95;
+  const totalHeight = (lineHeight * lineCount) + (size * 0.035 * Math.max(0, lineCount - 1));
+  if (totalHeight > maxHeight) return null;
+  let best = null;
+  getLineCombos(words, lineCount).forEach(lines => {
+    const widths = lines.map(line => measureTermLine(line, size, termText));
+    const widest = Math.max(...widths);
+    if (widest > maxWidth) return;
+    const narrowest = Math.min(...widths);
+    const balance = widest - narrowest;
+    const raggedPenalty = widths.reduce((sum, width) => sum + Math.abs(width - widest), 0) * 0.12;
+    const score = balance + raggedPenalty;
+    if (!best || score < best.score) best = { lines, score, widest };
+  });
+  return best?.lines || null;
+}
+
+function renderTermLines(termText, lines) {
+  termText.innerHTML = lines.map(line => `<span class="term-line">${escapeHTML(line)}</span>`).join('');
+}
+
 function fitCardTermText() {
   const termText = document.querySelector('#card-term .term-text');
   const card = document.getElementById('card-term');
   if (!termText || !card) return;
+  const rawTerm = String(termText.dataset.term || termText.textContent || '').replace(/\s+/g, ' ').trim();
+  if (!rawTerm) return;
+  termText.dataset.term = rawTerm;
   termText.style.fontSize = '';
   termText.style.lineHeight = '';
   termText.style.whiteSpace = '';
   termText.style.overflowWrap = '';
   termText.style.wordBreak = '';
-  const cardWidth = Math.max(220, card.clientWidth || card.offsetWidth || card.getBoundingClientRect().width);
-  const cardHeight = Math.max(140, card.clientHeight || card.offsetHeight || card.getBoundingClientRect().height);
-  const maxTextWidth = Math.max(180, cardWidth - Math.max(32, cardWidth * 0.08));
-  const maxTextHeight = Math.max(110, cardHeight * 0.76);
-  const term = termText.textContent.trim();
-  const words = term.split(/\s+/).filter(Boolean);
+  const cardStyle = getComputedStyle(card);
+  const padX = parseFloat(cardStyle.paddingLeft || 0) + parseFloat(cardStyle.paddingRight || 0);
+  const padY = parseFloat(cardStyle.paddingTop || 0) + parseFloat(cardStyle.paddingBottom || 0);
+  const cardWidth = Math.max(240, card.clientWidth || card.offsetWidth || card.getBoundingClientRect().width);
+  const cardHeight = Math.max(150, card.clientHeight || card.offsetHeight || card.getBoundingClientRect().height);
+  const maxTextWidth = Math.max(180, cardWidth - padX - Math.max(20, cardWidth * 0.035));
+  const maxTextHeight = Math.max(108, (cardHeight - padY) * 0.88);
+  const words = rawTerm.split(/\s+/).filter(Boolean);
   const isSingleWord = words.length <= 1;
-  const isMediumMultiWord = !isSingleWord && words.length <= 3 && term.length <= 30;
-  const isLongMultiWord = !isSingleWord && !isMediumMultiWord;
   termText.classList.toggle('single-word', isSingleWord);
   termText.classList.toggle('multi-word', !isSingleWord);
   termText.style.whiteSpace = isSingleWord ? 'nowrap' : 'normal';
   termText.style.overflowWrap = 'normal';
   termText.style.wordBreak = 'normal';
-  const desiredFromHeight = cardHeight * (isSingleWord ? 0.78 : isMediumMultiWord ? 0.70 : 0.60);
-  const desiredFromWidth = cardWidth * (isSingleWord ? 0.36 : isMediumMultiWord ? 0.30 : 0.24);
-  const base = Math.min(
-    isSingleWord ? 260 : isMediumMultiWord ? 235 : 205,
-    Math.max(78, desiredFromHeight, desiredFromWidth)
-  );
-  let size = base;
-  termText.style.fontSize = `${size}px`;
-  termText.style.lineHeight = isSingleWord ? '0.92' : '0.96';
-  while (
-    size > 34 &&
-    (
-      termText.scrollWidth > maxTextWidth ||
-      termText.scrollHeight > maxTextHeight
-    )
-  ) {
-    size -= size > 120 ? 5 : size > 72 ? 3 : 2;
-    termText.style.fontSize = `${size}px`;
+  const targetSize = Math.min(210, Math.max(78, Math.min(cardHeight * 0.64, cardWidth * 0.17)));
+  const minSize = Math.max(44, targetSize * 0.86);
+  card.style.setProperty('--game-term-size', `${targetSize}px`);
+  const counts = isSingleWord ? [1] : [1, 2, 3].filter(count => count <= words.length);
+  let chosenLines = null;
+  let chosenSize = targetSize;
+  for (const count of counts) {
+    chosenLines = chooseBalancedTermLines(words, count, targetSize, maxTextWidth, maxTextHeight, termText);
+    if (chosenLines) break;
   }
+  if (!chosenLines) {
+    for (let size = targetSize - 3; size >= minSize; size -= 3) {
+      for (const count of counts) {
+        chosenLines = chooseBalancedTermLines(words, count, size, maxTextWidth, maxTextHeight, termText);
+        if (chosenLines) {
+          chosenSize = size;
+          break;
+        }
+      }
+      if (chosenLines) break;
+    }
+  }
+  if (!chosenLines) {
+    chosenSize = minSize;
+    chosenLines = isSingleWord ? [rawTerm] : chooseBalancedTermLines(words, Math.min(3, words.length), minSize, Number.POSITIVE_INFINITY, maxTextHeight, termText) || [rawTerm];
+  }
+  termText.style.fontSize = `${chosenSize}px`;
+  termText.style.lineHeight = '0.95';
+  renderTermLines(termText, chosenLines);
 }
 window.fitCardTermText = fitCardTermText;
 
@@ -7391,6 +7575,7 @@ function startGame() {
   updateGameHud();
   const accFill = document.getElementById('acc-fill');
   if (accFill) accFill.style.width = '0%';
+  requestGameOrientationLockForRound();
   actionTimeout = setTimeout(() => {
     if (gameState.ended) return;
     showGameScreen('countdown');
@@ -7413,6 +7598,7 @@ function runCountdown(n) {
 function beginGame() {
   if (gameState.ended) return;
   gameState.active = true;
+  requestGameOrientationLockForRound();
   showGameScreen('game');
   renderCard();
   startTimer();
@@ -7445,7 +7631,7 @@ function renderCard() {
     const categoryLabel = [card.category || 'General', card.aminoCardLabel].filter(Boolean).join(' · ');
     termEl.innerHTML = `
       <span class="card-source ${sourceClass}">${sourceLabel}</span>
-      <span class="term-text ${termClass}">${escapeHTML(displayTerm)}</span>
+      <span class="term-text ${termClass}" data-term="${escapeHTML(displayTerm)}">${escapeHTML(displayTerm)}</span>
       ${aminoHTML}
       <span class="card-category">${escapeHTML(categoryLabel)} · Tier ${card.difficulty}</span>
       ${tabooHTML ? `<div class="taboo-panel"><span class="taboo-label">Don't say</span><div class="taboo-list">${tabooHTML}</div></div>` : ''}
@@ -7466,8 +7652,7 @@ function renderCard() {
 }
 function setGameBg(s) {
   document.getElementById('game-bg').className = 'game-bg ' + s;
-  const colors = { neutral: GAME_SHELL_COLOR, correct: '#073C54', wrong: '#351B2A' };
-  setMobileShellColor(colors[s] || GAME_SHELL_COLOR, true);
+  setMobileShellColor(GAME_SHELL_COLOR, true);
 }
 function flash(emoji) { const el = document.getElementById('flash-overlay'); el.textContent = emoji; el.className = 'flash-overlay show'; setTimeout(() => { el.className = 'flash-overlay'; }, 420); }
 function showCardFeedback(kind, mainText, subText = '') {
@@ -7665,7 +7850,7 @@ function endGame() {
       playAgainBtn.innerHTML = `${iconMarkup('play', true)} Play Again`;
     }
   }
-  try { if (screen.orientation && screen.orientation.unlock) screen.orientation.unlock(); } catch(e) {}
+  releaseGameOrientationLockForRound();
   showGameScreen('results');
   const resultsScreen = document.getElementById('results');
   if (resultsScreen) resultsScreen.scrollTop = 0;
