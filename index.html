@@ -2810,11 +2810,6 @@ input[type=range] { width: 110px; accent-color: var(--blue); background: transpa
   .topic-desc { max-width: 118px; }
   .nav-title { font-size: 16px; }
   .score-pill { min-width: 64px; font-size: 11px; }
-  .game-hud { left: 16px; right: 16px; }
-  .card-term { width: min(64%, 520px); min-height: 42vh; padding: 18px; }
-  .card-term .term-text { font-size: clamp(34px, 10vh, 82px); }
-  .game-dog { right: 14px; bottom: 50px; }
-  .game-dog .mascot-dog { --dog-size: clamp(82px, 17vw, 126px); }
   #results > .results-header,
   #results > .mcat-card,
   #results > .insight-grid,
@@ -3040,13 +3035,6 @@ input[type=range] { width: 110px; accent-color: var(--blue); background: transpa
   50% { transform: scale(0.965) rotate(1deg); opacity: 0.9; }
 }
 
-#game .game-inner {
-  align-items: flex-start;
-  padding: clamp(58px, 11vh, 96px) clamp(14px, 4vw, 36px) clamp(56px, 10vh, 86px);
-}
-#game .game-hud {
-  align-items: flex-start;
-}
 .game-hud-left {
   display: inline-flex;
   align-items: center;
@@ -3069,56 +3057,6 @@ input[type=range] { width: 110px; accent-color: var(--blue); background: transpa
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-}
-#game .card-term {
-  width: min(72vw, 720px);
-  min-height: min(56vh, 390px);
-  max-height: calc(100vh - 148px);
-  margin-left: clamp(6px, 3vw, 28px);
-  padding: clamp(18px, 4vw, 42px);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: clamp(8px, 2vh, 16px);
-}
-#game .card-term .term-text {
-  display: block;
-  width: 100%;
-  max-width: 100%;
-  color: var(--navy);
-  font-size: clamp(44px, 10.5vh, 92px);
-  line-height: 0.98;
-  text-align: center;
-  overflow-wrap: normal;
-  word-break: normal;
-  hyphens: none;
-}
-#game .card-term .term-text.single-word {
-  white-space: nowrap;
-}
-#game .card-term .term-text.multi-word {
-  white-space: normal;
-}
-#game .card-source {
-  display: none;
-}
-#game .card-category {
-  max-width: 100%;
-  text-align: center;
-}
-#game .taboo-panel {
-  width: min(100%, 460px);
-}
-#game .game-dog {
-  right: clamp(8px, 4vw, 54px);
-  top: 50%;
-  bottom: auto;
-  transform: translateY(-22%);
-  opacity: 0.98;
-}
-#game .game-dog .mascot-dog {
-  --dog-size: clamp(86px, 16vw, 146px);
 }
 .amino-visual {
   display: grid;
@@ -3305,26 +3243,6 @@ input[type=range] { width: 110px; accent-color: var(--blue); background: transpa
   -webkit-backdrop-filter: blur(16px);
 }
 
-@media (orientation: portrait) {
-  #game .game-inner {
-    align-items: center;
-  }
-  #game .card-term {
-    width: min(92vw, 560px);
-    min-height: 46vh;
-    margin-left: 0;
-  }
-  #game .game-dog {
-    right: 10px;
-    top: auto;
-    bottom: 46px;
-    transform: none;
-  }
-  #game .game-dog .mascot-dog {
-    --dog-size: clamp(76px, 28vw, 118px);
-  }
-}
-
 @media (max-width: 520px) {
   #home {
     padding-top: max(54px, calc(env(safe-area-inset-top, 0px) + 48px));
@@ -3347,13 +3265,6 @@ input[type=range] { width: 110px; accent-color: var(--blue); background: transpa
   .topic-card {
     min-height: 126px;
     padding: 18px 12px 12px;
-  }
-  #game .card-term {
-    width: min(86vw, 620px);
-    min-height: 52vh;
-  }
-  #game .card-term .term-text {
-    font-size: clamp(38px, 10vh, 80px);
   }
 }
 
@@ -3663,63 +3574,9 @@ textarea,
   bottom: 12%;
 }
 
-#game .game-inner {
-  align-items: center;
-  justify-content: center;
-  padding: clamp(58px, 11vh, 96px) clamp(14px, 4vw, 36px) clamp(56px, 10vh, 86px);
-}
-#game .game-card-stage {
-  position: relative;
-  z-index: 5;
-  width: min(76vw, 760px);
-  display: grid;
-  place-items: center;
-  margin: 0 auto;
-}
-#game .card-term {
-  width: 100%;
-  min-height: min(56vh, 390px);
-  max-height: calc(100vh - 148px);
-  margin: 0;
-}
-#game .game-dog {
-  position: absolute;
-  right: clamp(-50px, -4.5vw, -24px);
-  bottom: clamp(-36px, -4vh, -18px);
-  top: auto;
-  transform: none;
-  z-index: 8;
-  opacity: 0.98;
-  pointer-events: none;
-  width: clamp(82px, 15vw, 138px);
-  height: clamp(82px, 15vw, 138px);
-}
-#game .game-dog .mascot-dog {
-  --dog-size: clamp(82px, 15vw, 138px);
-}
-
 #results .results-trophy {
   font-size: clamp(34px, 10vw, 52px);
   line-height: 0.95;
-}
-
-@media (orientation: portrait) {
-  #game .game-card-stage {
-    width: min(90vw, 560px);
-  }
-  #game .card-term {
-    width: 100%;
-    min-height: 46vh;
-  }
-  #game .game-dog {
-    right: clamp(-34px, -6vw, -16px);
-    bottom: clamp(-24px, -4vh, -10px);
-    width: clamp(72px, 22vw, 112px);
-    height: clamp(72px, 22vw, 112px);
-  }
-  #game .game-dog .mascot-dog {
-    --dog-size: clamp(72px, 22vw, 112px);
-  }
 }
 
 @media (max-width: 520px) {
@@ -3735,12 +3592,9 @@ textarea,
     left: -1%;
     bottom: 12%;
   }
-  #game .game-card-stage {
-    width: min(86vw, 620px);
-  }
 }
 
-/* Mobile shell corrections */
+/* Heads Up gameplay viewport */
 html,
 body,
 #app,
@@ -3797,47 +3651,54 @@ body.is-game-shell {
 #game,
 #game.active {
   position: fixed !important;
-  inset: 0 !important;
-  width: 100vw !important;
-  width: 100dvw !important;
-  height: 100vh !important;
-  height: 100dvh !important;
-  min-height: 100dvh !important;
-  margin: 0 !important;
-  padding: 0 !important;
-  background: var(--navy) !important;
-  overflow: hidden !important;
-  transform: none !important;
-  transform-origin: center !important;
-  touch-action: manipulation;
-}
-
-#game.active .game-bg,
-#game .game-bg {
-  position: fixed;
-  inset: 0;
+  top: 0 !important;
+  left: 0 !important;
+  right: auto !important;
+  bottom: auto !important;
   width: 100vw;
   width: 100dvw;
   height: 100vh;
   height: 100dvh;
   min-height: 100dvh;
-  transform: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  background: var(--navy) !important;
+  overflow: hidden !important;
+  transform: none;
+  transform-origin: top left;
+  touch-action: manipulation;
+}
+
+#game.active {
+  display: flex;
+}
+
+#game .game-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  transform: none;
+  pointer-events: none;
 }
 
 #game .game-inner {
+  position: relative;
+  z-index: 2;
   width: 100%;
   height: 100%;
-  min-height: 100dvh;
+  min-height: 100%;
   display: grid;
   grid-template-rows: auto minmax(0, 1fr) auto;
   align-items: stretch;
   justify-items: center;
-  gap: clamp(8px, 1.8vmin, 16px);
+  gap: clamp(7px, 1.4vmin, 12px);
   padding:
-    max(12px, calc(env(safe-area-inset-top, 0px) + 10px))
-    max(12px, calc(env(safe-area-inset-right, 0px) + 12px))
-    max(12px, calc(env(safe-area-inset-bottom, 0px) + 10px))
-    max(12px, calc(env(safe-area-inset-left, 0px) + 12px));
+    max(9px, calc(env(safe-area-inset-top, 0px) + 7px))
+    max(12px, calc(env(safe-area-inset-right, 0px) + 10px))
+    max(9px, calc(env(safe-area-inset-bottom, 0px) + 7px))
+    max(12px, calc(env(safe-area-inset-left, 0px) + 10px));
 }
 
 #game .game-hud {
@@ -3846,13 +3707,14 @@ body.is-game-shell {
   left: auto;
   right: auto;
   z-index: 30;
-  width: min(100%, 1080px);
+  width: min(100%, 1180px);
   align-self: start;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 8px;
+  gap: clamp(6px, 1.4vmin, 12px);
   min-width: 0;
+  color: #fff;
 }
 
 #game .game-hud-left,
@@ -3862,27 +3724,30 @@ body.is-game-shell {
 
 #game .game-hud-left .btn {
   flex: 0 0 auto;
-  min-height: 36px;
-  padding: 8px 12px !important;
+  min-height: 32px;
+  padding: 7px 11px !important;
   color: #fff;
   border-color: rgba(255,255,255,0.28);
   background: rgba(255,255,255,0.10);
 }
 
 #game .hud-mode-chip {
-  max-width: min(36vw, 190px);
-  min-height: 34px;
+  max-width: min(29vw, 180px);
+  min-height: 32px;
   padding: 7px 10px;
   color: #fff;
   border-color: rgba(255,255,255,0.22);
   background: rgba(255,255,255,0.12);
+  font-size: clamp(10px, 1.5vmin, 12px);
 }
 
 #game .score-hud {
   flex: 0 1 auto;
-  gap: 5px;
+  display: inline-flex;
+  flex-wrap: nowrap;
+  gap: 4px;
   padding: 5px;
-  max-width: min(56vw, 560px);
+  max-width: min(62vw, 650px);
   overflow: hidden;
   border-color: rgba(255,255,255,0.22);
   background: rgba(255,255,255,0.12);
@@ -3890,8 +3755,9 @@ body.is-game-shell {
 
 #game .score-pill {
   min-width: auto;
+  flex: 0 1 auto;
   padding: 6px 8px;
-  font-size: clamp(10px, 1.7vmin, 12px);
+  font-size: clamp(10px, 1.45vmin, 12px);
   line-height: 1;
   white-space: nowrap;
 }
@@ -3900,7 +3766,7 @@ body.is-game-shell {
   position: relative;
   z-index: 5;
   grid-row: 2;
-  width: min(100%, 1080px);
+  width: min(100%, 1180px);
   height: 100%;
   min-height: 0;
   display: grid;
@@ -3911,7 +3777,8 @@ body.is-game-shell {
 
 #game .card-term {
   position: relative;
-  width: min(100%, 1040px);
+  z-index: 5;
+  width: min(100%, 1140px);
   height: 100%;
   min-height: 0;
   max-height: none;
@@ -3921,8 +3788,8 @@ body.is-game-shell {
   align-items: center;
   justify-items: center;
   gap: 0;
-  padding: clamp(18px, 5vmin, 48px);
-  padding-bottom: clamp(38px, 8vmin, 76px);
+  padding: clamp(18px, 5vmin, 48px) clamp(22px, 6vmin, 70px);
+  padding-bottom: clamp(42px, 8vmin, 78px);
   border-radius: clamp(18px, 4vmin, 34px);
   overflow: hidden;
 }
@@ -3934,9 +3801,9 @@ body.is-game-shell {
   align-self: center;
   justify-self: center;
   color: var(--navy);
-  font-size: clamp(64px, 22vw, 190px);
-  font-size: clamp(64px, min(22vw, 30dvh), 190px);
-  line-height: 0.94;
+  font-size: clamp(76px, 22vw, 220px);
+  font-size: clamp(76px, min(22vw, 45dvh), 220px);
+  line-height: 0.92;
   text-align: center;
   text-wrap: balance;
   overflow-wrap: normal;
@@ -3952,13 +3819,17 @@ body.is-game-shell {
   white-space: normal;
 }
 
+#game .card-source {
+  display: none;
+}
+
 #game .card-category,
 #game .taboo-panel,
 #game .amino-visual {
   position: absolute;
   left: clamp(16px, 4vmin, 34px);
   right: clamp(16px, 4vmin, 34px);
-  bottom: clamp(12px, 2.8vmin, 22px);
+  bottom: clamp(11px, 2.6vmin, 20px);
   z-index: 3;
   max-width: none;
   margin: 0 auto;
@@ -3966,26 +3837,38 @@ body.is-game-shell {
 }
 
 #game .card-category {
-  font-size: clamp(12px, 2.6vmin, 16px);
+  text-align: center;
+  font-size: clamp(11px, 2.2vmin, 15px);
   color: rgba(7, 38, 74, 0.62);
 }
 
 #game .taboo-panel {
-  bottom: clamp(38px, 8vmin, 68px);
+  width: auto;
+  bottom: clamp(36px, 7vmin, 62px);
 }
 
 #game .amino-visual {
-  width: min(70%, 420px);
-  bottom: clamp(34px, 7vmin, 58px);
+  width: min(62%, 430px);
+  bottom: clamp(34px, 6.5vmin, 56px);
+}
+
+#game .card-term.feedback-card {
+  display: grid;
+  place-items: center;
+}
+
+#game .card-term.feedback-card .term-feedback {
+  font-size: clamp(72px, 18vw, 190px);
+  line-height: 0.88;
 }
 
 #game .game-dog {
   position: absolute;
-  right: clamp(-42px, -4vmin, -18px);
-  bottom: clamp(-40px, -5vmin, -16px);
+  right: clamp(-42px, -4.5vmin, -18px);
+  bottom: clamp(-36px, -5vmin, -14px);
   top: auto;
-  width: clamp(76px, 15vmin, 144px);
-  height: clamp(76px, 15vmin, 144px);
+  width: clamp(76px, 16vmin, 142px);
+  height: clamp(76px, 16vmin, 142px);
   transform: none;
   z-index: 9;
   opacity: 0.98;
@@ -3993,7 +3876,7 @@ body.is-game-shell {
 }
 
 #game .game-dog .mascot-dog {
-  --dog-size: clamp(76px, 15vmin, 144px);
+  --dog-size: clamp(76px, 16vmin, 142px);
 }
 
 #game #timer-text {
@@ -4007,84 +3890,89 @@ body.is-game-shell {
   justify-self: center;
   margin: 0;
   color: rgba(255,255,255,0.52);
-  font-size: clamp(32px, 7vmin, 58px);
+  font-size: clamp(30px, 6.5vmin, 54px);
   line-height: 0.9;
 }
 
 #game .tap-hints {
   position: absolute;
-  left: max(12px, calc(env(safe-area-inset-left, 0px) + 12px));
-  right: max(12px, calc(env(safe-area-inset-right, 0px) + 12px));
-  bottom: max(12px, calc(env(safe-area-inset-bottom, 0px) + 8px));
+  left: max(12px, calc(env(safe-area-inset-left, 0px) + 10px));
+  right: max(12px, calc(env(safe-area-inset-right, 0px) + 10px));
+  bottom: max(10px, calc(env(safe-area-inset-bottom, 0px) + 6px));
   z-index: 21;
 }
 
 #game .tap-hints span {
-  padding: 8px 11px;
+  padding: 7px 10px;
   max-width: 34vw;
   white-space: nowrap;
+  font-size: clamp(10px, 1.6vmin, 12px);
 }
 
 #game .tap-zones {
+  position: absolute;
   inset: 0;
-  margin: 0;
   z-index: 12;
+  display: flex;
+  margin: 0;
+  pointer-events: auto;
 }
 
-@media (orientation: landscape) {
-  #game .game-inner {
-    padding:
-      max(10px, calc(env(safe-area-inset-top, 0px) + 8px))
-      max(14px, calc(env(safe-area-inset-right, 0px) + 14px))
-      max(10px, calc(env(safe-area-inset-bottom, 0px) + 8px))
-      max(14px, calc(env(safe-area-inset-left, 0px) + 14px));
-  }
-
-  #game .game-card-stage {
-    width: min(100%, 1120px);
-  }
-
-  #game .card-term {
-    width: min(100%, 1080px);
-    padding: clamp(16px, 5vmin, 40px) clamp(28px, 7vmin, 72px);
-    padding-bottom: clamp(28px, 8vmin, 62px);
-  }
-
-  #game .card-term .term-text {
-    font-size: clamp(76px, 19vw, 210px);
-    font-size: clamp(76px, min(19vw, 42dvh), 210px);
-  }
-
-  #game .game-dog {
-    right: clamp(-42px, -4.2vmin, -18px);
-    bottom: clamp(-34px, -5vmin, -14px);
-    width: clamp(76px, 19vmin, 132px);
-    height: clamp(76px, 19vmin, 132px);
-  }
-
-  #game .game-dog .mascot-dog {
-    --dog-size: clamp(76px, 19vmin, 132px);
-  }
+#game .tap-zone {
+  flex: 1 1 50%;
+  min-width: 0;
+  background: rgba(255,255,255,0.001);
 }
 
 @media (orientation: portrait) {
-  #game .game-inner {
-    padding:
-      max(14px, calc(env(safe-area-inset-top, 0px) + 12px))
-      max(12px, calc(env(safe-area-inset-right, 0px) + 12px))
-      max(14px, calc(env(safe-area-inset-bottom, 0px) + 12px))
-      max(12px, calc(env(safe-area-inset-left, 0px) + 12px));
+  #game.active {
+    width: 100vh;
+    width: 100dvh;
+    height: 100vw;
+    height: 100dvw;
+    min-height: 100dvw;
+    transform: rotate(90deg) translateY(-100%);
+    transform-origin: top left;
   }
 
-  #game .game-hud {
+  #game.active .game-inner {
+    padding:
+      max(10px, env(safe-area-inset-left, 0px), env(safe-area-inset-right, 0px))
+      max(12px, env(safe-area-inset-top, 0px), env(safe-area-inset-bottom, 0px));
+  }
+}
+
+@media (orientation: landscape) {
+  #game.active {
+    width: 100vw;
+    width: 100dvw;
+    height: 100vh;
+    height: 100dvh;
+    transform: none;
+  }
+}
+
+@media (max-height: 430px), (max-width: 430px) {
+  #game .game-inner {
     gap: 6px;
   }
 
+  #game .game-hud-left .btn {
+    min-height: 30px;
+    padding: 6px 9px !important;
+    font-size: 11px !important;
+  }
+
+  #game .hud-mode-chip {
+    max-width: 128px;
+    min-height: 30px;
+    padding: 6px 8px;
+  }
+
   #game .score-hud {
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    max-width: min(58vw, 292px);
-    gap: 4px;
+    gap: 3px;
+    padding: 4px;
+    max-width: min(58vw, 480px);
   }
 
   #game .score-pill {
@@ -4092,42 +3980,25 @@ body.is-game-shell {
     font-size: 10px;
   }
 
-  #game .hud-mode-chip {
-    max-width: 104px;
-    font-size: 10px;
-  }
-
-  #game .game-card-stage {
-    width: min(100%, 620px);
+  #game .score-pill.points {
+    display: none;
   }
 
   #game .card-term {
-    width: min(100%, 590px);
-    padding: clamp(20px, 7vw, 42px);
-    padding-bottom: clamp(46px, 13vw, 86px);
-  }
-
-  #game .card-term .term-text {
-    font-size: clamp(70px, 24vw, 178px);
-    font-size: clamp(70px, min(24vw, 22dvh), 178px);
+    padding: clamp(15px, 4vmin, 34px) clamp(20px, 6vmin, 58px);
+    padding-bottom: clamp(34px, 7vmin, 60px);
   }
 
   #game .game-dog {
-    right: clamp(-30px, -6vw, -12px);
-    bottom: clamp(-28px, -6vw, -12px);
-    width: clamp(78px, 23vw, 124px);
-    height: clamp(78px, 23vw, 124px);
+    width: clamp(68px, 17vmin, 116px);
+    height: clamp(68px, 17vmin, 116px);
   }
 
   #game .game-dog .mascot-dog {
-    --dog-size: clamp(78px, 23vw, 124px);
-  }
-
-  #game .tap-hints span {
-    font-size: 11px;
-    padding: 7px 9px;
+    --dog-size: clamp(68px, 17vmin, 116px);
   }
 }
+
 </style>
 </head>
 <body>
@@ -4448,9 +4319,9 @@ body.is-game-shell {
       <span class="skip">Tap left: skip</span>
       <span class="got">Tap right: got it</span>
     </div>
-    <div class="tap-zones">
-      <div class="tap-zone" onclick="markWrong()"></div>
-      <div class="tap-zone" onclick="markCorrect()"></div>
+    <div class="tap-zones" onpointerdown="handleGameSurfaceTap(event)" onclick="if(!window.PointerEvent) handleGameSurfaceTap(event)">
+      <div class="tap-zone tap-zone-skip" data-action="skip" aria-label="Skip"></div>
+      <div class="tap-zone tap-zone-correct" data-action="correct" aria-label="Correct"></div>
     </div>
   </div>
 </div>
@@ -5448,6 +5319,29 @@ function setDogMood(stageId, mood = 'neutral') {
   stage.dataset.ready = '1';
 }
 
+let lastSurfaceTapAction = 0;
+function handleGameSurfaceTap(event) {
+  if (!gameState.active || gameState.ended || isGameTransitioning) return;
+  const now = Date.now();
+  if (now - lastSurfaceTapAction < 240) return;
+  lastSurfaceTapAction = now;
+  if (event) {
+    event.preventDefault();
+    event.stopPropagation();
+  }
+  const zone = event?.target?.closest?.('.tap-zone') ||
+    (event?.clientX != null && event?.clientY != null
+      ? document.elementsFromPoint(event.clientX, event.clientY).find(el => el.classList?.contains('tap-zone'))
+      : null);
+  let action = zone?.dataset?.action || '';
+  if (!action && event?.clientX != null) {
+    action = event.clientX < window.innerWidth / 2 ? 'skip' : 'correct';
+  }
+  if (action === 'correct') markCorrect();
+  else markWrong();
+}
+window.handleGameSurfaceTap = handleGameSurfaceTap;
+
 function fitCardTermText() {
   const termText = document.querySelector('#card-term .term-text');
   const card = document.getElementById('card-term');
@@ -5456,47 +5350,64 @@ function fitCardTermText() {
   termText.style.lineHeight = '';
   termText.style.whiteSpace = '';
   termText.style.overflowWrap = '';
-  const cardBox = card.getBoundingClientRect();
-  const maxTextHeight = Math.max(132, cardBox.height * 0.76);
-  const maxTextWidth = Math.max(200, cardBox.width - Math.max(34, cardBox.width * 0.07));
+  termText.style.wordBreak = '';
+  const cardWidth = Math.max(220, card.clientWidth || card.offsetWidth || card.getBoundingClientRect().width);
+  const cardHeight = Math.max(140, card.clientHeight || card.offsetHeight || card.getBoundingClientRect().height);
+  const maxTextWidth = Math.max(180, cardWidth - Math.max(32, cardWidth * 0.08));
+  const maxTextHeight = Math.max(110, cardHeight * 0.76);
   const term = termText.textContent.trim();
-  const isSingleWord = !/\s/.test(term);
-  const wordCount = term.split(/\s+/).filter(Boolean).length || 1;
-  const isLongMultiWord = !isSingleWord && (term.length > 24 || wordCount > 2);
+  const words = term.split(/\s+/).filter(Boolean);
+  const isSingleWord = words.length <= 1;
+  const isMediumMultiWord = !isSingleWord && words.length <= 3 && term.length <= 30;
+  const isLongMultiWord = !isSingleWord && !isMediumMultiWord;
   termText.classList.toggle('single-word', isSingleWord);
   termText.classList.toggle('multi-word', !isSingleWord);
   termText.style.whiteSpace = isSingleWord ? 'nowrap' : 'normal';
   termText.style.overflowWrap = 'normal';
-  const desiredFromHeight = cardBox.height * (isSingleWord ? 0.80 : isLongMultiWord ? 0.62 : 0.72);
-  const desiredFromWidth = cardBox.width * (isSingleWord ? 0.34 : isLongMultiWord ? 0.24 : 0.29);
+  termText.style.wordBreak = 'normal';
+  const desiredFromHeight = cardHeight * (isSingleWord ? 0.78 : isMediumMultiWord ? 0.70 : 0.60);
+  const desiredFromWidth = cardWidth * (isSingleWord ? 0.36 : isMediumMultiWord ? 0.30 : 0.24);
   const base = Math.min(
-    isSingleWord ? 238 : isLongMultiWord ? 198 : 222,
-    Math.max(68, desiredFromHeight, desiredFromWidth)
+    isSingleWord ? 260 : isMediumMultiWord ? 235 : 205,
+    Math.max(78, desiredFromHeight, desiredFromWidth)
   );
   let size = base;
   termText.style.fontSize = `${size}px`;
-  termText.style.lineHeight = isSingleWord ? '0.96' : '0.98';
+  termText.style.lineHeight = isSingleWord ? '0.92' : '0.96';
   while (
     size > 34 &&
     (
       termText.scrollWidth > maxTextWidth ||
-      termText.scrollHeight > maxTextHeight ||
-      termText.getBoundingClientRect().height > maxTextHeight
+      termText.scrollHeight > maxTextHeight
     )
   ) {
-    size -= size > 90 ? 4 : 2;
+    size -= size > 120 ? 5 : size > 72 ? 3 : 2;
     termText.style.fontSize = `${size}px`;
   }
 }
-function refitGameCardSoon() {
+window.fitCardTermText = fitCardTermText;
+
+function refitGameCardSoon(delay = 0) {
   if (currentScreenId !== 'game') return;
-  requestAnimationFrame(() => {
-    fitCardTermText();
-    setMobileShellColor(GAME_SHELL_COLOR, true);
-  });
+  const run = () => {
+    requestAnimationFrame(() => {
+      requestAnimationFrame(() => {
+        fitCardTermText();
+        setMobileShellColor(GAME_SHELL_COLOR, true);
+      });
+    });
+  };
+  if (delay > 0) setTimeout(run, delay);
+  else run();
 }
-window.addEventListener('resize', refitGameCardSoon);
-window.addEventListener('orientationchange', () => setTimeout(refitGameCardSoon, 240));
+window.addEventListener('resize', () => refitGameCardSoon());
+window.addEventListener('orientationchange', () => refitGameCardSoon(260));
+if (window.visualViewport) {
+  window.visualViewport.addEventListener('resize', () => refitGameCardSoon(80));
+}
+if (document.fonts && document.fonts.ready) {
+  document.fonts.ready.then(() => refitGameCardSoon(20)).catch(() => {});
+}
 function getAminoVisualHTML(card) {
   if (String(card?.category || '').toLowerCase() !== 'amino acids') return '';
   const code1 = String(card?.code1 || '').trim();
@@ -5526,6 +5437,7 @@ function showGameScreen(id) {
   if (id === 'game') { document.getElementById('game').style.display = 'flex'; } else { document.getElementById('game').style.display = 'none'; }
   setMobileShellColor(id === 'game' ? GAME_SHELL_COLOR : APP_SHELL_COLOR, id === 'game');
   currentScreenId = id;
+  if (id === 'game') refitGameCardSoon(40);
 }
 
 function loadAdBreakState() {
@@ -7314,10 +7226,15 @@ function startMotionListener() {
   motionListenerAdded = true;
   let zBuffer = [];
   const BUFFER_SIZE = 3;
+  window.addEventListener('orientationchange', () => {
+    zBuffer = [];
+    lastTiltAction = Date.now() + 500;
+  });
   window.addEventListener('devicemotion', e => {
     if (!document.getElementById('game').classList.contains('active')) return;
     const accel = e.accelerationIncludingGravity;
     if (!accel || accel.z === null) return;
+    // Z follows the phone face, so CSS-rotating the game canvas does not swap tilt axes.
     const rawZ = accel.z;
     zBuffer.push(rawZ);
     if (zBuffer.length > BUFFER_SIZE) zBuffer.shift();
@@ -7539,7 +7456,7 @@ function renderCard() {
     void termEl.offsetWidth;
     termEl.classList.remove('slide-in');
     termEl.classList.add('slide-in-active');
-    requestAnimationFrame(fitCardTermText);
+    refitGameCardSoon(40);
     document.getElementById('game-bg').className = 'game-bg neutral';
     setDogMood('game-dog', 'focused');
     lastTiltAction = Date.now() + 600;
