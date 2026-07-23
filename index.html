@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <meta name="apple-mobile-web-app-title" content="High Yield">
@@ -3728,6 +3728,18 @@ body,
   background-color: var(--bg-primary);
 }
 
+#app::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: env(safe-area-inset-top, 0px);
+  background: var(--app-status-bg, var(--bg-primary));
+  z-index: 12060;
+  pointer-events: none;
+}
+
 #home {
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
@@ -3764,8 +3776,8 @@ body,
     padding: clamp(16px, 4.5vh, 30px) clamp(20px, 5vw, 44px);
   }
   #game .card-term .term-text {
-    font-size: clamp(40px, 16vh, 88px);
-    font-size: clamp(40px, 16svh, 88px);
+    font-size: clamp(58px, 23vh, 132px);
+    font-size: clamp(58px, 23svh, 132px);
   }
   #game .game-dog {
     right: clamp(-34px, -3.5vw, -18px);
@@ -4978,9 +4990,16 @@ const OFFLINE_BANK = {
    ─────────────────────────────────────────────── */
 let currentScreenId = 'home';
 let isTransitioning = false;
+function setMobileShellColor(color = '#FFF8ED') {
+  const safeColor = String(color || '#FFF8ED');
+  const themeMeta = document.querySelector('meta[name="theme-color"]');
+  if (themeMeta) themeMeta.setAttribute('content', safeColor);
+  document.documentElement.style.setProperty('--app-status-bg', safeColor);
+}
 function showScreen(id) {
   if (isTransitioning || id === currentScreenId) return;
   isTransitioning = true;
+  setMobileShellColor('#FFF8ED');
   const currentEl = document.getElementById(currentScreenId);
   const nextEl = document.getElementById(id);
   if (!currentEl || !nextEl) { isTransitioning = false; return; }
@@ -5134,24 +5153,31 @@ function fitCardTermText() {
   termText.style.whiteSpace = '';
   termText.style.overflowWrap = '';
   const cardBox = card.getBoundingClientRect();
-  const maxTextHeight = Math.max(80, cardBox.height * 0.58);
-  const maxTextWidth = Math.max(140, cardBox.width - 32);
+  const maxTextHeight = Math.max(110, cardBox.height * 0.66);
+  const maxTextWidth = Math.max(180, cardBox.width - 34);
   const term = termText.textContent.trim();
   const isSingleWord = !/\s/.test(term);
+  const isLongMultiWord = !isSingleWord && term.length > 24;
   termText.classList.toggle('single-word', isSingleWord);
   termText.classList.toggle('multi-word', !isSingleWord);
   termText.style.whiteSpace = isSingleWord ? 'nowrap' : 'normal';
   termText.style.overflowWrap = 'normal';
+  const desiredFromHeight = cardBox.height * (isSingleWord ? 0.54 : isLongMultiWord ? 0.42 : 0.48);
+  const desiredFromWidth = cardBox.width * (isSingleWord ? 0.18 : 0.16);
   const base = Math.min(
-    Math.max(42, window.innerHeight * 0.105),
-    isSingleWord ? 96 : (term.length > 24 ? 72 : 92)
+    isSingleWord ? 148 : isLongMultiWord ? 118 : 132,
+    Math.max(58, desiredFromHeight, desiredFromWidth)
   );
   let size = base;
   termText.style.fontSize = `${size}px`;
-  termText.style.lineHeight = isSingleWord ? '1.02' : '1.05';
+  termText.style.lineHeight = isSingleWord ? '1' : '1.03';
   while (
-    size > 18 &&
-    (termText.scrollWidth > maxTextWidth || termText.scrollHeight > maxTextHeight)
+    size > 22 &&
+    (
+      termText.scrollWidth > maxTextWidth ||
+      termText.scrollHeight > maxTextHeight ||
+      card.scrollHeight > card.clientHeight + 2
+    )
   ) {
     size -= 2;
     termText.style.fontSize = `${size}px`;
@@ -5184,6 +5210,7 @@ function showGameScreen(id) {
   const el = document.getElementById(id);
   if (el) el.classList.add('active');
   if (id === 'game') { document.getElementById('game').style.display = 'flex'; } else { document.getElementById('game').style.display = 'none'; }
+  setMobileShellColor('#FFF8ED');
   currentScreenId = id;
 }
 
@@ -7212,7 +7239,11 @@ function renderCard() {
     updateGameHud();
   }, 300);
 }
-function setGameBg(s) { document.getElementById('game-bg').className = 'game-bg ' + s; }
+function setGameBg(s) {
+  document.getElementById('game-bg').className = 'game-bg ' + s;
+  const colors = { neutral: '#FFF8ED', correct: '#EDF9F2', wrong: '#FFF0F0' };
+  setMobileShellColor(colors[s] || '#FFF8ED');
+}
 function flash(emoji) { const el = document.getElementById('flash-overlay'); el.textContent = emoji; el.className = 'flash-overlay show'; setTimeout(() => { el.className = 'flash-overlay'; }, 420); }
 function showCardFeedback(kind, mainText, subText = '') {
   const termEl = document.getElementById('card-term');
