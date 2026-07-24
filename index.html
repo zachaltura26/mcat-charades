@@ -3628,7 +3628,7 @@ html.game-active #app {
   overscroll-behavior: none;
 }
 
-html.game-active::before {
+body.game-active::before {
   content: "";
   position: fixed;
   inset: 0;
@@ -3637,7 +3637,7 @@ html.game-active::before {
   height: 100vh;
   height: 100dvh;
   background: var(--navy);
-  z-index: 9998;
+  z-index: 0;
   pointer-events: none;
 }
 
@@ -3649,6 +3649,15 @@ body.game-active {
 
 html.game-active #app::before {
   background: var(--navy);
+  z-index: 0;
+}
+
+html.game-active #app {
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  isolation: isolate;
+  background: var(--navy) !important;
 }
 
 #app::before {
@@ -3686,6 +3695,8 @@ html.game-active #app::before {
   padding: 0 !important;
   background: var(--navy) !important;
   overflow: hidden !important;
+  z-index: 2 !important;
+  isolation: isolate;
   transform: none;
   transform-origin: top left;
   touch-action: manipulation;
@@ -3712,6 +3723,7 @@ html.game-active #app::before {
   height: 100%;
   min-height: 100%;
   display: grid;
+  grid-template-columns: minmax(0, 1fr);
   grid-template-rows: clamp(34px, 8vmin, 48px) minmax(0, 1fr) clamp(30px, 7vmin, 54px);
   align-items: stretch;
   justify-items: center;
@@ -3770,7 +3782,7 @@ html.game-active #app::before {
   gap: 4px;
   padding: 5px;
   max-width: min(62vw, 650px);
-  overflow: hidden;
+  overflow: visible;
   border-color: rgba(255,255,255,0.22);
   background: rgba(255,255,255,0.12);
 }
@@ -3787,8 +3799,11 @@ html.game-active #app::before {
 #game .game-card-stage {
   position: relative;
   z-index: 5;
+  grid-column: 1;
   grid-row: 2;
-  width: min(100%, 1180px);
+  width: 100%;
+  max-width: 1180px;
+  min-width: 0;
   height: 100%;
   min-height: 0;
   display: grid;
@@ -3801,7 +3816,8 @@ html.game-active #app::before {
   --game-term-size: clamp(78px, min(17.5vw, 42dvh), 210px);
   position: relative;
   z-index: 5;
-  width: min(100%, 1140px);
+  width: 100%;
+  max-width: 1140px;
   height: 100%;
   min-width: 0;
   min-height: 0;
@@ -3812,8 +3828,10 @@ html.game-active #app::before {
   align-items: center;
   justify-items: center;
   gap: 0;
-  padding: clamp(18px, 5vmin, 48px) clamp(22px, 6vmin, 70px);
-  padding-bottom: clamp(42px, 8vmin, 78px);
+  justify-self: center;
+  box-sizing: border-box;
+  padding: clamp(14px, 4vmin, 34px) clamp(18px, 5vmin, 56px);
+  padding-bottom: clamp(30px, 6vmin, 54px);
   border-radius: clamp(18px, 4vmin, 34px);
   overflow: hidden;
   contain: layout paint;
@@ -3823,7 +3841,8 @@ html.game-active #app::before {
 #game .card-term.slide-in,
 #game .card-term.slide-in-active,
 #game .card-term.feedback-card {
-  width: min(100%, 1140px);
+  width: 100%;
+  max-width: 1140px;
   height: 100%;
   min-height: 0;
   max-height: none;
@@ -3842,6 +3861,7 @@ html.game-active #app::before {
   gap: 0.035em;
   width: 100%;
   max-width: 100%;
+  min-height: 0;
   min-width: 0;
   align-self: center;
   justify-self: center;
@@ -3914,8 +3934,8 @@ html.game-active #app::before {
 
 #game .game-dog {
   position: absolute;
-  right: clamp(-42px, -4.5vmin, -18px);
-  bottom: clamp(-36px, -5vmin, -14px);
+  right: clamp(8px, 2vmin, 18px);
+  bottom: clamp(4px, 1.4vmin, 12px);
   top: auto;
   width: clamp(76px, 16vmin, 142px);
   height: clamp(76px, 16vmin, 142px);
@@ -3975,7 +3995,7 @@ html.game-active #app::before {
 }
 
 @media (orientation: portrait) {
-  #game.active.game-active {
+  #game.active.game-active:not(.game-orientation-fallback) {
     width: 100vh;
     width: 100dvh;
     height: 100vw;
@@ -3985,7 +4005,7 @@ html.game-active #app::before {
     transform-origin: top left;
   }
 
-  #game.active.game-active .game-inner {
+  #game.active.game-active:not(.game-orientation-fallback) .game-inner {
     padding:
       max(10px, env(safe-area-inset-left, 0px), env(safe-area-inset-right, 0px))
       max(12px, env(safe-area-inset-top, 0px), env(safe-area-inset-bottom, 0px));
@@ -4035,8 +4055,8 @@ html.game-active #app::before {
   }
 
   #game .card-term {
-    padding: clamp(15px, 4vmin, 34px) clamp(20px, 6vmin, 58px);
-    padding-bottom: clamp(34px, 7vmin, 60px);
+    padding: clamp(12px, 3.4vmin, 26px) clamp(16px, 5vmin, 44px);
+    padding-bottom: clamp(26px, 6vmin, 46px);
   }
 
   #game .game-dog {
@@ -4047,6 +4067,34 @@ html.game-active #app::before {
   #game .game-dog .mascot-dog {
     --dog-size: clamp(68px, 17vmin, 116px);
   }
+}
+
+@media (max-width: 660px), (max-height: 360px) {
+  #game .score-pill.points {
+    display: none;
+  }
+}
+
+@media (max-width: 590px), (max-height: 330px) {
+  #game .score-pill.tier {
+    display: none;
+  }
+}
+
+#game.game-orientation-fallback,
+#game.active.game-active.game-orientation-fallback {
+  width: 100vw !important;
+  width: 100dvw !important;
+  height: 100vh !important;
+  height: 100dvh !important;
+  min-height: 100dvh !important;
+  transform: none !important;
+  transform-origin: center center !important;
+}
+
+#game.game-orientation-fallback .game-inner {
+  width: 100% !important;
+  height: 100% !important;
 }
 
 </style>
@@ -5219,7 +5267,10 @@ function setGameViewportActive(active) {
   const app = document.getElementById('app');
   if (app) app.classList.toggle('game-active', isActive);
   const game = document.getElementById('game');
-  if (game) game.classList.toggle('game-active', isActive);
+  if (game) {
+    game.classList.toggle('game-active', isActive);
+    if (!isActive) game.classList.remove('game-orientation-fallback');
+  }
 }
 async function requestGameOrientationLockForRound() {
   if (gameOrientationLockPromise) return gameOrientationLockPromise;
@@ -5504,13 +5555,51 @@ function chooseBalancedTermLines(words, lineCount, size, maxWidth, maxHeight, te
     const balance = widest - narrowest;
     const raggedPenalty = widths.reduce((sum, width) => sum + Math.abs(width - widest), 0) * 0.12;
     const score = balance + raggedPenalty;
-    if (!best || score < best.score) best = { lines, score, widest };
+    if (!best || score < best.score) best = { lines, score, widest, widths };
   });
-  return best?.lines || null;
+  return best || null;
 }
 
 function renderTermLines(termText, lines) {
   termText.innerHTML = lines.map(line => `<span class="term-line">${escapeHTML(line)}</span>`).join('');
+}
+
+function verifyRenderedTermLayout(termText, maxWidth, maxHeight) {
+  const tolerance = 1;
+  const lines = [...termText.querySelectorAll('.term-line')];
+  const lineResults = lines.map(line => ({
+    text: line.textContent,
+    scrollWidth: line.scrollWidth,
+    clientWidth: line.clientWidth,
+    offsetWidth: line.offsetWidth,
+    fits: line.scrollWidth <= maxWidth + tolerance
+  }));
+  const renderedHeight = Math.max(termText.scrollHeight, termText.offsetHeight);
+  const overflow = lineResults.some(line => !line.fits) ||
+    termText.scrollWidth > termText.clientWidth + tolerance ||
+    termText.scrollHeight > maxHeight + tolerance ||
+    renderedHeight > maxHeight + tolerance;
+  return {
+    overflow,
+    lineResults,
+    termScrollWidth: termText.scrollWidth,
+    termClientWidth: termText.clientWidth,
+    termScrollHeight: termText.scrollHeight,
+    termHeight: renderedHeight,
+    maxWidth,
+    maxHeight
+  };
+}
+
+function applyTermLayout(termText, lines, size, maxWidth, maxHeight) {
+  termText.style.width = `${maxWidth}px`;
+  termText.style.maxWidth = `${maxWidth}px`;
+  termText.style.maxHeight = `${maxHeight}px`;
+  termText.style.fontSize = `${size}px`;
+  termText.style.lineHeight = '0.95';
+  termText.style.overflow = 'visible';
+  renderTermLines(termText, lines);
+  return verifyRenderedTermLayout(termText, maxWidth, maxHeight);
 }
 
 function fitCardTermText() {
@@ -5525,13 +5614,19 @@ function fitCardTermText() {
   termText.style.whiteSpace = '';
   termText.style.overflowWrap = '';
   termText.style.wordBreak = '';
+  termText.style.maxWidth = '';
+  termText.style.maxHeight = '';
+  termText.style.overflow = '';
   const cardStyle = getComputedStyle(card);
   const padX = parseFloat(cardStyle.paddingLeft || 0) + parseFloat(cardStyle.paddingRight || 0);
   const padY = parseFloat(cardStyle.paddingTop || 0) + parseFloat(cardStyle.paddingBottom || 0);
   const cardWidth = Math.max(240, card.clientWidth || card.offsetWidth || card.getBoundingClientRect().width);
   const cardHeight = Math.max(150, card.clientHeight || card.offsetHeight || card.getBoundingClientRect().height);
-  const maxTextWidth = Math.max(180, cardWidth - padX - Math.max(20, cardWidth * 0.035));
-  const maxTextHeight = Math.max(108, (cardHeight - padY) * 0.88);
+  const category = card.querySelector('.card-category');
+  const categoryHeight = category ? category.getBoundingClientRect().height : 0;
+  const reservedFooter = Math.max(24, categoryHeight + 16);
+  const maxTextWidth = Math.max(160, cardWidth - padX - Math.max(18, cardWidth * 0.03));
+  const maxTextHeight = Math.max(96, cardHeight - padY - reservedFooter);
   const words = rawTerm.split(/\s+/).filter(Boolean);
   const isSingleWord = words.length <= 1;
   termText.classList.toggle('single-word', isSingleWord);
@@ -5539,35 +5634,55 @@ function fitCardTermText() {
   termText.style.whiteSpace = isSingleWord ? 'nowrap' : 'normal';
   termText.style.overflowWrap = 'normal';
   termText.style.wordBreak = 'normal';
-  const targetSize = Math.min(210, Math.max(78, Math.min(cardHeight * 0.64, cardWidth * 0.17)));
-  const minSize = Math.max(44, targetSize * 0.86);
+  const targetSize = Math.round(Math.min(116, Math.max(62, cardHeight * 0.32)));
+  const minSize = Math.max(22, Math.floor(targetSize * 0.58));
   card.style.setProperty('--game-term-size', `${targetSize}px`);
   const counts = isSingleWord ? [1] : [1, 2, 3].filter(count => count <= words.length);
-  let chosenLines = null;
-  let chosenSize = targetSize;
-  for (const count of counts) {
-    chosenLines = chooseBalancedTermLines(words, count, targetSize, maxTextWidth, maxTextHeight, termText);
-    if (chosenLines) break;
-  }
-  if (!chosenLines) {
-    for (let size = targetSize - 3; size >= minSize; size -= 3) {
-      for (const count of counts) {
-        chosenLines = chooseBalancedTermLines(words, count, size, maxTextWidth, maxTextHeight, termText);
-        if (chosenLines) {
-          chosenSize = size;
-          break;
-        }
+  let chosen = null;
+  for (let size = targetSize; size >= minSize && !chosen; size -= 2) {
+    for (const count of counts) {
+      const candidate = chooseBalancedTermLines(words, count, size, maxTextWidth, maxTextHeight, termText);
+      if (!candidate) continue;
+      const verification = applyTermLayout(termText, candidate.lines, size, maxTextWidth, maxTextHeight);
+      if (!verification.overflow) {
+        chosen = { ...candidate, size, lineCount: candidate.lines.length, verification };
+        break;
       }
-      if (chosenLines) break;
     }
   }
-  if (!chosenLines) {
-    chosenSize = minSize;
-    chosenLines = isSingleWord ? [rawTerm] : chooseBalancedTermLines(words, Math.min(3, words.length), minSize, Number.POSITIVE_INFINITY, maxTextHeight, termText) || [rawTerm];
+  for (let size = minSize - 2; size >= 18 && !chosen; size -= 2) {
+    for (const count of counts) {
+      const candidate = chooseBalancedTermLines(words, count, size, maxTextWidth, maxTextHeight, termText);
+      if (!candidate) continue;
+      const verification = applyTermLayout(termText, candidate.lines, size, maxTextWidth, maxTextHeight);
+      if (!verification.overflow) {
+        chosen = { ...candidate, size, lineCount: candidate.lines.length, verification };
+        break;
+      }
+    }
   }
-  termText.style.fontSize = `${chosenSize}px`;
-  termText.style.lineHeight = '0.95';
-  renderTermLines(termText, chosenLines);
+  if (!chosen) {
+    const emergencyLines = getLineCombos(words, Math.min(3, words.length || 1)).sort((a, b) => Math.max(...a.map(x => x.length)) - Math.max(...b.map(x => x.length)))[0];
+    const emergencySize = 18;
+    const verification = applyTermLayout(termText, emergencyLines, emergencySize, maxTextWidth, maxTextHeight);
+    chosen = { lines: emergencyLines, size: emergencySize, lineCount: emergencyLines.length, verification };
+  }
+  card.style.setProperty('--game-term-size', `${chosen.size}px`);
+  termText.dataset.fitLines = String(chosen.lineCount);
+  termText.dataset.fitSize = String(chosen.size);
+  termText.dataset.fitOverflow = String(Boolean(chosen.verification?.overflow));
+  window.lastTermFitDiagnostics = {
+    term: rawTerm,
+    lines: chosen.lines,
+    lineCount: chosen.lineCount,
+    fontSize: chosen.size,
+    cardWidth,
+    cardHeight,
+    maxTextWidth,
+    maxTextHeight,
+    overflow: Boolean(chosen.verification?.overflow),
+    verification: chosen.verification
+  };
 }
 window.fitCardTermText = fitCardTermText;
 
@@ -5584,10 +5699,41 @@ function refitGameCardSoon(delay = 0) {
   if (delay > 0) setTimeout(run, delay);
   else run();
 }
+let gameLayoutValidationTimeout = null;
+function validateGameLayoutOrFallback(delay = 0) {
+  const game = document.getElementById('game');
+  if (!game || currentScreenId !== 'game') return;
+  clearTimeout(gameLayoutValidationTimeout);
+  gameLayoutValidationTimeout = setTimeout(() => {
+    if (currentScreenId !== 'game') return;
+    game.classList.remove('game-orientation-fallback');
+    requestAnimationFrame(() => {
+      const stage = document.querySelector('#game .game-card-stage');
+      const card = document.getElementById('card-term');
+      if (!stage || !card) return;
+      const viewportWidth = window.visualViewport?.width || window.innerWidth || document.documentElement.clientWidth;
+      const viewportHeight = window.visualViewport?.height || window.innerHeight || document.documentElement.clientHeight;
+      const stageRect = stage.getBoundingClientRect();
+      const cardRect = card.getBoundingClientRect();
+      const intersectsViewport = stageRect.right > 0 && stageRect.bottom > 0 && stageRect.left < viewportWidth && stageRect.top < viewportHeight;
+      const stageHasSpace = stageRect.width >= Math.min(160, viewportWidth * 0.4) && stageRect.height >= Math.min(160, viewportHeight * 0.4);
+      const cardVisible = cardRect.right > 0 && cardRect.bottom > 0 && cardRect.left < viewportWidth && cardRect.top < viewportHeight && cardRect.width > 120 && cardRect.height > 120;
+      if (!intersectsViewport || !stageHasSpace || !cardVisible) {
+        game.classList.add('game-orientation-fallback');
+        refitGameCardSoon(20);
+      }
+    });
+  }, delay);
+}
 window.addEventListener('resize', () => refitGameCardSoon());
-window.addEventListener('orientationchange', () => refitGameCardSoon(260));
+window.addEventListener('resize', () => validateGameLayoutOrFallback(120));
+window.addEventListener('orientationchange', () => {
+  refitGameCardSoon(260);
+  validateGameLayoutOrFallback(300);
+});
 if (window.visualViewport) {
   window.visualViewport.addEventListener('resize', () => refitGameCardSoon(80));
+  window.visualViewport.addEventListener('resize', () => validateGameLayoutOrFallback(140));
 }
 if (document.fonts && document.fonts.ready) {
   document.fonts.ready.then(() => refitGameCardSoon(20)).catch(() => {});
@@ -7311,6 +7457,7 @@ async function startDailyChallenge() {
     const again = confirm(`Today's Daily Challenge is complete: ${p.daily[today].score}. Current streak: ${streak.streak} day${streak.streak === 1 ? '' : 's'}. Replay as practice?`);
     if (!again) return;
   }
+  requestGameOrientationLockForRound();
   currentGameMode = 'daily';
   gameSettings.timer = MODE_CONFIG.daily.timer;
   gameSettings.tabooEnabled = false;
@@ -7329,6 +7476,7 @@ function startReviewRound(kind) {
     alert(kind === 'favorites' ? 'No favorites saved yet.' : 'No cards saved for that review mode yet.');
     return;
   }
+  requestGameOrientationLockForRound();
   currentGameMode = 'review';
   gameSettings.timer = 60;
   syncSettingsToggles();
@@ -7460,6 +7608,7 @@ async function prepareAndStart() {
     const hasCustom = document.querySelectorAll('[data-custom].selected').length > 0;
     const hasTopics = selectedTopics.length > 0;
     if (!hasTopics && !hasCustom) { alert('Select a topic.'); return; }
+    requestGameOrientationLockForRound();
 
     // Start UI Loading Animation
     btn.style.display = 'none';
@@ -7487,13 +7636,14 @@ async function prepareAndStart() {
     } catch (e) {
         console.warn('Deck preparation failed, using embedded/custom deck.', e);
         lockDeckPool([...getSelectedOfflineCards(), ...getSelectedCustomCards()]);
-        if (!currentDeck.length) {
-          clearInterval(loadInterval);
-          loadContainer.style.display = 'none';
-          btn.style.display = 'inline-block';
-          alert('No cards matched this setup. Try another difficulty, subtopic, or mode.');
-          shouldStart = false;
-          return;
+	        if (!currentDeck.length) {
+	          clearInterval(loadInterval);
+	          loadContainer.style.display = 'none';
+	          btn.style.display = 'inline-block';
+	          releaseGameOrientationLockForRound();
+	          alert('No cards matched this setup. Try another difficulty, subtopic, or mode.');
+	          shouldStart = false;
+	          return;
         }
         currentDeckSource = hasTopics ? 'bank' : 'custom';
         if (loadingText) loadingText.textContent = 'Fallback deck ready.';
@@ -7575,7 +7725,6 @@ function startGame() {
   updateGameHud();
   const accFill = document.getElementById('acc-fill');
   if (accFill) accFill.style.width = '0%';
-  requestGameOrientationLockForRound();
   actionTimeout = setTimeout(() => {
     if (gameState.ended) return;
     showGameScreen('countdown');
@@ -7598,11 +7747,11 @@ function runCountdown(n) {
 function beginGame() {
   if (gameState.ended) return;
   gameState.active = true;
-  requestGameOrientationLockForRound();
-  showGameScreen('game');
-  renderCard();
-  startTimer();
-}
+	  showGameScreen('game');
+	  renderCard();
+	  startTimer();
+	  validateGameLayoutOrFallback(80);
+	}
 
 function renderCard() {
   if (!gameState.active || gameState.ended) return;
@@ -7643,6 +7792,7 @@ function renderCard() {
     termEl.classList.remove('slide-in');
     termEl.classList.add('slide-in-active');
     refitGameCardSoon(40);
+    validateGameLayoutOrFallback(120);
     document.getElementById('game-bg').className = 'game-bg neutral';
     setDogMood('game-dog', 'focused');
     lastTiltAction = Date.now() + 600;
