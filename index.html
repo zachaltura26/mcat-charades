@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="theme-neo-brutalist">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="High Yield">
@@ -3681,6 +3681,10 @@ html.game-active #app {
 #game,
 #game.active,
 #game.game-active {
+  --game-safe-top: max(9px, calc(env(safe-area-inset-top, 0px) + 7px));
+  --game-safe-right: max(12px, calc(env(safe-area-inset-right, 0px) + 10px));
+  --game-safe-bottom: max(9px, calc(env(safe-area-inset-bottom, 0px) + 7px));
+  --game-safe-left: max(12px, calc(env(safe-area-inset-left, 0px) + 10px));
   position: fixed !important;
   top: 0 !important;
   left: 0 !important;
@@ -3698,7 +3702,7 @@ html.game-active #app {
   z-index: 2 !important;
   isolation: isolate;
   transform: none;
-  transform-origin: top left;
+  transform-origin: center center;
   touch-action: manipulation;
 }
 
@@ -3716,6 +3720,16 @@ html.game-active #app {
   pointer-events: none;
 }
 
+#game .game-rotation-shell {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  transform: none;
+  transform-origin: center center;
+}
+
 #game .game-inner {
   position: relative;
   z-index: 2;
@@ -3729,10 +3743,10 @@ html.game-active #app {
   justify-items: center;
   gap: clamp(7px, 1.4vmin, 12px);
   padding:
-    max(9px, calc(env(safe-area-inset-top, 0px) + 7px))
-    max(12px, calc(env(safe-area-inset-right, 0px) + 10px))
-    max(9px, calc(env(safe-area-inset-bottom, 0px) + 7px))
-    max(12px, calc(env(safe-area-inset-left, 0px) + 10px));
+    var(--game-safe-top)
+    var(--game-safe-right)
+    var(--game-safe-bottom)
+    var(--game-safe-left);
 }
 
 #game .game-hud {
@@ -3996,19 +4010,90 @@ html.game-active #app {
 
 @media (orientation: portrait) {
   #game.active.game-active:not(.game-orientation-fallback) {
+    --game-safe-top: max(8px, calc(env(safe-area-inset-right, 0px) + 6px));
+    --game-safe-right: max(10px, calc(env(safe-area-inset-bottom, 0px) + 8px));
+    --game-safe-bottom: max(8px, calc(env(safe-area-inset-left, 0px) + 6px));
+    --game-safe-left: max(10px, calc(env(safe-area-inset-top, 0px) + 8px));
+    width: 100vw;
+    width: 100dvw;
+    height: 100vh;
+    height: 100dvh;
+    min-height: 100dvh;
+    transform: none;
+    transform-origin: center center;
+  }
+
+  #game.active.game-active:not(.game-orientation-fallback) .game-rotation-shell {
+    position: absolute;
+    left: calc((100vw - 100vh) / 2);
+    left: calc((100dvw - 100dvh) / 2);
+    top: calc((100vh - 100vw) / 2);
+    top: calc((100dvh - 100dvw) / 2);
+    inset: auto;
     width: 100vh;
     width: 100dvh;
     height: 100vw;
     height: 100dvw;
-    min-height: 100dvw;
-    transform: rotate(90deg) translateY(-100%);
-    transform-origin: top left;
+    transform: rotate(90deg);
+    transform-origin: center center;
   }
 
   #game.active.game-active:not(.game-orientation-fallback) .game-inner {
-    padding:
-      max(10px, env(safe-area-inset-left, 0px), env(safe-area-inset-right, 0px))
-      max(12px, env(safe-area-inset-top, 0px), env(safe-area-inset-bottom, 0px));
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: 0;
+    padding: 0;
+  }
+
+  #game.active.game-active:not(.game-orientation-fallback) .game-hud {
+    position: absolute;
+    top: var(--game-safe-top);
+    left: var(--game-safe-left);
+    right: var(--game-safe-right);
+    width: auto;
+    max-width: none;
+    align-self: auto;
+  }
+
+  #game.active.game-active:not(.game-orientation-fallback) .game-card-stage {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    grid-row: auto;
+    width: min(calc(100% - clamp(28px, 6.8vmin, 58px)), 1140px);
+    max-width: none;
+    height: min(calc(100% - clamp(104px, 27vmin, 142px)), 390px);
+    max-height: 390px;
+    margin: 0;
+    transform: translate(-50%, -50%);
+  }
+
+  #game.active.game-active:not(.game-orientation-fallback) .card-term,
+  #game.active.game-active:not(.game-orientation-fallback) .card-term.slide-out,
+  #game.active.game-active:not(.game-orientation-fallback) .card-term.slide-in,
+  #game.active.game-active:not(.game-orientation-fallback) .card-term.slide-in-active,
+  #game.active.game-active:not(.game-orientation-fallback) .card-term.feedback-card {
+    width: 100%;
+    max-width: none;
+    height: 100%;
+    max-height: none;
+  }
+
+  #game.active.game-active:not(.game-orientation-fallback) #timer-text {
+    position: absolute;
+    left: 50%;
+    bottom: var(--game-safe-bottom);
+    grid-row: auto;
+    align-self: auto;
+    justify-self: auto;
+    transform: translateX(-50%);
+  }
+
+  #game.active.game-active:not(.game-orientation-fallback) .tap-hints {
+    left: var(--game-safe-left);
+    right: var(--game-safe-right);
+    bottom: var(--game-safe-bottom);
   }
 }
 
@@ -4097,7 +4182,16 @@ html.game-active #app {
   height: 100% !important;
 }
 
+#game.game-orientation-fallback .game-rotation-shell {
+  position: absolute !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  transform: none !important;
+}
+
 </style>
+<link rel="stylesheet" href="variant-neo.css">
 </head>
 <body>
 <div id="app">
@@ -4194,29 +4288,28 @@ html.game-active #app {
       <div class="premed-float-field" aria-hidden="true">
         <span class="premed-float float-atom"><svg class="ui-icon"><use href="#i-atom"></use></svg></span>
         <span class="premed-float float-flask"><svg class="ui-icon"><use href="#i-flask"></use></svg></span>
-        <span class="premed-float float-helix"><svg class="ui-icon"><use href="#i-helix"></use></svg></span>
+        <span class="premed-float float-dna"><svg class="ui-icon"><use href="#i-helix"></use></svg></span>
       </div>
-      <div class="home-title"><span class="high">High</span> <span class="yield">Yield!</span></div>
+      <div class="home-title" aria-label="High Yield"><span class="high">High</span><span class="yield">Yield</span></div>
     </div>
     <div class="home-sub">MCAT Heads-Up Study Game</div>
     <div class="home-cook-copy">Ready to <span>cook</span> today?</div>
-    <div class="dog-stage home-dog" data-dog="neutral"></div>
     <div class="home-badge" style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;justify-content:center;">
       <span id="home-ai-status">Question banks ready</span>
       <span class="offline-indicator online" id="offlineIndicator"><span class="dot"></span> <span id="offlineText">Online</span></span>
     </div>
   </div>
   <div class="home-actions">
-    <button class="btn-original primary" onclick="showScreen('topics')"><span class="icon-badge"><svg class="ui-icon solid"><use href="#i-play"></use></svg></span><span>Start Game</span></button>
-    <button class="btn-original" id="daily-home-btn" onclick="startDailyChallenge()"><span class="icon-badge"><svg class="ui-icon"><use href="#i-sun"></use></svg></span><span>Daily Challenge</span></button>
-    <button class="btn-original" onclick="showDashboard()"><span class="icon-badge"><svg class="ui-icon"><use href="#i-chart"></use></svg></span><span>Your Recall Stats</span></button>
+    <button class="btn-original primary menu-button" onclick="showScreen('topics')"><span class="menu-button-label">Start Game</span></button>
+    <button class="btn-original menu-button" id="daily-home-btn" onclick="startDailyChallenge()"><span class="menu-button-label">Daily Challenge</span></button>
+    <button class="btn-original menu-button" onclick="showDashboard()"><span class="menu-button-label">Recall Stats</span></button>
     <div class="premium-bundle">
       <button class="premium-mini" onclick="showNoAdsUpgrade()"><span class="icon-badge"><svg class="ui-icon"><use href="#i-slash"></use></svg></span><span>Remove Ads</span></button>
       <button class="premium-mini" onclick="showPremiumFeature('AI Deck from Slides')"><span class="icon-badge"><svg class="ui-icon"><use href="#i-spark"></use></svg></span><span>AI Deck from Slides</span></button>
       <button class="premium-mini" onclick="showPremiumFeature('Custom AI Deck Maker')"><span class="icon-badge"><svg class="ui-icon"><use href="#i-wand"></use></svg></span><span>Custom Deck Maker</span></button>
       <div class="premium-bundle-tag">Premium</div>
     </div>
-    <button class="btn-original" onclick="showTutorial()"><span class="icon-badge"><svg class="ui-icon"><use href="#i-phone"></use></svg></span><span>How to Play</span></button>
+    <button class="btn-original menu-button" onclick="showTutorial()"><span class="menu-button-label">How to Play</span></button>
   </div>
   <div class="launch-card">
     <div class="launch-row">
@@ -4260,7 +4353,7 @@ html.game-active #app {
       <div class="mode-card selected" data-mode="classic" onclick="setGameMode('classic')"><div class="mode-icon"><svg class="ui-icon"><use href="#i-target"></use></svg></div><div><div class="mode-name">Classic Heads-Up</div><div class="mode-sub">Balanced round for quick review or group play.</div></div><span class="mode-tag">60s</span></div>
       <div class="mode-card" data-mode="taboo" onclick="setGameMode('taboo')"><div class="mode-icon"><svg class="ui-icon"><use href="#i-slash"></use></svg></div><div><div class="mode-name">Taboo Mode</div><div class="mode-sub">Adds forbidden clue words for a more chaotic party round.</div></div><span class="mode-tag">Harder</span></div>
       <div class="mode-card" data-mode="sprint" onclick="setGameMode('sprint')"><div class="mode-icon"><svg class="ui-icon"><use href="#i-zap"></use></svg></div><div><div class="mode-name">MCAT Sprint</div><div class="mode-sub">45 seconds, faster pressure, higher streak focus.</div></div><span class="mode-tag">45s</span></div>
-      <div class="mode-card" data-mode="weak" onclick="setGameMode('weak')"><div class="mode-icon"><svg class="ui-icon"><use href="#i-brain"></use></svg></div><div><div class="mode-name">Weak Spot Review</div><div class="mode-sub">Replays missed and skipped cards from previous rounds.</div></div><span class="mode-tag" id="weak-count">0</span></div>
+      <div class="mode-card weakness-mode-card" data-mode="weak" onclick="setGameMode('weak')"><div class="weak-mode-marker"><span>Review</span><strong>Focus</strong></div><div><div class="mode-name">Weakness Mode</div><div class="mode-sub">Retest missed, slow, and forgotten high-yield concepts.</div><div class="weak-mode-detail"><span id="weak-forgotten-count">0 forgotten</span><span id="weak-high-yield-count">0 high-yield</span><span id="weak-duration">~1 min</span></div></div><div class="mode-side"><span class="mode-tag" id="weak-count">0 weak</span><button class="mode-start-btn" onclick="event.stopPropagation();setGameMode('weak');prepareAndStart()">Start Review</button></div></div>
       <div class="mode-card" data-mode="teams" onclick="setGameMode('teams')"><div class="mode-icon"><svg class="ui-icon"><use href="#i-flag"></use></svg></div><div><div class="mode-name">Team Battle</div><div class="mode-sub">Named players, best-of face-offs, and a running party score.</div></div><span class="mode-tag" id="team-active-label">Team A</span></div>
     </div>
 
@@ -4309,26 +4402,34 @@ html.game-active #app {
     <div class="settings-card" style="margin-bottom:14px">
       <div class="settings-row">
         <div><div class="settings-lbl">Timer</div><div class="settings-sub" id="timer-label">60 seconds</div></div>
-        <input id="timer-slider" type="range" min="30" max="120" step="15" value="60" oninput="document.getElementById('timer-label').textContent=this.value+' seconds';gameSettings.timer=+this.value">
+        <input id="timer-slider" type="range" min="30" max="120" step="15" value="60" oninput="document.getElementById('timer-label').textContent=this.value+' seconds';gameSettings.timer=+this.value;saveGameSettings()">
+      </div>
+      <div class="settings-row">
+        <div><div class="settings-lbl">Quick recall</div><div class="settings-sub" id="quick-threshold-label">Strong if guessed in 8 seconds or less</div></div>
+        <input id="quick-threshold-slider" type="range" min="4" max="12" step="1" value="8" oninput="updateRecallThreshold('quick', +this.value)">
+      </div>
+      <div class="settings-row">
+        <div><div class="settings-lbl">Slow recall</div><div class="settings-sub" id="slow-threshold-label">Needs practice after 15 seconds</div></div>
+        <input id="slow-threshold-slider" type="range" min="10" max="25" step="1" value="15" oninput="updateRecallThreshold('slow', +this.value)">
       </div>
       <div class="settings-row">
         <div><div class="settings-lbl">Taboo words</div><div class="settings-sub">2-3 extra forbidden clues</div></div>
         <label class="toggle-switch" aria-label="Toggle taboo word">
-          <input id="taboo-toggle" type="checkbox" onchange="gameSettings.tabooEnabled=this.checked">
+          <input id="taboo-toggle" type="checkbox" onchange="gameSettings.tabooEnabled=this.checked;saveGameSettings()">
           <span class="toggle-track"></span>
         </label>
       </div>
       <div class="settings-row">
         <div><div class="settings-lbl">Sound effects</div><div class="settings-sub">Dings, skips, countdown ticks</div></div>
         <label class="toggle-switch" aria-label="Toggle sound effects">
-          <input id="sound-toggle" type="checkbox" checked onchange="gameSettings.soundEnabled=this.checked">
+          <input id="sound-toggle" type="checkbox" checked onchange="gameSettings.soundEnabled=this.checked;saveGameSettings()">
           <span class="toggle-track"></span>
         </label>
       </div>
       <div class="settings-row">
         <div><div class="settings-lbl">Haptics</div><div class="settings-sub">Phone vibration feedback</div></div>
         <label class="toggle-switch" aria-label="Toggle haptics">
-          <input id="haptics-toggle" type="checkbox" checked onchange="gameSettings.hapticsEnabled=this.checked">
+          <input id="haptics-toggle" type="checkbox" checked onchange="gameSettings.hapticsEnabled=this.checked;saveGameSettings()">
           <span class="toggle-track"></span>
         </label>
       </div>
@@ -4394,10 +4495,12 @@ html.game-active #app {
 <div class="screen" id="game">
   <div class="game-bg neutral" id="game-bg"></div>
   <div class="flash-overlay" id="flash-overlay"></div>
+  <div class="game-rotation-shell">
   <div class="game-inner">
     <div class="game-hud">
       <div class="game-hud-left">
         <button class="btn btn-ghost btn-sm" style="font-size: 13px; border-radius: 8px; width: auto; padding: 8px 16px;" onclick="endGame()">End</button>
+        <button class="btn btn-ghost btn-sm" id="undo-card-btn" style="font-size: 13px; border-radius: 8px; width: auto; padding: 8px 14px;" onclick="undoLastCardAction()" disabled>Undo</button>
         <span class="hud-mode-chip" id="hud-mode-chip">Classic Heads-Up</span>
       </div>
       <div class="score-hud">
@@ -4421,6 +4524,7 @@ html.game-active #app {
       <div class="tap-zone tap-zone-skip" data-action="skip" aria-label="Skip"></div>
       <div class="tap-zone tap-zone-correct" data-action="correct" aria-label="Correct"></div>
     </div>
+  </div>
   </div>
 </div>
 
@@ -4453,12 +4557,24 @@ html.game-active #app {
     </div>
     <div class="takeaway-action" id="takeaway-action">Finish a round to get a useful review plan.</div>
   </div>
+  <div class="weakness-summary" id="weakness-summary">
+    <div class="weakness-summary-top"><span>Round Recall</span><strong id="weakness-cta-title">No weak cards yet</strong></div>
+    <div class="weakness-stat-grid">
+      <div class="weakness-stat"><strong id="round-strong-recalls">0</strong><span>Strong</span></div>
+      <div class="weakness-stat"><strong id="round-slow-recalls">0</strong><span>Slow</span></div>
+      <div class="weakness-stat"><strong id="round-missed-cards">0</strong><span>Missed</span></div>
+      <div class="weakness-stat"><strong id="round-new-mastered">0</strong><span>Mastered</span></div>
+      <div class="weakness-stat"><strong id="round-forgotten-cards">0</strong><span>Forgotten</span></div>
+      <div class="weakness-stat"><strong id="round-avg-response">0s</strong><span>Avg time</span></div>
+    </div>
+    <button class="btn btn-primary btn-sm" id="practice-weak-btn" onclick="startWeaknessRoundFromResults()"><svg class="ui-icon"><use href="#i-brain"></use></svg> Practice Weak Cards</button>
+  </div>
   <div class="missed-summary" id="missed-summary">
     <div class="missed-summary-top"><span>Missed this round</span><strong id="missed-summary-count">0 words</strong></div>
     <div class="missed-summary-list" id="missed-summary-list"></div>
   </div>
   <div class="achievement-row" id="new-achievements" style="display:none"></div>
-  <div class="team-panel" id="team-panel">
+  <div class="team-panel" id="team-panel" hidden>
     <div class="team-row"><span>Series</span><strong id="team-seriesline">Team A 0 · Team B 0</strong></div>
     <div class="team-row"><span>Total points</span><strong id="team-scoreline">Team A 0 · Team B 0</strong></div>
     <div class="team-row"><span>Face-off</span><strong id="team-faceoff">1 · first to 2</strong></div>
@@ -4484,7 +4600,7 @@ html.game-active #app {
     <button class="btn btn-secondary" id="streak-reward-btn" style="display:none" onclick="showStreakReward()"><svg class="ui-icon"><use href="#i-zap"></use></svg> View Streak Reward</button>
     <button class="btn btn-secondary" id="review-missed-btn" onclick="continueAfterResults(() => startReviewRound('missed'))"><svg class="ui-icon"><use href="#i-brain"></use></svg> Review Missed Cards</button>
     <button class="btn btn-secondary" id="review-hard-btn" onclick="continueAfterResults(() => startReviewRound('hard'))"><svg class="ui-icon"><use href="#i-zap"></use></svg> Replay Hard Cards</button>
-    <button class="btn btn-secondary" id="reset-team-btn" style="display:none" onclick="resetTeamBattle(true)"><svg class="ui-icon"><use href="#i-flag"></use></svg> Reset Team Battle</button>
+    <button class="btn btn-secondary" id="reset-team-btn" style="display:none" hidden onclick="resetTeamBattle(true)"><svg class="ui-icon"><use href="#i-flag"></use></svg> Reset Team Battle</button>
     <button class="btn btn-secondary" onclick="shareLastResult()"><svg class="ui-icon"><use href="#i-share"></use></svg> Share Result</button>
     <button class="btn btn-secondary" onclick="continueAfterResults(() => showScreen('topics'))"><svg class="ui-icon"><use href="#i-arrow-left"></use></svg> Change Topics</button>
     <button class="btn btn-secondary" onclick="continueAfterResults(() => showScreen('home'))"><svg class="ui-icon"><use href="#i-home"></use></svg> Home</button>
@@ -4568,6 +4684,18 @@ html.game-active #app {
       <div class="dash-stat"><div class="dash-stat-n" id="dash-accuracy">0%</div><div class="dash-stat-l">Accuracy</div></div>
       <div class="dash-stat"><div class="dash-stat-n" id="dash-streak">0</div><div class="dash-stat-l">Best Streak</div></div>
     </div>
+    <div class="section-label">Recall Health</div>
+    <div class="dash-grid dash-weak-grid">
+      <div class="dash-stat"><div class="dash-stat-n" id="dash-mastery">0%</div><div class="dash-stat-l">Mastery</div></div>
+      <div class="dash-stat"><div class="dash-stat-n" id="dash-weak-cards">0</div><div class="dash-stat-l">Weak Cards</div></div>
+      <div class="dash-stat"><div class="dash-stat-n" id="dash-forgotten">0</div><div class="dash-stat-l">Forgotten</div></div>
+      <div class="dash-stat"><div class="dash-stat-n" id="dash-hy-open">0</div><div class="dash-stat-l">HY Open</div></div>
+      <div class="dash-stat"><div class="dash-stat-n" id="dash-avg-time">0s</div><div class="dash-stat-l">Avg Time</div></div>
+      <div class="dash-stat"><div class="dash-stat-n" id="dash-mastered-week">0</div><div class="dash-stat-l">Mastered Week</div></div>
+      <div class="dash-stat"><div class="dash-stat-n" id="dash-review-today">0</div><div class="dash-stat-l">Review Today</div></div>
+      <div class="dash-stat"><div class="dash-stat-n" id="dash-improving">None</div><div class="dash-stat-l">Improving</div></div>
+      <div class="dash-stat"><div class="dash-stat-n" id="dash-weakest-topic">None</div><div class="dash-stat-l">Weakest</div></div>
+    </div>
     <div class="daily-panel">
       <div class="daily-panel-top">
         <div><div class="daily-panel-title">Daily Challenge</div><div class="daily-panel-sub" id="dash-daily-sub">Complete today's run to build a streak.</div></div>
@@ -4578,8 +4706,10 @@ html.game-active #app {
     <div class="badge-grid" id="achievement-grid"></div>
     <div class="section-label">Topic Mastery</div>
     <div class="mastery-list" id="mastery-list"></div>
+    <div class="weak-topic-panel" id="weak-topic-panel" style="display:none"></div>
     <div class="section-label">Saved Study Sets</div>
     <div style="padding:0 16px;display:flex;flex-direction:column;gap:10px">
+      <button class="btn btn-primary" onclick="startWeaknessMode()"><svg class="ui-icon"><use href="#i-brain"></use></svg> Practice Weak Cards</button>
       <button class="btn btn-secondary" onclick="startReviewRound('favorites')"><svg class="ui-icon"><use href="#i-star"></use></svg> Review Favorites</button>
       <button class="btn btn-secondary" onclick="startReviewRound('missed')"><svg class="ui-icon"><use href="#i-brain"></use></svg> Review Missed Cards</button>
       <button class="btn btn-secondary" onclick="exportFlaggedCards()"><svg class="ui-icon"><use href="#i-flag"></use></svg> Flagged Card Export</button>
@@ -5631,6 +5761,16 @@ function fitCardTermText() {
   const isSingleWord = words.length <= 1;
   termText.classList.toggle('single-word', isSingleWord);
   termText.classList.toggle('multi-word', !isSingleWord);
+  termText.classList.remove('game-term--short', 'game-term--medium', 'game-term--long', 'game-term--extra-long');
+  const termLength = rawTerm.replace(/\s+/g, '').length;
+  const termSizeClass = termLength <= 10 && words.length <= 1
+    ? 'game-term--short'
+    : termLength <= 20 && words.length <= 3
+      ? 'game-term--medium'
+      : termLength <= 34
+        ? 'game-term--long'
+        : 'game-term--extra-long';
+  termText.classList.add('game-term', termSizeClass);
   termText.style.whiteSpace = isSingleWord ? 'nowrap' : 'normal';
   termText.style.overflowWrap = 'normal';
   termText.style.wordBreak = 'normal';
@@ -5711,15 +5851,47 @@ function validateGameLayoutOrFallback(delay = 0) {
       const stage = document.querySelector('#game .game-card-stage');
       const card = document.getElementById('card-term');
       if (!stage || !card) return;
-      const viewportWidth = window.visualViewport?.width || window.innerWidth || document.documentElement.clientWidth;
-      const viewportHeight = window.visualViewport?.height || window.innerHeight || document.documentElement.clientHeight;
+      const visualViewport = window.visualViewport;
+      const viewportLeft = visualViewport?.offsetLeft || 0;
+      const viewportTop = visualViewport?.offsetTop || 0;
+      const viewportWidth = visualViewport?.width || window.innerWidth || document.documentElement.clientWidth;
+      const viewportHeight = visualViewport?.height || window.innerHeight || document.documentElement.clientHeight;
+      const viewportRight = viewportLeft + viewportWidth;
+      const viewportBottom = viewportTop + viewportHeight;
+      const viewportCenterX = viewportLeft + viewportWidth / 2;
+      const viewportCenterY = viewportTop + viewportHeight / 2;
       const stageRect = stage.getBoundingClientRect();
       const cardRect = card.getBoundingClientRect();
-      const intersectsViewport = stageRect.right > 0 && stageRect.bottom > 0 && stageRect.left < viewportWidth && stageRect.top < viewportHeight;
+      const cardCenterX = cardRect.left + cardRect.width / 2;
+      const cardCenterY = cardRect.top + cardRect.height / 2;
+      const centerDiffX = cardCenterX - viewportCenterX;
+      const centerDiffY = cardCenterY - viewportCenterY;
+      const isPortraitForced = window.matchMedia('(orientation: portrait)').matches && game.classList.contains('game-active') && !game.classList.contains('game-orientation-fallback');
+      const centerTolerance = isPortraitForced ? 3 : Math.max(8, Math.min(viewportWidth, viewportHeight) * 0.03);
+      const cardCenterValid = Math.abs(centerDiffX) <= centerTolerance && Math.abs(centerDiffY) <= centerTolerance;
+      const intersectsViewport = stageRect.right > viewportLeft && stageRect.bottom > viewportTop && stageRect.left < viewportRight && stageRect.top < viewportBottom;
       const stageHasSpace = stageRect.width >= Math.min(160, viewportWidth * 0.4) && stageRect.height >= Math.min(160, viewportHeight * 0.4);
-      const cardVisible = cardRect.right > 0 && cardRect.bottom > 0 && cardRect.left < viewportWidth && cardRect.top < viewportHeight && cardRect.width > 120 && cardRect.height > 120;
-      if (!intersectsViewport || !stageHasSpace || !cardVisible) {
+      const cardVisible = cardRect.right > viewportLeft && cardRect.bottom > viewportTop && cardRect.left < viewportRight && cardRect.top < viewportBottom && cardRect.width > 120 && cardRect.height > 120;
+      const cardInsideViewport = cardRect.left >= viewportLeft - 1 && cardRect.top >= viewportTop - 1 && cardRect.right <= viewportRight + 1 && cardRect.bottom <= viewportBottom + 1;
+      window.lastGameLayoutDiagnostics = {
+        portraitForced: isPortraitForced,
+        viewportCenterX,
+        viewportCenterY,
+        cardCenterX,
+        cardCenterY,
+        centerDiffX,
+        centerDiffY,
+        centerTolerance,
+        cardCenterValid,
+        cardInsideViewport,
+        viewport: { left: viewportLeft, top: viewportTop, width: viewportWidth, height: viewportHeight },
+        stageRect: { left: stageRect.left, top: stageRect.top, width: stageRect.width, height: stageRect.height },
+        cardRect: { left: cardRect.left, top: cardRect.top, width: cardRect.width, height: cardRect.height }
+      };
+      if (!intersectsViewport || !stageHasSpace || !cardVisible || !cardInsideViewport) {
         game.classList.add('game-orientation-fallback');
+        refitGameCardSoon(20);
+      } else if (isPortraitForced && !cardCenterValid) {
         refitGameCardSoon(20);
       }
     });
@@ -6491,6 +6663,11 @@ function updateCountLabels() {
 const DIFF_CONFIG = { 1: { badge: 'Tier 1 — Highest Yield', prompt: 'Tier 1 — HIGHEST YIELD' }, 2: { badge: 'Tier 2 — High Yield', prompt: 'Tier 2 — HIGH YIELD' }, 3: { badge: 'Tier 3 — Moderate', prompt: 'Tier 3 — MODERATE YIELD' }, 4: { badge: 'Tier 4 — Low Yield', prompt: 'Tier 4 — LOW YIELD' }, 5: { badge: 'Tier 5 — Expert', prompt: 'Tier 5 — EXPERT' } };
 const MCAT_MIN = 472;
 const MCAT_MAX = 528;
+const GAME_SETTINGS_STORAGE = 'highYieldGameSettingsV2';
+const DEFAULT_GAME_SETTINGS = { timer: 60, tabooEnabled: false, soundEnabled: true, hapticsEnabled: true, quickRecallSeconds: 8, slowRecallSeconds: 15 };
+const CARD_PROGRESS_HISTORY_LIMIT = 12;
+const APPLIED_OUTCOME_LIMIT = 500;
+const REVIEW_INTERVAL_DAYS = [1, 3, 7];
 let currentDifficulty = 1;
 let selectedTopics = [];
 let selectedSubtopics = new Set();
@@ -6498,7 +6675,7 @@ let customDecks = [];
 let uploadedFiles = [];
 let generatedDeckData = null;
 let generatedPromptDeckData = null;
-let gameSettings = { timer: 60, tabooEnabled: false, soundEnabled: true, hapticsEnabled: true };
+let gameSettings = { ...DEFAULT_GAME_SETTINGS };
 let gameState = {};
 let currentDeckSource = 'offline';
 let currentGameMode = 'classic';
@@ -6506,6 +6683,7 @@ let pendingSpecialRound = null;
 let lastRoundResult = null;
 let progressData = null;
 let lastDailyReward = null;
+let cardResponseTracker = getEmptyResponseTracker();
 const TEAM_BATTLE_STORAGE = 'highYieldTeamBattleV1';
 let teamBattle = getDefaultTeamBattle();
 const AD_BREAK_STORAGE = 'highYieldAdBreakV1';
@@ -6533,11 +6711,49 @@ const MODE_CONFIG = {
   classic: { label: 'Classic Heads-Up', timer: 60, taboo: false },
   taboo: { label: 'Taboo Mode', timer: 60, taboo: true },
   sprint: { label: 'MCAT Sprint', timer: 45, taboo: false },
-  weak: { label: 'Weak Spot Review', timer: 60, taboo: false },
+  weak: { label: 'Weakness Mode', timer: 60, taboo: false },
   teams: { label: 'Team Battle', timer: 60, taboo: false },
   daily: { label: 'Daily Challenge', timer: 60, taboo: false },
   review: { label: 'Review Round', timer: 60, taboo: false }
 };
+
+function normalizeGameSettings(raw = {}) {
+  const quick = clampNumber(raw.quickRecallSeconds ?? DEFAULT_GAME_SETTINGS.quickRecallSeconds, 4, 12);
+  const slow = clampNumber(raw.slowRecallSeconds ?? DEFAULT_GAME_SETTINGS.slowRecallSeconds, Math.max(quick + 1, 10), 25);
+  return {
+    timer: clampNumber(raw.timer ?? DEFAULT_GAME_SETTINGS.timer, 30, 120),
+    tabooEnabled: Boolean(raw.tabooEnabled ?? DEFAULT_GAME_SETTINGS.tabooEnabled),
+    soundEnabled: raw.soundEnabled === undefined ? DEFAULT_GAME_SETTINGS.soundEnabled : Boolean(raw.soundEnabled),
+    hapticsEnabled: raw.hapticsEnabled === undefined ? DEFAULT_GAME_SETTINGS.hapticsEnabled : Boolean(raw.hapticsEnabled),
+    quickRecallSeconds: quick,
+    slowRecallSeconds: slow
+  };
+}
+function loadGameSettings() {
+  try {
+    gameSettings = normalizeGameSettings(JSON.parse(localStorage.getItem(GAME_SETTINGS_STORAGE) || '{}'));
+  } catch(e) {
+    gameSettings = normalizeGameSettings();
+  }
+}
+function saveGameSettings() {
+  gameSettings = normalizeGameSettings(gameSettings);
+  try { localStorage.setItem(GAME_SETTINGS_STORAGE, JSON.stringify(gameSettings)); } catch(e) {}
+  syncSettingsToggles();
+}
+function updateRecallThreshold(kind, value) {
+  if (kind === 'quick') {
+    gameSettings.quickRecallSeconds = clampNumber(value, 4, 12);
+    if (gameSettings.slowRecallSeconds <= gameSettings.quickRecallSeconds) {
+      gameSettings.slowRecallSeconds = Math.min(25, gameSettings.quickRecallSeconds + 1);
+    }
+  } else {
+    gameSettings.slowRecallSeconds = clampNumber(value, Math.max(10, (gameSettings.quickRecallSeconds || 8) + 1), 25);
+  }
+  saveGameSettings();
+}
+window.saveGameSettings = saveGameSettings;
+window.updateRecallThreshold = updateRecallThreshold;
 
 function getDefaultTeamBattle() {
   return {
@@ -6779,6 +6995,7 @@ function recordTeamRound(scoreData, correct, wrong, total, pct) {
 function renderTeamBattleResults(summary = null) {
   const panel = document.getElementById('team-panel');
   if (!panel) return;
+  panel.hidden = false;
   panel.classList.add('active');
   const nameA = getTeamName('A');
   const nameB = getTeamName('B');
@@ -6990,6 +7207,8 @@ function getDefaultProgress() {
     missedCards: [],
     hardCards: [],
     favorites: [],
+    cardProgress: {},
+    appliedOutcomeIds: [],
     reports: [],
     achievements: {},
     recentScores: []
@@ -7006,6 +7225,8 @@ function loadProgress() {
   progressData.missedCards = Array.isArray(progressData.missedCards) ? progressData.missedCards : [];
   progressData.hardCards = Array.isArray(progressData.hardCards) ? progressData.hardCards : [];
   progressData.favorites = Array.isArray(progressData.favorites) ? progressData.favorites : [];
+  progressData.cardProgress = progressData.cardProgress && typeof progressData.cardProgress === 'object' ? progressData.cardProgress : {};
+  progressData.appliedOutcomeIds = Array.isArray(progressData.appliedOutcomeIds) ? progressData.appliedOutcomeIds.slice(-APPLIED_OUTCOME_LIMIT) : [];
   progressData.reports = Array.isArray(progressData.reports) ? progressData.reports : [];
   progressData.achievements = progressData.achievements || {};
   progressData.daily = progressData.daily || {};
@@ -7023,11 +7244,20 @@ function compactCard(card) {
   const safe = normalizeCard(card, card?.category || 'General');
   return {
     term: safe.term,
+    displayTerm: safe.displayTerm,
     explanation: safe.explanation,
     category: safe.category,
     difficulty: safe.difficulty,
     tabooWords: safe.tabooWords,
-    isAI: safe.isAI
+    isAI: safe.isAI,
+    variant: safe.variant,
+    aminoCardType: safe.aminoCardType,
+    aminoCardLabel: safe.aminoCardLabel,
+    aminoName: safe.aminoName,
+    code1: safe.code1,
+    code3: safe.code3,
+    aminoGroup: safe.aminoGroup,
+    structure: safe.structure
   };
 }
 function mergeCardList(list, cards, max = 120) {
@@ -7040,6 +7270,465 @@ function mergeCardList(list, cards, max = 120) {
     byId.set(getCardId(safe), safe);
   });
   return Array.from(byId.values()).slice(-max);
+}
+function getEmptyResponseTracker() {
+  return { active: false, completed: true, appearanceId: null, cardId: null, startedAt: 0, pausedAt: null, pausedTotal: 0 };
+}
+function getNowMs() {
+  return (window.performance && typeof performance.now === 'function') ? performance.now() : Date.now();
+}
+function startCardResponseTimer(card, appearanceId, delayMs = 0) {
+  cardResponseTracker = {
+    active: true,
+    completed: false,
+    appearanceId,
+    cardId: getCardId(card),
+    startedAt: getNowMs() + Math.max(0, Number(delayMs) || 0),
+    pausedAt: null,
+    pausedTotal: 0
+  };
+}
+function pauseCardResponseTimer() {
+  if (!cardResponseTracker.active || cardResponseTracker.completed || cardResponseTracker.pausedAt !== null) return;
+  cardResponseTracker.pausedAt = getNowMs();
+}
+function resumeCardResponseTimer() {
+  if (!cardResponseTracker.active || cardResponseTracker.completed || cardResponseTracker.pausedAt === null) return;
+  cardResponseTracker.pausedTotal += Math.max(0, getNowMs() - cardResponseTracker.pausedAt);
+  cardResponseTracker.pausedAt = null;
+}
+function finishCardResponseTimer(appearanceId = gameState.currentAppearanceId) {
+  const tracker = cardResponseTracker;
+  if (!tracker.active || tracker.completed || tracker.appearanceId !== appearanceId) return null;
+  const now = tracker.pausedAt !== null ? tracker.pausedAt : getNowMs();
+  const seconds = Math.max(0, (now - tracker.startedAt - tracker.pausedTotal) / 1000);
+  cardResponseTracker = { ...tracker, active: false, completed: true, responseSeconds: seconds };
+  return seconds;
+}
+function handleGameVisibilityChange() {
+  if (!gameState.active || gameState.ended) return;
+  if (document.hidden) {
+    gameState.pausedForVisibility = true;
+    pauseCardResponseTimer();
+  } else {
+    gameState.pausedForVisibility = false;
+    resumeCardResponseTimer();
+  }
+}
+document.addEventListener('visibilitychange', handleGameVisibilityChange);
+window.addEventListener('blur', () => {
+  if (gameState.active && !gameState.ended) pauseCardResponseTimer();
+});
+window.addEventListener('focus', () => {
+  if (gameState.active && !gameState.ended && !document.hidden) resumeCardResponseTimer();
+});
+function isHighYieldCard(card) {
+  return clampNumber(card?.difficulty ?? 3, 1, 5) <= 2;
+}
+function getYieldLevel(card) {
+  const difficulty = clampNumber(card?.difficulty ?? 3, 1, 5);
+  if (difficulty <= 1) return 'high';
+  if (difficulty === 2) return 'medium';
+  return 'low';
+}
+function getYieldMultiplier(card) {
+  const level = getYieldLevel(card);
+  if (level === 'high') return 1.35;
+  if (level === 'medium') return 1.15;
+  return 1;
+}
+function getDefaultCardProgress(card) {
+  const safe = compactCard(card);
+  return {
+    cardId: getCardId(safe),
+    card: safe,
+    timesSeen: 0,
+    cycleCount: 0,
+    quickCorrectCount: 0,
+    normalCorrectCount: 0,
+    slowCorrectCount: 0,
+    missCount: 0,
+    timeoutCount: 0,
+    passCount: 0,
+    consecutiveCorrect: 0,
+    consecutiveMisses: 0,
+    lastSeenAt: null,
+    lastCorrectAt: null,
+    lastMissedAt: null,
+    averageResponseTime: 0,
+    masteryScore: 0,
+    weaknessScore: 0,
+    previouslyMastered: false,
+    forgotten: false,
+    nextReviewAt: null,
+    masteredAt: null,
+    reviewStep: 0,
+    successfulSessionIds: [],
+    outcomeHistory: []
+  };
+}
+function normalizeCardProgress(record, card) {
+  const base = getDefaultCardProgress(card || record?.card || {});
+  const safe = record && typeof record === 'object' ? record : {};
+  return {
+    ...base,
+    ...safe,
+    cardId: safe.cardId || base.cardId,
+    card: compactCard(safe.card || card || base.card),
+    timesSeen: Math.max(0, Math.round(Number(safe.timesSeen) || 0)),
+    cycleCount: Math.max(0, Math.round(Number(safe.cycleCount) || 0)),
+    quickCorrectCount: Math.max(0, Math.round(Number(safe.quickCorrectCount) || 0)),
+    normalCorrectCount: Math.max(0, Math.round(Number(safe.normalCorrectCount) || 0)),
+    slowCorrectCount: Math.max(0, Math.round(Number(safe.slowCorrectCount) || 0)),
+    missCount: Math.max(0, Math.round(Number(safe.missCount) || 0)),
+    timeoutCount: Math.max(0, Math.round(Number(safe.timeoutCount) || 0)),
+    passCount: Math.max(0, Math.round(Number(safe.passCount) || 0)),
+    consecutiveCorrect: Math.max(0, Math.round(Number(safe.consecutiveCorrect) || 0)),
+    consecutiveMisses: Math.max(0, Math.round(Number(safe.consecutiveMisses) || 0)),
+    averageResponseTime: Math.max(0, Number(safe.averageResponseTime) || 0),
+    masteryScore: Number(safe.masteryScore) || 0,
+    weaknessScore: Math.max(0, Number(safe.weaknessScore) || 0),
+    previouslyMastered: Boolean(safe.previouslyMastered),
+    forgotten: Boolean(safe.forgotten),
+    nextReviewAt: Number(safe.nextReviewAt) || null,
+    masteredAt: Number(safe.masteredAt) || null,
+    reviewStep: Math.max(0, Math.round(Number(safe.reviewStep) || 0)),
+    successfulSessionIds: Array.isArray(safe.successfulSessionIds) ? [...new Set(safe.successfulSessionIds.filter(Boolean))].slice(-8) : [],
+    outcomeHistory: Array.isArray(safe.outcomeHistory) ? safe.outcomeHistory.slice(-CARD_PROGRESS_HISTORY_LIMIT) : []
+  };
+}
+function ensureCardProgressStore(p = ensureProgress()) {
+  p.cardProgress = p.cardProgress && typeof p.cardProgress === 'object' ? p.cardProgress : {};
+  p.appliedOutcomeIds = Array.isArray(p.appliedOutcomeIds) ? p.appliedOutcomeIds.slice(-APPLIED_OUTCOME_LIMIT) : [];
+  return p.cardProgress;
+}
+function getCardProgressRecord(card, p = ensureProgress()) {
+  const store = ensureCardProgressStore(p);
+  const id = getCardId(card);
+  const record = normalizeCardProgress(store[id], card);
+  store[id] = record;
+  return record;
+}
+function getHardMissOutcomes() {
+  return new Set(['pass', 'incorrect', 'timeout', 'hard_miss', 'ended_early']);
+}
+function isHardMissOutcome(outcome) {
+  return getHardMissOutcomes().has(outcome);
+}
+function classifyCardOutcome(result, responseSeconds, options = {}) {
+  if (result === 'correct') {
+    if (responseSeconds === null || !Number.isFinite(Number(responseSeconds))) return 'normal_correct';
+    if (responseSeconds !== null && responseSeconds <= gameSettings.quickRecallSeconds) return 'quick_correct';
+    if (responseSeconds !== null && responseSeconds <= gameSettings.slowRecallSeconds) return 'normal_correct';
+    return 'slow_correct';
+  }
+  if (options.timedOut) return 'timeout';
+  if (options.endedEarly) return 'ended_early';
+  if (options.incorrect) return 'incorrect';
+  return 'pass';
+}
+function getOutcomeLabel(outcome) {
+  const labels = {
+    quick_correct: 'Quick Correct',
+    normal_correct: 'Normal Correct',
+    slow_correct: 'Slow Recall',
+    pass: 'Needs Practice',
+    incorrect: 'Needs Practice',
+    timeout: 'Timed Out',
+    ended_early: 'Round Ended',
+    hard_miss: 'Needs Practice',
+    forgotten: 'Forgotten'
+  };
+  return labels[outcome] || 'Needs Practice';
+}
+function createCardOutcomeLog(card, result, options = {}) {
+  const appearanceId = gameState.currentAppearanceId || `${gameState.roundId || 'round'}:${gameState.cardCount || 0}`;
+  const responseSeconds = finishCardResponseTimer(appearanceId);
+  const outcome = classifyCardOutcome(result, responseSeconds, options);
+  const safe = normalizeCard(card, card?.category || 'General');
+  return {
+    ...safe,
+    result,
+    outcome,
+    outcomeLabel: getOutcomeLabel(outcome),
+    responseTime: responseSeconds,
+    appearanceId,
+    outcomeId: `${gameState.roundId || Date.now()}::${appearanceId}::${getCardId(safe)}`
+  };
+}
+function hasCurrentAppearanceOutcome() {
+  const appearanceId = gameState.currentAppearanceId;
+  return Boolean(appearanceId && (gameState.log || []).some(item => item.appearanceId === appearanceId));
+}
+function wasCardMastered(record) {
+  const confident = (record.quickCorrectCount || 0) + (record.normalCorrectCount || 0);
+  const successes = confident + (record.slowCorrectCount || 0);
+  const sessions = new Set(record.successfulSessionIds || []);
+  const recentHardMiss = (record.outcomeHistory || []).slice(-3).some(item => isHardMissOutcome(item.outcome));
+  return successes >= 3 && confident >= 2 && sessions.size > 1 && !recentHardMiss;
+}
+function hasTwoSlowInLastThree(record) {
+  return (record.outcomeHistory || []).slice(-3).filter(item => item.outcome === 'slow_correct').length >= 2;
+}
+function isWeaknessEligible(record, now = Date.now()) {
+  const safe = normalizeCardProgress(record);
+  if (!safe.timesSeen) return false;
+  if (safe.forgotten) return true;
+  const lastOutcome = safe.outcomeHistory.length ? safe.outcomeHistory[safe.outcomeHistory.length - 1].outcome : '';
+  if (isHardMissOutcome(lastOutcome)) return true;
+  if (hasTwoSlowInLastThree(safe)) return true;
+  if ((safe.consecutiveMisses || 0) >= 2) return true;
+  if ((safe.nextReviewAt || 0) && safe.nextReviewAt <= now && safe.weaknessScore > 0) return true;
+  if (isHighYieldCard(safe.card) && safe.masteryScore < 3 && safe.weaknessScore > 0) return true;
+  return safe.weaknessScore >= 4 && !wasCardMastered(safe);
+}
+function getRecentMissMultiplier(record, now = Date.now()) {
+  if (!record.lastMissedAt) return 1;
+  const days = Math.max(0, (now - record.lastMissedAt) / 86400000);
+  if (days <= 1) return 1.28;
+  if (days <= 3) return 1.16;
+  if (days <= 7) return 1.08;
+  return 1;
+}
+function getForgottenMultiplier(record) {
+  return record.forgotten ? 1.45 : 1;
+}
+function getSlowResponseMultiplier(record) {
+  if (!record.averageResponseTime) return 1;
+  if (record.averageResponseTime > gameSettings.slowRecallSeconds) return 1.2;
+  if (record.averageResponseTime > gameSettings.quickRecallSeconds) return 1.08;
+  return 1;
+}
+function calculateWeaknessPriority(record, options = {}) {
+  const safe = normalizeCardProgress(record);
+  const base = Math.max(1, safe.weaknessScore || 0);
+  const cyclePressure = !wasCardMastered(safe) ? Math.min(2.5, (safe.cycleCount || 0) * 0.18) : 0;
+  const missPressure = Math.min(4, (safe.consecutiveMisses || 0) * 1.35);
+  const reviewDue = safe.nextReviewAt && safe.nextReviewAt <= Date.now() ? 2.5 : 0;
+  const seededBoost = options.seeded ? 5 : 0;
+  return (base + cyclePressure + missPressure + reviewDue + seededBoost)
+    * getYieldMultiplier(safe.card)
+    * getRecentMissMultiplier(safe)
+    * getForgottenMultiplier(safe)
+    * getSlowResponseMultiplier(safe);
+}
+function addAppliedOutcomeId(p, outcomeId) {
+  if (!outcomeId) return false;
+  p.appliedOutcomeIds = Array.isArray(p.appliedOutcomeIds) ? p.appliedOutcomeIds : [];
+  if (p.appliedOutcomeIds.includes(outcomeId)) return false;
+  p.appliedOutcomeIds.push(outcomeId);
+  p.appliedOutcomeIds = p.appliedOutcomeIds.slice(-APPLIED_OUTCOME_LIMIT);
+  return true;
+}
+function scheduleReviewForOutcome(record, outcome, now) {
+  if (isHardMissOutcome(outcome)) {
+    record.reviewStep = 0;
+    record.nextReviewAt = now + REVIEW_INTERVAL_DAYS[0] * 86400000;
+    return;
+  }
+  if (outcome === 'slow_correct') {
+    record.reviewStep = 0;
+    record.nextReviewAt = now + REVIEW_INTERVAL_DAYS[0] * 86400000;
+    return;
+  }
+  if (record.weaknessScore > 0 && !wasCardMastered(record)) {
+    record.reviewStep = Math.min(REVIEW_INTERVAL_DAYS.length - 1, (record.reviewStep || 0) + 1);
+    record.nextReviewAt = now + REVIEW_INTERVAL_DAYS[record.reviewStep] * 86400000;
+    return;
+  }
+  if (wasCardMastered(record)) record.nextReviewAt = null;
+}
+function applyCardOutcomeToProgress(item, sessionId, p = ensureProgress()) {
+  const safe = normalizeCard(item, item?.category || 'General');
+  if (!addAppliedOutcomeId(p, item.outcomeId)) return { skipped: true, card: safe };
+  const now = Date.now();
+  const record = getCardProgressRecord(safe, p);
+  const wasMasteredBefore = Boolean(record.previouslyMastered || wasCardMastered(record));
+  const outcome = item.outcome || classifyCardOutcome(item.result, item.responseTime, item);
+  const hardMiss = isHardMissOutcome(outcome);
+  const response = Number(item.responseTime);
+  record.card = compactCard(safe);
+  record.timesSeen += 1;
+  record.cycleCount += 1;
+  record.lastSeenAt = now;
+  if (Number.isFinite(response) && response > 0) {
+    record.averageResponseTime = record.averageResponseTime
+      ? ((record.averageResponseTime * (record.timesSeen - 1)) + response) / record.timesSeen
+      : response;
+  }
+  if (outcome === 'quick_correct') {
+    record.quickCorrectCount += 1;
+    record.masteryScore += 3;
+    record.weaknessScore = Math.max(0, record.weaknessScore - 2);
+  } else if (outcome === 'normal_correct') {
+    record.normalCorrectCount += 1;
+    record.masteryScore += 2;
+    record.weaknessScore = Math.max(0, record.weaknessScore - 1);
+  } else if (outcome === 'slow_correct') {
+    record.slowCorrectCount += 1;
+    record.masteryScore += 1;
+    record.weaknessScore += 2;
+  } else if (outcome === 'pass' || outcome === 'ended_early') {
+    record.passCount += 1;
+    record.missCount += 1;
+    record.masteryScore -= 2;
+    record.weaknessScore += 4;
+  } else {
+    record.missCount += 1;
+    if (outcome === 'timeout') record.timeoutCount += 1;
+    record.masteryScore -= 3;
+    record.weaknessScore += 5;
+  }
+  if (hardMiss) {
+    record.consecutiveMisses += 1;
+    record.consecutiveCorrect = 0;
+    record.lastMissedAt = now;
+  } else {
+    record.consecutiveCorrect += 1;
+    record.consecutiveMisses = 0;
+    record.lastCorrectAt = now;
+    record.successfulSessionIds = [...new Set([...(record.successfulSessionIds || []), sessionId].filter(Boolean))].slice(-8);
+  }
+  record.outcomeHistory = [
+    ...(record.outcomeHistory || []),
+    { outcome, responseTime: Number.isFinite(response) ? response : null, at: now, sessionId, hardMiss }
+  ].slice(-CARD_PROGRESS_HISTORY_LIMIT);
+  if (record.consecutiveCorrect >= 2 && ['quick_correct', 'normal_correct'].includes(outcome)) {
+    const confidentRecent = record.outcomeHistory.slice(-2).every(entry => ['quick_correct', 'normal_correct'].includes(entry.outcome));
+    if (confidentRecent) record.weaknessScore = Math.max(0, record.weaknessScore - 3);
+  }
+  record.forgotten = wasMasteredBefore && (hardMiss || hasTwoSlowInLastThree(record));
+  record.previouslyMastered = wasCardMastered(record);
+  if (record.previouslyMastered && !record.masteredAt) record.masteredAt = now;
+  if (!record.previouslyMastered && hardMiss) record.masteredAt = null;
+  scheduleReviewForOutcome(record, outcome, now);
+  record.weaknessScore = Math.max(0, Number(record.weaknessScore) || 0);
+  ensureCardProgressStore(p)[record.cardId] = record;
+  return {
+    card: safe,
+    record,
+    outcome,
+    weak: isWeaknessEligible(record, now),
+    newlyMastered: !wasMasteredBefore && record.previouslyMastered,
+    forgotten: record.forgotten && wasMasteredBefore,
+    strongRecall: outcome === 'quick_correct' || outcome === 'normal_correct',
+    slowRecall: outcome === 'slow_correct',
+    hardMiss
+  };
+}
+function getCardOutcomeLabels(item) {
+  const labels = [];
+  const outcome = item.outcome || '';
+  if (item.newlyMastered) labels.push('Mastered');
+  else if (outcome === 'quick_correct' || outcome === 'normal_correct') labels.push('Strong Recall');
+  if (outcome === 'slow_correct') labels.push('Slow Recall');
+  if (isHardMissOutcome(outcome)) labels.push('Needs Practice');
+  if (item.forgotten || item.progressForgotten) labels.push('Forgotten');
+  if (isHighYieldCard(item)) labels.push('High Yield');
+  return [...new Set(labels)];
+}
+function getWeaknessRecords() {
+  const p = ensureProgress();
+  return Object.values(ensureCardProgressStore(p)).map(record => normalizeCardProgress(record)).filter(record => record.timesSeen > 0);
+}
+function getWeaknessStats() {
+  const records = getWeaknessRecords();
+  const now = Date.now();
+  const mastered = records.filter(wasCardMastered);
+  const weak = records.filter(record => isWeaknessEligible(record, now));
+  const highYieldOpen = records.filter(record => isHighYieldCard(record.card) && !wasCardMastered(record));
+  const timedRecords = records.filter(record => record.averageResponseTime > 0);
+  const avgResponse = timedRecords.length
+    ? timedRecords.reduce((sum, record) => sum + (Number(record.averageResponseTime) || 0), 0) / timedRecords.length
+    : 0;
+  const weekAgo = now - 7 * 86400000;
+  const byCategory = {};
+  records.forEach(record => {
+    const topic = record.card?.category || 'General';
+    if (!byCategory[topic]) byCategory[topic] = { topic, weak: 0, mastered: 0, seen: 0, score: 0, avgTime: 0, timed: 0 };
+    byCategory[topic].seen += 1;
+    byCategory[topic].score += record.masteryScore || 0;
+    if (isWeaknessEligible(record, now)) byCategory[topic].weak += 1;
+    if (wasCardMastered(record)) byCategory[topic].mastered += 1;
+    if (record.averageResponseTime) {
+      byCategory[topic].avgTime += record.averageResponseTime;
+      byCategory[topic].timed += 1;
+    }
+  });
+  const categoryStats = Object.values(byCategory).map(item => ({
+    ...item,
+    pct: item.seen ? item.mastered / item.seen : 0,
+    weakPct: item.seen ? item.weak / item.seen : 0,
+    avgTime: item.timed ? item.avgTime / item.timed : 0
+  }));
+  const weakestCategory = [...categoryStats].sort((a, b) => b.weakPct - a.weakPct || b.weak - a.weak)[0]?.topic || 'None';
+  const fastestImproving = [...categoryStats].filter(item => item.seen >= 2).sort((a, b) => (b.mastered + b.score * 0.03) - (a.mastered + a.score * 0.03))[0]?.topic || 'None';
+  return {
+    totalTracked: records.length,
+    masteryPct: records.length ? Math.round((mastered.length / records.length) * 100) : 0,
+    weakCards: weak.length,
+    forgottenCards: records.filter(record => record.forgotten).length,
+    highYieldOpen: highYieldOpen.length,
+    highYieldWeak: weak.filter(record => isHighYieldCard(record.card)).length,
+    avgResponse: Number.isFinite(avgResponse) ? avgResponse : 0,
+    fastestImproving,
+    weakestCategory,
+    masteredThisWeek: records.filter(record => record.masteredAt && record.masteredAt >= weekAgo).length,
+    reviewToday: records.filter(record => (record.nextReviewAt || 0) <= now && isWeaknessEligible(record, now)).length,
+    categories: categoryStats
+  };
+}
+function getWeaknessRoundCards(options = {}) {
+  const seedIds = new Set((options.seedCards || []).filter(isUsableCard).map(card => getCardId(normalizeCard(card, card.category || 'General'))));
+  const records = getWeaknessRecords()
+    .filter(record => isWeaknessEligible(record))
+    .map(record => ({
+      record,
+      seeded: seedIds.has(record.cardId),
+      priority: calculateWeaknessPriority(record, { seeded: seedIds.has(record.cardId) })
+    }));
+  records.sort((a, b) => (b.priority + Math.random() * 1.7) - (a.priority + Math.random() * 1.7));
+  const cards = [];
+  records.forEach(item => {
+    if (cards.length >= (options.limit || 15)) return;
+    const card = normalizeCard(item.record.card, item.record.card?.category || 'General');
+    const previous = cards[cards.length - 1];
+    if (previous && getCardId(previous) === getCardId(card) && records.length > 2) return;
+    cards.push({ ...card, weaknessPriority: item.priority, weaknessSeeded: item.seeded });
+  });
+  return cards;
+}
+function getWeakCardsFromLog(log = []) {
+  return (Array.isArray(log) ? log : [])
+    .filter(item => item.result === 'wrong' || item.outcome === 'slow_correct' || isHardMissOutcome(item.outcome))
+    .map(item => normalizeCard(item, item.category || 'General'));
+}
+function renderWeaknessSummary(summary = {}) {
+  const box = document.getElementById('weakness-summary');
+  if (!box) return;
+  const total = Number(summary.total || 0);
+  box.classList.toggle('active', total > 0);
+  const fields = {
+    'round-strong-recalls': summary.strongRecalls || 0,
+    'round-slow-recalls': summary.slowRecalls || 0,
+    'round-missed-cards': summary.missedCards || 0,
+    'round-new-mastered': summary.newlyMastered || 0,
+    'round-forgotten-cards': summary.forgottenCards || 0,
+    'round-avg-response': `${Math.round((summary.avgResponse || 0) * 10) / 10}s`
+  };
+  Object.entries(fields).forEach(([id, value]) => {
+    const el = document.getElementById(id);
+    if (el) el.textContent = value;
+  });
+  const ctaTitle = document.getElementById('weakness-cta-title');
+  const practiceBtn = document.getElementById('practice-weak-btn');
+  const weakCount = Number(summary.weakCards || 0);
+  if (ctaTitle) {
+    ctaTitle.textContent = weakCount
+      ? `${weakCount} concept${weakCount === 1 ? '' : 's'} need reinforcement`
+      : 'No weak cards detected';
+  }
+  if (practiceBtn) practiceBtn.style.display = weakCount ? 'flex' : 'none';
 }
 function getStoredCards(kind) {
   const p = ensureProgress();
@@ -7226,10 +7915,21 @@ window.showLaunchChecklist = showLaunchChecklist;
 function updateProgressAfterRound(scoreData, log, pct) {
   const p = ensureProgress();
   const safeLog = Array.isArray(log) ? log : [];
+  const sessionId = gameState.roundId || `session_${Date.now()}`;
   const correct = safeLog.filter(item => item.result === 'correct').length;
   const wrong = safeLog.filter(item => item.result === 'wrong').length;
   const missed = safeLog.filter(item => item.result === 'wrong').map(compactCard);
-  const hard = safeLog.filter(item => item.result === 'wrong' || Number(item.difficulty) >= 4).map(compactCard);
+  const hard = safeLog.filter(item => item.result === 'wrong' || item.outcome === 'slow_correct' || Number(item.difficulty) >= 4).map(compactCard);
+  const progressUpdates = safeLog.map(item => {
+    const update = applyCardOutcomeToProgress(item, sessionId, p);
+    if (!update.skipped) {
+      item.progressForgotten = update.record?.forgotten || false;
+      item.newlyMastered = update.newlyMastered || false;
+      item.weaknessScore = Math.round(update.record?.weaknessScore || 0);
+      item.masteryScore = Math.round(update.record?.masteryScore || 0);
+    }
+    return update;
+  });
   const today = getTodayKey();
   const dailyAlreadyCompleted = Boolean(p.daily?.[today]?.completed);
   lastDailyReward = null;
@@ -7278,13 +7978,44 @@ function updateProgressAfterRound(scoreData, log, pct) {
       newlyUnlocked.push(badge);
     }
   });
+  const timedItems = safeLog.filter(item => Number.isFinite(Number(item.responseTime)));
+  const avgResponse = timedItems.length
+    ? timedItems.reduce((sum, item) => sum + Number(item.responseTime), 0) / timedItems.length
+    : 0;
+  const weakCards = getWeakCardsFromLog(safeLog);
+  const roundRecall = {
+    total: safeLog.length,
+    strongRecalls: progressUpdates.filter(item => item.strongRecall).length,
+    slowRecalls: progressUpdates.filter(item => item.slowRecall).length,
+    missedCards: progressUpdates.filter(item => item.hardMiss).length,
+    newlyMastered: progressUpdates.filter(item => item.newlyMastered).length,
+    forgottenCards: progressUpdates.filter(item => item.forgotten).length,
+    avgResponse,
+    weakCards: weakCards.length,
+    weakCardList: weakCards
+  };
   saveProgress();
   updateHomeLaunchState();
-  return newlyUnlocked;
+  return { newlyUnlocked, roundRecall };
 }
 function updateModeLabels() {
   const weakEl = document.getElementById('weak-count');
-  if (weakEl) weakEl.textContent = String(getStoredCards('missed').length);
+  const weakForgottenEl = document.getElementById('weak-forgotten-count');
+  const weakHighYieldEl = document.getElementById('weak-high-yield-count');
+  const weakDurationEl = document.getElementById('weak-duration');
+  const weakStartBtn = document.querySelector('.weakness-mode-card .mode-start-btn');
+  const stats = getWeaknessStats();
+  if (weakEl) weakEl.textContent = `${stats.weakCards} weak`;
+  if (weakForgottenEl) weakForgottenEl.textContent = `${stats.forgottenCards} forgotten`;
+  if (weakHighYieldEl) weakHighYieldEl.textContent = `${stats.highYieldWeak} high-yield`;
+  if (weakDurationEl) {
+    const minutes = Math.max(1, Math.round(Math.min(15, stats.weakCards || 0) * (gameSettings.timer || 60) / 15 / 60));
+    weakDurationEl.textContent = `~${minutes} min`;
+  }
+  if (weakStartBtn) {
+    weakStartBtn.disabled = stats.weakCards <= 0;
+    weakStartBtn.textContent = stats.weakCards > 0 ? 'Start Review' : 'Play first';
+  }
   const teamEl = document.getElementById('team-active-label');
   if (teamEl) {
     teamEl.textContent = teamBattle.complete && teamBattle.winner
@@ -7297,12 +8028,24 @@ function syncSettingsToggles() {
   const sound = document.getElementById('sound-toggle');
   const haptics = document.getElementById('haptics-toggle');
   const timer = document.getElementById('timer-slider');
+  const quick = document.getElementById('quick-threshold-slider');
+  const slow = document.getElementById('slow-threshold-slider');
+  gameSettings = normalizeGameSettings(gameSettings);
   if (taboo) taboo.checked = Boolean(gameSettings.tabooEnabled);
   if (sound) sound.checked = Boolean(gameSettings.soundEnabled);
   if (haptics) haptics.checked = Boolean(gameSettings.hapticsEnabled);
   if (timer) timer.value = gameSettings.timer;
+  if (quick) quick.value = gameSettings.quickRecallSeconds;
+  if (slow) {
+    slow.min = Math.max(10, gameSettings.quickRecallSeconds + 1);
+    slow.value = gameSettings.slowRecallSeconds;
+  }
   const timerLabel = document.getElementById('timer-label');
   if (timerLabel) timerLabel.textContent = `${gameSettings.timer} seconds`;
+  const quickLabel = document.getElementById('quick-threshold-label');
+  const slowLabel = document.getElementById('slow-threshold-label');
+  if (quickLabel) quickLabel.textContent = `Strong if guessed in ${gameSettings.quickRecallSeconds} seconds or less`;
+  if (slowLabel) slowLabel.textContent = `Needs practice after ${gameSettings.slowRecallSeconds} seconds`;
 }
 function setGameMode(mode) {
   currentGameMode = MODE_CONFIG[mode] ? mode : 'classic';
@@ -7310,7 +8053,7 @@ function setGameMode(mode) {
   const cfg = MODE_CONFIG[currentGameMode];
   gameSettings.timer = cfg.timer;
   gameSettings.tabooEnabled = cfg.taboo;
-  if (currentGameMode === 'weak' && getStoredCards('missed').length === 0) {
+  if (currentGameMode === 'weak' && getWeaknessStats().weakCards === 0) {
     gameSettings.timer = 60;
   }
   syncSettingsToggles();
@@ -7320,6 +8063,40 @@ function setGameMode(mode) {
 function showDashboard() {
   renderDashboard();
   showScreen('dashboard');
+}
+function shortMetricLabel(value, max = 10) {
+  const text = String(value || 'None').trim();
+  if (!text) return 'None';
+  const aliases = {
+    Biochemistry: 'Biochem',
+    Psychology: 'Psych',
+    Physiology: 'Physio',
+    Chemistry: 'Chem',
+    Biology: 'Bio',
+    Anatomy: 'Anatomy',
+    'Earth Science': 'Earth',
+    'Amino Acids': 'Amino'
+  };
+  const labeled = aliases[text] || text;
+  return labeled.length > max ? `${labeled.slice(0, max - 1)}…` : labeled;
+}
+function getWeakConceptsForCategory(topic, limit = 8) {
+  const safeTopic = String(topic || '').trim();
+  return getWeaknessRecords()
+    .filter(record => (record.card?.category || 'General') === safeTopic && isWeaknessEligible(record))
+    .sort((a, b) => calculateWeaknessPriority(b) - calculateWeaknessPriority(a))
+    .slice(0, limit);
+}
+function showWeakConceptsForCategory(topicKey) {
+  const topic = decodeActionId(topicKey);
+  const panel = document.getElementById('weak-topic-panel');
+  if (!panel) return;
+  const weak = getWeakConceptsForCategory(topic, 10);
+  panel.style.display = 'block';
+  panel.innerHTML = weak.length
+    ? `<div class="weak-topic-title">${escapeHTML(topic)} weak concepts</div><div class="weak-topic-list">${weak.map(record => `<div class="weak-topic-item"><strong>${escapeHTML(getCardDisplayTerm(record.card) || record.card.term)}</strong><span>${escapeHTML(getOutcomeLabel(record.outcomeHistory[record.outcomeHistory.length - 1]?.outcome || 'slow_correct'))} · weakness ${Math.round(record.weaknessScore || 0)}</span></div>`).join('')}</div><button class="btn btn-primary btn-sm" onclick="startWeaknessMode(getWeakConceptsForCategory('${encodeURIComponent(topic)}').map(item => item.card))"><svg class="ui-icon"><use href="#i-brain"></use></svg> Practice This Topic</button>`
+    : `<div class="weak-topic-title">${escapeHTML(topic)}</div><div class="weak-topic-empty">No weak concepts in this category yet.</div>`;
+  panel.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
 }
 function renderDashboard() {
   const p = ensureProgress();
@@ -7336,6 +8113,22 @@ function renderDashboard() {
   if (cardsEl) cardsEl.textContent = p.cardsSeen || 0;
   if (accEl) accEl.textContent = `${accuracy}%`;
   if (streakEl) streakEl.textContent = p.bestStreak || 0;
+  const weakStats = getWeaknessStats();
+  const weakFields = {
+    'dash-mastery': `${weakStats.masteryPct}%`,
+    'dash-weak-cards': weakStats.weakCards,
+    'dash-forgotten': weakStats.forgottenCards,
+    'dash-hy-open': weakStats.highYieldOpen,
+    'dash-avg-time': `${Math.round(weakStats.avgResponse * 10) / 10}s`,
+    'dash-mastered-week': weakStats.masteredThisWeek,
+    'dash-review-today': weakStats.reviewToday,
+    'dash-improving': shortMetricLabel(weakStats.fastestImproving),
+    'dash-weakest-topic': shortMetricLabel(weakStats.weakestCategory)
+  };
+  Object.entries(weakFields).forEach(([id, value]) => {
+    const el = document.getElementById(id);
+    if (el) el.textContent = value;
+  });
   const dailyData = getDailyStreakData(p);
   const dailyStreakEl = document.getElementById('dash-daily-streak');
   const dailySubEl = document.getElementById('dash-daily-sub');
@@ -7359,7 +8152,8 @@ function renderDashboard() {
     const entries = Object.entries(p.topics || {}).sort((a, b) => (b[1].seen || 0) - (a[1].seen || 0)).slice(0, 10);
     masteryList.innerHTML = entries.length ? entries.map(([topic, stats]) => {
       const pct = stats.seen ? Math.round((stats.correct / stats.seen) * 100) : 0;
-      return `<div class="mastery-row"><div class="mastery-top"><span>${escapeHTML(topic)}</span><span>${pct}% · ${stats.seen} cards</span></div><div class="mastery-bar"><div class="mastery-fill" style="width:${pct}%"></div></div></div>`;
+      const weakCount = getWeakConceptsForCategory(topic).length;
+      return `<div class="mastery-row" role="button" tabindex="0" onclick="showWeakConceptsForCategory('${encodeURIComponent(topic)}')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();showWeakConceptsForCategory('${encodeURIComponent(topic)}')}"><div class="mastery-top"><span>${escapeHTML(topic)}</span><span>${pct}% · ${stats.seen} cards · ${weakCount} weak</span></div><div class="mastery-bar"><div class="mastery-fill" style="width:${pct}%"></div></div></div>`;
     }).join('') : '<div class="mini-panel" style="margin:0"><div class="mini-panel-title">No mastery data yet</div><div class="mini-panel-sub">Play a few rounds and this will become your topic map.</div></div>';
   }
   updateModeLabels();
@@ -7469,7 +8263,41 @@ async function startDailyChallenge() {
   currentDeckSource = 'daily';
   startGame();
 }
+function startWeaknessMode(seedCards = []) {
+  const cards = getWeaknessRoundCards({ seedCards, limit: 15 });
+  if (!cards.length) {
+    alert('No weak cards yet. Play a normal round first and missed or slow cards will show up here.');
+    return;
+  }
+  requestGameOrientationLockForRound();
+  currentGameMode = 'weak';
+  gameSettings.timer = MODE_CONFIG.weak.timer;
+  gameSettings.tabooEnabled = false;
+  syncSettingsToggles();
+  initializeRoundControls();
+  pendingSpecialRound = {
+    cards,
+    source: 'weakness',
+    label: 'Weakness Mode',
+    ignoreSeen: true,
+    preventRefresh: true,
+    reviewKind: 'weak'
+  };
+  lockDeckPool(cards, { allowReset: false, ignoreSeen: true });
+  currentDeckSource = 'weakness';
+  startGame();
+}
+function startWeaknessRoundFromResults() {
+  const seedCards = (lastRoundResult?.weakCards && lastRoundResult.weakCards.length)
+    ? lastRoundResult.weakCards
+    : getWeakCardsFromLog(lastRoundResult?.log || []);
+  startWeaknessMode(seedCards);
+}
 function startReviewRound(kind) {
+  if (kind === 'weak') {
+    startWeaknessMode();
+    return;
+  }
   const labelMap = { missed: 'Missed Cards', hard: 'Hard Cards', favorites: 'Favorites' };
   const cards = getStoredCards(kind);
   if (!cards.length) {
@@ -7490,6 +8318,10 @@ function playAgainFromResults() {
   continueAfterResults(() => {
     if (lastRoundResult?.mode === 'daily') {
       startDailyChallenge();
+      return;
+    }
+    if (lastRoundResult?.mode === 'weak') {
+      startWeaknessMode(lastRoundResult.weakCards || []);
       return;
     }
     if (lastRoundResult?.mode === 'review') {
@@ -7594,7 +8426,7 @@ function shuffleCardList(cards) {
 
 async function prepareAndStart() {
     if (currentGameMode === 'weak') {
-        startReviewRound('missed');
+        startWeaknessMode();
         return;
     }
     if (currentGameMode === 'teams' && teamBattle.complete) {
@@ -7681,6 +8513,7 @@ function updateGameHud() {
   if (pointsEl) pointsEl.textContent = gameState.scorePoints || 0;
   const modeEl = document.getElementById('hud-mode-chip');
   if (modeEl) modeEl.textContent = gameState.roundLabel || MODE_CONFIG[currentGameMode]?.label || 'Classic Heads-Up';
+  updateUndoButton();
 }
 
 function startGame() {
@@ -7705,6 +8538,8 @@ function startGame() {
     timeLeft: gameSettings.timer,
     log: [],
     cardCount: 0,
+    roundId: `round_${Date.now()}_${Math.random().toString(16).slice(2)}`,
+    currentAppearanceId: null,
     currentCard: null,
     deckSource: special?.source || currentDeckSource,
     roundLabel: special?.label || (teamForRound ? `${playerForRound} · ${teamNameForRound}` : cfg.label),
@@ -7718,6 +8553,7 @@ function startGame() {
     aiTopics: [...selectedTopics],
     aiDifficulty: currentDifficulty,
     active: false,
+    pausedForVisibility: false,
     ended: false
   };
   isGameTransitioning = true;
@@ -7768,6 +8604,8 @@ function renderCard() {
     const card = normalizeCard(nextCard);
     gameState.cardCount++;
     gameState.currentCard = card;
+    gameState.currentAppearanceId = `${gameState.roundId}:${gameState.cardCount}`;
+    gameState.undoSnapshot = null;
     
     const sourceClass = card.isAI ? 'ai' : 'offline';
     const sourceLabel = gameState.roundLabel || (card.isAI ? 'Premium Deck' : 'Word Bank');
@@ -7797,6 +8635,7 @@ function renderCard() {
     setDogMood('game-dog', 'focused');
     lastTiltAction = Date.now() + 600;
     isGameTransitioning = false;
+    startCardResponseTimer(card, gameState.currentAppearanceId, 240);
     updateGameHud();
   }, 300);
 }
@@ -7811,10 +8650,93 @@ function showCardFeedback(kind, mainText, subText = '') {
   const className = kind === 'correct' ? 'correct-feedback' : 'skip-feedback';
   termEl.classList.remove('slide-out', 'slide-in', 'slide-in-active', 'feedback-card', 'correct-feedback', 'skip-feedback');
   termEl.classList.add('feedback-card', className);
-  termEl.innerHTML = `
+  termEl.querySelectorAll('.term-feedback-overlay').forEach(el => el.remove());
+  const overlay = document.createElement('div');
+  overlay.className = `term-feedback-overlay ${className}`;
+  overlay.setAttribute('aria-live', 'polite');
+  const icon = kind === 'correct' ? '✓' : '↷';
+  const label = kind === 'correct' ? 'Correct' : 'Pass';
+  overlay.innerHTML = `
+    <span class="term-feedback-icon" aria-hidden="true">${icon}</span>
     <span class="term-feedback">${escapeHTML(mainText)}</span>
+    <span class="term-feedback-label">${label}</span>
     ${subText ? `<span class="term-feedback-sub">${escapeHTML(subText)}</span>` : ''}
   `;
+  termEl.appendChild(overlay);
+  validateGameLayoutOrFallback(40);
+}
+function captureUndoSnapshot() {
+  const termEl = document.getElementById('card-term');
+  const bgEl = document.getElementById('game-bg');
+  gameState.undoSnapshot = {
+    logLength: (gameState.log || []).length,
+    correct: gameState.correct || 0,
+    wrong: gameState.wrong || 0,
+    streak: gameState.streak || 0,
+    maxStreak: gameState.maxStreak || 0,
+    activeTier: gameState.activeTier || 1,
+    maxTierReached: gameState.maxTierReached || 1,
+    scorePoints: gameState.scorePoints || 0,
+    currentCard: gameState.currentCard ? { ...gameState.currentCard } : null,
+    currentAppearanceId: gameState.currentAppearanceId,
+    termHTML: termEl ? termEl.innerHTML : '',
+    termClassName: termEl ? termEl.className : 'card-term',
+    bgClassName: bgEl ? bgEl.className : 'game-bg neutral',
+    deck: Array.isArray(currentDeck) ? currentDeck.map(card => ({ ...card })) : [],
+    responseTracker: { ...cardResponseTracker }
+  };
+}
+function updateUndoButton() {
+  const btn = document.getElementById('undo-card-btn');
+  if (!btn) return;
+  const canUndo = Boolean(gameState.active && !gameState.ended && gameState.undoSnapshot);
+  btn.disabled = !canUndo;
+  btn.style.opacity = canUndo ? '1' : '0.45';
+}
+function undoLastCardAction() {
+  const snapshot = gameState.undoSnapshot;
+  if (!snapshot || !gameState.active || gameState.ended) return;
+  clearTimeout(actionTimeout);
+  actionTimeout = null;
+  gameState.log = (gameState.log || []).slice(0, snapshot.logLength);
+  gameState.correct = snapshot.correct;
+  gameState.wrong = snapshot.wrong;
+  gameState.streak = snapshot.streak;
+  gameState.maxStreak = snapshot.maxStreak;
+  gameState.activeTier = snapshot.activeTier;
+  gameState.maxTierReached = snapshot.maxTierReached;
+  gameState.scorePoints = snapshot.scorePoints;
+  gameState.currentCard = snapshot.currentCard;
+  gameState.currentAppearanceId = snapshot.currentAppearanceId;
+  currentDeck = Array.isArray(snapshot.deck) ? snapshot.deck.map(card => ({ ...card })) : currentDeck;
+  cardResponseTracker = { ...snapshot.responseTracker, completed: false, active: true };
+  if (cardResponseTracker.pausedAt !== null && !document.hidden) resumeCardResponseTimer();
+  const termEl = document.getElementById('card-term');
+  if (termEl) {
+    termEl.className = snapshot.termClassName || 'card-term';
+    termEl.innerHTML = snapshot.termHTML || '';
+  }
+  const bgEl = document.getElementById('game-bg');
+  if (bgEl) bgEl.className = snapshot.bgClassName || 'game-bg neutral';
+  gameState.undoSnapshot = null;
+  isGameTransitioning = false;
+  setDogMood('game-dog', 'focused');
+  updateGameHud();
+  refitGameCardSoon(20);
+}
+window.undoLastCardAction = undoLastCardAction;
+function maybeQueueWeaknessRetest(item) {
+  if (!gameState || gameState.mode !== 'weak') return;
+  const outcome = item?.outcome || '';
+  if (outcome !== 'slow_correct' && !isHardMissOutcome(outcome)) return;
+  if (!Array.isArray(currentDeck) || currentDeck.length < 3) return;
+  const safe = compactCard(item);
+  const id = getCardId(safe);
+  const nearFuture = currentDeck.slice(0, Math.min(7, currentDeck.length)).some(card => getCardId(normalizeCard(card, card.category || 'General')) === id);
+  if (nearFuture) return;
+  const desiredGap = isHardMissOutcome(outcome) ? 8 + Math.floor(Math.random() * 5) : 10 + Math.floor(Math.random() * 5);
+  const insertAt = Math.min(currentDeck.length, Math.max(3, desiredGap));
+  currentDeck.splice(insertAt, 0, { ...safe, weaknessRetest: true });
 }
 
 function markCorrect() {
@@ -7822,16 +8744,20 @@ function markCorrect() {
   isGameTransitioning = true;
   if (!gameState.currentCard) { isGameTransitioning = false; return; }
   const card = normalizeCard(gameState.currentCard);
+  if (hasCurrentAppearanceOutcome()) { isGameTransitioning = false; return; }
+  captureUndoSnapshot();
   const nextStreak = (gameState.streak || 0) + 1;
   const multiplier = getStreakMultiplier(nextStreak);
   const points = getCardPoints(card, nextStreak);
+  const outcomeLog = createCardOutcomeLog(card, 'correct');
   playDing(); haptic('correct');
   gameState.streak = nextStreak;
   gameState.maxStreak = Math.max(gameState.maxStreak || 0, nextStreak);
   setRoundTierForStreak(nextStreak);
   gameState.scorePoints = (gameState.scorePoints || 0) + points;
-  gameState.log.push({ ...card, result: 'correct', streak: nextStreak, multiplier, points });
+  gameState.log.push({ ...outcomeLog, streak: nextStreak, multiplier, points });
   gameState.correct++;
+  maybeQueueWeaknessRetest(outcomeLog);
   updateGameHud();
   setDogMood('game-dog', 'celebrate');
   setGameBg('correct');
@@ -7843,27 +8769,34 @@ function markWrong() {
   isGameTransitioning = true;
   if (!gameState.currentCard) { isGameTransitioning = false; return; }
   const card = normalizeCard(gameState.currentCard);
+  if (hasCurrentAppearanceOutcome()) { isGameTransitioning = false; return; }
+  captureUndoSnapshot();
+  const outcomeLog = createCardOutcomeLog(card, 'wrong', { passed: true });
   playBadoo(); haptic('wrong');
-  gameState.log.push({ ...card, result: 'wrong', streak: 0, multiplier: 1, points: 0 });
+  gameState.log.push({ ...outcomeLog, streak: 0, multiplier: 1, points: 0, passed: true });
   gameState.streak = 0;
   setRoundTierForStreak(0);
   gameState.wrong++;
+  maybeQueueWeaknessRetest(outcomeLog);
   updateGameHud();
   setDogMood('game-dog', 'sad');
   setGameBg('wrong');
   showCardFeedback('skip', 'Skip', getCardDisplayTerm(card));
   actionTimeout = setTimeout(() => { if (gameState.active && !gameState.ended) renderCard(); }, 360);
 }
-function markCurrentCardMissedOnTimeout() {
-  if (!gameState.currentCard || gameState.timeLeft > 0) return;
+function markCurrentCardIncompleteOnEnd(options = {}) {
+  if (!gameState.currentCard || hasCurrentAppearanceOutcome()) return;
   const card = normalizeCard(gameState.currentCard);
-  const currentId = getCardId(card);
-  const alreadyLogged = (gameState.log || []).some(item => getCardId(normalizeCard(item)) === currentId);
-  if (alreadyLogged) return;
-  gameState.log.push({ ...card, result: 'wrong', streak: 0, multiplier: 1, points: 0, timedOut: true });
+  const timedOut = Boolean(options.timedOut || gameState.timeLeft <= 0);
+  const outcomeLog = createCardOutcomeLog(card, 'wrong', { timedOut, endedEarly: !timedOut });
+  gameState.log.push({ ...outcomeLog, streak: 0, multiplier: 1, points: 0, timedOut, endedEarly: !timedOut });
   gameState.streak = 0;
   setRoundTierForStreak(0);
   gameState.wrong = (gameState.wrong || 0) + 1;
+}
+function markCurrentCardMissedOnTimeout() {
+  if (!gameState.currentCard) return;
+  markCurrentCardIncompleteOnEnd({ timedOut: gameState.timeLeft <= 0 });
 }
 function startTimer() {
   clearInterval(timerInterval);
@@ -7871,6 +8804,7 @@ function startTimer() {
   upd();
   timerInterval = setInterval(() => {
     if (!gameState.active || gameState.ended) return;
+    if (gameState.pausedForVisibility || document.hidden) return;
     gameState.timeLeft = Math.max(0, gameState.timeLeft - 1);
     upd();
     if (gameState.timeLeft <= 0) { clearInterval(timerInterval); endGame(); }
@@ -7892,7 +8826,11 @@ function endGame() {
   const scoreData = calculateMcatScore(log);
   const insights = deriveRoundInsights(log);
   lastDailyReward = null;
-  const newlyUnlocked = total > 0 ? updateProgressAfterRound(scoreData, log, pct) : [];
+  const progressUpdate = total > 0
+    ? updateProgressAfterRound(scoreData, log, pct)
+    : { newlyUnlocked: [], roundRecall: { total: 0, strongRecalls: 0, slowRecalls: 0, missedCards: 0, newlyMastered: 0, forgottenCards: 0, avgResponse: 0, weakCards: 0, weakCardList: [] } };
+  const newlyUnlocked = progressUpdate.newlyUnlocked || [];
+  const roundRecall = progressUpdate.roundRecall || {};
   const studyTakeaway = deriveStudyTakeaway(log, insights, scoreData, pct);
   noteRoundForAdBreak(total);
   const modeLabel = gameState.roundLabel || (MODE_CONFIG[gameState.mode]?.label || 'Round');
@@ -7909,10 +8847,16 @@ function endGame() {
     team: gameState.team,
     teamName: gameState.teamName,
     playerName: gameState.playerName,
+    roundRecall,
+    weakCards: roundRecall.weakCardList || [],
     log: log.map(item => ({ ...item }))
   };
   document.getElementById('res-correct').textContent = correct;
-  document.getElementById('res-wrong').textContent = wrong;
+  const missedNumberEl = document.getElementById('res-wrong');
+  if (missedNumberEl) {
+    missedNumberEl.textContent = wrong ? wrong : 'zero';
+    missedNumberEl.classList.toggle('is-zero-word', wrong === 0);
+  }
   document.getElementById('res-total').textContent = total;
   document.getElementById('acc-pct').textContent = pct + '%';
   document.getElementById('res-mcat').textContent = scoreData.score;
@@ -7927,6 +8871,7 @@ function endGame() {
   if (strongestEl) strongestEl.textContent = insights.strongest;
   if (weakestEl) weakestEl.textContent = insights.weakest;
   renderStudyTakeaway(studyTakeaway);
+  renderWeaknessSummary(roundRecall);
   const badgeRow = document.getElementById('new-achievements');
   if (badgeRow) {
     badgeRow.style.display = newlyUnlocked.length ? 'flex' : 'none';
@@ -7947,6 +8892,7 @@ function endGame() {
       }
     } else {
       teamPanel.classList.remove('active');
+      teamPanel.hidden = true;
     }
   }
   const ci = log.filter(l => l.result === 'correct');
@@ -7960,7 +8906,7 @@ function endGame() {
       missedSummaryCount.textContent = `${wi.length} word${wi.length === 1 ? '' : 's'}`;
       missedSummaryList.innerHTML = wi.map(item => {
         const safe = normalizeCard(item);
-        const reason = item.timedOut ? ' · Timed out' : '';
+        const reason = item.timedOut ? ' · Timed out' : item.endedEarly ? ' · Round ended' : '';
         return `<span class="missed-term-chip"><strong>${escapeHTML(safe.term)}</strong><small>${escapeHTML(safe.category || 'General')} · Tier ${safe.difficulty}${reason}</small></span>`;
       }).join('');
     } else {
@@ -7978,7 +8924,9 @@ function endGame() {
       .map(word => `<span class="rv-meta-pill">No ${escapeHTML(word)}</span>`)
       .join('') : '';
     const multiplier = item.result === 'correct' ? `${formatMultiplier(item.multiplier || 1)}x` : item.timedOut ? 'time expired' : 'streak reset';
-    return `<div class="rv-item ${cls}" onclick="this.classList.toggle('open')"><div class="rv-header"><div class="rv-left"><span class="rv-icon">${icon}</span><div><div class="rv-term">${escapeHTML(safe.term)}</div><div class="rv-cat">${escapeHTML(safe.category || 'General')} · Tier ${safe.difficulty}</div></div></div><span class="rv-chev">▾</span></div><div class="rv-body"><div class="rv-body-inner">${escapeHTML(safe.explanation || 'No explanation.')}<div class="rv-meta"><span class="rv-meta-pill">${Number(item.points) || 0} pts</span><span class="rv-meta-pill">${multiplier}</span>${tabooTags}<button class="rv-meta-pill" onclick="event.stopPropagation();saveFavoriteCard('${actionId}')">Save</button><button class="rv-meta-pill" onclick="event.stopPropagation();reportCard('${actionId}')">Flag</button></div></div></div></div>`;
+    const responseTag = Number.isFinite(Number(item.responseTime)) ? `<span class="rv-meta-pill">${Number(item.responseTime).toFixed(1)}s</span>` : '';
+    const outcomeTags = getCardOutcomeLabels(item).map(label => `<span class="rv-meta-pill">${escapeHTML(label)}</span>`).join('');
+    return `<div class="rv-item ${cls}" onclick="this.classList.toggle('open')"><div class="rv-header"><div class="rv-left"><span class="rv-icon">${icon}</span><div><div class="rv-term">${escapeHTML(safe.term)}</div><div class="rv-cat">${escapeHTML(safe.category || 'General')} · Tier ${safe.difficulty}</div></div></div><span class="rv-chev">▾</span></div><div class="rv-body"><div class="rv-body-inner">${escapeHTML(safe.explanation || 'No explanation.')}<div class="rv-meta"><span class="rv-meta-pill">${Number(item.points) || 0} pts</span><span class="rv-meta-pill">${multiplier}</span>${responseTag}${outcomeTags}${tabooTags}<button class="rv-meta-pill" onclick="event.stopPropagation();saveFavoriteCard('${actionId}')">Save</button><button class="rv-meta-pill" onclick="event.stopPropagation();reportCard('${actionId}')">Flag</button></div></div></div></div>`;
   };
   document.getElementById('rv-correct-list').innerHTML = ci.map(item => reviewHTML(item, '✓', 'rv-correct')).join('');
   document.getElementById('rv-wrong-list').innerHTML = wi.map(item => reviewHTML(item, '↷', 'rv-wrong')).join('');
@@ -7987,7 +8935,11 @@ function endGame() {
   if (reviewMissedBtn) reviewMissedBtn.style.display = getStoredCards('missed').length ? 'flex' : 'none';
   if (reviewHardBtn) reviewHardBtn.style.display = getStoredCards('hard').length ? 'flex' : 'none';
   const resetTeamBtn = document.getElementById('reset-team-btn');
-  if (resetTeamBtn) resetTeamBtn.style.display = gameState.mode === 'teams' ? 'flex' : 'none';
+  if (resetTeamBtn) {
+    const showTeamResultsAction = gameState.mode === 'teams';
+    resetTeamBtn.hidden = !showTeamResultsAction;
+    resetTeamBtn.style.display = showTeamResultsAction ? 'flex' : 'none';
+  }
   const streakRewardBtn = document.getElementById('streak-reward-btn');
   if (streakRewardBtn) streakRewardBtn.style.display = lastDailyReward ? 'flex' : 'none';
   const playAgainBtn = document.getElementById('play-again-btn');
@@ -8029,11 +8981,11 @@ function updateSelectedCount() {
   const total = selectedTopics.length + customSel;
   document.getElementById('selected-count').textContent = total + ' selected';
   const btn = document.getElementById('start-btn');
-  const weakReady = currentGameMode === 'weak' && getStoredCards('missed').length > 0;
-  const enabled = total > 0 || weakReady;
+  const weakReady = currentGameMode === 'weak' && getWeaknessStats().weakCards > 0;
+  const enabled = currentGameMode === 'weak' ? weakReady : total > 0;
   btn.style.opacity = enabled ? '1' : '0.4';
   btn.style.pointerEvents = enabled ? 'auto' : 'none';
-  if (currentGameMode === 'weak') btn.textContent = weakReady ? 'Start Weak Spot Review' : 'No missed cards yet';
+  if (currentGameMode === 'weak') btn.textContent = weakReady ? 'Start Weakness Mode' : 'No weak cards yet';
   else if (currentGameMode === 'teams') btn.textContent = total > 0 ? (teamBattle.complete ? 'Start New Team Battle' : `Start ${getTeamNextLabel()}`) : 'Select at least one topic';
   else btn.textContent = total > 0 ? `Start ${MODE_CONFIG[currentGameMode]?.label || 'Round'}` : 'Select at least one topic';
 }
@@ -8123,6 +9075,7 @@ function generateCustomPromptDeck() {
 setMobileShellColor(APP_SHELL_COLOR, false);
 renderMascotDogs();
 loadCardCycle();
+loadGameSettings();
 loadProgress();
 loadAdBreakState();
 loadTeamBattle();

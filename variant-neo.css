@@ -1,0 +1,2515 @@
+/* High Yield! Neo-Brutalist redesign.
+   This file is visual-only and intentionally leaves app IDs, storage, data, and game logic intact. */
+
+:root {
+  --neo-canvas: #fffdf5;
+  --neo-ink: #000000;
+  --neo-red: #ff6b6b;
+  --neo-yellow: #ffd93d;
+  --neo-violet: #c4b5fd;
+  --neo-green: #6ee7b7;
+  --neo-white: #ffffff;
+  --neo-paper: #fffdf8;
+  --neo-border-thin: 2px;
+  --neo-border: 3px;
+  --neo-border-heavy: 4px;
+  --neo-shadow-small: 4px 4px 0 #000;
+  --neo-shadow-medium: 6px 6px 0 #000;
+  --neo-shadow-large: 8px 8px 0 #000;
+  --neo-space-1: 4px;
+  --neo-space-2: 8px;
+  --neo-space-3: 12px;
+  --neo-space-4: 16px;
+  --neo-space-5: 24px;
+  --neo-space-6: 32px;
+}
+
+.theme-neo-brutalist {
+  --font-heading: 'Junegull', 'Arial Black', Impact, sans-serif;
+  --font-body: 'Rimouski', Arial, sans-serif;
+  --font-gameplay: 'Rimouski', Arial, sans-serif;
+  --bg-primary: var(--neo-canvas);
+  --bg-secondary: #fff1c2;
+  --bg-card: var(--neo-white);
+  --bg-card-hover: #fff1c2;
+  --bg-input: var(--neo-white);
+  --text-primary: var(--neo-ink);
+  --text-secondary: var(--neo-ink);
+  --text-dim: var(--neo-ink);
+  --blue: #3b82f6;
+  --red: var(--neo-red);
+  --green: #6ee7b7;
+  --amber: #ff8a00;
+  --violet: var(--neo-violet);
+  --navy: #151515;
+  --cream: var(--neo-canvas);
+  --orange: #ff7a00;
+  --border: var(--neo-ink);
+  --radius: 0;
+  --radius-sm: 0;
+  --radius-full: 9999px;
+  --transition: 230ms cubic-bezier(0.22, 1, 0.36, 1);
+  color: var(--neo-ink);
+  background:
+    linear-gradient(rgba(0,0,0,0.055) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,0,0,0.055) 1px, transparent 1px),
+    radial-gradient(circle at 84% 8%, var(--neo-violet) 0 42px, transparent 43px),
+    var(--neo-canvas);
+  background-size: 22px 22px, 22px 22px, auto, auto;
+}
+
+.theme-neo-brutalist body {
+  background: inherit;
+  color: var(--neo-ink);
+}
+
+.theme-neo-brutalist .neo-screen,
+.theme-neo-brutalist .screen {
+  background:
+    linear-gradient(rgba(0,0,0,0.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,0,0,0.045) 1px, transparent 1px),
+    var(--neo-canvas);
+  background-size: 24px 24px;
+}
+
+.theme-neo-brutalist .screen.active {
+  animation: neoScreenSnap 240ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.theme-neo-brutalist #game.screen.active {
+  animation: none !important;
+}
+
+.theme-neo-brutalist .neo-panel,
+.theme-neo-brutalist .neo-card,
+.theme-neo-brutalist .neo-results-card,
+.theme-neo-brutalist .settings-card,
+.theme-neo-brutalist .launch-card,
+.theme-neo-brutalist .bank-note,
+.theme-neo-brutalist .mini-panel,
+.theme-neo-brutalist .team-setup .settings-card,
+.theme-neo-brutalist .ai-hero,
+.theme-neo-brutalist .ai-status,
+.theme-neo-brutalist .gen-deck-card,
+.theme-neo-brutalist .upload-zone,
+.theme-neo-brutalist .file-pill-ai,
+.theme-neo-brutalist .dash-hero,
+.theme-neo-brutalist .dash-stat,
+.theme-neo-brutalist .mastery-item,
+.theme-neo-brutalist .badge-card,
+.theme-neo-brutalist .reward-card,
+.theme-neo-brutalist .launch-check-card,
+.theme-neo-brutalist .mcat-card,
+.theme-neo-brutalist .insight-card,
+.theme-neo-brutalist .study-takeaway,
+.theme-neo-brutalist .missed-summary,
+.theme-neo-brutalist .team-panel,
+.theme-neo-brutalist .rstat,
+.theme-neo-brutalist .rv-item,
+.theme-neo-brutalist .ad-break-card,
+.theme-neo-brutalist .install-thanks-card,
+.theme-neo-brutalist .add-home-card,
+.theme-neo-brutalist .tutorial-card {
+  background: var(--neo-white) !important;
+  color: var(--neo-ink) !important;
+  border: var(--neo-border-heavy) solid var(--neo-ink) !important;
+  border-radius: 0 !important;
+  box-shadow: var(--neo-shadow-medium) !important;
+}
+
+.theme-neo-brutalist .nav-bar {
+  background: var(--neo-yellow);
+  border-bottom: var(--neo-border-heavy) solid var(--neo-ink);
+  box-shadow: 0 5px 0 var(--neo-ink);
+}
+
+.theme-neo-brutalist .nav-title,
+.theme-neo-brutalist .section-label,
+.theme-neo-brutalist .home-top-brand,
+.theme-neo-brutalist .results-title,
+.theme-neo-brutalist .results-trophy,
+.theme-neo-brutalist .mcat-number,
+.theme-neo-brutalist .dash-score,
+.theme-neo-brutalist .cd-num,
+.theme-neo-brutalist .reward-title,
+.theme-neo-brutalist .launch-title-big,
+.theme-neo-brutalist .ai-hero-title {
+  font-family: var(--font-heading);
+  letter-spacing: 0;
+  text-shadow: none !important;
+  color: var(--neo-ink) !important;
+}
+
+.theme-neo-brutalist .home-top-brand {
+  transform: rotate(-1.5deg);
+  width: fit-content;
+  margin: max(14px, env(safe-area-inset-top)) auto 0;
+  padding: 8px 18px;
+  background: var(--neo-yellow);
+  border: var(--neo-border-heavy) solid var(--neo-ink);
+  box-shadow: var(--neo-shadow-medium);
+  font-size: clamp(28px, 10vw, 52px);
+}
+
+.theme-neo-brutalist .home-header {
+  padding-top: 18px;
+}
+
+.theme-neo-brutalist .flashcard-logo {
+  isolation: isolate;
+  margin-top: 10px;
+}
+
+.theme-neo-brutalist .home-title {
+  display: inline-block;
+  padding: 10px 16px;
+  background: var(--neo-white);
+  color: var(--neo-ink);
+  border: var(--neo-border-heavy) solid var(--neo-ink);
+  box-shadow: var(--neo-shadow-large);
+  transform: rotate(1deg);
+}
+
+.theme-neo-brutalist .home-title .high,
+.theme-neo-brutalist .home-title .yield {
+  color: var(--neo-ink) !important;
+  -webkit-text-stroke: 0 !important;
+  text-shadow: none !important;
+}
+
+.theme-neo-brutalist .home-title .yield {
+  background: var(--neo-red);
+  padding: 0 8px;
+  border: var(--neo-border) solid var(--neo-ink);
+}
+
+.theme-neo-brutalist .home-sub,
+.theme-neo-brutalist .home-cook-copy {
+  color: var(--neo-ink) !important;
+  font-weight: 900;
+}
+
+.theme-neo-brutalist .home-cook-copy span {
+  color: var(--neo-red);
+  text-decoration: underline;
+  text-decoration-thickness: 4px;
+}
+
+.theme-neo-brutalist .home-dog,
+.theme-neo-brutalist .neo-mascot-frame,
+.theme-neo-brutalist .dashboard-dog,
+.theme-neo-brutalist .results-dog,
+.theme-neo-brutalist .reward-dog,
+.theme-neo-brutalist .countdown-dog {
+  min-height: 112px;
+  display: grid;
+  place-items: center;
+  overflow: visible;
+}
+
+.theme-neo-brutalist .home-dog {
+  margin-top: 10px;
+}
+
+.theme-neo-brutalist .dog-stage .mascot-dog {
+  filter: drop-shadow(5px 5px 0 var(--neo-ink));
+}
+
+.theme-neo-brutalist .premed-float {
+  background: var(--neo-yellow) !important;
+  color: var(--neo-ink) !important;
+  border: var(--neo-border) solid var(--neo-ink);
+  box-shadow: var(--neo-shadow-small);
+}
+
+.theme-neo-brutalist .float-flask { background: var(--neo-red) !important; }
+.theme-neo-brutalist .float-helix { background: var(--neo-violet) !important; }
+
+.theme-neo-brutalist .home-status-pill,
+.theme-neo-brutalist .home-badge,
+.theme-neo-brutalist .offline-indicator,
+.theme-neo-brutalist .ai-status-badge,
+.theme-neo-brutalist .bank-health,
+.theme-neo-brutalist .daily-chip,
+.theme-neo-brutalist .mode-tag,
+.theme-neo-brutalist .diff-badge,
+.theme-neo-brutalist .neo-badge,
+.theme-neo-brutalist .takeaway-pill,
+.theme-neo-brutalist .achievement-chip,
+.theme-neo-brutalist .rv-meta-pill {
+  background: var(--neo-yellow) !important;
+  color: var(--neo-ink) !important;
+  border: var(--neo-border) solid var(--neo-ink) !important;
+  border-radius: 0 !important;
+  box-shadow: 3px 3px 0 var(--neo-ink);
+  font-weight: 900 !important;
+}
+
+.theme-neo-brutalist .btn,
+.theme-neo-brutalist .premium-mini,
+.theme-neo-brutalist .nav-back,
+.theme-neo-brutalist .neo-button,
+.theme-neo-brutalist .neo-icon-button {
+  min-height: 48px;
+  color: var(--neo-ink) !important;
+  background: var(--neo-white) !important;
+  border: var(--neo-border-heavy) solid var(--neo-ink) !important;
+  border-radius: 0 !important;
+  box-shadow: var(--neo-shadow-small) !important;
+  font-weight: 900 !important;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  transition: transform 170ms cubic-bezier(0.22, 1, 0.36, 1), background-color 170ms ease, color 170ms ease !important;
+  will-change: transform;
+}
+
+.theme-neo-brutalist .btn-primary,
+.theme-neo-brutalist .btn-original.primary,
+.theme-neo-brutalist .neo-button--primary {
+  background: var(--neo-red) !important;
+  color: var(--neo-ink) !important;
+}
+
+.theme-neo-brutalist .btn-secondary,
+.theme-neo-brutalist .btn-original:not(.primary),
+.theme-neo-brutalist .neo-button--secondary {
+  background: var(--neo-yellow) !important;
+}
+
+.theme-neo-brutalist .btn-danger {
+  background: var(--neo-red) !important;
+}
+
+.theme-neo-brutalist .btn:active,
+.theme-neo-brutalist .btn-original:active,
+.theme-neo-brutalist .premium-mini:active,
+.theme-neo-brutalist .nav-back:active,
+.theme-neo-brutalist .neo-button:active {
+  transform: translate(4px, 4px) !important;
+  box-shadow: none !important;
+}
+
+.theme-neo-brutalist button:focus-visible,
+.theme-neo-brutalist a:focus-visible,
+.theme-neo-brutalist input:focus-visible,
+.theme-neo-brutalist select:focus-visible,
+.theme-neo-brutalist textarea:focus-visible,
+.theme-neo-brutalist [tabindex]:focus-visible {
+  outline: 4px solid var(--neo-red) !important;
+  outline-offset: 4px !important;
+}
+
+.theme-neo-brutalist .icon-badge,
+.theme-neo-brutalist .topic-icon,
+.theme-neo-brutalist .mode-icon,
+.theme-neo-brutalist .tutorial-step-icon,
+.theme-neo-brutalist .badge-icon,
+.theme-neo-brutalist .add-home-icon {
+  background: var(--neo-violet) !important;
+  color: var(--neo-ink) !important;
+  border: var(--neo-border) solid var(--neo-ink) !important;
+  border-radius: 0 !important;
+  box-shadow: 3px 3px 0 var(--neo-ink);
+}
+
+.theme-neo-brutalist .home-actions {
+  gap: 14px;
+}
+
+.theme-neo-brutalist .premium-bundle {
+  background: var(--neo-violet) !important;
+  border: var(--neo-border-heavy) solid var(--neo-ink);
+  box-shadow: var(--neo-shadow-medium);
+  border-radius: 0;
+}
+
+.theme-neo-brutalist .premium-bundle-tag {
+  background: var(--neo-yellow);
+  color: var(--neo-ink);
+  border: var(--neo-border) solid var(--neo-ink);
+  border-radius: 0;
+}
+
+.theme-neo-brutalist .topic-card,
+.theme-neo-brutalist .mode-card,
+.theme-neo-brutalist .subtopic-chip,
+.theme-neo-brutalist .neo-card {
+  background: var(--neo-white) !important;
+  color: var(--neo-ink) !important;
+  border: var(--neo-border-heavy) solid var(--neo-ink) !important;
+  border-radius: 0 !important;
+  box-shadow: var(--neo-shadow-small) !important;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  transition: transform 190ms cubic-bezier(0.22, 1, 0.36, 1), background-color 170ms ease !important;
+  will-change: transform;
+}
+
+.theme-neo-brutalist .topic-card:nth-child(2n),
+.theme-neo-brutalist .mode-card:nth-child(2n) {
+  transform: rotate(-0.6deg);
+}
+
+.theme-neo-brutalist .topic-card:nth-child(3n),
+.theme-neo-brutalist .mode-card:nth-child(3n) {
+  transform: rotate(0.7deg);
+}
+
+.theme-neo-brutalist .topic-card.selected,
+.theme-neo-brutalist .mode-card.selected,
+.theme-neo-brutalist .subtopic-chip.selected {
+  background: var(--neo-yellow) !important;
+  box-shadow: var(--neo-shadow-medium) !important;
+}
+
+.theme-neo-brutalist .topic-card.selected .topic-check {
+  display: grid;
+  place-items: center;
+  opacity: 1;
+  background: var(--neo-red);
+  color: var(--neo-ink);
+  border: var(--neo-border) solid var(--neo-ink);
+}
+
+.theme-neo-brutalist .topic-name,
+.theme-neo-brutalist .mode-name,
+.theme-neo-brutalist .settings-lbl,
+.theme-neo-brutalist .rv-term,
+.theme-neo-brutalist .badge-name {
+  color: var(--neo-ink) !important;
+  font-weight: 900 !important;
+}
+
+.theme-neo-brutalist .topic-desc,
+.theme-neo-brutalist .topic-count,
+.theme-neo-brutalist .mode-sub,
+.theme-neo-brutalist .settings-sub,
+.theme-neo-brutalist .rv-cat,
+.theme-neo-brutalist .badge-desc,
+.theme-neo-brutalist .launch-sub,
+.theme-neo-brutalist .daily-status-sub,
+.theme-neo-brutalist .add-home-copy,
+.theme-neo-brutalist .tutorial-copy,
+.theme-neo-brutalist .ad-break-sub {
+  color: var(--neo-ink) !important;
+}
+
+.theme-neo-brutalist input,
+.theme-neo-brutalist textarea,
+.theme-neo-brutalist select,
+.theme-neo-brutalist .neo-input,
+.theme-neo-brutalist .neo-select {
+  min-height: 44px;
+  color: var(--neo-ink) !important;
+  background: var(--neo-white) !important;
+  border: var(--neo-border) solid var(--neo-ink) !important;
+  border-radius: 0 !important;
+  box-shadow: 3px 3px 0 var(--neo-ink);
+}
+
+.theme-neo-brutalist input:focus,
+.theme-neo-brutalist textarea:focus,
+.theme-neo-brutalist select:focus {
+  background: var(--neo-yellow) !important;
+}
+
+.theme-neo-brutalist .toggle-track {
+  border: var(--neo-border) solid var(--neo-ink) !important;
+  background: var(--neo-white) !important;
+  box-shadow: 3px 3px 0 var(--neo-ink);
+}
+
+.theme-neo-brutalist .toggle-switch input:checked + .toggle-track {
+  background: var(--neo-red) !important;
+}
+
+.theme-neo-brutalist .toggle-switch {
+  width: 64px !important;
+  min-width: 64px;
+  height: 44px !important;
+  min-height: 44px;
+}
+
+.theme-neo-brutalist .toggle-switch input {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  width: 100% !important;
+  height: 100% !important;
+  margin: 0;
+  cursor: pointer;
+}
+
+.theme-neo-brutalist .toggle-track {
+  inset: 8px !important;
+}
+
+.theme-neo-brutalist .neo-progress,
+.theme-neo-brutalist .mastery-bar,
+.theme-neo-brutalist .acc-bar,
+.theme-neo-brutalist #loading-container {
+  background: var(--neo-white) !important;
+  border: var(--neo-border) solid var(--neo-ink) !important;
+  border-radius: 0 !important;
+  box-shadow: 3px 3px 0 var(--neo-ink);
+}
+
+.theme-neo-brutalist .mastery-fill,
+.theme-neo-brutalist .acc-fill,
+.theme-neo-brutalist #loading-bar {
+  background: var(--neo-red) !important;
+  border-radius: 0 !important;
+}
+
+.theme-neo-brutalist #countdown {
+  background: var(--neo-yellow);
+}
+
+.theme-neo-brutalist .rotate-icon,
+.theme-neo-brutalist .cd-step {
+  background: var(--neo-white) !important;
+  border: var(--neo-border-heavy) solid var(--neo-ink) !important;
+  border-radius: 0 !important;
+  box-shadow: var(--neo-shadow-medium);
+}
+
+.theme-neo-brutalist #game,
+.theme-neo-brutalist #game.active,
+.theme-neo-brutalist #game.game-active {
+  background:
+    linear-gradient(rgba(255,255,255,0.055) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.055) 1px, transparent 1px),
+    #171717 !important;
+  background-size: 28px 28px;
+}
+
+.theme-neo-brutalist #game .game-bg.neutral {
+  background: transparent !important;
+}
+
+.theme-neo-brutalist #game .game-bg.correct {
+  background: rgba(110, 231, 183, 0.18) !important;
+}
+
+.theme-neo-brutalist #game .game-bg.wrong {
+  background: rgba(255, 107, 107, 0.18) !important;
+}
+
+.theme-neo-brutalist #game .neo-game-hud,
+.theme-neo-brutalist #game .game-hud {
+  color: var(--neo-white);
+}
+
+.theme-neo-brutalist #game .game-hud-left .btn,
+.theme-neo-brutalist #game .hud-mode-chip,
+.theme-neo-brutalist #game .score-hud,
+.theme-neo-brutalist #game .score-pill,
+.theme-neo-brutalist #game #timer-text {
+  background: var(--neo-yellow) !important;
+  color: var(--neo-ink) !important;
+  border: var(--neo-border) solid var(--neo-ink) !important;
+  border-radius: 0 !important;
+  box-shadow: var(--neo-shadow-small) !important;
+  font-variant-numeric: tabular-nums;
+}
+
+.theme-neo-brutalist #game #timer-text {
+  min-width: 86px;
+  padding: 4px 12px;
+  text-align: center;
+}
+
+.theme-neo-brutalist #game .game-card-stage {
+  z-index: 5;
+}
+
+.theme-neo-brutalist #game .neo-game-card,
+.theme-neo-brutalist #game .card-term {
+  background: var(--neo-canvas) !important;
+  color: var(--neo-ink) !important;
+  border: var(--neo-border-heavy) solid var(--neo-ink) !important;
+  border-radius: 0 !important;
+  box-shadow: var(--neo-shadow-large) !important;
+  overflow: hidden;
+  contain: layout paint;
+}
+
+.theme-neo-brutalist #game .card-term,
+.theme-neo-brutalist #game .card-term.slide-out,
+.theme-neo-brutalist #game .card-term.slide-in,
+.theme-neo-brutalist #game .card-term.slide-in-active,
+.theme-neo-brutalist #game .card-term.feedback-card {
+  transition: opacity 180ms ease, transform 180ms cubic-bezier(0.22, 1, 0.36, 1) !important;
+}
+
+.theme-neo-brutalist #game .term-text {
+  color: var(--neo-ink) !important;
+  font-family: var(--font-gameplay);
+  text-align: center;
+  line-height: 0.98;
+  text-wrap: balance;
+  overflow-wrap: normal;
+  word-break: normal;
+}
+
+.theme-neo-brutalist #game .game-term--short { letter-spacing: 0.01em; }
+.theme-neo-brutalist #game .game-term--medium { letter-spacing: 0; }
+.theme-neo-brutalist #game .game-term--long,
+.theme-neo-brutalist #game .game-term--extra-long { letter-spacing: 0; line-height: 1; }
+
+.theme-neo-brutalist #game .card-category,
+.theme-neo-brutalist #game .taboo-panel {
+  color: var(--neo-ink) !important;
+  background: var(--neo-yellow);
+  border: var(--neo-border) solid var(--neo-ink);
+  border-radius: 0;
+  padding: 4px 8px;
+}
+
+.theme-neo-brutalist #game .game-dog {
+  filter: drop-shadow(4px 4px 0 var(--neo-ink));
+}
+
+.theme-neo-brutalist #game .tap-hints span {
+  background: var(--neo-white) !important;
+  color: var(--neo-ink) !important;
+  border: var(--neo-border) solid var(--neo-ink);
+  border-radius: 0;
+  box-shadow: var(--neo-shadow-small);
+}
+
+.theme-neo-brutalist #game .term-feedback-overlay {
+  position: absolute;
+  inset: clamp(14px, 4vmin, 30px);
+  z-index: 15;
+  display: grid;
+  place-items: center;
+  align-content: center;
+  gap: 4px;
+  background: var(--neo-white);
+  color: var(--neo-ink);
+  border: var(--neo-border-heavy) solid var(--neo-ink);
+  box-shadow: var(--neo-shadow-medium);
+  pointer-events: none;
+}
+
+.theme-neo-brutalist #game .term-feedback-overlay.correct-feedback {
+  background: #a7f3d0;
+}
+
+.theme-neo-brutalist #game .term-feedback-overlay.skip-feedback {
+  background: var(--neo-red);
+}
+
+.theme-neo-brutalist #game .term-feedback-icon {
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  background: var(--neo-yellow);
+  border: var(--neo-border) solid var(--neo-ink);
+  font-size: 28px;
+  font-weight: 900;
+}
+
+.theme-neo-brutalist #game .term-feedback {
+  font-family: var(--font-heading);
+  font-size: clamp(40px, 12vmin, 86px);
+  line-height: 0.92;
+}
+
+.theme-neo-brutalist #game .term-feedback-label,
+.theme-neo-brutalist #game .term-feedback-sub {
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.theme-neo-brutalist #results {
+  background:
+    radial-gradient(circle at 10% 6%, var(--neo-red) 0 44px, transparent 45px),
+    radial-gradient(circle at 92% 15%, var(--neo-violet) 0 54px, transparent 55px),
+    linear-gradient(rgba(0,0,0,0.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,0,0,0.045) 1px, transparent 1px),
+    var(--neo-canvas);
+  background-size: auto, auto, 24px 24px, 24px 24px, auto;
+}
+
+.theme-neo-brutalist .mcat-card {
+  background: var(--neo-yellow) !important;
+}
+
+.theme-neo-brutalist .rstat:nth-child(1),
+.theme-neo-brutalist .insight-card:nth-child(1) {
+  background: var(--neo-violet) !important;
+}
+
+.theme-neo-brutalist .rstat:nth-child(3),
+.theme-neo-brutalist .insight-card:nth-child(2) {
+  background: var(--neo-red) !important;
+}
+
+.theme-neo-brutalist .rv-header,
+.theme-neo-brutalist .rv-body-inner,
+.theme-neo-brutalist .takeaway-item,
+.theme-neo-brutalist .missed-term-chip,
+.theme-neo-brutalist .team-row,
+.theme-neo-brutalist .launch-check-row,
+.theme-neo-brutalist .add-home-step,
+.theme-neo-brutalist .tutorial-step {
+  background: var(--neo-white) !important;
+  color: var(--neo-ink) !important;
+  border: var(--neo-border) solid var(--neo-ink) !important;
+  border-radius: 0 !important;
+}
+
+.theme-neo-brutalist .ad-slot {
+  background: var(--neo-yellow) !important;
+  color: var(--neo-ink) !important;
+  border: var(--neo-border-heavy) dashed var(--neo-ink) !important;
+  border-radius: 0 !important;
+}
+
+.theme-neo-brutalist .install-banner {
+  background: var(--neo-yellow);
+  border: var(--neo-border-heavy) solid var(--neo-ink);
+  box-shadow: var(--neo-shadow-medium);
+  border-radius: 0;
+}
+
+.theme-neo-brutalist .empty-state,
+.theme-neo-brutalist .error-state {
+  border: var(--neo-border-heavy) solid var(--neo-ink);
+  box-shadow: var(--neo-shadow-medium);
+  background: var(--neo-white);
+}
+
+/* Final Neo polish: tighter home layout, cleaner motion, and centered topic navigation. */
+.theme-neo-brutalist .screen {
+  backface-visibility: hidden;
+  transform: translate3d(0, 14px, 0) scale(0.985);
+  will-change: opacity, transform;
+}
+
+.theme-neo-brutalist .screen.active {
+  transform: translate3d(0, 0, 0) scale(1);
+}
+
+.theme-neo-brutalist .screen.exit {
+  transform: translate3d(0, -8px, 0) scale(0.99);
+}
+
+.theme-neo-brutalist #home {
+  gap: clamp(10px, 2.5vh, 18px);
+  justify-content: flex-start;
+  padding-top: max(18px, calc(env(safe-area-inset-top, 0px) + 14px));
+  padding-bottom: max(24px, calc(env(safe-area-inset-bottom, 0px) + 22px));
+}
+
+.theme-neo-brutalist #home .home-top-brand {
+  margin-top: max(6px, env(safe-area-inset-top, 0px));
+  padding: 5px 12px;
+  font-size: clamp(20px, 6vw, 32px);
+  box-shadow: var(--neo-shadow-small);
+}
+
+.theme-neo-brutalist #home .home-header {
+  width: min(100%, 390px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding-top: 0;
+}
+
+.theme-neo-brutalist #home .home-status-row {
+  width: 100%;
+  margin-bottom: 2px;
+}
+
+.theme-neo-brutalist #home .flashcard-logo {
+  width: min(100%, 370px);
+  min-height: clamp(128px, 36vw, 164px);
+  margin: 0 auto;
+  padding-inline: 12px;
+}
+
+.theme-neo-brutalist #home .premed-float {
+  width: clamp(34px, 9vw, 44px);
+  height: clamp(34px, 9vw, 44px);
+}
+
+.theme-neo-brutalist #home .float-atom {
+  left: 2%;
+  top: 20%;
+}
+
+.theme-neo-brutalist #home .float-flask {
+  right: 2%;
+  top: 12%;
+}
+
+.theme-neo-brutalist #home .float-helix {
+  right: 7%;
+  bottom: 15%;
+}
+
+.theme-neo-brutalist #home .home-title {
+  font-size: clamp(60px, 18vw, 94px);
+  filter: drop-shadow(0 6px 7px rgba(0, 0, 0, 0.14));
+}
+
+.theme-neo-brutalist #home .home-sub {
+  margin-top: 0;
+}
+
+.theme-neo-brutalist #home .home-cook-copy {
+  margin-top: 4px;
+  font-size: clamp(22px, 5.8vw, 31px);
+}
+
+.theme-neo-brutalist #home .home-dog {
+  display: none !important;
+}
+
+.theme-neo-brutalist #home .home-badge {
+  margin-top: 0;
+  padding: 5px 10px;
+}
+
+.theme-neo-brutalist #home .home-actions {
+  gap: 9px;
+  margin-top: 0;
+  max-width: 370px;
+  align-items: stretch;
+}
+
+.theme-neo-brutalist #home .home-actions .btn-original {
+  display: grid !important;
+  grid-template-columns: 42px minmax(0, 1fr) 42px;
+  align-items: center !important;
+  justify-content: stretch !important;
+  gap: 10px !important;
+  text-align: center !important;
+}
+
+.theme-neo-brutalist #home .home-actions .btn-original .icon-badge {
+  grid-column: 1;
+  justify-self: center;
+  margin-left: 0 !important;
+}
+
+.theme-neo-brutalist #home .home-actions .btn-original > span:last-child {
+  grid-column: 2;
+  justify-self: center;
+  min-width: 0;
+  text-align: center;
+}
+
+/* Final home/menu polish */
+.theme-neo-brutalist #home .home-title {
+  display: inline-flex !important;
+  align-items: baseline;
+  justify-content: center;
+  gap: 0.18em;
+  padding: 0 !important;
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  transform: none !important;
+}
+
+.theme-neo-brutalist #home .home-title .high {
+  color: var(--neo-ink) !important;
+  background: transparent !important;
+  border: 0 !important;
+  padding: 0 !important;
+}
+
+.theme-neo-brutalist #home .home-title .yield {
+  color: var(--neo-red) !important;
+  background: transparent !important;
+  border: 0 !important;
+  padding: 0 !important;
+}
+
+.theme-neo-brutalist #home .home-actions .btn-original {
+  position: relative;
+  width: 100%;
+  min-height: 68px;
+  padding: 12px 14px !important;
+  background: var(--neo-white) !important;
+  border: var(--neo-border-heavy) solid var(--neo-ink) !important;
+  border-radius: 0 !important;
+  color: var(--neo-ink) !important;
+  box-shadow: var(--neo-shadow-small), inset 0 0 0 2px rgba(8, 27, 53, 0.14) !important;
+  overflow: visible;
+}
+
+.theme-neo-brutalist #home .home-actions .btn-original.primary {
+  min-height: 78px;
+  background: var(--neo-red) !important;
+  box-shadow: var(--neo-shadow-medium), inset 0 0 0 2px rgba(255, 255, 255, 0.34) !important;
+}
+
+.theme-neo-brutalist #home .home-actions .btn-original:not(.primary) {
+  background: var(--neo-yellow) !important;
+}
+
+.theme-neo-brutalist #home .home-actions .btn-original::after {
+  content: "";
+  position: absolute;
+  inset: 6px;
+  border: 2px solid rgba(8, 27, 53, 0.16);
+  pointer-events: none;
+}
+
+.theme-neo-brutalist #home .home-actions .btn-original.primary::after {
+  border-color: rgba(255, 255, 255, 0.36);
+}
+
+.theme-neo-brutalist #home .home-actions .btn-original .icon-badge {
+  width: 38px;
+  height: 38px;
+  background: var(--neo-white) !important;
+}
+
+.theme-neo-brutalist #home .home-actions .btn-original > span:last-child {
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+.theme-neo-brutalist #topics .weakness-mode-card {
+  grid-template-columns: minmax(56px, 64px) minmax(0, 1fr) minmax(82px, auto) !important;
+}
+
+.theme-neo-brutalist .weak-mode-marker {
+  width: 58px;
+  min-height: 52px;
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  gap: 2px;
+  padding: 7px 5px;
+  background: var(--neo-cream);
+  border: var(--neo-border) solid var(--neo-ink);
+  box-shadow: 3px 3px 0 var(--neo-ink);
+  color: var(--neo-ink);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.theme-neo-brutalist .weak-mode-marker span {
+  font-size: 8px;
+  font-weight: 900;
+  letter-spacing: 0.04em;
+  line-height: 1;
+}
+
+.theme-neo-brutalist .weak-mode-marker strong {
+  font-size: 16px;
+  font-weight: 900;
+  line-height: 0.95;
+  color: var(--neo-red);
+}
+
+@media (max-width: 420px) {
+  .theme-neo-brutalist #topics .weakness-mode-card {
+    grid-template-columns: minmax(48px, 54px) minmax(0, 1fr) minmax(72px, auto) !important;
+    gap: 8px !important;
+  }
+
+  .theme-neo-brutalist .weak-mode-marker {
+    width: 50px;
+    min-height: 48px;
+    padding: 6px 4px;
+  }
+
+  .theme-neo-brutalist .weak-mode-marker strong {
+    font-size: 14px;
+  }
+}
+
+.theme-neo-brutalist #home .home-actions .btn-original.primary {
+  width: 100% !important;
+  max-width: none;
+  min-height: 92px;
+  height: auto;
+  padding: 18px 22px;
+}
+
+.theme-neo-brutalist #home .home-actions .btn-original.primary span:last-child {
+  max-width: none;
+}
+
+.theme-neo-brutalist #home .premium-bundle {
+  padding: 9px;
+}
+
+.theme-neo-brutalist #home .launch-card {
+  max-width: 370px;
+  padding: 10px 12px;
+  gap: 6px;
+}
+
+.theme-neo-brutalist #topics .nav-back {
+  position: relative;
+  min-width: 98px;
+  justify-content: center;
+  text-align: center;
+  padding-inline: 28px;
+}
+
+.theme-neo-brutalist #topics .nav-back .ui-icon {
+  position: absolute;
+  left: 10px;
+}
+
+.theme-neo-brutalist #results .results-header {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  grid-template-areas:
+    "dog trophy"
+    "dog title"
+    "dog sub";
+  align-items: center;
+  justify-content: center;
+  column-gap: 14px;
+  row-gap: 2px;
+  text-align: left;
+  padding-top: max(18px, env(safe-area-inset-top, 0px));
+}
+
+.theme-neo-brutalist #results .results-dog {
+  grid-area: dog;
+  width: clamp(72px, 22vw, 104px);
+  height: clamp(72px, 22vw, 104px);
+  min-height: 0;
+  margin: 0;
+  align-self: center;
+}
+
+.theme-neo-brutalist #results .results-dog .mascot-dog {
+  --dog-size: clamp(70px, 21vw, 100px);
+}
+
+.theme-neo-brutalist #results .results-trophy {
+  grid-area: trophy;
+  min-width: 0;
+  margin: 0;
+  font-size: clamp(28px, 8vw, 44px);
+  line-height: 0.95;
+  overflow-wrap: anywhere;
+  text-wrap: balance;
+}
+
+.theme-neo-brutalist #results .results-title {
+  grid-area: title;
+  min-width: 0;
+  font-size: clamp(24px, 6.6vw, 34px);
+  line-height: 0.96;
+  overflow-wrap: anywhere;
+  text-wrap: balance;
+}
+
+.theme-neo-brutalist #results .results-sub {
+  grid-area: sub;
+  margin-top: 2px;
+}
+
+.theme-neo-brutalist #results .results-stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  padding-top: 14px;
+}
+
+.theme-neo-brutalist #results .rstat {
+  width: 100%;
+  min-width: 0;
+  min-height: 92px;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  align-items: center;
+  justify-items: center;
+  padding: 12px 8px 10px;
+  box-sizing: border-box;
+}
+
+.theme-neo-brutalist #results .rstat:nth-child(1),
+.theme-neo-brutalist #results .insight-card:nth-child(1) {
+  background: var(--neo-green, #6ee7b7) !important;
+}
+
+.theme-neo-brutalist #results .rstat:nth-child(2) {
+  background: var(--neo-white) !important;
+}
+
+.theme-neo-brutalist #results .rstat:nth-child(3) {
+  background: var(--neo-red) !important;
+}
+
+.theme-neo-brutalist #results .rn {
+  width: 100%;
+  color: var(--neo-ink) !important;
+  font-size: clamp(34px, 10vw, 48px);
+  line-height: 0.9;
+  text-align: center;
+  overflow-wrap: anywhere;
+}
+
+.theme-neo-brutalist #results .rn.is-zero-word {
+  font-size: clamp(22px, 6vw, 32px);
+  text-transform: uppercase;
+}
+
+.theme-neo-brutalist #results .rl {
+  color: var(--neo-ink) !important;
+  font-weight: 900;
+}
+
+/* Final shared refinement pass: keep the neo-brutalist voice, but make mobile controls cleaner. */
+.theme-neo-brutalist .icon-badge,
+.theme-neo-brutalist .topic-icon,
+.theme-neo-brutalist .mode-icon,
+.theme-neo-brutalist .tutorial-step-icon,
+.theme-neo-brutalist .badge-icon,
+.theme-neo-brutalist .add-home-icon {
+  background: var(--neo-paper) !important;
+  color: var(--neo-ink) !important;
+  border: 2px solid var(--neo-ink) !important;
+  border-radius: 10px !important;
+  box-shadow: 2px 2px 0 rgba(8, 27, 53, 0.95) !important;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+}
+
+.theme-neo-brutalist .icon-badge {
+  width: 34px;
+  height: 34px;
+  min-width: 34px;
+  padding: 7px;
+}
+
+.theme-neo-brutalist .topic-icon,
+.theme-neo-brutalist .mode-icon,
+.theme-neo-brutalist .tutorial-step-icon,
+.theme-neo-brutalist .badge-icon,
+.theme-neo-brutalist .add-home-icon {
+  width: 44px;
+  height: 44px;
+  min-width: 44px;
+}
+
+.theme-neo-brutalist #home .home-status-row {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+  align-items: stretch;
+}
+
+.theme-neo-brutalist #home .home-status-pill {
+  width: 100%;
+  box-sizing: border-box;
+  min-width: 0;
+  min-height: 46px;
+  padding: 8px 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  text-align: center;
+  white-space: normal;
+  line-height: 1.08;
+  font-size: clamp(11px, 3.2vw, 13px);
+  overflow-wrap: anywhere;
+  border-width: 2px !important;
+  border-radius: 10px !important;
+  box-shadow: 2px 2px 0 rgba(8, 27, 53, 0.95) !important;
+}
+
+.theme-neo-brutalist #home .home-status-pill strong {
+  font-size: 1.12em;
+}
+
+.theme-neo-brutalist #home .flashcard-logo {
+  overflow: visible;
+  min-height: clamp(150px, 38vw, 182px);
+  isolation: isolate;
+}
+
+.theme-neo-brutalist #home .home-title {
+  position: relative;
+  z-index: 2;
+}
+
+.theme-neo-brutalist #home .premed-float-field {
+  inset: 0;
+  z-index: 1;
+}
+
+.theme-neo-brutalist #home .premed-float {
+  width: clamp(30px, 7.6vw, 40px);
+  height: clamp(30px, 7.6vw, 40px);
+  opacity: 0.68;
+  background: rgba(255, 255, 255, 0.93) !important;
+  border-width: 2px;
+  box-shadow: 2px 2px 0 rgba(8, 27, 53, 0.78);
+}
+
+.theme-neo-brutalist #home .float-atom {
+  left: 6px;
+  top: 4px;
+}
+
+.theme-neo-brutalist #home .float-flask {
+  right: 6px;
+  bottom: 10px;
+}
+
+.theme-neo-brutalist #home .float-helix {
+  display: none;
+}
+
+.theme-neo-brutalist #topics .topic-card .topic-icon {
+  color: var(--topic-accent) !important;
+  border-color: var(--topic-accent) !important;
+}
+
+.theme-neo-brutalist #topics .topic-card .topic-icon .ui-icon {
+  color: var(--topic-accent) !important;
+  stroke: currentColor !important;
+}
+
+.theme-neo-brutalist #topics .settings-card {
+  padding: 12px !important;
+}
+
+.theme-neo-brutalist #topics .settings-row {
+  min-height: 64px;
+  padding: 12px 0;
+  gap: 16px;
+  align-items: center;
+}
+
+.theme-neo-brutalist #topics .settings-row + .settings-row {
+  border-top: 2px solid rgba(8, 27, 53, 0.14);
+}
+
+.theme-neo-brutalist #topics .settings-row > div:first-child {
+  min-width: 0;
+  text-align: left;
+}
+
+.theme-neo-brutalist #topics .settings-lbl {
+  line-height: 1.05;
+}
+
+.theme-neo-brutalist #topics .settings-sub {
+  margin-top: 4px;
+  line-height: 1.28;
+}
+
+.theme-neo-brutalist #topics #timer-slider {
+  width: clamp(118px, 34vw, 164px);
+  min-width: 118px;
+  min-height: 44px;
+  box-shadow: none;
+  border: 0 !important;
+  background: transparent !important;
+}
+
+.theme-neo-brutalist .toggle-switch {
+  width: 64px !important;
+  min-width: 64px !important;
+  height: 44px !important;
+  min-height: 44px !important;
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  flex: 0 0 64px;
+}
+
+.theme-neo-brutalist .toggle-switch input {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  width: 100% !important;
+  height: 100% !important;
+  min-height: 0 !important;
+  margin: 0;
+  opacity: 0;
+  appearance: none;
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  cursor: pointer;
+}
+
+.theme-neo-brutalist .toggle-track {
+  position: absolute !important;
+  inset: 6px 4px !important;
+  box-sizing: border-box;
+  border: 3px solid var(--neo-ink) !important;
+  border-radius: 999px !important;
+  background: var(--neo-paper) !important;
+  box-shadow: 2px 2px 0 rgba(8, 27, 53, 0.95) !important;
+  transition: background-color 160ms ease, transform 140ms ease, box-shadow 140ms ease;
+}
+
+.theme-neo-brutalist .toggle-track::after {
+  width: 24px !important;
+  height: 24px !important;
+  top: 50% !important;
+  left: 4px !important;
+  border: 3px solid var(--neo-ink) !important;
+  border-radius: 999px !important;
+  background: var(--neo-white) !important;
+  box-sizing: border-box;
+  transform: translate(0, -50%) !important;
+  transition: transform 180ms cubic-bezier(0.22, 1, 0.36, 1), background-color 160ms ease;
+}
+
+.theme-neo-brutalist .toggle-switch input:checked + .toggle-track {
+  background: var(--neo-green, #6ee7b7) !important;
+}
+
+.theme-neo-brutalist .toggle-switch input:checked + .toggle-track::after {
+  transform: translate(24px, -50%) !important;
+}
+
+.theme-neo-brutalist .toggle-switch input:focus-visible + .toggle-track {
+  outline: 4px solid var(--neo-red);
+  outline-offset: 3px;
+}
+
+.theme-neo-brutalist .toggle-switch input:focus-visible {
+  outline: 0 !important;
+}
+
+.theme-neo-brutalist .toggle-switch:active .toggle-track {
+  transform: translate(2px, 2px);
+  box-shadow: none !important;
+}
+
+.theme-neo-brutalist #start-ui-wrapper {
+  display: grid;
+  justify-items: center;
+  gap: 10px;
+}
+
+.theme-neo-brutalist #loading-container {
+  width: min(100%, 320px);
+  max-width: 320px;
+  height: auto !important;
+  min-height: 0;
+  margin: 10px auto 0;
+  padding: 10px;
+  overflow: visible !important;
+  box-sizing: border-box;
+}
+
+.theme-neo-brutalist #loading-bar {
+  height: 9px;
+}
+
+.theme-neo-brutalist #loading-text {
+  display: block;
+  margin-top: 8px !important;
+  color: var(--neo-ink) !important;
+  line-height: 1.35;
+  font-weight: 900;
+}
+
+.theme-neo-brutalist #countdown {
+  gap: clamp(8px, 2vh, 14px);
+  padding: max(18px, env(safe-area-inset-top, 0px)) clamp(18px, 5vw, 30px) max(18px, env(safe-area-inset-bottom, 0px));
+  overflow-y: auto;
+}
+
+.theme-neo-brutalist #countdown .countdown-dog {
+  width: clamp(82px, 24vw, 112px);
+  height: clamp(82px, 24vw, 112px);
+  min-height: 0;
+  margin: 0;
+  flex: 0 0 auto;
+}
+
+.theme-neo-brutalist #countdown .countdown-dog .mascot-dog {
+  --dog-size: clamp(78px, 23vw, 108px);
+}
+
+.theme-neo-brutalist #countdown .rotate-icon {
+  margin: 0;
+}
+
+.theme-neo-brutalist #countdown .rotate-text {
+  margin: 0;
+  font-size: clamp(20px, 5.2vw, 28px);
+  line-height: 0.98;
+}
+
+.theme-neo-brutalist #countdown .cd-num {
+  margin: 0;
+  font-size: clamp(60px, 17vw, 88px);
+  line-height: 0.9;
+}
+
+.theme-neo-brutalist #countdown .cd-steps {
+  width: min(100%, 350px);
+  margin-top: 2px;
+  gap: 8px;
+}
+
+/* Shared alignment system for boxed labels, actions, counters, and game UI. */
+.theme-neo-brutalist .centered-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.theme-neo-brutalist .centered-content {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  width: 100%;
+  min-width: 0;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.theme-neo-brutalist .btn,
+.theme-neo-brutalist .premium-mini,
+.theme-neo-brutalist .nav-back,
+.theme-neo-brutalist .neo-button,
+.theme-neo-brutalist .neo-icon-button {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+  gap: 8px !important;
+  line-height: 1.12 !important;
+  box-sizing: border-box;
+  white-space: normal;
+}
+
+.theme-neo-brutalist .btn .icon-badge,
+.theme-neo-brutalist .premium-mini .icon-badge {
+  margin-left: 0 !important;
+}
+
+.theme-neo-brutalist .btn .ui-icon,
+.theme-neo-brutalist .btn-original .ui-icon,
+.theme-neo-brutalist .premium-mini .ui-icon,
+.theme-neo-brutalist .nav-back .ui-icon {
+  flex: 0 0 auto;
+}
+
+.theme-neo-brutalist .home-actions .btn-original.primary {
+  text-align: center !important;
+}
+
+.theme-neo-brutalist .home-actions .btn-original.primary span:last-child,
+.theme-neo-brutalist .btn-original > span:last-child,
+.theme-neo-brutalist .premium-mini > span:last-child {
+  min-width: 0;
+  text-align: center;
+  overflow-wrap: anywhere;
+}
+
+.theme-neo-brutalist .nav-bar {
+  display: grid !important;
+  grid-template-columns: minmax(74px, 1fr) minmax(0, auto) minmax(44px, 1fr);
+  align-items: center !important;
+  gap: 8px;
+}
+
+.theme-neo-brutalist .nav-bar > :first-child {
+  justify-self: start;
+}
+
+.theme-neo-brutalist .nav-bar > :last-child {
+  justify-self: end;
+}
+
+.theme-neo-brutalist .nav-title,
+.theme-neo-brutalist #selected-count {
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  line-height: 1.05;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.theme-neo-brutalist .nav-title {
+  justify-self: center;
+  white-space: nowrap;
+}
+
+.theme-neo-brutalist #selected-count {
+  min-height: 32px;
+  max-width: 100%;
+  white-space: normal;
+}
+
+.theme-neo-brutalist #topics .nav-back {
+  padding-inline: 14px !important;
+}
+
+.theme-neo-brutalist #topics .nav-back .ui-icon {
+  position: static !important;
+  left: auto !important;
+}
+
+.theme-neo-brutalist .home-status-pill,
+.theme-neo-brutalist .home-badge,
+.theme-neo-brutalist .offline-indicator,
+.theme-neo-brutalist .ai-status-badge,
+.theme-neo-brutalist .bank-health,
+.theme-neo-brutalist .daily-chip,
+.theme-neo-brutalist .mode-tag,
+.theme-neo-brutalist .diff-badge,
+.theme-neo-brutalist .neo-badge,
+.theme-neo-brutalist .takeaway-pill,
+.theme-neo-brutalist .achievement-chip,
+.theme-neo-brutalist .rv-meta-pill,
+.theme-neo-brutalist .premium-bundle-tag,
+.theme-neo-brutalist .ad-label {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 6px;
+  text-align: center !important;
+  line-height: 1.12 !important;
+  box-sizing: border-box;
+  min-width: 0;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+  text-wrap: balance;
+}
+
+.theme-neo-brutalist .icon-badge,
+.theme-neo-brutalist .topic-icon,
+.theme-neo-brutalist .mode-icon,
+.theme-neo-brutalist .tutorial-step-icon,
+.theme-neo-brutalist .badge-icon,
+.theme-neo-brutalist .add-home-icon,
+.theme-neo-brutalist .add-home-step-num,
+.theme-neo-brutalist .add-home-inline-icon,
+.theme-neo-brutalist .launch-check-icon,
+.theme-neo-brutalist #game .term-feedback-icon,
+.theme-neo-brutalist .rv-icon,
+.theme-neo-brutalist .rv-chev {
+  display: inline-grid !important;
+  place-items: center !important;
+  text-align: center;
+  line-height: 1 !important;
+  box-sizing: border-box;
+}
+
+.theme-neo-brutalist #topics .topic-card {
+  display: grid !important;
+  grid-template-columns: 44px minmax(0, 1fr);
+  align-items: center !important;
+  justify-items: center;
+  gap: 8px 12px !important;
+  text-align: center !important;
+  padding: 16px 12px !important;
+  box-sizing: border-box;
+}
+
+.theme-neo-brutalist #topics .topic-card > .topic-icon {
+  justify-self: center;
+  margin: 0 !important;
+}
+
+.theme-neo-brutalist #topics .topic-card > div:not(.topic-check):not(.topic-icon) {
+  width: 100%;
+  min-width: 0;
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  gap: 3px;
+  text-align: center;
+}
+
+.theme-neo-brutalist #topics .topic-name,
+.theme-neo-brutalist #topics .topic-desc,
+.theme-neo-brutalist #topics .topic-count {
+  max-width: 100%;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  text-align: center !important;
+  line-height: 1.2;
+}
+
+.theme-neo-brutalist #topics .topic-desc,
+.theme-neo-brutalist #topics .mode-sub {
+  line-height: 1.28 !important;
+  text-wrap: balance;
+}
+
+.theme-neo-brutalist #topics .mode-card {
+  display: grid !important;
+  grid-template-columns: 44px minmax(0, 1fr) minmax(52px, auto);
+  align-items: center !important;
+  justify-items: center;
+  gap: 8px 12px !important;
+  text-align: center !important;
+  padding: 13px 12px !important;
+  box-sizing: border-box;
+}
+
+.theme-neo-brutalist #topics .mode-card > .mode-icon {
+  justify-self: center;
+}
+
+.theme-neo-brutalist #topics .mode-card > div:not(.mode-icon):not(.weak-mode-marker) {
+  width: 100%;
+  min-width: 0;
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  gap: 3px;
+  text-align: center;
+}
+
+.theme-neo-brutalist #topics .mode-name,
+.theme-neo-brutalist #topics .mode-sub {
+  max-width: 100%;
+  text-align: center !important;
+}
+
+.theme-neo-brutalist #topics .mode-tag {
+  justify-self: center;
+  min-height: 28px;
+  padding: 5px 8px;
+}
+
+.theme-neo-brutalist #topics .topic-check {
+  display: grid !important;
+  place-items: center !important;
+  line-height: 1 !important;
+}
+
+.theme-neo-brutalist #topics .settings-row {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center !important;
+  gap: 14px !important;
+}
+
+.theme-neo-brutalist #topics .settings-row > div:first-child {
+  min-height: 44px;
+  display: grid;
+  align-content: center;
+}
+
+.theme-neo-brutalist #topics .settings-lbl,
+.theme-neo-brutalist #topics .settings-sub {
+  margin-top: 0 !important;
+}
+
+.theme-neo-brutalist #topics .settings-row .toggle-switch,
+.theme-neo-brutalist #topics .settings-row select,
+.theme-neo-brutalist #topics .settings-row input[type="range"] {
+  justify-self: end;
+}
+
+.theme-neo-brutalist .dash-stat,
+.theme-neo-brutalist .mcat-card,
+.theme-neo-brutalist .insight-card,
+.theme-neo-brutalist .takeaway-item,
+.theme-neo-brutalist .ad-slot,
+.theme-neo-brutalist .reward-card,
+.theme-neo-brutalist .launch-check-card {
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.theme-neo-brutalist .dash-stat-n,
+.theme-neo-brutalist .dash-stat-l,
+.theme-neo-brutalist .daily-panel-score,
+.theme-neo-brutalist .mcat-label,
+.theme-neo-brutalist .mcat-number,
+.theme-neo-brutalist .mcat-detail,
+.theme-neo-brutalist .insight-kicker,
+.theme-neo-brutalist .insight-value,
+.theme-neo-brutalist .takeaway-k,
+.theme-neo-brutalist .takeaway-v,
+.theme-neo-brutalist .reward-kicker,
+.theme-neo-brutalist .reward-title,
+.theme-neo-brutalist .reward-streak-number,
+.theme-neo-brutalist .reward-copy,
+.theme-neo-brutalist .launch-kicker,
+.theme-neo-brutalist .launch-title-big {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  line-height: 1.12;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+}
+
+.theme-neo-brutalist #results .results-stats {
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: stretch;
+}
+
+.theme-neo-brutalist #results .rstat {
+  display: grid !important;
+  grid-template-rows: minmax(48px, 1fr) auto;
+  place-items: center !important;
+  align-content: center;
+  gap: 6px;
+  text-align: center !important;
+  box-sizing: border-box;
+  padding: 12px 8px !important;
+}
+
+.theme-neo-brutalist #results .rn,
+.theme-neo-brutalist #results .rl {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center !important;
+  margin: 0 !important;
+  line-height: 1.08 !important;
+}
+
+.theme-neo-brutalist #results .rn {
+  min-height: 1.24em;
+  overflow: visible;
+}
+
+.theme-neo-brutalist #results .rl {
+  min-height: 16px;
+  line-height: 1.1 !important;
+}
+
+.theme-neo-brutalist .missed-summary-top,
+.theme-neo-brutalist .team-row,
+.theme-neo-brutalist .team-history-row,
+.theme-neo-brutalist .acc-label,
+.theme-neo-brutalist .daily-panel-top,
+.theme-neo-brutalist .launch-row,
+.theme-neo-brutalist .daily-strip {
+  align-items: center !important;
+}
+
+.theme-neo-brutalist .team-row {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 10px;
+  text-align: center;
+}
+
+.theme-neo-brutalist .team-row span,
+.theme-neo-brutalist .team-row strong {
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow-wrap: anywhere;
+}
+
+.theme-neo-brutalist .missed-term-chip {
+  display: inline-flex !important;
+  flex-direction: column;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 3px;
+  text-align: center !important;
+  line-height: 1.18;
+  box-sizing: border-box;
+}
+
+.theme-neo-brutalist .rv-header {
+  align-items: center !important;
+}
+
+.theme-neo-brutalist .rv-left {
+  min-width: 0;
+  align-items: center !important;
+}
+
+.theme-neo-brutalist .rv-left > div {
+  min-width: 0;
+}
+
+.theme-neo-brutalist .rv-term,
+.theme-neo-brutalist .rv-cat {
+  line-height: 1.18;
+}
+
+.theme-neo-brutalist #game .game-hud-left,
+.theme-neo-brutalist #game .score-hud {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.theme-neo-brutalist #game .score-hud {
+  flex-wrap: wrap;
+}
+
+.theme-neo-brutalist #game .score-pill,
+.theme-neo-brutalist #game .hud-mode-chip,
+.theme-neo-brutalist #game #timer-text,
+.theme-neo-brutalist #game .tap-hints span,
+.theme-neo-brutalist #game .card-category,
+.theme-neo-brutalist #game .card-source,
+.theme-neo-brutalist #game .taboo-label,
+.theme-neo-brutalist #game .taboo-chip,
+.theme-neo-brutalist #game .term-feedback,
+.theme-neo-brutalist #game .term-feedback-label,
+.theme-neo-brutalist #game .term-feedback-sub {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center !important;
+  line-height: 1.12 !important;
+  box-sizing: border-box;
+  min-width: 0;
+}
+
+.theme-neo-brutalist #game #timer-text {
+  min-height: 42px;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  font-variant-numeric: tabular-nums;
+}
+
+.theme-neo-brutalist #game .score-pill {
+  min-height: 34px;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.theme-neo-brutalist #game .card-term {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+  box-sizing: border-box;
+}
+
+.theme-neo-brutalist #game .term-text {
+  width: 100%;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  text-align: center !important;
+  line-height: 1.05 !important;
+  min-height: 1.32em;
+  overflow: visible;
+}
+
+.theme-neo-brutalist #game .term-feedback-overlay {
+  text-align: center !important;
+}
+
+.theme-neo-brutalist .tutorial-actions,
+.theme-neo-brutalist .reward-actions,
+.theme-neo-brutalist .results-actions {
+  display: grid;
+  justify-items: stretch;
+  align-items: center;
+}
+
+@media (max-width: 360px) {
+  .theme-neo-brutalist .nav-bar {
+    grid-template-columns: minmax(66px, 1fr) minmax(0, auto) minmax(36px, 1fr);
+    gap: 6px;
+  }
+
+  .theme-neo-brutalist #topics .topic-card,
+  .theme-neo-brutalist #topics .mode-card {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .theme-neo-brutalist #topics .mode-tag {
+    grid-column: 1;
+  }
+
+  .theme-neo-brutalist #topics .topic-card > div:not(.topic-check):not(.topic-icon),
+  .theme-neo-brutalist #topics .mode-card > div:not(.mode-icon):not(.weak-mode-marker) {
+    justify-items: center;
+  }
+
+  .theme-neo-brutalist #topics .settings-row {
+    grid-template-columns: minmax(0, 1fr) auto;
+  }
+}
+
+@media (orientation: landscape) {
+  .theme-neo-brutalist #game .card-term {
+    min-height: 0;
+  }
+}
+
+@media (max-width: 520px) {
+  .theme-neo-brutalist #home .flashcard-logo {
+    min-height: 156px;
+  }
+
+  .theme-neo-brutalist #home .home-title {
+    font-size: clamp(58px, 19vw, 82px);
+  }
+
+  .theme-neo-brutalist #home .home-actions .btn-original.primary {
+    width: 100% !important;
+    min-height: 88px;
+    height: auto;
+  }
+}
+
+@media (max-width: 420px) {
+  .theme-neo-brutalist .home-title {
+    transform: none;
+  }
+
+  .theme-neo-brutalist .topic-card:nth-child(n),
+  .theme-neo-brutalist .mode-card:nth-child(n) {
+    transform: none;
+  }
+
+  .theme-neo-brutalist #home .premed-float {
+    width: 34px;
+    height: 34px;
+  }
+
+  .theme-neo-brutalist #topics .settings-row {
+    gap: 12px;
+  }
+
+  .theme-neo-brutalist #topics #timer-slider {
+    width: 124px;
+    min-width: 124px;
+  }
+}
+
+@media (max-height: 620px) {
+  .theme-neo-brutalist #countdown {
+    justify-content: flex-start;
+  }
+
+  .theme-neo-brutalist #countdown .countdown-dog {
+    width: 78px;
+    height: 78px;
+  }
+
+  .theme-neo-brutalist #countdown .countdown-dog .mascot-dog {
+    --dog-size: 76px;
+  }
+
+  .theme-neo-brutalist #countdown .cd-num {
+    font-size: 58px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .theme-neo-brutalist *,
+  .theme-neo-brutalist *::before,
+  .theme-neo-brutalist *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+@keyframes neoScreenSnap {
+  0% { opacity: 0; transform: translate3d(0, 12px, 0) scale(0.985); }
+  100% { opacity: 1; transform: translate3d(0, 0, 0) scale(1); }
+}
+
+/* Adaptive Weakness Mode */
+.theme-neo-brutalist #topics .weakness-mode-card {
+  grid-template-columns: 44px minmax(0, 1fr) minmax(82px, auto);
+  min-height: 104px;
+}
+
+.theme-neo-brutalist .weak-mode-detail {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-top: 5px;
+}
+
+.theme-neo-brutalist .weak-mode-detail span,
+.theme-neo-brutalist .mode-start-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 22px;
+  border: var(--neo-border) solid var(--neo-ink);
+  background: var(--neo-white);
+  color: var(--neo-ink);
+  box-shadow: 2px 2px 0 var(--neo-ink);
+  padding: 3px 6px;
+  font-size: 8.5px;
+  font-weight: 900;
+  line-height: 1.05;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.theme-neo-brutalist .mode-side {
+  display: grid;
+  justify-items: center;
+  align-content: center;
+  gap: 6px;
+}
+
+.theme-neo-brutalist .mode-start-btn {
+  border-radius: 0;
+  cursor: pointer;
+  font-family: var(--font-body);
+}
+
+.theme-neo-brutalist .mode-start-btn:disabled {
+  opacity: 0.52;
+  cursor: default;
+}
+
+.theme-neo-brutalist #undo-card-btn:disabled {
+  pointer-events: none;
+}
+
+.theme-neo-brutalist .weakness-summary {
+  display: none;
+  width: min(calc(100% - 32px), 560px);
+  margin: 12px auto 0;
+  padding: 13px;
+  border: var(--neo-border-heavy) solid var(--neo-ink);
+  background: var(--neo-white);
+  box-shadow: var(--neo-shadow-small);
+}
+
+.theme-neo-brutalist .weakness-summary.active {
+  display: grid;
+  gap: 10px;
+}
+
+.theme-neo-brutalist .weakness-summary-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  text-align: center;
+}
+
+.theme-neo-brutalist .weakness-summary-top span {
+  color: var(--neo-red);
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+}
+
+.theme-neo-brutalist .weakness-summary-top strong {
+  color: var(--neo-ink);
+  font-size: 12px;
+  line-height: 1.15;
+}
+
+.theme-neo-brutalist .weakness-stat-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 7px;
+}
+
+.theme-neo-brutalist .weakness-stat {
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  min-height: 58px;
+  border: var(--neo-border) solid var(--neo-ink);
+  background: var(--neo-cream);
+  padding: 7px 4px;
+  text-align: center;
+}
+
+.theme-neo-brutalist .weakness-stat strong {
+  color: var(--neo-blue);
+  font-family: var(--font-heading);
+  font-size: 21px;
+  line-height: 1;
+}
+
+.theme-neo-brutalist .weakness-stat span {
+  margin-top: 3px;
+  color: var(--neo-ink);
+  font-size: 8.5px;
+  font-weight: 900;
+  line-height: 1.05;
+  text-transform: uppercase;
+}
+
+.theme-neo-brutalist .dash-weak-grid .dash-stat-n {
+  max-width: 100%;
+  font-size: clamp(18px, 6vw, 25px);
+  line-height: 1.05;
+  overflow-wrap: anywhere;
+}
+
+.theme-neo-brutalist .mastery-row {
+  cursor: pointer;
+}
+
+.theme-neo-brutalist .mastery-row:focus-visible {
+  outline: 3px solid var(--neo-red);
+  outline-offset: 3px;
+}
+
+.theme-neo-brutalist .weak-topic-panel {
+  margin: -6px 16px 16px;
+  padding: 12px;
+  border: var(--neo-border-heavy) solid var(--neo-ink);
+  background: var(--neo-white);
+  box-shadow: var(--neo-shadow-small);
+}
+
+.theme-neo-brutalist .weak-topic-title {
+  color: var(--neo-ink);
+  font-size: 14px;
+  font-weight: 900;
+  text-align: center;
+}
+
+.theme-neo-brutalist .weak-topic-list {
+  display: grid;
+  gap: 7px;
+  margin: 10px 0;
+}
+
+.theme-neo-brutalist .weak-topic-item {
+  display: grid;
+  gap: 2px;
+  border: var(--neo-border) solid var(--neo-ink);
+  background: var(--neo-cream);
+  padding: 9px;
+  text-align: center;
+}
+
+.theme-neo-brutalist .weak-topic-item strong {
+  color: var(--neo-ink);
+  font-size: 13px;
+  line-height: 1.15;
+}
+
+.theme-neo-brutalist .weak-topic-item span,
+.theme-neo-brutalist .weak-topic-empty {
+  color: var(--text-secondary);
+  font-size: 11px;
+  font-weight: 800;
+  line-height: 1.3;
+  text-align: center;
+}
+
+@media (max-width: 420px) {
+  .theme-neo-brutalist #topics .weakness-mode-card {
+    grid-template-columns: 40px minmax(0, 1fr) minmax(72px, auto);
+    gap: 8px;
+    padding-inline: 10px !important;
+  }
+
+  .theme-neo-brutalist .weak-mode-detail span,
+  .theme-neo-brutalist .mode-start-btn {
+    font-size: 8px;
+    padding-inline: 5px;
+  }
+
+  .theme-neo-brutalist .weakness-stat-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* Home-screen cleanup after global centering audit */
+.theme-neo-brutalist #home .flashcard-logo {
+  width: min(100%, 390px);
+  min-height: clamp(168px, 43vw, 218px);
+  padding-inline: 46px;
+  overflow: visible;
+}
+
+.theme-neo-brutalist #home .home-title {
+  position: relative;
+  z-index: 2;
+  font-size: clamp(56px, 17vw, 90px);
+  padding: 8px 12px;
+}
+
+.theme-neo-brutalist #home .premed-float-field {
+  inset: -4px 0;
+  z-index: 3;
+  pointer-events: none;
+}
+
+.theme-neo-brutalist #home .premed-float {
+  z-index: 3;
+  opacity: 0.9;
+}
+
+.theme-neo-brutalist #home .float-atom {
+  left: -2px;
+  top: 2px;
+}
+
+.theme-neo-brutalist #home .float-flask {
+  right: -2px;
+  bottom: 8px;
+}
+
+.theme-neo-brutalist #home .float-helix {
+  display: none;
+}
+
+.theme-neo-brutalist #home .home-actions .btn-original {
+  display: grid !important;
+  grid-template-columns: 42px minmax(0, 1fr) 42px;
+  align-items: center !important;
+  justify-content: stretch !important;
+  gap: 10px !important;
+  text-align: center !important;
+}
+
+.theme-neo-brutalist #home .home-actions .btn-original .icon-badge {
+  grid-column: 1;
+  justify-self: center;
+  margin-left: 0 !important;
+}
+
+.theme-neo-brutalist #home .home-actions .btn-original > span:last-child {
+  grid-column: 2;
+  justify-self: center;
+  min-width: 0;
+  text-align: center;
+}
+
+/* Last-word guard: keep the home logo unboxed and menu actions rectangular. */
+.theme-neo-brutalist #home .home-title {
+  display: inline-flex !important;
+  align-items: baseline;
+  justify-content: center;
+  gap: 0.18em;
+  padding: 0 !important;
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  transform: none !important;
+}
+
+.theme-neo-brutalist #home .home-title .high {
+  color: var(--neo-ink) !important;
+  background: transparent !important;
+  border: 0 !important;
+  padding: 0 !important;
+}
+
+.theme-neo-brutalist #home .home-title .yield {
+  color: var(--neo-red) !important;
+  background: transparent !important;
+  border: 0 !important;
+  padding: 0 !important;
+}
+
+.theme-neo-brutalist #home .home-actions .btn-original,
+.theme-neo-brutalist #home .home-actions .btn-original.primary {
+  width: 100% !important;
+  height: auto !important;
+  border-radius: 0 !important;
+  border: var(--neo-border-heavy) solid var(--neo-ink) !important;
+}
+
+.theme-neo-brutalist #home .home-actions .btn-original {
+  min-height: 68px;
+  padding: 12px 14px !important;
+  background: var(--neo-yellow) !important;
+  box-shadow: var(--neo-shadow-small), inset 0 0 0 2px rgba(8, 27, 53, 0.14) !important;
+}
+
+.theme-neo-brutalist #home .home-actions .btn-original.primary {
+  min-height: 78px;
+  background: var(--neo-red) !important;
+  box-shadow: var(--neo-shadow-medium), inset 0 0 0 2px rgba(255, 255, 255, 0.34) !important;
+}
+
+/* Main menu refinement: centered title, label-only buttons, three science bubbles. */
+.theme-neo-brutalist #home .flashcard-logo {
+  width: min(100%, 420px);
+  min-height: clamp(246px, 62vw, 318px);
+  display: grid;
+  place-items: center;
+  padding-inline: 0 !important;
+  margin-inline: auto;
+  position: relative;
+  overflow: visible;
+  isolation: isolate;
+}
+
+.theme-neo-brutalist #home .home-title {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(0px, 0.5vw, 4px);
+  text-align: center;
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: clamp(82px, 23.5vw, 128px);
+  letter-spacing: 0;
+  padding: 0 !important;
+  margin: 0 auto !important;
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  transform: none !important;
+  filter: drop-shadow(0 14px 0 rgba(8, 27, 53, 0.32));
+  isolation: isolate;
+  pointer-events: none;
+}
+
+.theme-neo-brutalist #home .home-title::before,
+.theme-neo-brutalist #home .home-title::after {
+  content: none !important;
+  display: none !important;
+}
+
+.theme-neo-brutalist #home .home-title::before {
+  background: transparent !important;
+  filter: none !important;
+}
+
+.theme-neo-brutalist #home .home-title::after {
+  background: transparent !important;
+  opacity: 0 !important;
+}
+
+.theme-neo-brutalist #home .home-title span,
+.theme-neo-brutalist #home .home-title .high,
+.theme-neo-brutalist #home .home-title .yield {
+  display: block;
+  width: auto;
+  padding: 0 !important;
+  margin: 0 !important;
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  text-align: center;
+  line-height: 0.78;
+  animation: none !important;
+  -webkit-text-stroke: 2.3px var(--neo-ink);
+  paint-order: stroke fill;
+  text-shadow:
+    2px 2px 0 #fff,
+    4px 4px 0 #fff,
+    6px 6px 0 #fff,
+    10px 10px 0 rgba(8, 27, 53, 1),
+    15px 15px 0 rgba(8, 27, 53, 0.42);
+}
+
+.theme-neo-brutalist #home .home-title .high {
+  color: var(--neo-ink) !important;
+  transform: rotate(-1.2deg) scaleX(1.04);
+}
+
+.theme-neo-brutalist #home .home-title .yield {
+  color: var(--neo-red) !important;
+  -webkit-text-fill-color: currentColor !important;
+  background-image: none !important;
+  transform: rotate(1deg) scaleX(1.04);
+}
+
+.theme-neo-brutalist #home .premed-float-field {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.theme-neo-brutalist #home .premed-float {
+  width: clamp(32px, 8vw, 44px);
+  height: clamp(32px, 8vw, 44px);
+  display: grid;
+  place-items: center;
+  background: rgba(255, 255, 255, 0.93) !important;
+  border: 2px solid rgba(8, 27, 53, 0.78) !important;
+  box-shadow: 2px 2px 0 rgba(8, 27, 53, 0.78) !important;
+  color: var(--neo-ink) !important;
+  opacity: 0.86;
+  pointer-events: none;
+  animation: premedFloat 5.2s ease-in-out infinite;
+}
+
+.theme-neo-brutalist #home .float-atom {
+  left: clamp(-22px, -4.5vw, -10px);
+  top: clamp(-4px, -1vw, 0px);
+  animation-delay: -0.4s;
+}
+
+.theme-neo-brutalist #home .float-flask {
+  right: clamp(-22px, -4.5vw, -10px);
+  top: clamp(4px, 1.8vw, 12px);
+  animation-delay: -1.7s;
+}
+
+.theme-neo-brutalist #home .float-dna {
+  left: clamp(-18px, -3vw, -6px);
+  bottom: clamp(-6px, -1vw, 0px);
+  animation-delay: -3.1s;
+}
+
+.theme-neo-brutalist #home .home-actions > .btn-original.menu-button,
+.theme-neo-brutalist #home .home-actions > .btn-original.menu-button.primary {
+  width: 100% !important;
+  height: auto !important;
+  display: grid !important;
+  align-items: center !important;
+  justify-content: center !important;
+  align-content: center !important;
+  justify-items: center !important;
+  place-items: center !important;
+  grid-template-columns: none !important;
+  gap: 0 !important;
+  text-align: center !important;
+  box-sizing: border-box;
+}
+
+.theme-neo-brutalist #home .home-actions > .btn-original.menu-button.primary {
+  min-height: 78px;
+  padding: 0 20px !important;
+  line-height: 1 !important;
+}
+
+.theme-neo-brutalist #home .home-actions > .btn-original.menu-button::before,
+.theme-neo-brutalist #home .home-actions > .btn-original.menu-button::after {
+  content: none !important;
+  display: none !important;
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+
+.theme-neo-brutalist #home .home-actions > .btn-original.menu-button .icon-badge {
+  display: none !important;
+}
+
+.theme-neo-brutalist #home .home-actions > .btn-original.menu-button .menu-button-label {
+  position: static !important;
+  inset: auto !important;
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  height: auto;
+  min-width: 0;
+  max-width: none !important;
+  grid-column: auto !important;
+  grid-row: auto !important;
+  justify-self: auto !important;
+  align-self: auto !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  background: transparent !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  outline: 0 !important;
+  transform: none !important;
+  color: inherit;
+  text-align: center;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+.theme-neo-brutalist #home .home-actions > .btn-original.menu-button.primary .menu-button-label {
+  font-size: clamp(1.55rem, 5.8vw, 2.1rem);
+  font-weight: 900;
+  white-space: nowrap;
+}
+
+@media (max-width: 380px) {
+  .theme-neo-brutalist #home .flashcard-logo {
+    min-height: 228px;
+  }
+
+  .theme-neo-brutalist #home .premed-float {
+    width: 32px;
+    height: 32px;
+  }
+
+  .theme-neo-brutalist #home .float-atom {
+    left: -16px;
+    top: -4px;
+  }
+
+  .theme-neo-brutalist #home .float-flask {
+    right: -16px;
+    top: 4px;
+  }
+
+  .theme-neo-brutalist #home .float-dna {
+    left: -10px;
+    bottom: -4px;
+  }
+}
+
+@media (min-width: 700px) {
+  .theme-neo-brutalist #home .flashcard-logo {
+    width: min(100%, 520px);
+    min-height: 338px;
+  }
+
+  .theme-neo-brutalist #home .premed-float {
+    width: 48px;
+    height: 48px;
+  }
+
+  .theme-neo-brutalist #home .float-atom {
+    left: -4px;
+    top: 0;
+  }
+
+  .theme-neo-brutalist #home .float-flask {
+    right: -4px;
+    top: 16px;
+  }
+
+  .theme-neo-brutalist #home .float-dna {
+    left: 2px;
+    bottom: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .theme-neo-brutalist #home .premed-float {
+    animation: none !important;
+  }
+}
