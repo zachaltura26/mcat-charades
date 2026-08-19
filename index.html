@@ -4481,14 +4481,18 @@ html.game-active #app {
 </div>
 
 <div class="screen" id="countdown">
-  <div class="dog-stage countdown-dog" data-dog="thinking"></div>
-  <div class="rotate-icon"><svg class="ui-icon"><use href="#i-phone"></use></svg></div>
-  <div class="rotate-text">Turn Phone Sideways</div>
-  <div class="cd-num" id="countdown-num">3</div>
-  <div class="cd-steps">
-    <div class="cd-step"><div class="cd-step-n">1</div><div class="cd-step-text">Hold phone to forehead, screen facing OUT</div></div>
-    <div class="cd-step"><div class="cd-step-n">2</div><div class="cd-step-text">Friends describe the term — without saying it!</div></div>
-    <div class="cd-step"><div class="cd-step-n">3</div><div class="cd-step-text"><span style="color:var(--blue);font-weight:700">Tilt head DOWN</span> = got it &nbsp;·&nbsp; <span style="color:var(--red);font-weight:700">Tilt head UP</span> = skip</div></div>
+  <div class="countdown-card" role="status" aria-live="polite">
+    <div class="rotate-icon" aria-hidden="true"><svg class="ui-icon"><use href="#i-phone"></use></svg></div>
+    <div class="countdown-copy">
+      <div class="rotate-text">Turn Phone Sideways</div>
+      <div class="rotate-sub">Landscape gives the game card more room.</div>
+      <div class="cd-steps">
+        <div class="cd-step"><div class="cd-step-n">1</div><div class="cd-step-text">Hold phone to forehead, screen facing out</div></div>
+        <div class="cd-step"><div class="cd-step-n">2</div><div class="cd-step-text">Friends describe the term without saying it</div></div>
+        <div class="cd-step"><div class="cd-step-n">3</div><div class="cd-step-text"><span style="color:var(--blue);font-weight:700">Tilt down</span> = got it &nbsp;·&nbsp; <span style="color:var(--red);font-weight:700">Tilt up</span> = skip</div></div>
+      </div>
+    </div>
+    <div class="cd-num" id="countdown-num">3</div>
   </div>
 </div>
 

@@ -2513,3 +2513,251 @@
     animation: none !important;
   }
 }
+
+/* Focused gameplay cleanup: lighter HUD and a horizontal turn-phone screen. */
+.theme-neo-brutalist #loading-container {
+  display: grid;
+  grid-template-columns: minmax(96px, 1fr) auto;
+  align-items: center;
+  justify-items: stretch;
+  gap: 10px;
+  width: min(100%, 380px);
+  max-width: 380px;
+  padding: 12px 14px;
+}
+
+.theme-neo-brutalist #loading-container #loading-bar {
+  width: 100%;
+}
+
+.theme-neo-brutalist #loading-container #loading-text {
+  width: auto;
+  margin: 0 !important;
+  text-align: right;
+  white-space: nowrap;
+}
+
+.theme-neo-brutalist #countdown {
+  width: 100vw;
+  width: 100dvw;
+  height: 100vh;
+  height: 100dvh;
+  min-height: 100vh;
+  min-height: 100dvh;
+  padding:
+    max(14px, env(safe-area-inset-top, 0px))
+    max(14px, env(safe-area-inset-right, 0px))
+    max(14px, env(safe-area-inset-bottom, 0px))
+    max(14px, env(safe-area-inset-left, 0px));
+  place-items: center;
+  align-content: center;
+  justify-content: center;
+  background:
+    linear-gradient(rgba(0,0,0,0.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,0,0,0.045) 1px, transparent 1px),
+    var(--neo-canvas) !important;
+  background-size: 24px 24px;
+  overflow: hidden;
+}
+
+.theme-neo-brutalist #countdown.active {
+  display: grid !important;
+}
+
+.theme-neo-brutalist #countdown .countdown-dog {
+  display: none !important;
+}
+
+.theme-neo-brutalist #countdown .countdown-card {
+  width: min(calc(100vw - 28px), 720px);
+  width: min(calc(100dvw - 28px), 720px);
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: center;
+  gap: clamp(8px, 2.6vw, 22px);
+  padding: clamp(12px, 3.4vw, 24px);
+  background: var(--neo-white);
+  border: var(--neo-border-heavy) solid var(--neo-ink);
+  box-shadow: var(--neo-shadow-medium);
+  box-sizing: border-box;
+}
+
+.theme-neo-brutalist #countdown .rotate-icon {
+  width: clamp(42px, 12vw, 72px);
+  height: clamp(42px, 12vw, 72px);
+  display: grid;
+  place-items: center;
+  margin: 0 !important;
+  color: var(--neo-ink);
+  transform-origin: center;
+}
+
+.theme-neo-brutalist #countdown .rotate-icon .ui-icon {
+  width: 100%;
+  height: 100%;
+}
+
+.theme-neo-brutalist #countdown .countdown-copy {
+  min-width: 0;
+  display: grid;
+  gap: clamp(5px, 1.4vw, 10px);
+  align-content: center;
+  justify-items: start;
+  text-align: left;
+}
+
+.theme-neo-brutalist #countdown .rotate-text {
+  margin: 0 !important;
+  max-width: 100%;
+  color: var(--neo-ink);
+  font-family: var(--font-heading);
+  font-size: clamp(22px, 6vw, 48px);
+  line-height: 0.92;
+  letter-spacing: 0.01em;
+  text-wrap: balance;
+}
+
+.theme-neo-brutalist #countdown .rotate-sub {
+  max-width: 28ch;
+  color: var(--neo-ink);
+  font-size: clamp(12px, 2.8vw, 16px);
+  font-weight: 900;
+  line-height: 1.15;
+}
+
+.theme-neo-brutalist #countdown .cd-num {
+  margin: 0 !important;
+  color: var(--neo-red);
+  font-size: clamp(48px, 15vw, 104px);
+  line-height: 0.82;
+  text-shadow: 3px 3px 0 var(--neo-ink);
+}
+
+.theme-neo-brutalist #countdown .cd-steps {
+  width: 100%;
+  max-width: none;
+  display: grid;
+  gap: 5px;
+  margin: 0 !important;
+}
+
+.theme-neo-brutalist #countdown .cd-step {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  align-items: center;
+  gap: 7px;
+  padding: 0 !important;
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+
+.theme-neo-brutalist #countdown .cd-step-n {
+  width: 20px;
+  height: 20px;
+  display: grid;
+  place-items: center;
+  flex: 0 0 auto;
+  background: var(--neo-yellow);
+  border: var(--neo-border-thin) solid var(--neo-ink);
+  color: var(--neo-ink);
+  font-size: 12px;
+  line-height: 1;
+  box-sizing: border-box;
+}
+
+.theme-neo-brutalist #countdown .cd-step-text {
+  min-width: 0;
+  color: var(--neo-ink);
+  font-size: clamp(10px, 2.55vw, 13px);
+  font-weight: 900;
+  line-height: 1.12;
+}
+
+.theme-neo-brutalist #game .score-hud {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: flex-end !important;
+  flex-wrap: nowrap !important;
+  gap: 0 !important;
+  min-width: 0 !important;
+  max-width: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+
+.theme-neo-brutalist #game .score-pill.correct,
+.theme-neo-brutalist #game .score-pill.wrong,
+.theme-neo-brutalist #game .score-pill.tier,
+.theme-neo-brutalist #game .score-pill.points {
+  display: none !important;
+}
+
+.theme-neo-brutalist #game .score-pill.streak {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  min-width: 0 !important;
+  min-height: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  color: var(--neo-white) !important;
+  font-family: var(--font-body);
+  font-size: clamp(12px, 2.2vmin, 15px);
+  font-weight: 900;
+  line-height: 1 !important;
+  letter-spacing: 0.01em;
+  text-shadow: 2px 2px 0 rgba(0,0,0,0.55);
+  white-space: nowrap;
+}
+
+@media (max-width: 370px) {
+  .theme-neo-brutalist #loading-container {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .theme-neo-brutalist #loading-container #loading-text {
+    width: 100%;
+    text-align: center;
+    white-space: normal;
+  }
+
+  .theme-neo-brutalist #countdown .countdown-card {
+    gap: 7px;
+    padding: 11px;
+  }
+
+  .theme-neo-brutalist #countdown .rotate-sub {
+    display: none;
+  }
+
+  .theme-neo-brutalist #countdown .cd-step-text {
+    font-size: 10px;
+  }
+}
+
+@media (orientation: landscape) {
+  .theme-neo-brutalist #countdown .countdown-card {
+    width: min(calc(100vw - 36px), 780px);
+    width: min(calc(100dvw - 36px), 780px);
+    grid-template-columns: auto minmax(260px, 1fr) auto;
+    padding: clamp(14px, 3vmin, 22px);
+  }
+
+  .theme-neo-brutalist #countdown .cd-steps {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 8px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .theme-neo-brutalist #countdown .rotate-icon {
+    animation: none !important;
+  }
+}
