@@ -2761,3 +2761,64 @@
     animation: none !important;
   }
 }
+
+/* Mobile viewport fill: keep iOS safe-area/status bars painted with the app. */
+:root {
+  --app-status-bg: var(--neo-canvas);
+}
+
+html.theme-neo-brutalist {
+  width: 100%;
+  min-width: 100%;
+  min-height: 100vh;
+  min-height: 100dvh;
+  background: var(--app-status-bg, var(--neo-canvas)) !important;
+  background-color: var(--app-status-bg, var(--neo-canvas)) !important;
+}
+
+html.theme-neo-brutalist body,
+html.theme-neo-brutalist #app {
+  width: 100vw !important;
+  min-width: 100vw;
+  height: 100vh !important;
+  height: 100dvh !important;
+  min-height: 100vh;
+  min-height: 100dvh;
+  background: var(--app-status-bg, var(--neo-canvas)) !important;
+  background-color: var(--app-status-bg, var(--neo-canvas)) !important;
+  overflow: hidden;
+}
+
+html.theme-neo-brutalist .screen {
+  width: 100vw !important;
+  height: 100vh !important;
+  height: 100dvh !important;
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+
+html.theme-neo-brutalist #app::before,
+html.theme-neo-brutalist #app::after {
+  content: "";
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 12060;
+  pointer-events: none;
+  background: var(--app-status-bg, var(--neo-canvas));
+}
+
+html.theme-neo-brutalist #app::before {
+  top: 0;
+  height: max(env(safe-area-inset-top, 0px), 1px);
+}
+
+html.theme-neo-brutalist #app::after {
+  bottom: 0;
+  height: max(env(safe-area-inset-bottom, 0px), 1px);
+}
+
+html.theme-neo-brutalist.game-active #app::before,
+html.theme-neo-brutalist.game-active #app::after {
+  background: var(--navy);
+}
