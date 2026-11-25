@@ -141,7 +141,6 @@ html, body {
 .screen.active .mastery-row,
 #results.active .mcat-card,
 #results.active .insight-card,
-#results.active .missed-summary,
 #results.active .rstat,
 #results.active .rv-item {
   animation: cardPop 0.42s cubic-bezier(0.2, 0.9, 0.2, 1) both;
@@ -167,7 +166,6 @@ html, body {
 #results > .mcat-card,
 #results > .insight-grid,
 #results > .study-takeaway,
-#results > .missed-summary,
 #results > .achievement-row,
 #results > .team-panel,
 #results > .results-stats,
@@ -1568,7 +1566,6 @@ input[type=range] { width: 110px; accent-color: var(--blue); background: transpa
 #results > .mcat-card,
 #results > .insight-grid,
 #results > .study-takeaway,
-#results > .missed-summary,
 #results > .achievement-row,
 #results > .team-panel,
 #results > .results-stats,
@@ -1716,63 +1713,6 @@ input[type=range] { width: 110px; accent-color: var(--blue); background: transpa
   font-size: 12px;
   line-height: 1.45;
   font-weight: 700;
-}
-.missed-summary {
-  margin: 10px 20px 0;
-  border: 1px solid rgba(239, 68, 68, 0.28);
-  border-radius: var(--radius-sm);
-  background: rgba(239, 68, 68, 0.08);
-  padding: 10px 12px;
-  display: none;
-  flex-shrink: 0;
-}
-.missed-summary.active { display: block; }
-.missed-summary-top {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 12px;
-  color: var(--text-primary);
-  font-size: 12px;
-  font-weight: 700;
-}
-.missed-summary-top span {
-  color: var(--red);
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  font-size: 10px;
-}
-.missed-summary-list {
-  display: flex;
-  gap: 7px;
-  overflow-x: auto;
-  padding-top: 8px;
-  -webkit-overflow-scrolling: touch;
-}
-.missed-summary-list::-webkit-scrollbar { display: none; }
-.missed-term-chip {
-  flex: 0 0 auto;
-  max-width: 190px;
-  border: 1px solid rgba(239, 68, 68, 0.28);
-  border-radius: var(--radius-sm);
-  background: rgba(24, 24, 24, 0.34);
-  padding: 8px 10px;
-}
-.missed-term-chip strong {
-  display: block;
-  color: var(--text-primary);
-  font-size: 13px;
-  font-weight: 700;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-.missed-term-chip small {
-  display: block;
-  color: var(--text-secondary);
-  font-size: 10px;
-  font-weight: 700;
-  margin-top: 2px;
 }
 .achievement-row {
   display: flex;
@@ -2572,7 +2512,6 @@ input[type=range] { width: 110px; accent-color: var(--blue); background: transpa
 .dash-stat,
 .badge-card,
 .mcat-card,
-.missed-summary,
 .team-panel,
 .rv-item {
   border-radius: 16px;
@@ -2760,7 +2699,6 @@ input[type=range] { width: 110px; accent-color: var(--blue); background: transpa
   box-shadow: 0 16px 42px rgba(7, 38, 74, 0.08);
 }
 .mcat-number { color: var(--navy); }
-.missed-term-chip { background: rgba(255,255,255,0.72); }
 .results-actions {
   background: rgba(247, 239, 227, 0.96);
 }
@@ -2814,7 +2752,6 @@ input[type=range] { width: 110px; accent-color: var(--blue); background: transpa
   #results > .mcat-card,
   #results > .insight-grid,
   #results > .study-takeaway,
-  #results > .missed-summary,
   #results > .achievement-row,
   #results > .team-panel,
   #results > .results-stats,
@@ -3091,9 +3028,6 @@ input[type=range] { width: 110px; accent-color: var(--blue); background: transpa
   margin-top: 2px;
 }
 
-#results .missed-summary {
-  display: none !important;
-}
 #results .results-title {
   text-transform: uppercase;
   letter-spacing: 0;
@@ -4192,6 +4126,7 @@ html.game-active #app {
 
 </style>
 <link rel="stylesheet" href="variant-neo.css">
+<link rel="stylesheet" href="minimal.css">
 </head>
 <body>
 <div id="app">
@@ -4292,26 +4227,31 @@ html.game-active #app {
       </div>
       <div class="home-title" aria-label="High Yield"><span class="high">High</span><span class="yield">Yield</span></div>
     </div>
-    <div class="home-sub">MCAT Heads-Up Study Game</div>
-    <div class="home-cook-copy">Ready to <span>cook</span> today?</div>
+    <div class="home-sub">MCAT charades</div>
     <div class="home-badge" style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;justify-content:center;">
       <span id="home-ai-status">Question banks ready</span>
       <span class="offline-indicator online" id="offlineIndicator"><span class="dot"></span> <span id="offlineText">Online</span></span>
     </div>
   </div>
+    <div id="round-recovery" hidden>
+      <strong>Pick up where you left off</strong>
+      <p id="round-recovery-detail"></p>
+      <button class="btn btn-primary" onclick="resumeSavedRound()">Resume round</button>
+      <button class="btn btn-secondary" onclick="discardSavedRound()">Discard round</button>
+    </div>
   <div class="home-actions">
     <button class="btn-original primary menu-button" onclick="showScreen('topics')"><span class="menu-button-label">Start Game</span></button>
     <button class="btn-original menu-button" id="daily-home-btn" onclick="startDailyChallenge()"><span class="menu-button-label">Daily Challenge</span></button>
     <button class="btn-original menu-button" onclick="showDashboard()"><span class="menu-button-label">Recall Stats</span></button>
-    <div class="premium-bundle">
+    <details class="home-more"><summary>More options</summary><div class="premium-bundle">
       <button class="premium-mini" onclick="showNoAdsUpgrade()"><span class="icon-badge"><svg class="ui-icon"><use href="#i-slash"></use></svg></span><span>Remove Ads</span></button>
       <button class="premium-mini" onclick="showPremiumFeature('AI Deck from Slides')"><span class="icon-badge"><svg class="ui-icon"><use href="#i-spark"></use></svg></span><span>AI Deck from Slides</span></button>
       <button class="premium-mini" onclick="showPremiumFeature('Custom AI Deck Maker')"><span class="icon-badge"><svg class="ui-icon"><use href="#i-wand"></use></svg></span><span>Custom Deck Maker</span></button>
       <div class="premium-bundle-tag">Premium</div>
-    </div>
+    </div></details>
     <button class="btn-original menu-button" onclick="showTutorial()"><span class="menu-button-label">How to Play</span></button>
   </div>
-  <div class="launch-card">
+  <details class="home-launch"><summary>App status</summary><div class="launch-card">
     <div class="launch-row">
       <div>
         <div class="launch-title">Launch status</div>
@@ -4324,16 +4264,17 @@ html.game-active #app {
       <div class="daily-chip" id="daily-streak-chip">0 day streak</div>
     </div>
     <button class="btn btn-secondary btn-sm launch-check-btn" onclick="showLaunchChecklist()"><svg class="ui-icon"><use href="#i-check"></use></svg> Launch Checklist</button>
-  </div>
+  </div></details>
 </div>
 
 <div class="screen" id="topics">
   <div class="nav-bar">
     <button class="nav-back" onclick="showScreen('home')"><svg class="ui-icon"><use href="#i-arrow-left"></use></svg> Back</button>
-    <span class="nav-title">Choose Topics</span>
+    <span class="nav-title">Decks</span>
     <span style="font-size:12px;color:var(--text-dim);font-weight:600" id="selected-count">0 selected</span>
   </div>
   <div class="scroll-body" style="display:flex;flex-direction:column;gap:0;padding-bottom:8px">
+    <div class="deck-intro"><h1>What are we studying?</h1><p>Pick a few topics.</p></div>
     <div class="section-label">Question banks. <span id="ai-status-badge" class="ai-status-badge on">Checking bank</span></div>
     <div class="bank-note" id="bank-warning">Mini fallback bank is active. On GitHub Pages, upload the full <strong>data</strong> folder next to <strong>index.html</strong>, then hard refresh.</div>
     <div class="topics-grid" style="margin-bottom:14px">
@@ -4348,6 +4289,11 @@ html.game-active #app {
     </div>
     <div id="custom-decks-section" style="display:none"><div class="section-label">My Decks</div><div class="topics-grid" id="custom-decks-grid" style="margin-bottom:14px"></div></div>
 
+    <div class="section-label">Your round</div>
+    <div class="settings-row round-duration">
+      <div><div class="settings-lbl">Duration</div><div class="settings-sub" id="timer-label">60 seconds</div></div>
+      <input aria-label="Round duration in seconds" id="timer-slider" type="range" min="30" max="120" step="15" value="60" oninput="document.getElementById('timer-label').textContent=this.value+' seconds';gameSettings.timer=+this.value;saveGameSettings()">
+    </div>
     <div class="section-label">Game Mode</div>
     <div class="mode-grid" style="margin-bottom:14px">
       <div class="mode-card selected" data-mode="classic" onclick="setGameMode('classic')"><div class="mode-icon"><svg class="ui-icon"><use href="#i-target"></use></svg></div><div><div class="mode-name">Classic Heads-Up</div><div class="mode-sub">Balanced round for quick review or group play.</div></div><span class="mode-tag">60s</span></div>
@@ -4379,6 +4325,8 @@ html.game-active #app {
       </div>
     </div>
 
+    <details class="round-more">
+    <summary>More options</summary>
     <div id="subtopic-section" style="display:none">
       <div class="section-label">Optional Filters</div>
       <div class="subtopic-wrap" id="subtopic-wrap"></div>
@@ -4400,10 +4348,6 @@ html.game-active #app {
 
     <div class="section-label">Round Settings</div>
     <div class="settings-card" style="margin-bottom:14px">
-      <div class="settings-row">
-        <div><div class="settings-lbl">Timer</div><div class="settings-sub" id="timer-label">60 seconds</div></div>
-        <input id="timer-slider" type="range" min="30" max="120" step="15" value="60" oninput="document.getElementById('timer-label').textContent=this.value+' seconds';gameSettings.timer=+this.value;saveGameSettings()">
-      </div>
       <div class="settings-row">
         <div><div class="settings-lbl">Quick recall</div><div class="settings-sub" id="quick-threshold-label">Strong if guessed in 8 seconds or less</div></div>
         <input id="quick-threshold-slider" type="range" min="4" max="12" step="1" value="8" oninput="updateRecallThreshold('quick', +this.value)">
@@ -4467,6 +4411,7 @@ html.game-active #app {
       <div class="cycle-reset-note">Repeat prevention tracks unique playable prompts, so duplicated raw bank rows do not show the same term over and over.</div>
       <button class="btn btn-danger btn-sm" onclick="resetCardCycle()"><svg class="ui-icon"><use href="#i-refresh"></use></svg> Clear Seen Cards</button>
     </div>
+    </details>
   </div>
   
   <div class="start-bar">
@@ -4521,8 +4466,8 @@ html.game-active #app {
     </div>
     <div id="timer-text">60</div>
     <div class="tap-hints">
-      <span class="skip">Tap left: skip</span>
-      <span class="got">Tap right: got it</span>
+      <span class="skip">&#8630; Skip</span>
+      <span class="got">Got it</span>
     </div>
     <div class="tap-zones" onpointerdown="handleGameSurfaceTap(event)" onclick="if(!window.PointerEvent) handleGameSurfaceTap(event)">
       <div class="tap-zone tap-zone-skip" data-action="skip" aria-label="Skip"></div>
@@ -4544,9 +4489,15 @@ html.game-active #app {
     <div class="mcat-number" id="res-mcat">472</div>
     <div class="mcat-detail" id="res-mcat-detail">Streaks and word difficulty raise your score.</div>
   </div>
-  <div class="insight-grid">
-    <div class="insight-card"><div class="insight-kicker">Strongest</div><div class="insight-value" id="res-strongest">Not enough data</div></div>
-    <div class="insight-card"><div class="insight-kicker">Focus Next</div><div class="insight-value" id="res-weakest">Not enough data</div></div>
+  <div class="results-stats">
+    <div class="rstat"><div class="rn g" id="res-correct">0</div><div class="rl">Correct</div></div>
+    <div class="rstat"><div class="rn n" id="res-total">0</div><div class="rl">Total</div></div>
+    <div class="rstat"><div class="rn r" id="res-wrong">0</div><div class="rl">Missed</div></div>
+    <div class="rstat accuracy-stat"><div class="rn n" id="acc-pct">0%</div><div class="rl">Accuracy</div><div class="acc-bar"><div class="acc-fill" id="acc-fill"></div></div></div>
+  </div>
+  <div class="review-scroll">
+    <div id="rv-wrong-section" style="display:none"><div class="rv-label">Missed Words</div><div id="rv-wrong-list"></div></div>
+    <div id="rv-correct-section" style="display:none"><div class="rv-label">Correct</div><div id="rv-correct-list"></div></div>
   </div>
   <div class="study-takeaway" id="study-takeaway">
     <div class="takeaway-head">
@@ -4554,10 +4505,7 @@ html.game-active #app {
       <div class="takeaway-pill" id="takeaway-pill">Next move</div>
     </div>
     <div class="takeaway-grid">
-      <div class="takeaway-item"><div class="takeaway-k">Best topic</div><div class="takeaway-v" id="takeaway-best">Play a round</div></div>
-      <div class="takeaway-item"><div class="takeaway-k">Needs review</div><div class="takeaway-v" id="takeaway-focus">Missed cards</div></div>
-      <div class="takeaway-item"><div class="takeaway-k">Review 3</div><div class="takeaway-v" id="takeaway-cards">None yet</div></div>
-      <div class="takeaway-item"><div class="takeaway-k">Next deck</div><div class="takeaway-v" id="takeaway-next">Classic Heads-Up</div></div>
+      <div class="takeaway-item takeaway-topic"><div class="takeaway-k">Review topic</div><div class="takeaway-v" id="takeaway-focus">Missed cards</div></div>
     </div>
     <div class="takeaway-action" id="takeaway-action">Finish a round to get a useful review plan.</div>
   </div>
@@ -4573,10 +4521,6 @@ html.game-active #app {
     </div>
     <button class="btn btn-primary btn-sm" id="practice-weak-btn" onclick="startWeaknessRoundFromResults()"><svg class="ui-icon"><use href="#i-brain"></use></svg> Practice Weak Cards</button>
   </div>
-  <div class="missed-summary" id="missed-summary">
-    <div class="missed-summary-top"><span>Missed this round</span><strong id="missed-summary-count">0 words</strong></div>
-    <div class="missed-summary-list" id="missed-summary-list"></div>
-  </div>
   <div class="achievement-row" id="new-achievements" style="display:none"></div>
   <div class="team-panel" id="team-panel" hidden>
     <div class="team-row"><span>Series</span><strong id="team-seriesline">Team A 0 · Team B 0</strong></div>
@@ -4586,25 +4530,11 @@ html.game-active #app {
     <div class="team-callout" id="team-last">Team Battle is ready.</div>
     <div class="team-history" id="team-history"></div>
   </div>
-  <div class="results-stats">
-    <div class="rstat"><div class="rn g" id="res-correct">0</div><div class="rl">Correct</div></div>
-    <div class="rstat"><div class="rn n" id="res-total">0</div><div class="rl">Total</div></div>
-    <div class="rstat"><div class="rn r" id="res-wrong">0</div><div class="rl">Missed</div></div>
-  </div>
-  <div class="acc-wrap">
-    <div class="acc-label"><span>Accuracy</span><strong id="acc-pct">0%</strong></div>
-    <div class="acc-bar"><div class="acc-fill" id="acc-fill"></div></div>
-  </div>
-  <div class="review-scroll">
-    <div id="rv-correct-section" style="display:none"><div class="rv-label">Correct</div><div id="rv-correct-list"></div></div>
-    <div id="rv-wrong-section" style="display:none"><div class="rv-label">Missed Words</div><div id="rv-wrong-list"></div></div>
-  </div>
   <div class="results-actions">
     <button class="btn btn-primary" id="play-again-btn" onclick="playAgainFromResults()"><svg class="ui-icon solid"><use href="#i-play"></use></svg> Play Again</button>
     <button class="btn btn-secondary" id="streak-reward-btn" style="display:none" onclick="showStreakReward()"><svg class="ui-icon"><use href="#i-zap"></use></svg> View Streak Reward</button>
     <button class="btn btn-secondary" id="review-missed-btn" onclick="continueAfterResults(() => startReviewRound('missed'))"><svg class="ui-icon"><use href="#i-brain"></use></svg> Review Missed Cards</button>
-    <button class="btn btn-secondary" id="review-hard-btn" onclick="continueAfterResults(() => startReviewRound('hard'))"><svg class="ui-icon"><use href="#i-zap"></use></svg> Replay Hard Cards</button>
-    <button class="btn btn-secondary" id="reset-team-btn" style="display:none" hidden onclick="resetTeamBattle(true)"><svg class="ui-icon"><use href="#i-flag"></use></svg> Reset Team Battle</button>
+    <div id="team-reset-action"></div>
     <button class="btn btn-secondary" onclick="shareLastResult()"><svg class="ui-icon"><use href="#i-share"></use></svg> Share Result</button>
     <button class="btn btn-secondary" onclick="continueAfterResults(() => showScreen('topics'))"><svg class="ui-icon"><use href="#i-arrow-left"></use></svg> Change Topics</button>
     <button class="btn btn-secondary" onclick="continueAfterResults(() => showScreen('home'))"><svg class="ui-icon"><use href="#i-home"></use></svg> Home</button>
@@ -4698,7 +4628,6 @@ html.game-active #app {
       <div class="dash-stat"><div class="dash-stat-n" id="dash-mastered-week">0</div><div class="dash-stat-l">Mastered Week</div></div>
       <div class="dash-stat"><div class="dash-stat-n" id="dash-review-today">0</div><div class="dash-stat-l">Review Today</div></div>
       <div class="dash-stat"><div class="dash-stat-n" id="dash-improving">None</div><div class="dash-stat-l">Improving</div></div>
-      <div class="dash-stat"><div class="dash-stat-n" id="dash-weakest-topic">None</div><div class="dash-stat-l">Weakest</div></div>
     </div>
     <div class="daily-panel">
       <div class="daily-panel-top">
@@ -4777,6 +4706,7 @@ html.game-active #app {
 </div>
 
 <script src="data/word-bank.js"></script>
+<script src="native-bridge.js"></script>
 <script>
 /* ═══════════════════════════════════════════
    MASSIVE OFFLINE DECK (550+ terms total)
@@ -5389,11 +5319,38 @@ const OFFLINE_BANK = {
    ─────────────────────────────────────────────── */
 let currentScreenId = 'home';
 let isTransitioning = false;
-const APP_SHELL_COLOR = '#FFFDF5';
-const GAME_SHELL_COLOR = '#062B52';
+const APP_SHELL_COLOR = '#FFFFFF';
+const GAME_SHELL_COLOR = '#FFFFFF';
+const PORTRAIT_SCREEN_IDS = new Set(['home', 'dashboard', 'topics']);
+const LANDSCAPE_SCREEN_IDS = new Set(['countdown', 'game']);
 let gameRoundFullscreenEntered = false;
 let gameOrientationSessionActive = false;
 let gameOrientationLockPromise = null;
+function notifyNativeOrientationLock(orientation) {
+  const payload = { orientation };
+  try {
+    const handlers = window.webkit?.messageHandlers;
+    ['orientationLock', 'screenOrientation', 'appOrientation'].forEach(name => {
+      if (handlers?.[name]?.postMessage) handlers[name].postMessage(payload);
+    });
+  } catch(e) {}
+  try {
+    const screenOrientation = window.Capacitor?.Plugins?.ScreenOrientation;
+    if (screenOrientation?.lock) screenOrientation.lock({ orientation }).catch?.(() => {});
+  } catch(e) {}
+}
+async function requestPortraitOrientationForApp() {
+  notifyNativeOrientationLock('portrait');
+  if (window.HighYieldNative) return;
+  try { if (window.screen?.orientation?.unlock) window.screen.orientation.unlock(); } catch(e) {}
+  const orientation = window.screen?.orientation;
+  if (orientation?.lock) {
+    try { await orientation.lock('portrait-primary'); }
+    catch(primaryError) {
+      try { await orientation.lock('portrait'); } catch(e) {}
+    }
+  }
+}
 function setGameViewportActive(active) {
   const isActive = Boolean(active);
   document.documentElement.classList.toggle('game-active', isActive);
@@ -5409,6 +5366,8 @@ function setGameViewportActive(active) {
 async function requestGameOrientationLockForRound() {
   if (gameOrientationLockPromise) return gameOrientationLockPromise;
   gameOrientationSessionActive = true;
+  notifyNativeOrientationLock('landscape');
+  if (window.HighYieldNative) return;
   gameOrientationLockPromise = (async () => {
     try {
       const root = document.documentElement;
@@ -5442,6 +5401,7 @@ function releaseGameOrientationLockForRound() {
     } catch(e) {}
   }
   gameRoundFullscreenEntered = false;
+  requestPortraitOrientationForApp().catch?.(() => {});
 }
 function setMobileShellColor(color = APP_SHELL_COLOR, gameShell = false) {
   const safeColor = String(color || APP_SHELL_COLOR);
@@ -5449,6 +5409,7 @@ function setMobileShellColor(color = APP_SHELL_COLOR, gameShell = false) {
   if (themeMeta) themeMeta.setAttribute('content', safeColor);
   document.documentElement.style.setProperty('--app-status-bg', safeColor);
   document.documentElement.style.backgroundColor = safeColor;
+  if (document.body) document.body.style.backgroundColor = safeColor;
   const isGameShell = Boolean(gameShell);
   document.documentElement.classList.toggle('is-game-shell', isGameShell);
   if (document.body) document.body.classList.toggle('is-game-shell', isGameShell);
@@ -5459,6 +5420,7 @@ function setMobileShellColor(color = APP_SHELL_COLOR, gameShell = false) {
 function showScreen(id) {
   if (isTransitioning || id === currentScreenId) return;
   isTransitioning = true;
+  if (PORTRAIT_SCREEN_IDS.has(id) || !LANDSCAPE_SCREEN_IDS.has(id)) releaseGameOrientationLockForRound();
   setMobileShellColor(APP_SHELL_COLOR, false);
   const currentEl = document.getElementById(currentScreenId);
   const nextEl = document.getElementById(id);
@@ -5520,7 +5482,7 @@ function maybeShowFirstRunTutorial() {
 window.showTutorial = showTutorial;
 window.completeTutorial = completeTutorial;
 function isStandaloneApp() {
-  return window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone === true;
+  return Boolean(window.HighYieldNative) || window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone === true;
 }
 function showAddHomeInstructions() {
   const overlay = document.getElementById('add-home-overlay');
@@ -5941,6 +5903,8 @@ function showGameScreen(id) {
   const el = document.getElementById(id);
   if (el) el.classList.add('active');
   if (id === 'game') { document.getElementById('game').style.display = 'flex'; } else { document.getElementById('game').style.display = 'none'; }
+  if (LANDSCAPE_SCREEN_IDS.has(id)) requestGameOrientationLockForRound();
+  else requestPortraitOrientationForApp().catch?.(() => {});
   setMobileShellColor(id === 'game' ? GAME_SHELL_COLOR : APP_SHELL_COLOR, id === 'game');
   currentScreenId = id;
   if (id === 'game') refitGameCardSoon(40);
@@ -5972,9 +5936,24 @@ function noteRoundForAdBreak(totalCards) {
 function hasPendingAdBreak() {
   return Boolean(adBreakState.pending);
 }
+let nativeAdBreakBusy = false;
 function continueAfterResults(action) {
+  if (nativeAdBreakBusy) return;
   const nextAction = typeof action === 'function' ? action : () => {};
   if (AD_CONFIG.enabled && currentScreenId === 'results' && hasPendingAdBreak()) {
+    if (window.HighYieldNative) {
+      nativeAdBreakBusy = true;
+      Promise.resolve().then(() => window.HighYieldNative.showAd()).then(result => {
+        if (result?.shown) adBreakState.totalShown = (adBreakState.totalShown || 0) + 1;
+      }).catch(error => console.warn('Ad unavailable:', error)).finally(() => {
+        adBreakState.pending = false;
+        adBreakState.roundsSinceAd = 0;
+        saveAdBreakState();
+        nativeAdBreakBusy = false;
+        nextAction();
+      });
+      return;
+    }
     showAdBreak(nextAction);
     return;
   }
@@ -7813,48 +7792,54 @@ function deriveRoundInsights(log) {
 function getTopicNameFromInsight(value = '') {
   return String(value || '').split('·')[0].trim();
 }
+function getSpecificStudyTopic(card) {
+  const safe = normalizeCard(card, card?.category || 'General');
+  const aminoTopic = safe.aminoName && safe.aminoCardLabel ? `${safe.aminoName} ${safe.aminoCardLabel}` : '';
+  return String(
+    safe.subtopic ||
+    safe.topic ||
+    safe.pathway ||
+    safe.system ||
+    safe.unit ||
+    aminoTopic ||
+    safe.category ||
+    getCardDisplayTerm(safe) ||
+    'Missed cards'
+  ).trim();
+}
 function deriveStudyTakeaway(log, insights, scoreData, pct) {
   const safeLog = Array.isArray(log) ? log : [];
   const correct = safeLog.filter(item => item.result === 'correct').map(item => normalizeCard(item));
   const missed = safeLog.filter(item => item.result === 'wrong').map(item => normalizeCard(item));
-  const missedByTopic = {};
-  missed.forEach(card => {
-    const key = card.category || 'General';
-    missedByTopic[key] = (missedByTopic[key] || 0) + 1;
+  const reviewCandidates = safeLog
+    .filter(item => item.result === 'wrong' || item.outcome === 'slow_correct' || isHardMissOutcome(item.outcome))
+    .map(item => normalizeCard(item));
+  const focusScores = {};
+  reviewCandidates.forEach(card => {
+    const key = getSpecificStudyTopic(card);
+    const weight = card.result === 'wrong' ? 3 : 1;
+    focusScores[key] = (focusScores[key] || 0) + weight + Math.max(0, Number(card.difficulty) || 1) * 0.1;
   });
-  const focusTopic = Object.entries(missedByTopic).sort((a, b) => b[1] - a[1])[0]?.[0]
+  const focusTopic = Object.entries(focusScores).sort((a, b) => b[1] - a[1])[0]?.[0]
     || getTopicNameFromInsight(insights?.weakest)
+    || getSpecificStudyTopic(correct[0] || safeLog[0] || {})
     || 'Missed cards';
-  const bestTopic = getTopicNameFromInsight(insights?.strongest)
-    || correct[0]?.category
-    || 'Not enough data';
-  const reviewCards = missed.slice(0, 3).map(card => getCardDisplayTerm(card) || card.term);
-  const nextDeck = missed.length
-    ? `${focusTopic} review`
-    : pct >= 85
-      ? 'Hard Cards'
-      : (safeLog[0]?.category || 'Classic Heads-Up');
   const action = missed.length
-    ? `Start with the ${missed.length === 1 ? 'card' : 'cards'} you missed, then replay ${focusTopic}.`
+    ? `Review ${focusTopic}, then run the same deck again.`
     : pct >= 85
-      ? 'Clean round. Try a harder deck, Taboo Mode, or Sprint next.'
-      : 'Play one more classic round to build speed before narrowing topics.';
+      ? `Clean round. Push ${focusTopic} at a higher difficulty next.`
+      : `Do one more round, then review ${focusTopic}.`;
   const pill = scoreData?.score >= 515 ? 'Strong run' : missed.length ? 'Review plan' : 'Next rep';
   return {
-    best: bestTopic,
+    topic: focusTopic,
     focus: focusTopic,
-    cards: reviewCards.length ? reviewCards.join(', ') : 'No misses',
-    next: nextDeck,
     action,
     pill
   };
 }
 function renderStudyTakeaway(takeaway) {
   const map = {
-    'takeaway-best': takeaway?.best || 'Not enough data',
-    'takeaway-focus': takeaway?.focus || 'Missed cards',
-    'takeaway-cards': takeaway?.cards || 'None yet',
-    'takeaway-next': takeaway?.next || 'Classic Heads-Up',
+    'takeaway-focus': takeaway?.topic || takeaway?.focus || 'Missed cards',
     'takeaway-action': takeaway?.action || 'Finish a round to get a useful review plan.',
     'takeaway-pill': takeaway?.pill || 'Next move'
   };
@@ -8521,6 +8506,7 @@ function updateGameHud() {
 }
 
 function startGame() {
+  document.getElementById('round-recovery').hidden = true;
   clearInterval(timerInterval);
   clearRoundTimers();
   const special = pendingSpecialRound;
@@ -8563,6 +8549,7 @@ function startGame() {
   isGameTransitioning = true;
   deckIndex = 0;
   updateGameHud();
+  saveInterruptedRound();
   const accFill = document.getElementById('acc-fill');
   if (accFill) accFill.style.width = '0%';
   actionTimeout = setTimeout(() => {
@@ -8593,7 +8580,7 @@ function beginGame() {
 	  validateGameLayoutOrFallback(80);
 	}
 
-function renderCard() {
+function renderCard(restoredCard = null, elapsedMs = 0) {
   if (!gameState.active || gameState.ended) return;
   clearTimeout(cardRenderTimeout);
   isGameTransitioning = true;
@@ -8603,10 +8590,10 @@ function renderCard() {
   
   cardRenderTimeout = setTimeout(() => {
     if (!gameState.active || gameState.ended) return;
-    const nextCard = getNextCard();
+    const nextCard = restoredCard || getNextCard();
     if (!nextCard) { isGameTransitioning = false; endGame(); return; }
     const card = normalizeCard(nextCard);
-    gameState.cardCount++;
+    if (!restoredCard) gameState.cardCount++;
     gameState.currentCard = card;
     gameState.currentAppearanceId = `${gameState.roundId}:${gameState.cardCount}`;
     gameState.undoSnapshot = null;
@@ -8640,7 +8627,10 @@ function renderCard() {
     lastTiltAction = Date.now() + 600;
     isGameTransitioning = false;
     startCardResponseTimer(card, gameState.currentAppearanceId, 240);
+    if (restoredCard) cardResponseTracker.startedAt -= elapsedMs;
+    if (document.hidden) pauseCardResponseTimer();
     updateGameHud();
+    saveInterruptedRound();
   }, 300);
 }
 function setGameBg(s) {
@@ -8648,26 +8638,19 @@ function setGameBg(s) {
   setMobileShellColor(GAME_SHELL_COLOR, true);
 }
 function flash(emoji) { const el = document.getElementById('flash-overlay'); el.textContent = emoji; el.className = 'flash-overlay show'; setTimeout(() => { el.className = 'flash-overlay'; }, 420); }
-function showCardFeedback(kind, mainText, subText = '') {
-  const termEl = document.getElementById('card-term');
-  if (!termEl) return;
-  const className = kind === 'correct' ? 'correct-feedback' : 'skip-feedback';
-  termEl.classList.remove('slide-out', 'slide-in', 'slide-in-active', 'feedback-card', 'correct-feedback', 'skip-feedback');
-  termEl.classList.add('feedback-card', className);
-  termEl.querySelectorAll('.term-feedback-overlay').forEach(el => el.remove());
-  const overlay = document.createElement('div');
-  overlay.className = `term-feedback-overlay ${className}`;
-  overlay.setAttribute('aria-live', 'polite');
-  const icon = kind === 'correct' ? '✓' : '↷';
-  const label = kind === 'correct' ? 'Correct' : 'Pass';
-  overlay.innerHTML = `
-    <span class="term-feedback-icon" aria-hidden="true">${icon}</span>
-    <span class="term-feedback">${escapeHTML(mainText)}</span>
-    <span class="term-feedback-label">${label}</span>
-    ${subText ? `<span class="term-feedback-sub">${escapeHTML(subText)}</span>` : ''}
-  `;
-  termEl.appendChild(overlay);
-  validateGameLayoutOrFallback(40);
+function showCardFeedback(kind) {
+  const overlay = document.getElementById('flash-overlay');
+  if (!overlay) return;
+  overlay.getAnimations().forEach(animation => animation.cancel());
+  overlay.textContent = '';
+  overlay.className = 'flash-overlay answer-tint';
+  overlay.style.backgroundColor = kind === 'correct' ? '#41a36a' : '#df554b';
+  overlay.animate([
+    { opacity: 0 },
+    { opacity: 0.16, offset: 0.22 },
+    { opacity: 0.12, offset: 0.55 },
+    { opacity: 0 }
+  ], { duration: 340, easing: 'ease-out' });
 }
 function captureUndoSnapshot() {
   const termEl = document.getElementById('card-term');
@@ -8727,6 +8710,7 @@ function undoLastCardAction() {
   setDogMood('game-dog', 'focused');
   updateGameHud();
   refitGameCardSoon(20);
+  saveInterruptedRound();
 }
 window.undoLastCardAction = undoLastCardAction;
 function maybeQueueWeaknessRetest(item) {
@@ -8765,7 +8749,8 @@ function markCorrect() {
   updateGameHud();
   setDogMood('game-dog', 'celebrate');
   setGameBg('correct');
-  showCardFeedback('correct', `+${points}`, 'Correct');
+  showCardFeedback('correct');
+  saveInterruptedRound();
   actionTimeout = setTimeout(() => { if (gameState.active && !gameState.ended) renderCard(); }, 360);
 }
 function markWrong() {
@@ -8785,7 +8770,8 @@ function markWrong() {
   updateGameHud();
   setDogMood('game-dog', 'sad');
   setGameBg('wrong');
-  showCardFeedback('skip', 'Skip', getCardDisplayTerm(card));
+  showCardFeedback('skip');
+  saveInterruptedRound();
   actionTimeout = setTimeout(() => { if (gameState.active && !gameState.ended) renderCard(); }, 360);
 }
 function markCurrentCardIncompleteOnEnd(options = {}) {
@@ -8804,13 +8790,19 @@ function markCurrentCardMissedOnTimeout() {
 }
 function startTimer() {
   clearInterval(timerInterval);
-  function upd() { const t = gameState.timeLeft; const tt = document.getElementById('timer-text'); tt.textContent = t; tt.style.color = t <= 10 ? 'var(--red)' : t <= 20 ? 'var(--orange)' : 'rgba(255,255,255,0.52)'; }
+  function upd() {
+    const t = gameState.timeLeft;
+    const tt = document.getElementById('timer-text');
+    tt.textContent = t;
+    tt.dataset.urgency = t <= 10 ? 'urgent' : t <= 20 ? 'warning' : 'normal';
+  }
   upd();
   timerInterval = setInterval(() => {
     if (!gameState.active || gameState.ended) return;
     if (gameState.pausedForVisibility || document.hidden) return;
     gameState.timeLeft = Math.max(0, gameState.timeLeft - 1);
     upd();
+    saveRoundClock();
     if (gameState.timeLeft <= 0) { clearInterval(timerInterval); endGame(); }
   }, 1000);
 }
@@ -8818,6 +8810,7 @@ function endGame() {
   if (gameState.ended && currentScreenId === 'results') return;
   gameState.active = false;
   gameState.ended = true;
+  discardSavedRound();
   clearInterval(timerInterval);
   clearRoundTimers();
   isGameTransitioning = false;
@@ -8870,10 +8863,6 @@ function endGame() {
   document.getElementById('results-title').textContent = title;
   document.getElementById('results-sub').textContent = total ? `${modeLabel} · MCAT-style` : 'No cards scored yet · try a shorter warm-up';
   setDogMood('results-dog', scoreData.score >= 505 ? 'celebrate' : scoreData.score >= 495 ? 'happy' : 'thinking');
-  const strongestEl = document.getElementById('res-strongest');
-  const weakestEl = document.getElementById('res-weakest');
-  if (strongestEl) strongestEl.textContent = insights.strongest;
-  if (weakestEl) weakestEl.textContent = insights.weakest;
   renderStudyTakeaway(studyTakeaway);
   renderWeaknessSummary(roundRecall);
   const badgeRow = document.getElementById('new-achievements');
@@ -8901,24 +8890,6 @@ function endGame() {
   }
   const ci = log.filter(l => l.result === 'correct');
   const wi = log.filter(l => l.result === 'wrong');
-  const missedSummary = document.getElementById('missed-summary');
-  const missedSummaryCount = document.getElementById('missed-summary-count');
-  const missedSummaryList = document.getElementById('missed-summary-list');
-  if (missedSummary && missedSummaryCount && missedSummaryList) {
-    if (wi.length) {
-      missedSummary.classList.add('active');
-      missedSummaryCount.textContent = `${wi.length} word${wi.length === 1 ? '' : 's'}`;
-      missedSummaryList.innerHTML = wi.map(item => {
-        const safe = normalizeCard(item);
-        const reason = item.timedOut ? ' · Timed out' : item.endedEarly ? ' · Round ended' : '';
-        return `<span class="missed-term-chip"><strong>${escapeHTML(safe.term)}</strong><small>${escapeHTML(safe.category || 'General')} · Tier ${safe.difficulty}${reason}</small></span>`;
-      }).join('');
-    } else {
-      missedSummary.classList.remove('active');
-      missedSummaryCount.textContent = '0 words';
-      missedSummaryList.innerHTML = '';
-    }
-  }
   document.getElementById('rv-correct-section').style.display = ci.length ? 'block' : 'none';
   document.getElementById('rv-wrong-section').style.display = wi.length ? 'block' : 'none';
   const reviewHTML = (item, icon, cls) => {
@@ -8935,14 +8906,13 @@ function endGame() {
   document.getElementById('rv-correct-list').innerHTML = ci.map(item => reviewHTML(item, '✓', 'rv-correct')).join('');
   document.getElementById('rv-wrong-list').innerHTML = wi.map(item => reviewHTML(item, '↷', 'rv-wrong')).join('');
   const reviewMissedBtn = document.getElementById('review-missed-btn');
-  const reviewHardBtn = document.getElementById('review-hard-btn');
   if (reviewMissedBtn) reviewMissedBtn.style.display = getStoredCards('missed').length ? 'flex' : 'none';
-  if (reviewHardBtn) reviewHardBtn.style.display = getStoredCards('hard').length ? 'flex' : 'none';
-  const resetTeamBtn = document.getElementById('reset-team-btn');
-  if (resetTeamBtn) {
+  const teamResetAction = document.getElementById('team-reset-action');
+  if (teamResetAction) {
     const showTeamResultsAction = gameState.mode === 'teams';
-    resetTeamBtn.hidden = !showTeamResultsAction;
-    resetTeamBtn.style.display = showTeamResultsAction ? 'flex' : 'none';
+    teamResetAction.innerHTML = showTeamResultsAction
+      ? '<button class="btn btn-secondary" id="reset-team-btn" onclick="resetTeamBattle(true)"><svg class="ui-icon"><use href="#i-flag"></use></svg> Reset Team Battle</button>'
+      : '';
   }
   const streakRewardBtn = document.getElementById('streak-reward-btn');
   if (streakRewardBtn) streakRewardBtn.style.display = lastDailyReward ? 'flex' : 'none';
@@ -8981,12 +8951,18 @@ function toggleTopic(el) {
   refreshSubtopicOptions();
 }
 function updateSelectedCount() {
+  document.querySelectorAll('.topic-card').forEach(card => {
+    card.setAttribute('role', 'checkbox');
+    card.tabIndex = 0;
+    card.setAttribute('aria-checked', String(card.classList.contains('selected')));
+  });
   const customSel = document.querySelectorAll('[data-custom].selected').length;
   const total = selectedTopics.length + customSel;
   document.getElementById('selected-count').textContent = total + ' selected';
   const btn = document.getElementById('start-btn');
   const weakReady = currentGameMode === 'weak' && getWeaknessStats().weakCards > 0;
   const enabled = currentGameMode === 'weak' ? weakReady : total > 0;
+  btn.disabled = !enabled;
   btn.style.opacity = enabled ? '1' : '0.4';
   btn.style.pointerEvents = enabled ? 'auto' : 'none';
   if (currentGameMode === 'weak') btn.textContent = weakReady ? 'Start Weakness Mode' : 'No weak cards yet';
@@ -9075,8 +9051,109 @@ function generateCustomPromptDeck() {
   showPremiumFeature('Custom AI Deck Maker');
 }
 
+// Persist data, not rendered HTML or performance.now() timestamps.
+const ROUND_SAVE_KEY = 'highYieldInterruptedRoundV1';
+const ROUND_CLOCK_KEY = 'highYieldInterruptedClockV1';
+function currentResponseElapsed() {
+  const t = cardResponseTracker;
+  if (!t.active || t.completed || t.appearanceId !== gameState.currentAppearanceId) return 0;
+  return Math.max(0, (t.pausedAt ?? getNowMs()) - t.startedAt - t.pausedTotal);
+}
+function saveRoundClock() {
+  if (!gameState.roundId || gameState.ended) return;
+  try {
+    localStorage.setItem(ROUND_CLOCK_KEY, JSON.stringify({ roundId: gameState.roundId, timeLeft: gameState.timeLeft, elapsedMs: currentResponseElapsed() }));
+  } catch (error) { console.warn('Round clock could not be saved', error); }
+}
+function saveInterruptedRound() {
+  if (!gameState.roundId || gameState.ended) return;
+  try {
+    const state = { ...gameState, undoSnapshot: null, active: false, pausedForVisibility: false };
+    const remainingIds = new Set(currentDeck.map(getCardId));
+    localStorage.setItem(ROUND_SAVE_KEY, JSON.stringify({
+      version: 1, state, deck: currentDeck, deckIndex,
+      poolExtras: allCardsPool.filter(card => !remainingIds.has(getCardId(card))),
+      settings: gameSettings, topics: selectedTopics, difficulty: currentDifficulty,
+      subtopics: [...selectedSubtopics], team: teamBattle,
+      elapsedMs: currentResponseElapsed()
+    }));
+    saveRoundClock();
+  } catch (error) {
+    console.warn('Round recovery is unavailable: device storage could not be written', error);
+  }
+}
+function readSavedRound() {
+  try {
+    const saved = JSON.parse(localStorage.getItem(ROUND_SAVE_KEY) || 'null');
+    if (!saved) return null;
+    if (saved.version !== 1 || !saved.state?.roundId || saved.state.ended ||
+        !Array.isArray(saved.deck) || !Array.isArray(saved.state.log) ||
+        !MODE_CONFIG[saved.state.mode] || !Number.isFinite(saved.state.timeLeft) ||
+        saved.state.timeLeft <= 0 || !saved.settings || !Array.isArray(saved.topics) ||
+        (saved.state.currentCard && typeof saved.state.currentCard.term !== 'string') ||
+        (saved.poolExtras && (!Array.isArray(saved.poolExtras) || saved.poolExtras.some(card => !card || typeof card.term !== 'string'))) ||
+        saved.deck.some(card => !card || typeof card.term !== 'string')) {
+      discardSavedRound(); return null;
+    }
+    const clock = JSON.parse(localStorage.getItem(ROUND_CLOCK_KEY) || 'null');
+    if (clock?.roundId === saved.state.roundId && Number.isFinite(clock.timeLeft)) {
+      saved.state.timeLeft = Math.max(0, Math.min(saved.state.timeLeft, clock.timeLeft));
+      saved.elapsedMs = Math.max(0, Number(clock.elapsedMs) || 0);
+    }
+    if (saved.state.timeLeft <= 0) { discardSavedRound(); return null; }
+    return saved;
+  } catch (error) { discardSavedRound(); return null; }
+}
+function discardSavedRound() {
+  try { localStorage.removeItem(ROUND_SAVE_KEY); localStorage.removeItem(ROUND_CLOCK_KEY); } catch (_) {}
+  document.getElementById('round-recovery').hidden = true;
+}
+function offerSavedRound() {
+  const saved = readSavedRound();
+  const panel = document.getElementById('round-recovery');
+  panel.hidden = !saved;
+  if (saved) document.getElementById('round-recovery-detail').textContent =
+    `${saved.state.roundLabel || 'Round'} · ${saved.state.timeLeft}s left · ${saved.state.correct || 0} correct`;
+}
+function resumeSavedRound() {
+  const saved = readSavedRound();
+  if (!saved) { offerSavedRound(); return; }
+  requestMotionPermission();
+  clearRoundTimers(); clearInterval(timerInterval);
+  currentGameMode = saved.state.mode;
+  currentDeckSource = saved.state.deckSource;
+  gameSettings = { ...DEFAULT_GAME_SETTINGS, ...saved.settings };
+  selectedTopics = saved.topics;
+  selectedSubtopics = new Set(saved.subtopics || []);
+  currentDifficulty = saved.difficulty || 1;
+  currentDeck = saved.deck;
+  deckIndex = saved.deckIndex || 0;
+  gameState = { ...saved.state, active: true, ended: false, pausedForVisibility: false, undoSnapshot: null };
+  allCardsPool = uniqueVisibleCards([...currentDeck, ...(saved.poolExtras || gameState.log), ...(gameState.currentCard ? [gameState.currentCard] : [])]);
+  if (gameState.mode === 'teams' && saved.team) teamBattle = saved.team;
+  cardResponseTracker = getEmptyResponseTracker();
+  document.getElementById('round-recovery').hidden = true;
+  document.querySelectorAll('.topic-card[data-topic]').forEach(card => card.classList.toggle('selected', selectedTopics.includes(card.dataset.topic)));
+  document.querySelectorAll('.mode-card').forEach(card => card.classList.toggle('selected', card.dataset.mode === currentGameMode));
+  syncSettingsToggles(); updateSelectedCount();
+  showGameScreen('game');
+  updateGameHud();
+  const pendingCard = gameState.currentCard && !hasCurrentAppearanceOutcome() ? gameState.currentCard : null;
+  renderCard(pendingCard, saved.elapsedMs || 0);
+  startTimer();
+}
+document.addEventListener('visibilitychange', () => { if (document.hidden) saveInterruptedRound(); });
+window.addEventListener('pagehide', saveInterruptedRound);
+
 // Initialize
+document.getElementById('topics').addEventListener('keydown', event => {
+  if (event.target.matches('.topic-card') && (event.key === 'Enter' || event.key === ' ')) {
+    event.preventDefault();
+    event.target.click();
+  }
+});
 setMobileShellColor(APP_SHELL_COLOR, false);
+requestPortraitOrientationForApp().catch?.(() => {});
 renderMascotDogs();
 loadCardCycle();
 loadGameSettings();
@@ -9091,6 +9168,7 @@ updateCycleUI();
 updateModeLabels();
 syncSettingsToggles();
 updateHomeLaunchState();
+offerSavedRound();
 maybeShowInstallThanksOnLaunch();
 if (!maybeShowAddHomeInstructions()) maybeShowFirstRunTutorial();
 preloadLaunchBanks();
