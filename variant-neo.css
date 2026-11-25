@@ -102,7 +102,6 @@
 .theme-neo-brutalist .mcat-card,
 .theme-neo-brutalist .insight-card,
 .theme-neo-brutalist .study-takeaway,
-.theme-neo-brutalist .missed-summary,
 .theme-neo-brutalist .team-panel,
 .theme-neo-brutalist .rstat,
 .theme-neo-brutalist .rv-item,
@@ -653,7 +652,6 @@
 .theme-neo-brutalist .rv-header,
 .theme-neo-brutalist .rv-body-inner,
 .theme-neo-brutalist .takeaway-item,
-.theme-neo-brutalist .missed-term-chip,
 .theme-neo-brutalist .team-row,
 .theme-neo-brutalist .launch-check-row,
 .theme-neo-brutalist .add-home-step,
@@ -1704,7 +1702,6 @@
   line-height: 1.1 !important;
 }
 
-.theme-neo-brutalist .missed-summary-top,
 .theme-neo-brutalist .team-row,
 .theme-neo-brutalist .team-history-row,
 .theme-neo-brutalist .acc-label,
@@ -1729,17 +1726,6 @@
   justify-content: center;
   text-align: center;
   overflow-wrap: anywhere;
-}
-
-.theme-neo-brutalist .missed-term-chip {
-  display: inline-flex !important;
-  flex-direction: column;
-  align-items: center !important;
-  justify-content: center !important;
-  gap: 3px;
-  text-align: center !important;
-  line-height: 1.18;
-  box-sizing: border-box;
 }
 
 .theme-neo-brutalist .rv-header {
@@ -2821,4 +2807,221 @@ html.theme-neo-brutalist #app::after {
 html.theme-neo-brutalist.game-active #app::before,
 html.theme-neo-brutalist.game-active #app::after {
   background: var(--navy);
+}
+
+@supports (-webkit-touch-callout: none) {
+  html.theme-neo-brutalist,
+  html.theme-neo-brutalist body,
+  html.theme-neo-brutalist #app,
+  html.theme-neo-brutalist .screen {
+    min-height: -webkit-fill-available;
+  }
+
+  @media (display-mode: standalone) {
+    html.theme-neo-brutalist,
+    html.theme-neo-brutalist body,
+    html.theme-neo-brutalist #app {
+      height: -webkit-fill-available !important;
+      background-color: var(--app-status-bg, var(--neo-canvas)) !important;
+    }
+  }
+}
+
+/* How-to-play rows: reserve real space for the enlarged neo icons. */
+.theme-neo-brutalist .tutorial-step {
+  display: grid !important;
+  grid-template-columns: 48px minmax(0, 1fr) !important;
+  align-items: center !important;
+  justify-items: start;
+  column-gap: 12px !important;
+  row-gap: 4px;
+  text-align: left !important;
+}
+
+.theme-neo-brutalist .tutorial-step-icon {
+  grid-column: 1;
+  justify-self: start;
+  align-self: center;
+  width: 44px !important;
+  height: 44px !important;
+  min-width: 44px !important;
+  margin: 0 !important;
+  position: relative !important;
+  inset: auto !important;
+  transform: none !important;
+  z-index: 1;
+}
+
+.theme-neo-brutalist .tutorial-step > div:not(.tutorial-step-icon) {
+  grid-column: 2;
+  min-width: 0;
+  width: 100%;
+  margin: 0 !important;
+  padding: 0 !important;
+  text-align: left !important;
+}
+
+.theme-neo-brutalist .tutorial-step strong,
+.theme-neo-brutalist .tutorial-step span {
+  max-width: 100%;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 360px) {
+  .theme-neo-brutalist .tutorial-step {
+    grid-template-columns: 42px minmax(0, 1fr) !important;
+    column-gap: 10px !important;
+  }
+
+  .theme-neo-brutalist .tutorial-step-icon {
+    width: 40px !important;
+    height: 40px !important;
+    min-width: 40px !important;
+  }
+}
+
+/* Official iOS/results cleanup: compact order without changing score logic. */
+.theme-neo-brutalist #results > .insight-grid,
+.theme-neo-brutalist #results > .acc-wrap {
+  display: none !important;
+}
+
+.theme-neo-brutalist #results > .results-stats,
+.theme-neo-brutalist #results > .study-takeaway,
+.theme-neo-brutalist #results > .weakness-summary,
+.theme-neo-brutalist #results > .review-scroll {
+  width: min(calc(100% - 28px), 560px);
+}
+
+.theme-neo-brutalist #results .results-stats {
+  display: grid !important;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 8px;
+  padding: 10px 0 0;
+}
+
+.theme-neo-brutalist #results .rstat {
+  min-width: 0;
+  min-height: 72px;
+  grid-template-rows: auto auto auto;
+  gap: 3px;
+  padding: 8px 5px !important;
+}
+
+.theme-neo-brutalist #results .rn {
+  font-size: clamp(22px, 7vw, 36px);
+  min-height: 1em;
+}
+
+.theme-neo-brutalist #results .rl {
+  min-height: 0;
+  font-size: 9px;
+}
+
+.theme-neo-brutalist #results .accuracy-stat .acc-bar {
+  width: min(100%, 58px);
+  height: 5px;
+  margin-top: 2px;
+  border: 2px solid var(--neo-ink);
+  background: var(--neo-paper);
+}
+
+.theme-neo-brutalist #results .accuracy-stat .acc-fill {
+  background: var(--neo-green);
+}
+
+.theme-neo-brutalist #results .study-takeaway {
+  margin-top: 8px;
+  padding: 10px;
+}
+
+.theme-neo-brutalist #results .takeaway-head {
+  margin-bottom: 6px;
+}
+
+.theme-neo-brutalist #results .takeaway-title {
+  font-size: 12px;
+}
+
+.theme-neo-brutalist #results .takeaway-grid {
+  grid-template-columns: 1fr;
+  gap: 0;
+}
+
+.theme-neo-brutalist #results .takeaway-topic {
+  width: 100%;
+  min-height: 0;
+  padding: 8px 10px;
+}
+
+.theme-neo-brutalist #results .takeaway-action {
+  margin-top: 7px;
+  font-size: 11px;
+  line-height: 1.3;
+}
+
+.theme-neo-brutalist #results .weakness-summary {
+  margin-top: 8px;
+  padding: 10px;
+}
+
+.theme-neo-brutalist #results .weakness-summary.active {
+  gap: 7px;
+}
+
+.theme-neo-brutalist #results .weakness-summary-top {
+  gap: 8px;
+}
+
+.theme-neo-brutalist #results .weakness-stat-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 5px;
+}
+
+.theme-neo-brutalist #results .weakness-stat {
+  min-height: 44px;
+  padding: 5px;
+}
+
+.theme-neo-brutalist #results .weakness-stat strong {
+  font-size: 16px;
+}
+
+.theme-neo-brutalist #results .weakness-stat span {
+  font-size: 9px;
+}
+
+.theme-neo-brutalist #results .review-scroll {
+  padding: 8px 0 10px;
+}
+
+.theme-neo-brutalist #results .rv-header {
+  padding: 8px 10px;
+}
+
+.theme-neo-brutalist #results .rv-body-inner {
+  padding: 9px 10px 10px;
+}
+
+.theme-neo-brutalist #team-reset-action:empty {
+  display: none;
+}
+
+.theme-neo-brutalist #team-reset-action .btn {
+  width: 100%;
+}
+
+@media (max-width: 370px) {
+  .theme-neo-brutalist #results .results-stats {
+    gap: 6px;
+  }
+
+  .theme-neo-brutalist #results .rstat {
+    min-height: 66px;
+    padding: 7px 3px !important;
+  }
+
+  .theme-neo-brutalist #results .rn {
+    font-size: clamp(20px, 6.4vw, 30px);
+  }
 }

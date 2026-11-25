@@ -1,0 +1,480 @@
+/* Minimal flashcard theme. Gameplay geometry and orientation remain in index.html. */
+#native-privacy-button[hidden] { display: none !important; }
+html.native-ios .screen:not(#game) .nav-bar { padding-top: calc(env(safe-area-inset-top, 0px) + 12px) !important; }
+html.native-ios #results .results-header { padding-top: calc(env(safe-area-inset-top, 0px) + 24px) !important; }
+html.native-ios #results { padding-bottom: env(safe-area-inset-bottom, 0px); }
+/* Feedback uses one foreground tint; the backdrop must stay neutral. */
+html.theme-neo-brutalist #game .game-bg:is(.neutral, .correct, .wrong) {
+  background: #fff !important;
+}
+html.theme-neo-brutalist #game > .flash-overlay.answer-tint {
+  position: absolute;
+  inset: 0;
+  z-index: 100;
+  pointer-events: none;
+  opacity: 0;
+  transition: none;
+}
+html.theme-neo-brutalist #home::before { display: none !important; }
+html.theme-neo-brutalist.game-active #app::before,
+html.theme-neo-brutalist.game-active #app::after { background: #fff !important; }
+html.theme-neo-brutalist #topics #loading-container:not([style*="display: block"]) { display: none !important; }
+html.theme-neo-brutalist #topics .scroll-body > .section-label:first-of-type { font-family: Arial, sans-serif; }
+html.theme-neo-brutalist #topics .ai-status-badge { background: #fff !important; border: 0 !important; box-shadow: none !important; font: 400 11px/1.3 Arial, sans-serif; }
+html.theme-neo-brutalist #home .home-title span { filter: none !important; }
+html.theme-neo-brutalist #home,
+html.theme-neo-brutalist #topics .nav-bar { background: #fff !important; }
+html.theme-neo-brutalist #home .home-title .high,
+html.theme-neo-brutalist #home .home-title .yield { color: #171717 !important; text-shadow: none !important; filter: none !important; text-transform: none !important; -webkit-text-stroke: 0 !important; -webkit-text-fill-color: #171717 !important; }
+html.theme-neo-brutalist #home .home-title { text-transform: none !important; filter: none !important; }
+html.theme-neo-brutalist #home .home-actions > .btn-original.menu-button { border-radius: 6px !important; text-transform: none !important; }
+html.theme-neo-brutalist #home .home-actions > .btn-original.menu-button .menu-button-label { text-transform: none !important; font-family: Arial, sans-serif !important; }
+html.theme-neo-brutalist #home .home-actions > .btn-original.menu-button:not(.primary) { background: #fff !important; }
+html.theme-neo-brutalist #topics .topic-card > div:not(.topic-check):not(.topic-icon) { justify-items: start !important; text-align: left !important; }
+html.theme-neo-brutalist #topics .topic-name,
+html.theme-neo-brutalist #topics .topic-count { margin-left: 0 !important; margin-right: 0 !important; text-align: left !important; font-family: Arial, sans-serif !important; }
+html.theme-neo-brutalist #game .card-category { background: none !important; border: 0 !important; box-shadow: none !important; font-weight: 400 !important; font-size: 16px !important; }
+html.theme-neo-brutalist #game .score-pill.streak { text-shadow: none !important; }
+html.theme-neo-brutalist #game #timer-text { position: absolute !important; top: calc(var(--game-safe-top) + 8px) !important; bottom: auto !important; left: 50% !important; transform: translateX(-50%) !important; border: 0 !important; background: none !important; box-shadow: none !important; padding: 0 !important; }
+html.theme-neo-brutalist {
+  --font-heading: Arial, Helvetica, sans-serif;
+  --font-body: Arial, Helvetica, sans-serif;
+  --font-gameplay: Arial, Helvetica, sans-serif;
+  --bg-primary: #fff; --bg-secondary: #f5f5f5; --bg-card: #fff;
+  --text-primary: #171717; --text-secondary: #555; --text-dim: #666;
+  --neo-canvas: #fff; --neo-paper: #fff; --neo-ink: #171717;
+  --neo-red: #cb473e; --red: #cb473e; --orange: #cb473e;
+  --neo-yellow: #f5f5f5; --neo-violet: #f5f5f5; --neo-green: #e5f0e8;
+  --neo-border-heavy: 1px; --neo-border: 1px;
+  --neo-shadow-small: none; --neo-shadow-medium: none; --neo-shadow-large: none;
+  background: #fff;
+}
+.theme-neo-brutalist body, .theme-neo-brutalist .screen { background: #fff !important; }
+.theme-neo-brutalist .screen { font-family: Arial, Helvetica, sans-serif; }
+.theme-neo-brutalist .btn, .theme-neo-brutalist .btn-original,
+.theme-neo-brutalist .nav-back, .theme-neo-brutalist .premium-mini {
+  border: 1px solid #b6b6b6 !important; border-radius: 6px !important;
+  box-shadow: none !important; text-transform: none; letter-spacing: 0;
+  font-weight: 600 !important; background: #fff !important; color: #171717 !important;
+}
+.theme-neo-brutalist .btn-primary { background: #cb473e !important; color: #fff !important; border-color: #cb473e !important; }
+.theme-neo-brutalist .nav-bar { background: #fff; box-shadow: none; border: 0; }
+.theme-neo-brutalist .nav-back { border: 0 !important; }
+.theme-neo-brutalist .icon-badge, .theme-neo-brutalist .mode-icon { background: transparent !important; border: 0 !important; box-shadow: none !important; }
+.theme-neo-brutalist #home { padding: max(32px, env(safe-area-inset-top)) 24px max(24px, env(safe-area-inset-bottom)) !important; overflow-y: auto !important; }
+.theme-neo-brutalist #home .home-top-brand,
+.theme-neo-brutalist #home .home-status-row,
+.theme-neo-brutalist #home .home-badge,
+.theme-neo-brutalist #home .premed-float-field { display: none !important; }
+.theme-neo-brutalist #home .home-header { padding: 0 !important; margin: auto auto 0 !important; width: 100%; max-width: 390px; flex: none; }
+.theme-neo-brutalist #home .flashcard-logo { display: flex !important; flex-direction: column; align-items: center; justify-content: center; width: 100% !important; height: auto !important; min-height: 0 !important; padding: 0 !important; margin: 0 !important; isolation: auto; }
+.theme-neo-brutalist #home .flashcard-logo::before { content: ''; display: block; width: 158px; height: 112px; margin: 20px auto 28px; background: url('icons/minimal-cards.svg') center / contain no-repeat; }
+.theme-neo-brutalist #home .home-title { display: flex !important; flex-direction: row !important; justify-content: center !important; gap: 10px !important; width: 100% !important; height: auto !important; padding: 0 !important; margin: 0 !important; transform: none !important; background: none !important; border: 0 !important; box-shadow: none !important; font: 700 46px/1.12 Arial, sans-serif !important; letter-spacing: 0 !important; }
+.theme-neo-brutalist #home .home-title::before, .theme-neo-brutalist #home .home-title::after { display: none !important; }
+.theme-neo-brutalist #home .home-title span { display: inline !important; font: inherit !important; color: #171717 !important; background: none !important; border: 0 !important; padding: 0 !important; margin: 0 !important; text-shadow: none !important; -webkit-text-stroke: 0 !important; transform: none !important; animation: none !important; }
+.theme-neo-brutalist #home .home-sub { font: 400 24px/1.3 Arial, sans-serif; margin: 10px 0 0; color: #171717 !important; text-transform: none; letter-spacing: 0; }
+.theme-neo-brutalist #home .home-actions { display: grid !important; grid-template-columns: 1fr 1fr; width: 100%; max-width: 360px; margin: 0 auto !important; gap: 14px 0 !important; }
+.theme-neo-brutalist #home .menu-button { display: flex !important; align-items: center !important; justify-content: center !important; padding: 12px !important; min-height: 48px !important; height: auto !important; width: 100% !important; max-width: none !important; transform: none !important; }
+.theme-neo-brutalist #home .menu-button-label { font: 600 18px/1.3 Arial, sans-serif !important; position: static !important; transform: none !important; padding: 0 !important; margin: 0 !important; background: none !important; border: 0 !important; box-shadow: none !important; }
+.theme-neo-brutalist #home .menu-button.primary { grid-column: 1 / -1; background: #cb473e !important; border-color: #cb473e !important; color: white !important; }
+.theme-neo-brutalist #daily-home-btn { grid-column: 1 / -1; }
+.theme-neo-brutalist #home .menu-button:nth-child(3), .theme-neo-brutalist #home .menu-button:last-child { border: 0 !important; margin-top: 12px; }
+.theme-neo-brutalist #home .menu-button:nth-child(3) .menu-button-label, .theme-neo-brutalist #home .menu-button:last-child .menu-button-label { font-size: 15px !important; font-weight: 400 !important; }
+.theme-neo-brutalist #home .home-more { grid-column: 1 / -1; grid-row: 4; }
+.theme-neo-brutalist #home .home-launch { width: 100%; max-width: 360px; margin: 8px auto auto; }
+.home-more summary, .home-launch summary { cursor: pointer; color: #666; font-size: 12px; padding: 8px; text-align: center; }
+.theme-neo-brutalist #home .premium-bundle, .theme-neo-brutalist #home .launch-card { width: 100%; margin: 8px 0; background: #fff !important; border: 1px solid #ddd !important; box-shadow: none !important; }
+.deck-intro { padding: 25px 0 28px; text-align: center; }
+.deck-intro h1 { font-size: 25px; line-height: 1.25; margin-bottom: 10px; }
+.deck-intro p { font-size: 16px; color: #555; }
+.theme-neo-brutalist #topics .topics-grid { display: flex !important; flex-direction: column; gap: 0 !important; }
+.theme-neo-brutalist #topics .topic-card { display: grid !important; grid-template-columns: 38px minmax(0,1fr) 24px; align-items: center; gap: 14px; width: 100%; min-height: 72px !important; padding: 14px 4px !important; border: 0 !important; border-bottom: 1px solid #d9d9d9 !important; border-radius: 0 !important; box-shadow: none !important; background: #fff !important; transform: none !important; }
+.theme-neo-brutalist #topics .topic-card::before, .theme-neo-brutalist #topics .topic-card::after { display: none !important; }
+.theme-neo-brutalist #topics .topic-icon { grid-column: 1; grid-row: 1; width: 36px !important; height: 32px !important; margin: 0 !important; border: 0 !important; box-shadow: none !important; background: url('icons/minimal-cards.svg') center / contain no-repeat !important; }
+.theme-neo-brutalist #topics .topic-icon svg { visibility: hidden; }
+.theme-neo-brutalist #topics .topic-card > div:last-child { grid-column: 2; grid-row: 1; text-align: left; min-width: 0; }
+.theme-neo-brutalist #topics .topic-name { color: #171717 !important; font: 500 19px/1.25 Arial, sans-serif; text-align: left !important; }
+.theme-neo-brutalist #topics .topic-desc { display: none; }
+.theme-neo-brutalist #topics .topic-count { margin-top: 4px; font-size: 11px; color: #666 !important; }
+.theme-neo-brutalist #topics .topic-check { position: static !important; grid-column: 3; grid-row: 1; width: 22px; height: 22px; display: grid; place-items: center; opacity: 1 !important; border: 1px solid #555 !important; border-radius: 4px !important; background: #fff !important; color: transparent !important; box-shadow: none !important; }
+.theme-neo-brutalist #topics .selected .topic-check { background: #cb473e !important; color: #fff !important; border-color: #cb473e !important; }
+.theme-neo-brutalist #topics .start-bar { background: #fff; border-top: 1px solid #eee; box-shadow: none; }
+.theme-neo-brutalist #game, .theme-neo-brutalist #game.active, .theme-neo-brutalist #game .game-bg { background: #fff !important; }
+.theme-neo-brutalist #game .game-dog { display: none !important; }
+.theme-neo-brutalist #game .game-hud { border-bottom: 1px solid #ddd; padding-bottom: 6px; color: #171717 !important; }
+.theme-neo-brutalist #game .game-hud-left .btn { background: #fff !important; color: #171717 !important; border: 0 !important; min-height: 32px; }
+.theme-neo-brutalist #game .hud-mode-chip { display: none !important; }
+.theme-neo-brutalist #game .score-hud { background: none !important; border: 0 !important; box-shadow: none !important; padding: 0 !important; }
+.theme-neo-brutalist #game .score-pill { display: none !important; }
+.theme-neo-brutalist #game .score-pill.streak { display: flex !important; color: #555 !important; background: none !important; border: 0 !important; box-shadow: none !important; font-size: 14px; }
+.theme-neo-brutalist #game .card-term { background: #fff !important; border: 0 !important; border-radius: 0 !important; box-shadow: none !important; color: #171717 !important; }
+.theme-neo-brutalist #game .term-text { color: #171717 !important; text-shadow: none !important; font-family: Arial, sans-serif !important; font-weight: 700; }
+.theme-neo-brutalist #game .card-category { color: #666 !important; font-family: Arial, sans-serif; }
+.theme-neo-brutalist #game #timer-text { color: #171717 !important; font: 700 24px/1 Arial, sans-serif !important; }
+.theme-neo-brutalist #game .tap-hints span { border: 0 !important; border-radius: 6px !important; box-shadow: none !important; font: 600 18px/1.2 Arial, sans-serif !important; padding: 12px 24px !important; }
+.theme-neo-brutalist #game .tap-hints .skip { background: #fff !important; color: #171717 !important; }
+.theme-neo-brutalist #game .tap-hints .got { background: #cb473e !important; color: #fff !important; }
+@media(max-width: 370px) { .theme-neo-brutalist #home .home-title { font-size: 40px !important; } }
+@media(max-height: 740px) { .theme-neo-brutalist #home .flashcard-logo::before { width: 120px; height: 84px; margin: 8px auto 16px; } }
+/* Shared finishing details keep the compact controls legible and predictable. */
+html.theme-neo-brutalist .screen button,
+html.theme-neo-brutalist .screen input,
+html.theme-neo-brutalist .screen select,
+html.theme-neo-brutalist .screen summary {
+  font-family: Arial, Helvetica, sans-serif !important;
+  letter-spacing: 0 !important;
+}
+html.theme-neo-brutalist button:focus-visible,
+html.theme-neo-brutalist summary:focus-visible,
+html.theme-neo-brutalist input:focus-visible,
+html.theme-neo-brutalist select:focus-visible {
+  outline: 2px solid #cb473e !important;
+  outline-offset: 3px !important;
+}
+html.theme-neo-brutalist #home .home-actions > .menu-button .menu-button-label {
+  font-weight: 600 !important;
+}
+html.theme-neo-brutalist #home .home-more summary,
+html.theme-neo-brutalist #home .home-launch summary {
+  min-height: 44px;
+  padding: 14px 8px;
+}
+html.theme-neo-brutalist #home .home-launch { margin-top: 0; }
+html.theme-neo-brutalist #topics .topic-card.selected { background: #fff9f8 !important; }
+html.theme-neo-brutalist #topics .topic-count { font-size: 12px; line-height: 1.4; }
+html.theme-neo-brutalist #topics .nav-title { font: 600 18px/1.3 Arial, sans-serif; }
+html.theme-neo-brutalist #topics .start-bar { padding-bottom: max(16px, env(safe-area-inset-bottom)); }
+html.theme-neo-brutalist #game .game-hud-left { gap: 4px; }
+html.theme-neo-brutalist #game .game-hud-left .btn {
+  min-width: 44px;
+  min-height: 36px;
+  padding: 8px 10px !important;
+  font: 500 14px/1.2 Arial, sans-serif !important;
+  box-shadow: none !important;
+  transform: none !important;
+}
+html.theme-neo-brutalist #game #undo-card-btn:disabled {
+  color: #888 !important;
+  opacity: 0.6;
+  cursor: default;
+}
+html.theme-neo-brutalist #game .score-pill.streak {
+  font: 400 14px/1.2 Arial, sans-serif !important;
+  gap: 5px;
+}
+html.theme-neo-brutalist #game #timer-text {
+  grid-area: auto !important;
+  align-self: start !important;
+  justify-self: auto !important;
+  min-height: 28px;
+  font-variant-numeric: tabular-nums;
+}
+html.theme-neo-brutalist #game #timer-text[data-urgency="warning"] { color: #9a5b14 !important; }
+html.theme-neo-brutalist #game #timer-text[data-urgency="urgent"] { color: #bd302b !important; }
+html.theme-neo-brutalist #game .term-feedback,
+html.theme-neo-brutalist #game .term-feedback-sub { font-family: Arial, sans-serif !important; text-shadow: none !important; }
+@media (hover: hover) {
+  html.theme-neo-brutalist #topics .topic-card:hover { background: #f7f7f7 !important; }
+  html.theme-neo-brutalist #game .game-hud-left .btn:not(:disabled):hover { background: #f4f4f4 !important; }
+}
+/* A larger wordmark with a quieter, compact action group. */
+html.theme-neo-brutalist #home .home-title {
+  font-family: 'Rimouski', Arial, sans-serif !important;
+  font-size: 56px !important;
+  font-weight: 700 !important;
+  gap: 12px !important;
+}
+html.theme-neo-brutalist #home .home-sub,
+html.theme-neo-brutalist #home .home-actions > .btn-original.menu-button .menu-button-label,
+html.theme-neo-brutalist #home summary {
+  font-family: 'Rimouski', Arial, sans-serif !important;
+}
+html.theme-neo-brutalist #home .flashcard-logo::before {
+  width: 200px;
+  height: 150px;
+  margin: 16px auto 28px;
+}
+html.theme-neo-brutalist #home .home-sub { margin-bottom: 34px; font-size: 21px; }
+html.theme-neo-brutalist #home .home-actions { max-width: 290px; gap: 12px 0 !important; }
+html.theme-neo-brutalist #home .home-actions > .btn-original.menu-button {
+  min-height: 44px !important;
+  padding: 9px 12px !important;
+}
+html.theme-neo-brutalist #home .home-actions > .btn-original.menu-button .menu-button-label { font-size: 16px !important; }
+html.theme-neo-brutalist #home .home-actions > .btn-original.menu-button:nth-child(3) .menu-button-label,
+html.theme-neo-brutalist #home .home-actions > .btn-original.menu-button:last-child .menu-button-label { font-size: 14px !important; }
+@media(max-width: 390px) {
+  html.theme-neo-brutalist #home .home-title { font-size: 50px !important; gap: 10px !important; }
+}
+@media(max-width: 350px) {
+  html.theme-neo-brutalist #home .home-title { font-size: 44px !important; }
+}
+@media(max-height: 740px) {
+  html.theme-neo-brutalist #home .flashcard-logo::before { width: 168px; height: 126px; margin: 8px auto 20px; }
+  html.theme-neo-brutalist #home .home-sub { margin-bottom: 26px; }
+}
+/* The same quiet surface language across setup, recap, progress and dialogs. */
+html.theme-neo-brutalist {
+  --font-heading: 'Rimouski', Arial, sans-serif;
+  --font-body: 'Rimouski', Arial, sans-serif;
+  --border: #e2e2e2;
+}
+html.theme-neo-brutalist .screen:not(#game),
+html.theme-neo-brutalist :is(.tutorial-card, .install-thanks-card, .add-home-card) {
+  font-family: 'Rimouski', Arial, sans-serif;
+  color: #242424;
+}
+html.theme-neo-brutalist .screen:not(#game) :is(button, input, select, textarea, summary) {
+  font-family: 'Rimouski', Arial, sans-serif !important;
+}
+html.theme-neo-brutalist .screen:not(#game) .nav-bar {
+  background: #fff !important;
+  border: 0 !important;
+  border-bottom: 1px solid #eee !important;
+  box-shadow: none !important;
+  gap: 12px;
+}
+html.theme-neo-brutalist .nav-title { font: 600 18px/1.3 'Rimouski', Arial, sans-serif !important; }
+html.theme-neo-brutalist .section-label {
+  color: #666 !important;
+  font: 500 12px/1.4 'Rimouski', Arial, sans-serif;
+  text-transform: none !important;
+  letter-spacing: 0 !important;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+html.theme-neo-brutalist :is(.settings-card, .mini-panel, .bank-note, .ai-options, .ai-status,
+  .generated-deck, .upload-zone, .file-pill-ai, .gen-term-item, .badge-card, .rv-item) {
+  border: 1px solid #e2e2e2 !important;
+  border-radius: 8px !important;
+  background: #fff !important;
+  box-shadow: none !important;
+}
+html.theme-neo-brutalist :is(.settings-card, .mini-panel, .ai-options) { padding: 16px !important; }
+html.theme-neo-brutalist :is(.settings-sub, .mode-sub, .opt-sub, .cycle-reset-note, .mini-panel-sub,
+  .rv-cat, .dash-sub, .daily-panel-sub, .reward-copy, .ai-hero-sub, .ad-break-sub) {
+  font-size: 13px !important;
+  line-height: 1.5 !important;
+  font-weight: 400 !important;
+  color: #666 !important;
+}
+html.theme-neo-brutalist :is(.settings-lbl, .mode-name, .opt-label, .daily-panel-title) {
+  font: 500 16px/1.3 'Rimouski', Arial, sans-serif !important;
+}
+html.theme-neo-brutalist .settings-row {
+  gap: 16px;
+  padding: 14px 0;
+  border-color: #eee;
+  text-align: left;
+}
+html.theme-neo-brutalist .settings-row > div { min-width: 0; }
+html.theme-neo-brutalist .settings-row input[type=range] { width: 110px; flex: 0 0 110px; accent-color: #cb473e; }
+html.theme-neo-brutalist :is(.opt-select, .team-input, .prompt-textarea) {
+  background: #fafafa !important;
+  color: #242424 !important;
+  border: 1px solid #ccc !important;
+  border-radius: 6px !important;
+  box-shadow: none !important;
+  font-size: 16px;
+  min-height: 44px;
+}
+html.theme-neo-brutalist .toggle-track { background: #ddd !important; border: 0 !important; box-shadow: none !important; border-radius: 20px !important; }
+html.theme-neo-brutalist .toggle-track::after { background: #fff !important; border: 0 !important; box-shadow: 0 1px 3px #0002 !important; border-radius: 50% !important; }
+html.theme-neo-brutalist .toggle-switch input:checked + .toggle-track { background: #cb473e !important; }
+html.theme-neo-brutalist .toggle-switch input:focus-visible + .toggle-track { outline: 2px solid #cb473e; outline-offset: 3px; }
+html.theme-neo-brutalist #topics .mode-grid { grid-template-columns: minmax(0,1fr); gap: 8px; }
+html.theme-neo-brutalist #topics .mode-card {
+  border: 1px solid #e2e2e2 !important;
+  border-radius: 8px !important;
+  background: #fff !important;
+  box-shadow: none !important;
+  padding: 14px 12px !important;
+  grid-template-columns: 32px minmax(0,1fr) auto !important;
+  gap: 12px !important;
+  text-align: left !important;
+}
+html.theme-neo-brutalist #topics .mode-card.selected { border-color: #cb473e !important; background: #fff9f8 !important; }
+html.theme-neo-brutalist #topics .mode-card > div:not(.mode-icon):not(.mode-side):not(.weak-mode-marker) { text-align: left !important; justify-items: start !important; }
+html.theme-neo-brutalist :is(.mode-tag, .diff-badge, .takeaway-pill, .achievement-chip, .rv-meta-pill, .subtopic-chip, .daily-chip) {
+  background: #f4f4f4 !important;
+  color: #555 !important;
+  border: 0 !important;
+  border-radius: 5px !important;
+  box-shadow: none !important;
+  font-weight: 500 !important;
+  text-transform: none !important;
+  letter-spacing: 0 !important;
+}
+html.theme-neo-brutalist .btn { min-height: 44px; font-size: 15px; gap: 8px; line-height: 1.35; }
+html.theme-neo-brutalist .btn-secondary { border-color: #ddd !important; }
+html.theme-neo-brutalist .btn-danger { color: #b3332d !important; background: #fff !important; border-color: #e8b7b3 !important; }
+html.theme-neo-brutalist .btn:active { transform: scale(.985) !important; }
+html.theme-neo-brutalist :is(.results-dog, .dashboard-dog, .reward-dog, .tutorial-mascot) { display: none !important; }
+html.theme-neo-brutalist #results .results-header { padding: 28px 12px 4px; }
+html.theme-neo-brutalist #results .results-trophy { font: 500 16px/1.4 'Rimouski', Arial, sans-serif !important; margin-bottom: 10px; }
+html.theme-neo-brutalist #results .results-title { font: 700 27px/1.25 'Rimouski', Arial, sans-serif !important; background: none !important; color: #242424 !important; -webkit-text-fill-color: #242424 !important; }
+html.theme-neo-brutalist #results :is(.mcat-card, .study-takeaway, .weakness-summary, .team-panel),
+html.theme-neo-brutalist :is(.dash-hero, .reward-card, .launch-check-card, .ai-hero, .daily-panel) {
+  background: #fff !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  padding: 20px 12px !important;
+}
+html.theme-neo-brutalist #results :is(.study-takeaway, .weakness-summary, .team-panel) { border-top: 1px solid #e5e5e5 !important; margin-top: 16px; }
+html.theme-neo-brutalist #results .mcat-number,
+html.theme-neo-brutalist .dash-score { font: 700 56px/1.15 'Rimouski', Arial, sans-serif !important; color: #242424 !important; }
+html.theme-neo-brutalist #results .mcat-label { font-size: 11px; font-weight: 400; letter-spacing: 0; text-transform: none; }
+html.theme-neo-brutalist #results .mcat-detail { font-size: 12px; font-weight: 400; line-height: 1.4; color: #666; }
+html.theme-neo-brutalist #results .rstat,
+html.theme-neo-brutalist .dash-stat,
+html.theme-neo-brutalist #results .weakness-stat {
+  background: #f7f7f7 !important;
+  border: 0 !important;
+  border-radius: 6px !important;
+  box-shadow: none !important;
+  min-width: 0;
+}
+html.theme-neo-brutalist #results .rstat:first-child { background: #edf5ef !important; }
+html.theme-neo-brutalist #results .rn { font: 600 26px/1.2 'Rimouski', Arial, sans-serif !important; color: #242424 !important; }
+html.theme-neo-brutalist #results .rn.is-zero-word { font-size: 22px !important; }
+html.theme-neo-brutalist :is(.rl, .dash-stat-l) { text-transform: none !important; letter-spacing: 0 !important; font-size: 11px !important; color: #666 !important; }
+html.theme-neo-brutalist #results .review-scroll { padding-top: 20px; }
+html.theme-neo-brutalist #results .rv-label { font: 600 16px/1.4 'Rimouski', Arial, sans-serif; text-transform: none; letter-spacing: 0; margin: 14px 0 10px; }
+html.theme-neo-brutalist #results .rv-item { margin-bottom: 10px; overflow: hidden; }
+html.theme-neo-brutalist #results .rv-header { padding: 14px !important; }
+html.theme-neo-brutalist #results .rv-term { font: 500 16px/1.3 'Rimouski', Arial, sans-serif; }
+html.theme-neo-brutalist #results .rv-body-inner { padding: 0 14px 16px !important; font-size: 14px; line-height: 1.6; }
+html.theme-neo-brutalist #results .results-actions { background: #fff !important; gap: 10px; padding-top: 22px; border-top: 1px solid #eee; }
+html.theme-neo-brutalist #results :is(.takeaway-topic, .team-row, .team-callout, .team-history) { background: #fff !important; border: 0 !important; box-shadow: none !important; }
+html.theme-neo-brutalist .dash-hero { text-align: center; }
+html.theme-neo-brutalist .dash-score { padding: 0 !important; margin: 0 !important; }
+html.theme-neo-brutalist .dash-stat-n { font: 600 26px/1.25 'Rimouski', Arial, sans-serif !important; overflow-wrap: anywhere; }
+html.theme-neo-brutalist :is(.badge-card, .mastery-item) { padding: 14px; }
+html.theme-neo-brutalist .badge-icon { background: #f5f5f5 !important; border: 0 !important; box-shadow: none !important; }
+html.theme-neo-brutalist :is(.reward-title, .launch-title-big, .ai-hero-title, .ad-break-title) { font: 600 28px/1.2 'Rimouski', Arial, sans-serif !important; }
+html.theme-neo-brutalist .reward-streak-number { font: 700 64px/1.2 'Rimouski', Arial, sans-serif; color: #cb473e; }
+html.theme-neo-brutalist :is(.launch-check-row, .mastery-item) { border: 0 !important; border-bottom: 1px solid #eee !important; border-radius: 0 !important; box-shadow: none !important; background: #fff !important; }
+html.theme-neo-brutalist #countdown { background: #fff !important; }
+html.theme-neo-brutalist #countdown .countdown-card { background: #fff !important; border: 0 !important; box-shadow: none !important; }
+html.theme-neo-brutalist #countdown :is(.rotate-text, .cd-num) { font-family: 'Rimouski', Arial, sans-serif !important; text-shadow: none !important; }
+html.theme-neo-brutalist #countdown .rotate-text { font-size: 26px !important; text-transform: none !important; }
+html.theme-neo-brutalist #countdown .cd-num { color: #cb473e !important; }
+html.theme-neo-brutalist #countdown :is(.cd-step, .cd-step-n, .rotate-icon) { border: 0 !important; box-shadow: none !important; background: #f7f7f7 !important; color: #242424 !important; }
+html.theme-neo-brutalist :is(.tutorial-overlay, .add-home-overlay, .install-thanks-overlay) { background: #17171766 !important; backdrop-filter: none !important; padding: max(16px, env(safe-area-inset-top)) 16px max(16px, env(safe-area-inset-bottom)); }
+html.theme-neo-brutalist :is(.tutorial-card, .add-home-card, .install-thanks-card, .ad-break-card) {
+  background: #fff !important; border: 1px solid #e5e5e5 !important;
+  border-radius: 8px !important; box-shadow: 0 12px 36px #00000018 !important;
+  padding: 24px !important; max-width: 440px; max-height: 88dvh; overflow-y: auto;
+}
+html.theme-neo-brutalist :is(.tutorial-title, .add-home-title, .install-thanks-title) { font: 600 26px/1.2 'Rimouski', Arial, sans-serif !important; text-align: left !important; }
+html.theme-neo-brutalist :is(.tutorial-copy, .add-home-copy, .install-thanks-copy) { font: 400 14px/1.55 'Rimouski', Arial, sans-serif !important; color: #555 !important; text-align: left !important; }
+html.theme-neo-brutalist :is(.tutorial-step, .add-home-step) { background: #fff !important; border: 0 !important; border-bottom: 1px solid #eee !important; box-shadow: none !important; border-radius: 0 !important; padding: 14px 0 !important; }
+html.theme-neo-brutalist :is(.tutorial-step-icon, .add-home-step-num, .add-home-icon) { border: 0 !important; border-radius: 6px !important; box-shadow: none !important; background: #f5f5f5 !important; color: #cb473e !important; }
+html.theme-neo-brutalist :is(.tutorial-step, .add-home-step) strong { font: 500 14px/1.4 'Rimouski', Arial, sans-serif; }
+html.theme-neo-brutalist :is(.tutorial-step, .add-home-step) span { font-size: 13px; line-height: 1.45; color: #666; }
+html.theme-neo-brutalist #results .rstat:nth-child(3) { background: #fbefee !important; }
+html.theme-neo-brutalist #results .accuracy-stat .acc-bar { border: 0 !important; height: 3px; background: #ddd; }
+html.theme-neo-brutalist #results .accuracy-stat .acc-fill { background: #608c6c; }
+html.theme-neo-brutalist #dashboard .dash-stat-n { color: #242424 !important; }
+html.theme-neo-brutalist #streak-reward .reward-streak-number { background: #fff4f2 !important; border: 0 !important; border-radius: 8px !important; box-shadow: none !important; color: #bd4037 !important; }
+html.theme-neo-brutalist :is(.ai-hero-icon, .upload-icon, .upload-title) { color: #cb473e !important; }
+html.theme-neo-brutalist #topics .weak-mode-marker { background: #f5f5f5 !important; border: 0 !important; border-radius: 5px !important; box-shadow: none !important; padding: 4px !important; min-width: 0; width: 32px; }
+html.theme-neo-brutalist #topics .weak-mode-marker span { display: none; }
+html.theme-neo-brutalist #topics .weak-mode-marker strong { font: 500 10px/1.2 'Rimouski', Arial, sans-serif; }
+html.theme-neo-brutalist #topics .mode-side { min-width: 0; }
+html.theme-neo-brutalist #topics .mode-start-btn { border: 1px solid #ccc !important; border-radius: 6px !important; box-shadow: none !important; background: #fff !important; padding: 8px !important; min-height: 36px; font-size: 11px; }
+/* One short screen fade avoids competing, staggered child animations. */
+@keyframes minimalScreenIn { from { opacity: 0; } to { opacity: 1; } }
+html.theme-neo-brutalist .screen.active:not(#game):not(#countdown) { animation: minimalScreenIn 180ms ease-out !important; }
+html.theme-neo-brutalist .screen:not(#game):not(#countdown) :is(.topic-card, .mode-card, .badge-card, .rv-item, .rstat),
+html.theme-neo-brutalist .screen.active:not(#game):not(#countdown) > * { animation: none !important; }
+html.theme-neo-brutalist .btn, html.theme-neo-brutalist .topic-card { transition: background-color 140ms ease, border-color 140ms ease, transform 140ms ease !important; }
+@media(max-width: 370px) {
+  html.theme-neo-brutalist .settings-row { gap: 10px; }
+  html.theme-neo-brutalist .settings-row input[type=range] { width: 90px; flex-basis: 90px; }
+  html.theme-neo-brutalist :is(.tutorial-card, .add-home-card, .install-thanks-card) { padding: 20px !important; }
+}
+/* Setup and recap share a quiet, readable rhythm without changing game geometry. */
+html.theme-neo-brutalist #round-recovery:not([hidden]) {
+  width: 100%; max-width: 290px; margin-inline: auto; flex-shrink: 0;
+  display: grid; gap: 8px; padding: 16px 0;
+  border-block: 1px solid #e5e5e5; margin-bottom: 16px; text-align: center;
+}
+html.theme-neo-brutalist #round-recovery[hidden] { display: none; }
+html.theme-neo-brutalist #round-recovery p { font-size: 13px; line-height: 1.5; color: #666; margin-bottom: 8px; }
+html.theme-neo-brutalist #topics .scroll-body {
+  width: 100%; max-width: 600px; margin-inline: auto; padding-inline: 24px !important;
+}
+html.theme-neo-brutalist .deck-intro { text-align: left; padding: 24px 0 16px; }
+html.theme-neo-brutalist .deck-intro h1 { font-size: 28px; margin-bottom: 8px; }
+html.theme-neo-brutalist .deck-intro p { font-size: 15px; color: #666; }
+html.theme-neo-brutalist #topics .topics-grid { margin-inline: 0 !important; }
+html.theme-neo-brutalist #topics .topic-card {
+  grid-template-columns: 28px minmax(0, 1fr) 24px;
+  gap: 12px; padding: 16px 8px !important; min-height: 76px !important;
+}
+html.theme-neo-brutalist #topics .topic-icon {
+  width: 24px !important; height: 24px !important; background: none !important;
+  color: #666 !important; display: grid; place-items: center;
+}
+html.theme-neo-brutalist #topics .topic-icon svg { visibility: visible; width: 22px; height: 22px; }
+html.theme-neo-brutalist #topics .topic-name { font-size: 17px !important; line-height: 1.35; }
+html.theme-neo-brutalist #topics .topic-count { margin-top: 4px; }
+html.theme-neo-brutalist #topics .topic-card.selected .topic-icon { color: #b83e36 !important; }
+html.theme-neo-brutalist #topics .mode-grid { margin-inline: 0 !important; }
+html.theme-neo-brutalist #topics .mode-card { transform: none !important; min-height: 76px; }
+html.theme-neo-brutalist #topics .mode-sub { font-size: 12px !important; margin-top: 4px; }
+html.theme-neo-brutalist #topics .round-duration { margin: 0; border-bottom: 1px solid #e5e5e5; }
+html.theme-neo-brutalist #topics .round-more { margin: 8px 0 24px; border-top: 1px solid #e5e5e5; }
+html.theme-neo-brutalist #topics .round-more > summary {
+  padding: 16px 0; min-height: 52px; cursor: pointer; font-size: 15px; color: #555;
+}
+html.theme-neo-brutalist #topics .round-more .settings-card {
+  margin-inline: 0 !important; border: 0 !important; border-bottom: 1px solid #eee !important;
+  border-radius: 0 !important; padding: 0 0 16px !important;
+}
+html.theme-neo-brutalist #topics .start-bar { padding: 16px 24px max(16px, env(safe-area-inset-bottom)) !important; }
+html.theme-neo-brutalist #topics #start-ui-wrapper { max-width: 552px; margin-inline: auto; }
+html.theme-neo-brutalist #topics #start-btn { min-height: 48px; }
+html.theme-neo-brutalist #results .results-header { padding-top: 32px; }
+html.theme-neo-brutalist #results .results-sub { font-size: 13px; line-height: 1.5; color: #666; margin-top: 8px; }
+html.theme-neo-brutalist #results .mcat-card { padding: 24px 16px !important; }
+html.theme-neo-brutalist #results .mcat-number { font-size: 64px !important; font-variant-numeric: tabular-nums; }
+html.theme-neo-brutalist #results .results-stats {
+  display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px; padding: 0 16px;
+}
+html.theme-neo-brutalist #results .rstat {
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  gap: 6px; min-height: 80px; padding: 12px 4px !important; position: relative;
+}
+html.theme-neo-brutalist #results .rn { margin: 0 !important; font-size: 24px !important; }
+html.theme-neo-brutalist #results .accuracy-stat .acc-bar { position: absolute; bottom: 6px; width: 48%; margin: 0; }
+html.theme-neo-brutalist #results .review-scroll { padding: 16px; }
+html.theme-neo-brutalist #results .rv-item {
+  border: 0 !important; border-bottom: 1px solid #e5e5e5 !important;
+  border-radius: 0 !important; margin: 0;
+}
+html.theme-neo-brutalist #results .rv-header { min-height: 56px; padding: 12px 0 !important; border: 0 !important; }
+html.theme-neo-brutalist #results .rv-body-inner { padding: 0 0 16px !important; border: 0 !important; }
+html.theme-neo-brutalist #results .results-actions { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; padding: 16px !important; }
+html.theme-neo-brutalist #results .results-actions > :is(#play-again-btn, #review-missed-btn, #streak-reward-btn, #team-reset-action) { grid-column: 1 / -1; }
+html.theme-neo-brutalist #results #team-reset-action:empty { display: none; }
+html.theme-neo-brutalist #results #play-again-btn { min-height: 48px; }
+html.theme-neo-brutalist #results .results-actions > .btn-secondary:not(#review-missed-btn):not(#streak-reward-btn) { border-color: transparent !important; font-size: 14px; }
+html.theme-neo-brutalist #results #practice-weak-btn { background: #fff !important; border-color: #ddd !important; color: #242424 !important; }
+html.theme-neo-brutalist :is(.nav-back, .mode-start-btn) { min-height: 44px !important; }
+html.theme-neo-brutalist input[type=range] { min-height: 44px; cursor: pointer; }
+html.theme-neo-brutalist :is(.btn, .menu-button):disabled { opacity: .5; cursor: not-allowed; transform: none !important; }
+html.theme-neo-brutalist :is(.topic-card, .mode-card):focus-visible { outline: 2px solid #cb473e; outline-offset: 2px; }
+@media(hover: hover) {
+  html.theme-neo-brutalist .btn-secondary:hover { background: #f5f5f5 !important; }
+  html.theme-neo-brutalist .btn-primary:not(:disabled):hover { background: #b83e36 !important; }
+  html.theme-neo-brutalist #topics .topic-card.selected:hover { background: #fff2ef !important; }
+}
+@media(max-width: 370px) {
+  html.theme-neo-brutalist #topics .scroll-body { padding-inline: 16px !important; }
+  html.theme-neo-brutalist #results .results-stats { gap: 6px; }
+  html.theme-neo-brutalist #results .rn { font-size: 22px !important; }
+}
+@media(prefers-reduced-motion: reduce) { html.theme-neo-brutalist .screen, html.theme-neo-brutalist .screen *, html.theme-neo-brutalist [role=dialog] * { animation: none !important; transition: none !important; } }
