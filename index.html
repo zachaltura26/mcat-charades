@@ -8641,6 +8641,8 @@ function flash(emoji) { const el = document.getElementById('flash-overlay'); el.
 function showCardFeedback(kind) {
   const overlay = document.getElementById('flash-overlay');
   if (!overlay) return;
+  // Keep the tint outside the clipped/rotated gameplay layout.
+  if (overlay.parentElement !== document.body) document.body.appendChild(overlay);
   overlay.getAnimations().forEach(animation => animation.cancel());
   overlay.textContent = '';
   overlay.className = 'flash-overlay answer-tint';
