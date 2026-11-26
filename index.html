@@ -8647,10 +8647,10 @@ function showCardFeedback(kind) {
   overlay.style.backgroundColor = kind === 'correct' ? '#41a36a' : '#df554b';
   overlay.animate([
     { opacity: 0 },
-    { opacity: 0.16, offset: 0.22 },
-    { opacity: 0.12, offset: 0.55 },
+    { opacity: 0.38, offset: 0.12 },
+    { opacity: 0.38, offset: 0.55 },
     { opacity: 0 }
-  ], { duration: 340, easing: 'ease-out' });
+  ], { duration: 800, easing: 'ease-out' });
 }
 function captureUndoSnapshot() {
   const termEl = document.getElementById('card-term');
